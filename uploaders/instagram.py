@@ -8,8 +8,11 @@ import os
 import json
 import time
 import webbrowser
-import truststore
-truststore.inject_into_ssl()
+try:
+    import truststore
+    truststore.inject_into_ssl()
+except ImportError:
+    pass
 import requests
 
 DIR = os.path.dirname(os.path.abspath(__file__))
