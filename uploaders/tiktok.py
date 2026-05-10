@@ -22,7 +22,7 @@ CONFIG_FILE = os.path.join(ROOT, "config.json")
 API_URL = "https://open.tiktokapis.com/v2"
 AUTH_URL = "https://www.tiktok.com/v2/auth/authorize/"
 REDIRECT_URI = "https://noborta.ai/tiktok-callback"
-SCOPES = "video.publish,video.upload"
+SCOPES = "user.info.basic,video.publish,video.upload"
 
 
 def _load_config():
