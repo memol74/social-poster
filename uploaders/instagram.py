@@ -117,34 +117,15 @@ def authenticate():
         f"https://www.facebook.com/v22.0/dialog/oauth"
         f"?client_id={app_id}"
         f"&redirect_uri={REDIRECT_URI}"
-        f"&response_type=code"
+        f"&response_type=token"
         f"&scope={FB_SCOPES}"
     )
     print(f"\n  Opening browser for Facebook Login...")
     print(f"  URL: {auth_url}\n")
     webbrowser.open(auth_url)
     print("  After logging in, the browser will redirect to a page that won't load.")
-    print("  Copy the FULL URL from the address bar and paste it here.\n")
-    redirect_url = input("  Paste redirect URL: ").strip()
-
-    # Extract code from URL
-    from urllib.parse import urlparse, parse_qs
-    parsed = urlparse(redirect_url)
-    params = parse_qs(parsed.query)
-    auth_code = params.get("code", [None])[0]
-    if not auth_code:
-        raise Exception("Could not find 'code' in the URL you pasted.")
-
-    # Exchange code for short-lived token
-    r = requests.get(f"{GRAPH_URL}/oauth/access_token", params={
-        "client_id": app_id,
-        "client_secret": app_secret,
-        "redirect_uri": REDIRECT_URI,
-        "code": auth_code,
-    })
-    r.raise_for_status()
-    short_token = r.json()["access_token"]
-    print(f"  Got short-lived token")
+    print("  Copy the ACCESS TOKEN from the URL (after 'access_token=' and before '&').\n")
+    short_token = input("  Paste access token: ").strip()
 
     # Exchange for long-lived token (60 days)
     r = requests.get(f"{GRAPH_URL}/oauth/access_token", params={
