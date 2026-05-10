@@ -1,0 +1,15 @@
+{
+  "youtube": {
+    "client_secret_file": "client_secret.json"
+  },
+  "instagram": {
+    "app_id": "YOUR_IG_APP_ID",
+    "app_secret": "YOUR_IG_APP_SECRET",
+    "fb_app_id": "YOUR_FB_APP_ID",
+    "fb_app_secret": "YOUR_FB_APP_SECRET"
+  },
+  "tiktok": {
+    "client_key": "YOUR_TIKTOK_CLIENT_KEY",
+    "client_secret": "YOUR_TIKTOK_CLIENT_SECRET"
+  }
+}

@@ -1,0 +1,7 @@
+tokens/
+config.json
+client_secret.json
+__pycache__/
+*.pyc
+*.mp4
+tools/

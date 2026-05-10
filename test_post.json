@@ -1,0 +1,14 @@
+{
+  "video": "C:/Users/mouled/Noborta/social-poster/test_video2.mp4",
+  "platforms": {
+    "youtube": {
+      "title": "Test Upload - Please Ignore",
+      "description": "test",
+      "tags": ["test"],
+      "privacy": "private"
+    },
+    "instagram": {
+      "caption": "test"
+    }
+  }
+}
