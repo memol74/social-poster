@@ -127,21 +127,25 @@ def authenticate():
     print("  Copy the ACCESS TOKEN from the URL (after 'access_token=' and before '&').\n")
     short_token = input("  Paste access token: ").strip()
 
-    # Exchange for long-lived token (60 days)
+    # Try to exchange for long-lived token (60 days)
     r = requests.get(f"{GRAPH_URL}/oauth/access_token", params={
         "grant_type": "fb_exchange_token",
         "client_id": app_id,
         "client_secret": app_secret,
         "fb_exchange_token": short_token,
     })
-    r.raise_for_status()
-    long_token = r.json()["access_token"]
+    if r.status_code == 200 and "access_token" in r.json():
+        token = r.json()["access_token"]
+        print(f"  Exchanged for long-lived token (60 days)")
+    else:
+        token = short_token
+        print(f"  Using token as-is (couldn't exchange: {r.status_code})")
 
     # Resolve IG user ID from linked Page
-    ig_user_id = _resolve_ig_user_id(long_token)
+    ig_user_id = _resolve_ig_user_id(token)
 
     token_data = {
-        "access_token": long_token,
+        "access_token": token,
         "ig_user_id": ig_user_id,
         "token_type": "fb_login_for_business",
     }
