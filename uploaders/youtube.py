@@ -17,7 +17,10 @@ DIR = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(DIR)
 TOKEN_FILE = os.path.join(ROOT, "tokens", "youtube_token.json")
 CLIENT_SECRET = os.path.join(ROOT, "client_secret.json")
-SCOPES = ["https://www.googleapis.com/auth/youtube.upload"]
+SCOPES = [
+    "https://www.googleapis.com/auth/youtube.upload",
+    "https://www.googleapis.com/auth/youtube.force-ssl",  # needed for thumbnails
+]
 
 
 def authenticate():
@@ -37,8 +40,8 @@ def authenticate():
     return build("youtube", "v3", credentials=creds)
 
 
-def upload(video_path, title, description="", tags=None, privacy="public"):
-    """Upload a video as YouTube Short."""
+def upload(video_path, title, description="", tags=None, privacy="public", thumbnail=None):
+    """Upload a video as YouTube Short, optionally with a custom thumbnail."""
     youtube = authenticate()
 
     body = {
@@ -67,4 +70,14 @@ def upload(video_path, title, description="", tags=None, privacy="public"):
 
     video_id = response["id"]
     print(f"  Done: https://youtube.com/shorts/{video_id}")
+
+    # Set custom thumbnail if provided
+    if thumbnail and os.path.exists(thumbnail):
+        try:
+            thumb_media = MediaFileUpload(thumbnail, mimetype="image/png")
+            youtube.thumbnails().set(videoId=video_id, media_body=thumb_media).execute()
+            print(f"  Thumbnail set: {thumbnail}")
+        except Exception as e:
+            print(f"  [warn] Thumbnail upload failed: {e}")
+
     return video_id

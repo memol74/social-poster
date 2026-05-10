@@ -51,10 +51,23 @@ def run_post(args):
     with open(args.manifest) as f:
         manifest = json.load(f)
 
+    # Resolve paths relative to the manifest directory
+    manifest_dir = os.path.dirname(os.path.abspath(args.manifest))
+
     video_path = manifest["video"]
+    if not os.path.isabs(video_path):
+        video_path = os.path.join(manifest_dir, video_path)
     if not os.path.exists(video_path):
         print(f"Error: video not found: {video_path}")
         sys.exit(1)
+
+    # Resolve thumbnail path if present
+    thumbnail = manifest.get("thumbnail")
+    if thumbnail and not os.path.isabs(thumbnail):
+        thumbnail = os.path.join(manifest_dir, thumbnail)
+    if thumbnail and not os.path.exists(thumbnail):
+        print(f"  [warn] Thumbnail not found: {thumbnail}")
+        thumbnail = None
 
     platforms = manifest.get("platforms", {})
     if args.platforms:
@@ -73,6 +86,7 @@ def run_post(args):
                     description=config.get("description", ""),
                     tags=config.get("tags", []),
                     privacy=config.get("privacy", "public"),
+                    thumbnail=thumbnail,
                 )
                 results[platform] = {"success": True, "id": vid}
             elif platform == "instagram":

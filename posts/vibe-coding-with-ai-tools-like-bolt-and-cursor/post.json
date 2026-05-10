@@ -1,0 +1,20 @@
+{
+  "video": "video.mp4",
+  "platforms": {
+    "youtube": {
+      "title": "Vibe Coding with AI tools like Bolt and Cursor",
+      "description": "Vibe Coding with AI tools like Bolt and Cursor",
+      "tags": [
+        "shorts"
+      ],
+      "privacy": "public"
+    },
+    "instagram": {
+      "caption": "Vibe Coding with AI tools like Bolt and Cursor"
+    },
+    "tiktok": {
+      "description": "Vibe Coding with AI tools like Bolt and Cursor",
+      "privacy": "PUBLIC_TO_EVERYONE"
+    }
+  }
+}
