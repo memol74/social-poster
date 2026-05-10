@@ -151,6 +151,9 @@ def upload(video_path, description="", privacy="SELF_ONLY"):
     token = token_data["access_token"]
     file_size = os.path.getsize(video_path)
 
+    # Sandbox apps can only post as SELF_ONLY
+    privacy = "SELF_ONLY"
+
     headers = {
         "Authorization": f"Bearer {token}",
         "Content-Type": "application/json; charset=UTF-8",
