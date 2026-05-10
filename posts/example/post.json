@@ -1,0 +1,14 @@
+{
+  "video": "video.mp4",
+  "platforms": {
+    "youtube": {
+      "title": "My First Short",
+      "description": "Check this out!",
+      "tags": ["shorts"],
+      "privacy": "public"
+    },
+    "instagram": {
+      "caption": "My first reel! 🔥 #reels"
+    }
+  }
+}

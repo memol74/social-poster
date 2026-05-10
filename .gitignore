@@ -3,5 +3,5 @@ config.json
 client_secret.json
 __pycache__/
 *.pyc
-*.mp4
+/*.mp4
 tools/
