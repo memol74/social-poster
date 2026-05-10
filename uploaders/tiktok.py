@@ -175,7 +175,8 @@ def upload(video_path, description="", privacy="SELF_ONLY"):
         headers=headers,
         json=init_body,
     )
-    r.raise_for_status()
+    if not r.ok:
+        raise Exception(f"Init failed ({r.status_code}): {r.text}")
     resp = r.json()
 
     if resp.get("error", {}).get("code") != "ok":
