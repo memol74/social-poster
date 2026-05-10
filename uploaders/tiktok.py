@@ -13,7 +13,6 @@ try:
 except ImportError:
     pass
 import requests
-from http.server import HTTPServer, BaseHTTPRequestHandler
 from urllib.parse import urlparse, parse_qs
 
 DIR = os.path.dirname(os.path.abspath(__file__))
@@ -22,7 +21,7 @@ TOKEN_FILE = os.path.join(ROOT, "tokens", "tiktok_token.json")
 CONFIG_FILE = os.path.join(ROOT, "config.json")
 API_URL = "https://open.tiktokapis.com/v2"
 AUTH_URL = "https://www.tiktok.com/v2/auth/authorize/"
-REDIRECT_URI = "http://localhost:8081/"
+REDIRECT_URI = "https://noborta.ai/tiktok-callback"
 SCOPES = "video.publish,video.upload"
 
 
@@ -77,28 +76,19 @@ def authenticate():
 
     auth_code = None
 
-    class Handler(BaseHTTPRequestHandler):
-        def do_GET(self):
-            nonlocal auth_code
-            params = parse_qs(urlparse(self.path).query)
-            auth_code = params.get("code", [None])[0]
-            self.send_response(200)
-            self.send_header("Content-Type", "text/html")
-            self.end_headers()
-            self.wfile.write(b"<html><body><h2>TikTok authorized! You can close this tab.</h2></body></html>")
-
-        def log_message(self, format, *args):
-            pass
-
-    server = HTTPServer(("localhost", 8081), Handler)
     print(f"  Opening browser for TikTok login...")
     webbrowser.open(AUTH_URL + auth_params)
 
-    server.handle_request()
-    server.server_close()
+    print("  After logging in, the browser will redirect to a page that won't load.")
+    print("  Copy the FULL URL from your browser's address bar.\n")
+    redirect_url = input("  Paste redirect URL: ").strip()
+
+    # Extract code from URL
+    parsed = parse_qs(urlparse(redirect_url).query)
+    auth_code = parsed.get("code", [None])[0]
 
     if not auth_code:
-        raise Exception("No authorization code received")
+        raise Exception("No authorization code found in URL")
 
     # Exchange code for token
     r = requests.post(f"{API_URL}/oauth/token/", json={
