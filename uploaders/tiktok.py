@@ -3,6 +3,7 @@
 import os
 import json
 import time
+import base64
 import hashlib
 import secrets
 import webbrowser
@@ -60,7 +61,9 @@ def authenticate():
 
     state = secrets.token_urlsafe(16)
     code_verifier = secrets.token_urlsafe(64)
-    code_challenge = hashlib.sha256(code_verifier.encode()).hexdigest()
+    code_challenge = base64.urlsafe_b64encode(
+        hashlib.sha256(code_verifier.encode()).digest()
+    ).rstrip(b"=").decode()
 
     auth_params = (
         f"?client_key={client_key}"
