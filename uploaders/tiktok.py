@@ -46,6 +46,8 @@ def authenticate():
     cfg = _load_config()
     client_key = cfg["client_key"]
     client_secret = cfg["client_secret"]
+    print(f"  Config loaded from: {CONFIG_FILE}")
+    print(f"  client_key: {client_key[:6]}...{client_key[-4:]}")
 
     # Check for existing valid token
     if os.path.exists(TOKEN_FILE):
