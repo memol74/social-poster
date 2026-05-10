@@ -93,7 +93,7 @@ def authenticate():
         raise Exception("No authorization code found in URL")
 
     # Exchange code for token
-    r = requests.post(f"{API_URL}/oauth/token/", json={
+    r = requests.post(f"{API_URL}/oauth/token/", data={
         "client_key": client_key,
         "client_secret": client_secret,
         "code": auth_code,
@@ -120,7 +120,7 @@ def authenticate():
 
 def _refresh_token(client_key, client_secret, refresh_token):
     """Refresh an expired access token."""
-    r = requests.post(f"{API_URL}/oauth/token/", json={
+    r = requests.post(f"{API_URL}/oauth/token/", data={
         "client_key": client_key,
         "client_secret": client_secret,
         "grant_type": "refresh_token",
