@@ -1,0 +1,40 @@
+{
+  "video": "video.mp4",
+  "platforms": {
+    "youtube": {
+      "title": "Save Tokens Instantly! 💰 Cut Your Costs in Half!",
+      "description": "Did you know you can cut your token usage in half? 🚀 If you’re coding with Claude or ChatGPT, you don’t want to miss these game-changing tips! \n\nIn this video, we're diving into three powerful tools that can drastically reduce your token consumption while coding. Say goodbye to unnecessary expenses and hello to smarter coding! \n\nKey insights you’ll learn:\n- **Slash Compact Mode**: Learn how to reduce verbose responses and save tokens fast.\n- **Karpathy's Wiki Folder Pattern**: Discover how one user turned 383 files into just two, slashing token usage by 95%!\n- **Plan Mode**: Find out how this tool can help you plan before executing operations, cutting down on costly mistakes.\n\nDon’t wait—implement these tools today and transform your coding experience! If you found this helpful, make sure to follow our channel, like this video, and share it with your fellow coders! \n\n#CodingTips #TokenSavings #ChatGPT #Claude #AI #MachineLearning #TechHacks #Programming #CostCutting #EfficientCoding #SoftwareDevelopment #WebDevelopment #AICommunity #TechTips #Innovate #SaveMoney #ProductivityHacks #CodingLife #TechSavvy #SmartCoding",
+      "tags": [
+        "shorts",
+        "CodingTips",
+        "TokenSavings",
+        "ChatGPT",
+        "Claude",
+        "AI",
+        "MachineLearning",
+        "TechHacks",
+        "Programming",
+        "CostCutting",
+        "EfficientCoding",
+        "SoftwareDevelopment",
+        "WebDevelopment",
+        "AICommunity",
+        "TechTips",
+        "Innovate",
+        "SaveMoney",
+        "ProductivityHacks",
+        "CodingLife",
+        "TechSavvy"
+      ],
+      "privacy": "public"
+    },
+    "instagram": {
+      "caption": "Did you know you can cut your token usage in half? 🚀 If you’re coding with Claude or ChatGPT, you don’t want to miss these game-changing tips! \n\nIn this video, we're diving into three powerful tools that can drastically reduce your token consumption while coding. Say goodbye to unnecessary expenses and hello to smarter coding! \n\nKey insights you’ll learn:\n- **Slash Compact Mode**: Learn how to reduce verbose responses and save tokens fast.\n- **Karpathy's Wiki Folder Pattern**: Discover how one user turned 383 files into just two, slashing token usage by 95%!\n- **Plan Mode**: Find out how this tool can help you plan before executing operations, cutting down on costly mistakes.\n\nDon’t wait—implement these tools today and transform your coding experience! If you found this helpful, make sure to follow our channel, like this video, and share it with your fellow coders! \n\n#CodingTips #TokenSavings #ChatGPT #Claude #AI #MachineLearning #TechHacks #Programming #CostCutting #EfficientCoding #SoftwareDevelopment #WebDevelopment #AICommunity #TechTips #Innovate #SaveMoney #ProductivityHacks #CodingLife #TechSavvy #SmartCoding"
+    },
+    "tiktok": {
+      "description": "Did you know you can cut your token usage in half? 🚀 If you’re coding with Claude or ChatGPT, you don’t want to miss these game-changing tips! \n\nIn this video, we're diving into three powerful tools that can drastically reduce your token consumption while coding. Say goodbye to unnecessary expenses and hello to smarter coding! \n\nKey insights you’ll learn:\n- **Slash Compact Mode**: Learn how to reduce verbose responses and save tokens fast.\n- **Karpathy's Wiki Folder Pattern**: Discover how one user turned 383 files into just two, slashing token usage by 95%!\n- **Plan Mode**: Find out how this tool can help you plan before executing operations, cutting down on costly mistakes.\n\nDon’t wait—implement these tools today and transform your coding experience! If you found this helpful, make sure to follow our channel, like this video, and share it with your fellow coders! \n\n#CodingTips #TokenSavings #ChatGPT #Claude #AI #MachineLearning #TechHacks #Programming #CostCutting #EfficientCoding #SoftwareDevelopment #WebDevelopment #AICommunity #TechTips #Innovate #SaveMoney #ProductivityHacks #CodingLife #TechSavvy #SmartCoding",
+      "privacy": "PUBLIC_TO_EVERYONE"
+    }
+  },
+  "thumbnail": "thumbnail.png"
+}
