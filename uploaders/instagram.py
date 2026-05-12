@@ -205,6 +205,44 @@ def upload_reel(video_url, caption=""):
             except Exception as e:
                 print(f"  0x0.st failed: {e}")
 
+        # Fallback: tmpfiles.org
+        if not public_url:
+            try:
+                print(f"  Trying fallback (tmpfiles.org)...")
+                with open(video_url, "rb") as f:
+                    r = requests.post(
+                        "https://tmpfiles.org/api/v1/upload",
+                        files={"file": (os.path.basename(video_url), f, "video/mp4")},
+                        timeout=120,
+                    )
+                if r.status_code == 200:
+                    data = r.json()
+                    tmp_url = data.get("data", {}).get("url", "")
+                    if tmp_url:
+                        # Convert view URL to direct download URL
+                        public_url = tmp_url.replace("tmpfiles.org/", "tmpfiles.org/dl/")
+            except Exception as e:
+                print(f"  tmpfiles.org failed: {e}")
+
+        # Fallback: uguu.se
+        if not public_url:
+            try:
+                print(f"  Trying fallback (uguu.se)...")
+                with open(video_url, "rb") as f:
+                    r = requests.post(
+                        "https://uguu.se/upload",
+                        files={"files[]": (os.path.basename(video_url), f, "video/mp4")},
+                        timeout=120,
+                    )
+                if r.status_code == 200:
+                    data = r.json()
+                    if isinstance(data, list) and data:
+                        public_url = data[0].get("url", "")
+                    elif isinstance(data, dict):
+                        public_url = data.get("url", "")
+            except Exception as e:
+                print(f"  uguu.se failed: {e}")
+
         if not public_url:
             raise Exception("All temp hosts failed. Try again later or upload manually.")
 
