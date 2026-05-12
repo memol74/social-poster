@@ -170,19 +170,44 @@ def upload_reel(video_url, caption=""):
     is_local = os.path.isfile(video_url)
 
     if is_local:
-        # Upload to litterbox (temp host, 72h) to get a public URL
         file_size = os.path.getsize(video_url)
         print(f"  Local file: {video_url} ({file_size / 1024 / 1024:.1f} MB)")
-        print(f"  Uploading to temp host (litterbox.catbox.moe)...")
-        with open(video_url, "rb") as f:
-            r = requests.post(
-                "https://litterbox.catbox.moe/resources/internals/api.php",
-                data={"reqtype": "fileupload", "time": "72h"},
-                files={"fileToUpload": (os.path.basename(video_url), f, "video/mp4")},
-            )
-        if r.status_code != 200 or not r.text.startswith("http"):
-            raise Exception(f"Litterbox upload failed: {r.status_code} {r.text[:300]}")
-        public_url = r.text.strip()
+
+        public_url = None
+
+        # Try litterbox first
+        try:
+            print(f"  Uploading to temp host (litterbox.catbox.moe)...")
+            with open(video_url, "rb") as f:
+                r = requests.post(
+                    "https://litterbox.catbox.moe/resources/internals/api.php",
+                    data={"reqtype": "fileupload", "time": "72h"},
+                    files={"fileToUpload": (os.path.basename(video_url), f, "video/mp4")},
+                    timeout=60,
+                )
+            if r.status_code == 200 and r.text.startswith("http"):
+                public_url = r.text.strip()
+        except Exception as e:
+            print(f"  Litterbox failed: {e}")
+
+        # Fallback: 0x0.st
+        if not public_url:
+            try:
+                print(f"  Trying fallback (0x0.st)...")
+                with open(video_url, "rb") as f:
+                    r = requests.post(
+                        "https://0x0.st",
+                        files={"file": (os.path.basename(video_url), f, "video/mp4")},
+                        timeout=120,
+                    )
+                if r.status_code == 200 and r.text.strip().startswith("http"):
+                    public_url = r.text.strip()
+            except Exception as e:
+                print(f"  0x0.st failed: {e}")
+
+        if not public_url:
+            raise Exception("All temp hosts failed. Try again later or upload manually.")
+
         print(f"  Temp URL: {public_url}")
         video_url = public_url
 
