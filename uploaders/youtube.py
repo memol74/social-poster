@@ -53,7 +53,6 @@ def upload(video_path, title, description="", tags=None, privacy="public", thumb
         },
         "status": {
             "privacyStatus": privacy,
-            "selfDeclaredMadeForKids": False,
         },
     }
 
