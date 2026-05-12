@@ -170,50 +170,29 @@ def upload_reel(video_url, caption=""):
     is_local = os.path.isfile(video_url)
 
     if is_local:
-        # Resumable upload flow for local files
+        # Upload to file.io to get a public URL (Instagram API needs a public URL)
         file_size = os.path.getsize(video_url)
         print(f"  Local file: {video_url} ({file_size / 1024 / 1024:.1f} MB)")
-        print(f"  Creating resumable upload container...")
-        r = requests.post(f"{GRAPH_URL}/{ig_user_id}/media", data={
-            "media_type": "REELS",
-            "upload_type": "resumable",
-            "caption": caption,
-            "access_token": token,
-        })
-        r.raise_for_status()
-        container_id = r.json()["id"]
-        print(f"  Container: {container_id}")
+        print(f"  Uploading to temp host (file.io)...")
+        with open(video_url, "rb") as f:
+            r = requests.post("https://file.io", files={"file": f})
+        if r.status_code != 200 or not r.json().get("success"):
+            raise Exception(f"file.io upload failed: {r.status_code} {r.text[:300]}")
+        public_url = r.json()["link"]
+        print(f"  Temp URL: {public_url}")
+        video_url = public_url
 
-        # Upload the file to rupload.facebook.com
-        print(f"  Uploading video...")
-        api_version = GRAPH_URL.rsplit("/", 1)[-1]
-        upload_url = f"https://rupload.facebook.com/ig-api-upload/{api_version}/{container_id}"
-        file_data = open(video_url, "rb").read()
-        print(f"  Read {len(file_data)} bytes, uploading...")
-        r = requests.post(upload_url, headers={
-            "Authorization": f"OAuth {token}",
-            "offset": "0",
-            "file_size": str(file_size),
-        }, data=file_data)
-        if r.status_code != 200:
-            print(f"  Upload error {r.status_code}: {r.text[:500]}")
-            r.raise_for_status()
-        resp = r.json()
-        if not resp.get("success"):
-            raise Exception(f"Upload failed: {resp}")
-        print(f"  Upload complete!")
-    else:
-        # URL-based flow
-        print(f"  Creating container...")
-        r = requests.post(f"{GRAPH_URL}/{ig_user_id}/media", data={
-            "media_type": "REELS",
-            "video_url": video_url,
-            "caption": caption,
-            "access_token": token,
-        })
-        r.raise_for_status()
-        container_id = r.json()["id"]
-        print(f"  Container: {container_id}")
+    # Create container with public video URL
+    print(f"  Creating container...")
+    r = requests.post(f"{GRAPH_URL}/{ig_user_id}/media", data={
+        "media_type": "REELS",
+        "video_url": video_url,
+        "caption": caption,
+        "access_token": token,
+    })
+    r.raise_for_status()
+    container_id = r.json()["id"]
+    print(f"  Container: {container_id}")
 
     # Step 2: Wait for processing
     for i in range(60):
