@@ -188,13 +188,13 @@ def upload_reel(video_url, caption=""):
         print(f"  Uploading video...")
         api_version = GRAPH_URL.rsplit("/", 1)[-1]
         upload_url = f"https://rupload.facebook.com/ig-api-upload/{api_version}/{container_id}"
-        with open(video_url, "rb") as f:
-            r = requests.post(upload_url, headers={
-                "Authorization": f"OAuth {token}",
-                "offset": "0",
-                "file_size": str(file_size),
-                "Content-Type": "application/octet-stream",
-            }, data=f)
+        file_data = open(video_url, "rb").read()
+        print(f"  Read {len(file_data)} bytes, uploading...")
+        r = requests.post(upload_url, headers={
+            "Authorization": f"OAuth {token}",
+            "offset": "0",
+            "file_size": str(file_size),
+        }, data=file_data)
         if r.status_code != 200:
             print(f"  Upload error {r.status_code}: {r.text[:500]}")
             r.raise_for_status()
