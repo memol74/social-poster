@@ -176,8 +176,8 @@ def upload_reel(video_url, caption=""):
         print(f"  Uploading to temp host (litterbox.catbox.moe)...")
         with open(video_url, "rb") as f:
             r = requests.post(
-                "https://litterbox.catbox.moe/resources/serverside/llupload.php",
-                data={"time": "72h"},
+                "https://litterbox.catbox.moe/resources/internals/api.php",
+                data={"reqtype": "fileupload", "time": "72h"},
                 files={"fileToUpload": (os.path.basename(video_url), f, "video/mp4")},
             )
         if r.status_code != 200 or not r.text.startswith("http"):
