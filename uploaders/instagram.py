@@ -170,15 +170,19 @@ def upload_reel(video_url, caption=""):
     is_local = os.path.isfile(video_url)
 
     if is_local:
-        # Upload to file.io to get a public URL (Instagram API needs a public URL)
+        # Upload to litterbox (temp host, 72h) to get a public URL
         file_size = os.path.getsize(video_url)
         print(f"  Local file: {video_url} ({file_size / 1024 / 1024:.1f} MB)")
-        print(f"  Uploading to temp host (file.io)...")
+        print(f"  Uploading to temp host (litterbox.catbox.moe)...")
         with open(video_url, "rb") as f:
-            r = requests.post("https://file.io", files={"file": f})
-        if r.status_code != 200 or not r.json().get("success"):
-            raise Exception(f"file.io upload failed: {r.status_code} {r.text[:300]}")
-        public_url = r.json()["link"]
+            r = requests.post(
+                "https://litterbox.catbox.moe/resources/serverside/llupload.php",
+                data={"time": "72h"},
+                files={"fileToUpload": (os.path.basename(video_url), f, "video/mp4")},
+            )
+        if r.status_code != 200 or not r.text.startswith("http"):
+            raise Exception(f"Litterbox upload failed: {r.status_code} {r.text[:300]}")
+        public_url = r.text.strip()
         print(f"  Temp URL: {public_url}")
         video_url = public_url
 
