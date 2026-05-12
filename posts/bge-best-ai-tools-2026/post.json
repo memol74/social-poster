@@ -1,0 +1,18 @@
+{
+  "video": "video.mp4",
+  "platforms": {
+    "youtube": {
+      "title": "🏆 BAD → GOOD → EXCELLENT: Best AI Tools 2026",
+      "description": "Stop using the wrong AI tools. Here's the ultimate ranking of the best AI tools in 2026 — from BAD to GOOD to EXCELLENT.\n\n🔊 Text-to-Speech: ElevenLabs vs Qwen 3 vs Gemini 3.1 Flash\n🎨 Text-to-Image: DALL-E 3 vs seedream 4.5 vs GPT Image 2\n🎬 Text-to-Video: grok imagine video vs happyhorse 1.0 vs seedance 2.0\n📹 Image-to-Video: Veo 3.1 vs happyhorse 1.0 vs seedance 2.0\n🎙️ Speech-to-Text: SpeechBrain vs Qwen3-ASR vs NVIDIA Canary-Qwen\n\nWhich ones are you using? Drop a comment! 👇",
+      "tags": [],
+      "privacy": "public"
+    },
+    "instagram": {
+      "caption": "Stop using the wrong AI tools. Here's the ultimate ranking of the best AI tools in 2026 — from BAD to GOOD to EXCELLENT.\n\n🔊 Text-to-Speech: ElevenLabs vs Qwen 3 vs Gemini 3.1 Flash\n🎨 Text-to-Image: DALL-E 3 vs seedream 4.5 vs GPT Image 2\n🎬 Text-to-Video: grok imagine video vs happyhorse 1.0 vs seedance 2.0\n📹 Image-to-Video: Veo 3.1 vs happyhorse 1.0 vs seedance 2.0\n🎙️ Speech-to-Text: SpeechBrain vs Qwen3-ASR vs NVIDIA Canary-Qwen\n\nWhich ones are you using? Drop a comment! 👇"
+    },
+    "tiktok": {
+      "description": "Stop using the wrong AI tools. Here's the ultimate ranking of the best AI tools in 2026 — from BAD to GOOD to EXCELLENT.\n\n🔊 Text-to-Speech: ElevenLabs vs Qwen 3 vs Gemini 3.1 Flash\n🎨 Text-to-Image: DALL-E 3 vs seedream 4.5 vs GPT Image 2\n🎬 Text-to-Video: grok imagine video vs happyhorse 1.0 vs seedance 2.0\n📹 Image-to-Video: Veo 3.1 vs happyhorse 1.0 vs seedance 2.0\n🎙️ Speech-to-Text: SpeechBrain vs Qwen3-ASR vs NVIDIA Canary-Qwen\n\nWhich ones are you using? Drop a comment! 👇",
+      "privacy": "PUBLIC_TO_EVERYONE"
+    }
+  }
+}
