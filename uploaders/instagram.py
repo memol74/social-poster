@@ -193,8 +193,11 @@ def upload_reel(video_url, caption=""):
                 "Authorization": f"OAuth {token}",
                 "offset": "0",
                 "file_size": str(file_size),
+                "Content-Type": "application/octet-stream",
             }, data=f)
-        r.raise_for_status()
+        if r.status_code != 200:
+            print(f"  Upload error {r.status_code}: {r.text[:500]}")
+            r.raise_for_status()
         resp = r.json()
         if not resp.get("success"):
             raise Exception(f"Upload failed: {resp}")
