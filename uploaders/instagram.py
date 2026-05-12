@@ -156,6 +156,49 @@ def authenticate():
     return token_data
 
 
+def _upload_to_gdrive(local_path):
+    """Upload a file to Google Drive and return a public direct-download URL."""
+    from google_auth_oauthlib.flow import InstalledAppFlow
+    from google.auth.transport.requests import Request as GRequest
+    from google.oauth2.credentials import Credentials as GCredentials
+    from googleapiclient.discovery import build as gbuild
+    from googleapiclient.http import MediaFileUpload
+
+    GDRIVE_TOKEN = os.path.join(ROOT, "tokens", "gdrive_token.json")
+    CLIENT_SECRET = os.path.join(ROOT, "client_secret.json")
+    GDRIVE_SCOPES = ["https://www.googleapis.com/auth/drive.file"]
+
+    creds = None
+    if os.path.exists(GDRIVE_TOKEN):
+        creds = GCredentials.from_authorized_user_file(GDRIVE_TOKEN, GDRIVE_SCOPES)
+    if not creds or not creds.valid:
+        if creds and creds.expired and creds.refresh_token:
+            creds.refresh(GRequest())
+        else:
+            flow = InstalledAppFlow.from_client_secrets_file(CLIENT_SECRET, GDRIVE_SCOPES)
+            creds = flow.run_local_server(port=8083)
+        os.makedirs(os.path.dirname(GDRIVE_TOKEN), exist_ok=True)
+        with open(GDRIVE_TOKEN, "w") as f:
+            f.write(creds.to_json())
+
+    service = gbuild("drive", "v3", credentials=creds)
+    fname = os.path.basename(local_path)
+    media = MediaFileUpload(local_path, mimetype="video/mp4", resumable=True)
+    file_meta = {"name": fname}
+    gfile = service.files().create(body=file_meta, media_body=media, fields="id").execute()
+    file_id = gfile["id"]
+
+    # Make it publicly readable
+    service.permissions().create(
+        fileId=file_id,
+        body={"type": "anyone", "role": "reader"},
+    ).execute()
+
+    public_url = f"https://drive.google.com/uc?export=download&id={file_id}"
+    print(f"  Google Drive file ID: {file_id}")
+    return public_url
+
+
 def upload_reel(video_url, caption=""):
     """Upload a Reel to Instagram.
     
@@ -175,7 +218,7 @@ def upload_reel(video_url, caption=""):
 
         public_url = None
 
-        # Try litterbox first
+        # Try litterbox first (10s timeout)
         try:
             print(f"  Uploading to temp host (litterbox.catbox.moe)...")
             with open(video_url, "rb") as f:
@@ -183,14 +226,14 @@ def upload_reel(video_url, caption=""):
                     "https://litterbox.catbox.moe/resources/internals/api.php",
                     data={"reqtype": "fileupload", "time": "72h"},
                     files={"fileToUpload": (os.path.basename(video_url), f, "video/mp4")},
-                    timeout=60,
+                    timeout=10,
                 )
             if r.status_code == 200 and r.text.startswith("http"):
                 public_url = r.text.strip()
         except Exception as e:
             print(f"  Litterbox failed: {e}")
 
-        # Fallback: 0x0.st
+        # Fallback: 0x0.st (10s timeout)
         if not public_url:
             try:
                 print(f"  Trying fallback (0x0.st)...")
@@ -198,7 +241,7 @@ def upload_reel(video_url, caption=""):
                     r = requests.post(
                         "https://0x0.st",
                         files={"file": (os.path.basename(video_url), f, "video/mp4")},
-                        timeout=120,
+                        timeout=10,
                     )
                 if r.status_code == 200 and r.text.strip().startswith("http"):
                     public_url = r.text.strip()
@@ -242,6 +285,14 @@ def upload_reel(video_url, caption=""):
                         public_url = data.get("url", "")
             except Exception as e:
                 print(f"  uguu.se failed: {e}")
+
+        # Last resort: Google Drive
+        if not public_url:
+            try:
+                print(f"  Trying Google Drive upload...")
+                public_url = _upload_to_gdrive(video_url)
+            except Exception as e:
+                print(f"  Google Drive failed: {e}")
 
         if not public_url:
             raise Exception("All temp hosts failed. Try again later or upload manually.")
