@@ -1,7 +1,8 @@
 """Instagram Reels uploader using Facebook Login for Business.
 
-Uses Facebook Login for Business to get a token, then publishes Reels via
-the video_url approach (local files are served via a temporary Cloudflare tunnel).
+Uses Facebook Login for Business to get a token, then publishes Reels.
+Local files use the resumable upload API (rupload.facebook.com).
+Public URLs use the video_url approach.
 """
 
 import os
@@ -159,24 +160,57 @@ def upload_reel(video_url, caption=""):
     """Upload a Reel to Instagram.
     
     Args:
-        video_url: Public URL of the video (must be accessible by Instagram's servers).
+        video_url: Local file path or public URL of the video.
         caption: Post caption.
     """
     token_data = authenticate()
     token = token_data["access_token"]
     ig_user_id = token_data["ig_user_id"]
 
-    # Step 1: Create container
-    print(f"  Creating container...")
-    r = requests.post(f"{GRAPH_URL}/{ig_user_id}/media", data={
-        "media_type": "REELS",
-        "video_url": video_url,
-        "caption": caption,
-        "access_token": token,
-    })
-    r.raise_for_status()
-    container_id = r.json()["id"]
-    print(f"  Container: {container_id}")
+    is_local = os.path.isfile(video_url)
+
+    if is_local:
+        # Resumable upload flow for local files
+        file_size = os.path.getsize(video_url)
+        print(f"  Local file: {video_url} ({file_size / 1024 / 1024:.1f} MB)")
+        print(f"  Creating resumable upload container...")
+        r = requests.post(f"{GRAPH_URL}/{ig_user_id}/media", data={
+            "media_type": "REELS",
+            "upload_type": "resumable",
+            "caption": caption,
+            "access_token": token,
+        })
+        r.raise_for_status()
+        container_id = r.json()["id"]
+        print(f"  Container: {container_id}")
+
+        # Upload the file to rupload.facebook.com
+        print(f"  Uploading video...")
+        api_version = GRAPH_URL.rsplit("/", 1)[-1]
+        upload_url = f"https://rupload.facebook.com/ig-api-upload/{api_version}/{container_id}"
+        with open(video_url, "rb") as f:
+            r = requests.post(upload_url, headers={
+                "Authorization": f"OAuth {token}",
+                "offset": "0",
+                "file_size": str(file_size),
+            }, data=f)
+        r.raise_for_status()
+        resp = r.json()
+        if not resp.get("success"):
+            raise Exception(f"Upload failed: {resp}")
+        print(f"  Upload complete!")
+    else:
+        # URL-based flow
+        print(f"  Creating container...")
+        r = requests.post(f"{GRAPH_URL}/{ig_user_id}/media", data={
+            "media_type": "REELS",
+            "video_url": video_url,
+            "caption": caption,
+            "access_token": token,
+        })
+        r.raise_for_status()
+        container_id = r.json()["id"]
+        print(f"  Container: {container_id}")
 
     # Step 2: Wait for processing
     for i in range(60):
