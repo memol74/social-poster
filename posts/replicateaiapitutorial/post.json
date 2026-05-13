@@ -1,0 +1,19 @@
+{
+  "video": "video.mp4",
+  "platforms": {
+    "youtube": {
+      "title": "The Fastest Way to Build AI Apps in 2026 (Most Developers Don't Know This)",
+      "description": "If you're still managing your own GPU servers to run AI models, you're doing it the hard way. Replicate gives you access to 47,000+ AI models — image generation, text, music, video — with a single API call. No infrastructure. No CUDA debugging at 3AM. No monthly server bills.\n\nThree lines of Python and your AI feature is live in production. Switch between Stable Diffusion, FLUX, Llama, or any other model by changing one line of code. You only pay when your model actually runs — pennies per request — instead of $800/month sitting idle.\n\nWhether you're building a side project or a production app, Replicate cuts your time-to-launch from weeks to one afternoon.\n\nComment BUILD below and I'll send you the complete starter guide.\n\n🔗 Replicate API: https://replicate.com\n📌 Save this for your next AI project",
+      "tags": [
+      ],
+      "privacy": "public"
+    },
+    "instagram": {
+      "caption": "New Video"
+    },
+    "tiktok": {
+      "description": "New Video",
+      "privacy": "PUBLIC_TO_EVERYONE"
+    }
+  }
+}
