@@ -1,0 +1,21 @@
+{
+  "video": "video.mp4",
+  "platforms": {
+    "youtube": {
+      "title": "⚡ 3 Claude slash commands that cut coding time 70%",
+      "description": "Claude Code can write your commit messages in 5 seconds instead of 5 minutes.\n\nMost developers using Claude don't know about slash commands. These three will change how you work:\n\n/compact clears your context mid-session without losing memory. No more restarting conversations when you hit the token limit. Claude summarizes everything and keeps going.\n\n/review runs automated code reviews on your entire branch. It checks security, quality, and correctness before you ship. If you push to production, this one matters.\n\n/commit generates actually good commit messages. Not the generic \"fixed bug\" stuff — real, specific descriptions of what changed and why.\n\nThese aren't nice-to-have features. They're how you stop doing work the AI should handle. The time savings compound fast when you're making dozens of commits a day.\n\nComment SLASH and I'll send you the full command list.",
+      "tags": [
+        "shorts"
+      ],
+      "privacy": "public"
+    },
+    "instagram": {
+      "caption": "Claude Code can write your commit messages in 5 seconds instead of 5 minutes.\n\nMost developers using Claude don't know about slash commands. These three will change how you work:\n\n/compact clears your context mid-session without losing memory. No more restarting conversations when you hit the token limit. Claude summarizes everything and keeps going.\n\n/review runs automated code reviews on your entire branch. It checks security, quality, and correctness before you ship. If you push to production, this one matters.\n\n/commit generates actually good commit messages. Not the generic \"fixed bug\" stuff — real, specific descriptions of what changed and why.\n\nThese aren't nice-to-have features. They're how you stop doing work the AI should handle. The time savings compound fast when you're making dozens of commits a day.\n\nComment SLASH and I'll send you the full command list."
+    },
+    "tiktok": {
+      "description": "Claude Code can write your commit messages in 5 seconds instead of 5 minutes.\n\nMost developers using Claude don't know about slash commands. These three will change how you work:\n\n/compact clears your context mid-session without losing memory. No more restarting conversations when you hit the token limit. Claude summarizes everything and keeps going.\n\n/review runs automated code reviews on your entire branch. It checks security, quality, and correctness before you ship. If you push to production, this one matters.\n\n/commit generates actually good commit messages. Not the generic \"fixed bug\" stuff — real, specific descriptions of what changed and why.\n\nThese aren't nice-to-have features. They're how you stop doing work the AI should handle. The time savings compound fast when you're making dozens of commits a day.\n\nComment SLASH and I'll send you the full command list.",
+      "privacy": "PUBLIC_TO_EVERYONE"
+    }
+  },
+  "thumbnail": "thumbnail.png"
+}
