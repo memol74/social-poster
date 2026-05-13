@@ -115,6 +115,14 @@ def main():
         print("No platforms to post to.")
         sys.exit(1)
 
+    # Resolve thumbnail path if present
+    thumbnail = post.get("thumbnail")
+    if thumbnail:
+        thumbnail = os.path.join(args.folder, thumbnail)
+        if not os.path.exists(thumbnail):
+            print(f"  [warn] Thumbnail not found: {thumbnail}")
+            thumbnail = None
+
     # If Instagram is in the list, upload to Drive first
     drive_file_id = None
     drive_url = None
@@ -133,6 +141,7 @@ def main():
                     description=config.get("description", ""),
                     tags=config.get("tags", []),
                     privacy=config.get("privacy", "public"),
+                    thumbnail=thumbnail,
                 )
                 results[platform] = {"success": True, "id": vid}
 
