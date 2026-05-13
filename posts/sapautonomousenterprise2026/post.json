@@ -1,0 +1,21 @@
+{
+  "video": "video.mp4",
+  "platforms": {
+    "youtube": {
+      "title": "SAP’s 200 AI Agents Will Run Your Company — No Humans Needed 😱",
+      "description": "SAP just dropped something wild at Sapphire 2026.\n\n200 AI agents that handle finance, HR, supply chain, vendor payments — all without waiting for a human to approve anything. They call it the Autonomous Enterprise.\n\nA purchase order comes in at 2am. AI checks inventory, approves it, pays the vendor. Done before you wake up. What used to take your ops team 3 days now takes 4 minutes.\n\nIt runs on Claude 4, with Anthropic, Google Cloud, Microsoft, and NVIDIA backing the infrastructure. SAP’s CEO said “almost right isn’t good enough” for mission-critical processes — so they trained these agents on decades of enterprise data.\n\nCompanies are already cutting middle management roles to fund this shift. If you run operations, procurement, or finance — this is the thing that replaces the approval chain above you.\n\nComment ENTERPRISE and I’ll send you the full breakdown.",
+      "tags": [
+        "shorts"
+      ],
+      "privacy": "public"
+    },
+    "instagram": {
+      "caption": "SAP just dropped something wild at Sapphire 2026.\n\n200 AI agents that handle finance, HR, supply chain, vendor payments — all without waiting for a human to approve anything. They call it the Autonomous Enterprise.\n\nA purchase order comes in at 2am. AI checks inventory, approves it, pays the vendor. Done before you wake up. What used to take your ops team 3 days now takes 4 minutes.\n\nIt runs on Claude 4, with Anthropic, Google Cloud, Microsoft, and NVIDIA backing the infrastructure. SAP’s CEO said “almost right isn’t good enough” for mission-critical processes — so they trained these agents on decades of enterprise data.\n\nCompanies are already cutting middle management roles to fund this shift. If you run operations, procurement, or finance — this is the thing that replaces the approval chain above you.\n\nComment ENTERPRISE and I’ll send you the full breakdown."
+    },
+    "tiktok": {
+      "description": "SAP just dropped something wild at Sapphire 2026.\n\n200 AI agents that handle finance, HR, supply chain, vendor payments — all without waiting for a human to approve anything. They call it the Autonomous Enterprise.\n\nA purchase order comes in at 2am. AI checks inventory, approves it, pays the vendor. Done before you wake up. What used to take your ops team 3 days now takes 4 minutes.\n\nIt runs on Claude 4, with Anthropic, Google Cloud, Microsoft, and NVIDIA backing the infrastructure. SAP’s CEO said “almost right isn’t good enough” for mission-critical processes — so they trained these agents on decades of enterprise data.\n\nCompanies are already cutting middle management roles to fund this shift. If you run operations, procurement, or finance — this is the thing that replaces the approval chain above you.\n\nComment ENTERPRISE and I’ll send you the full breakdown.",
+      "privacy": "PUBLIC_TO_EVERYONE"
+    }
+  },
+  "thumbnail": "thumbnail.png"
+}
