@@ -1,0 +1,21 @@
+{
+  "video": "video.mp4",
+  "platforms": {
+    "youtube": {
+      "title": "Tool Subscriptions Are Scams — Pay Per Use Instead",
+      "description": "Every AI subscription you pay monthly is a markup on a model you can access directly for pennies.\n\nHere's the reality: those platforms charge you monthly whether you use them or not. API marketplaces like OpenRouter, Replicate, and fal.ai let you access the exact same models — but you only pay per request.\n\nMidjourney wants $35 for unlimited images. Flux Pro on Replicate costs 4 cents per image. Unless you're generating 875+ images a month, you're overpaying.\n\nOpenRouter gives you instant access to over 200 language models. Replicate hosts every major image model on one API. Groq runs inference 15x faster than ChatGPT's interface. No wrappers. No markup. Just raw model access.\n\nYou pay when you use it. Nothing when you don't.\n\nIf you're building anything — automations, apps, content workflows — this is the only way that makes financial sense. Monthly subscriptions are designed for casual users who don't track their actual usage.\n\nComment MODELS and I'll send you the full platform comparison sheet with pricing breakdowns.\n\nStop renting AI. Start owning your costs.",
+      "tags": [
+        "shorts"
+      ],
+      "privacy": "public"
+    },
+    "instagram": {
+      "caption": "Every AI subscription you pay monthly is a markup on a model you can access directly for pennies.\n\nHere's the reality: those platforms charge you monthly whether you use them or not. API marketplaces like OpenRouter, Replicate, and fal.ai let you access the exact same models — but you only pay per request.\n\nMidjourney wants $35 for unlimited images. Flux Pro on Replicate costs 4 cents per image. Unless you're generating 875+ images a month, you're overpaying.\n\nOpenRouter gives you instant access to over 200 language models. Replicate hosts every major image model on one API. Groq runs inference 15x faster than ChatGPT's interface. No wrappers. No markup. Just raw model access.\n\nYou pay when you use it. Nothing when you don't.\n\nIf you're building anything — automations, apps, content workflows — this is the only way that makes financial sense. Monthly subscriptions are designed for casual users who don't track their actual usage.\n\nComment MODELS and I'll send you the full platform comparison sheet with pricing breakdowns.\n\nStop renting AI. Start owning your costs."
+    },
+    "tiktok": {
+      "description": "Every AI subscription you pay monthly is a markup on a model you can access directly for pennies.\n\nHere's the reality: those platforms charge you monthly whether you use them or not. API marketplaces like OpenRouter, Replicate, and fal.ai let you access the exact same models — but you only pay per request.\n\nMidjourney wants $35 for unlimited images. Flux Pro on Replicate costs 4 cents per image. Unless you're generating 875+ images a month, you're overpaying.\n\nOpenRouter gives you instant access to over 200 language models. Replicate hosts every major image model on one API. Groq runs inference 15x faster than ChatGPT's interface. No wrappers. No markup. Just raw model access.\n\nYou pay when you use it. Nothing when you don't.\n\nIf you're building anything — automations, apps, content workflows — this is the only way that makes financial sense. Monthly subscriptions are designed for casual users who don't track their actual usage.\n\nComment MODELS and I'll send you the full platform comparison sheet with pricing breakdowns.\n\nStop renting AI. Start owning your costs.",
+      "privacy": "PUBLIC_TO_EVERYONE"
+    }
+  },
+  "thumbnail": "thumbnail.png"
+}
