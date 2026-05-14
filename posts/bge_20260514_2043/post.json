@@ -1,0 +1,38 @@
+{
+  "video": "video.mp4",
+  "platforms": {
+    "youtube": {
+      "title": "🤖 Claude dominates every AI category (deepseek flopped hard)",
+      "description": "Claude Sonnet 4.6 writes like a seasoned copywriter while deepseek V4 sounds like it never talked to a human.\n\nI tested AI tools across five brutal categories and Claude swept almost everything. For writing, it's not even close—Claude nails tone and style while deepseek churns out corporate drivel. Brainstorming? Claude Opus 4.7 gives you ideas you'd actually want to steal. Coding was wild because Claude Code literally builds full applications when other tools just autocomplete.\n\nBut here's what surprised me: Gemini actually held its own for design mockups, landing solidly in the Good tier. And n8n crushed workflow prototyping without making you write a single line of code.\n\nThe biggest flop? Perplexity for brainstorming. It just regurgitates search results when you need actual creative firepower. Replit also disappointed—constant crashes killed any momentum on complex builds.\n\nIf you're picking one AI tool right now, Claude is the Swiss Army knife. But Replicate deserves respect for deploying AI models faster than I can finish my coffee.\n\nWhat's your pick? Are you team Claude or is there a dark horse tool I'm sleeping on?",
+      "tags": [
+        "shorts",
+        "ai tools",
+        "claude",
+        "deepseek",
+        "gpt-4o",
+        "ai ranking",
+        "best ai",
+        "coding ai",
+        "ai writing",
+        "perplexity",
+        "gemini",
+        "replicate",
+        "tech review",
+        "ai comparison"
+      ],
+      "privacy": "public",
+      "made_for_kids": false
+    },
+    "instagram": {
+      "caption": "Claude Sonnet 4.6 writes like a seasoned copywriter while deepseek V4 sounds like it never talked to a human.\n\nI tested AI tools across five brutal categories and Claude swept almost everything. For writing, it's not even close—Claude nails tone and style while deepseek churns out corporate drivel. Brainstorming? Claude Opus 4.7 gives you ideas you'd actually want to steal. Coding was wild because Claude Code literally builds full applications when other tools just autocomplete.\n\nBut here's what surprised me: Gemini actually held its own for design mockups, landing solidly in the Good tier. And n8n crushed workflow prototyping without making you write a single line of code.\n\nThe biggest flop? Perplexity for brainstorming. It just regurgitates search results when you need actual creative firepower. Replit also disappointed—constant crashes killed any momentum on complex builds.\n\nIf you're picking one AI tool right now, Claude is the Swiss Army knife. But Replicate deserves respect for deploying AI models faster than I can finish my coffee.\n\nWhat's your pick? Are you team Claude or is there a dark horse tool I'm sleeping on?"
+    },
+    "tiktok": {
+      "description": "Claude Sonnet 4.6 writes like a seasoned copywriter while deepseek V4 sounds like it never talked to a human.\n\nI tested AI tools across five brutal categories and Claude swept almost everything. For writing, it's not even close—Claude nails tone and style while deepseek churns out corporate drivel. Brainstorming? Claude Opus 4.7 gives you ideas you'd actually want to steal. Coding was wild because Claude Code literally builds full applications when other tools just autocomplete.\n\nBut here's what surprised me: Gemini actually held its own for design mockups, landing solidly in the Good tier. And n8n crushed workflow prototyping without making you write a single line of code.\n\nThe biggest flop? Perplexity for brainstorming. It just regurgitates search results when you need actual creative firepower. Replit also disappointed—constant crashes killed any momentum on complex builds.\n\nIf you're picking one AI tool right now, Claude is the Swiss Army knife. But Replicate deserves respect for deploying AI models faster than I can finish my coffee.\n\nWhat's your pick? Are you team Claude or is there a dark horse tool I'm sleeping on?",
+      "privacy": "PUBLIC_TO_EVERYONE"
+    },
+    "linkedin": {
+      "text": "Unpopular opinion: Most 'AI-powered IDEs' are just expensive autocomplete with a marketing budget.\n\nI ranked AI tools across writing, brainstorming, coding, design, and prototyping. Claude won four out of five categories—and it wasn't even competitive.\n\nClaude Sonnet 4.6 writes copy that sounds human. Not 'good for AI' human. Actually human. Meanwhile deepseek V4 produces the kind of generic text that screams 'I was written by a bot.'\n\nThe coding category shocked me most. Claude Code doesn't just suggest your next line—it architects entire applications. GPT Codex is solid for quick scripts, but those wrapper IDEs charging $20/month? They're selling you features that should be free.\n\nFor design, Gemini surprised me by generating legitimately useful mockups. Not Pinterest-pretty, but functional and thoughtful. Claude still wins on polish, but Gemini earned its Good rating.\n\nBiggest letdown: Perplexity for brainstorming. It treats creative thinking like a search query. You don't need another search engine—you need ideas that don't exist yet. That's where Claude Opus 4.7 dominates.\n\nFull breakdown in the video. Curious what tools you're actually using daily—are you seeing the same patterns or am I missing something?\n\n#AI #TechTools #ProductivityTools #ArtificialIntelligence #Claude"
+    }
+  },
+  "thumbnail": "thumbnail.png"
+}

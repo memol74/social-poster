@@ -17,7 +17,7 @@ def main():
 
     # Setup command
     setup_parser = subparsers.add_parser("setup", help="Setup platform authentication")
-    setup_parser.add_argument("platform", choices=["youtube", "instagram", "tiktok"])
+    setup_parser.add_argument("platform", choices=["youtube", "instagram", "tiktok", "linkedin"])
     setup_parser.add_argument("--token", help="(unused, kept for compatibility)")
 
     args = parser.parse_args()
@@ -45,6 +45,10 @@ def run_setup(args):
         from uploaders.tiktok import authenticate
         authenticate()
         print("TikTok authentication complete!")
+    elif args.platform == "linkedin":
+        from uploaders.linkedin import authenticate
+        authenticate()
+        print("LinkedIn authentication complete!")
 
 
 def run_post(args):
@@ -102,6 +106,11 @@ def run_post(args):
                     privacy=config.get("privacy", "PUBLIC_TO_EVERYONE"),
                 )
                 results[platform] = {"success": True, "id": tid}
+            elif platform == "linkedin":
+                from uploaders.linkedin import post as linkedin_post
+                text = config.get("text", "")
+                pid = linkedin_post(text)
+                results[platform] = {"success": True, "id": pid}
             else:
                 print(f"  Platform '{platform}' not yet supported")
                 results[platform] = {"success": False, "error": "not supported"}
