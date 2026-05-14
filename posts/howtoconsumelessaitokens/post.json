@@ -1,0 +1,39 @@
+{
+  "video": "video.mp4",
+  "platforms": {
+    "youtube": {
+      "title": "🔥 Cut AI Agent Costs by 90% — Stop Wasting 75% of Every Token",
+      "description": "Your AI agent is burning 75% of every token on context it never uses.\n\nIf you're running agents or chatbots that pull memory or tools for every call, you're paying for thousands of tokens that do nothing. Most teams load all twenty tools into every single query — that's 3,000 tokens before the agent even thinks.\n\nSemantic tool selection fixes this. Use Redis vector search to match the user's query to only the three tools it actually needs. You drop from 3,000 tokens to 450. One company cut tool loading costs by 91% with this alone.\n\nStack it with prompt caching — Claude and ChatGPT both support it — and you save another 40-60% by reusing your system prompt. Add model tiering (cheap models for simple subtasks, expensive ones for reasoning) and you're at 90% total cost reduction.\n\nThis isn't theory. It's production-ready and already deployed at scale.\n\nComment OPTIMIZE and I'll send you the full implementation guide with code examples.",
+      "tags": [
+        "shorts",
+        "ai agents",
+        "token optimization",
+        "llm costs",
+        "semantic search",
+        "redis vector search",
+        "prompt caching",
+        "chatgpt",
+        "claude",
+        "ai development",
+        "cost optimization",
+        "machine learning",
+        "openai",
+        "ai programming",
+        "tech tips"
+      ],
+      "privacy": "public",
+      "made_for_kids": false
+    },
+    "instagram": {
+      "caption": "Your AI agent is burning 75% of every token on context it never uses.\n\nIf you're running agents or chatbots that pull memory or tools for every call, you're paying for thousands of tokens that do nothing. Most teams load all twenty tools into every single query — that's 3,000 tokens before the agent even thinks.\n\nSemantic tool selection fixes this. Use Redis vector search to match the user's query to only the three tools it actually needs. You drop from 3,000 tokens to 450. One company cut tool loading costs by 91% with this alone.\n\nStack it with prompt caching — Claude and ChatGPT both support it — and you save another 40-60% by reusing your system prompt. Add model tiering (cheap models for simple subtasks, expensive ones for reasoning) and you're at 90% total cost reduction.\n\nThis isn't theory. It's production-ready and already deployed at scale.\n\nComment OPTIMIZE and I'll send you the full implementation guide with code examples."
+    },
+    "tiktok": {
+      "description": "Your AI agent is burning 75% of every token on context it never uses.\n\nIf you're running agents or chatbots that pull memory or tools for every call, you're paying for thousands of tokens that do nothing. Most teams load all twenty tools into every single query — that's 3,000 tokens before the agent even thinks.\n\nSemantic tool selection fixes this. Use Redis vector search to match the user's query to only the three tools it actually needs. You drop from 3,000 tokens to 450. One company cut tool loading costs by 91% with this alone.\n\nStack it with prompt caching — Claude and ChatGPT both support it — and you save another 40-60% by reusing your system prompt. Add model tiering (cheap models for simple subtasks, expensive ones for reasoning) and you're at 90% total cost reduction.\n\nThis isn't theory. It's production-ready and already deployed at scale.\n\nComment OPTIMIZE and I'll send you the full implementation guide with code examples.",
+      "privacy": "PUBLIC_TO_EVERYONE"
+    },
+    "linkedin": {
+      "text": "I watched a company burn $12,000 a month on AI agent tokens.\n\n75% of it was wasted context.\n\nEvery query loaded all twenty tools. Every memory retrieval pulled irrelevant history. The agent never used most of it, but they paid for every token.\n\nOne change cut costs by 91%.\n\nSemantic tool selection. Instead of loading every tool into every call, they used Redis vector search to match the query to the three tools it actually needed. 3,000 tokens dropped to 450.\n\nThen they added prompt caching. Claude and ChatGPT both support it — cache your system prompt once and reuse it across calls. Another 40-60% savings.\n\nFinally, model tiering. Route simple subtasks to cheap models. Save the expensive reasoning for when you need it.\n\nTotal reduction: 90%.\n\nIf you're running multi-tool agents or chatbots with memory, you're probably making the same mistake. I made a short video breaking down the three techniques and the math behind them.\n\nWhat's the biggest hidden cost you've found in your AI stack?\n\n#AIAgents #MachineLearning #CostOptimization #OpenAI #TechLeadership"
+    }
+  },
+  "thumbnail": "thumbnail.png"
+}
