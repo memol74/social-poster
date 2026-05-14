@@ -1,0 +1,21 @@
+{
+  "video": "video.mp4",
+  "platforms": {
+    "youtube": {
+      "title": "5 Claude Code Skills That Saved Me 14 Hours ⚡",
+      "description": "Obra's Superpowers has 40,000 GitHub stars and I had no idea it existed until last month.\n\nI spent weeks testing 127 different Claude Code skills to find what actually moves the needle. Most are trash. Five are legitimately powerful.\n\nThe big ones: Obra's Superpowers isn't just one skill — it's a composable framework that automates brainstorming, planning, implementation, testing, and code review. Claude builds entire features start to finish without you babysitting every step.\n\nFrontend Design generates production-grade UI with Tailwind, shadcn, and accessibility standards already baked in. No more pixel-pushing.\n\nSkill Builder is the meta-skill that multiplies everything else. It lets Claude create custom skills on the fly for your specific workflow.\n\nOne Superpowers workflow saved me 14 hours last week. Debugging, iteration, code review — all handled automatically while I worked on actual product decisions.\n\nWithout skills, you're using Claude as expensive autocomplete. With them, it's an autonomous developer.\n\nComment SKILLS and I'll send the full setup guide.",
+      "tags": [
+        "shorts"
+      ],
+      "privacy": "public"
+    },
+    "instagram": {
+      "caption": "Obra's Superpowers has 40,000 GitHub stars and I had no idea it existed until last month.\n\nI spent weeks testing 127 different Claude Code skills to find what actually moves the needle. Most are trash. Five are legitimately powerful.\n\nThe big ones: Obra's Superpowers isn't just one skill — it's a composable framework that automates brainstorming, planning, implementation, testing, and code review. Claude builds entire features start to finish without you babysitting every step.\n\nFrontend Design generates production-grade UI with Tailwind, shadcn, and accessibility standards already baked in. No more pixel-pushing.\n\nSkill Builder is the meta-skill that multiplies everything else. It lets Claude create custom skills on the fly for your specific workflow.\n\nOne Superpowers workflow saved me 14 hours last week. Debugging, iteration, code review — all handled automatically while I worked on actual product decisions.\n\nWithout skills, you're using Claude as expensive autocomplete. With them, it's an autonomous developer.\n\nComment SKILLS and I'll send the full setup guide."
+    },
+    "tiktok": {
+      "description": "Obra's Superpowers has 40,000 GitHub stars and I had no idea it existed until last month.\n\nI spent weeks testing 127 different Claude Code skills to find what actually moves the needle. Most are trash. Five are legitimately powerful.\n\nThe big ones: Obra's Superpowers isn't just one skill — it's a composable framework that automates brainstorming, planning, implementation, testing, and code review. Claude builds entire features start to finish without you babysitting every step.\n\nFrontend Design generates production-grade UI with Tailwind, shadcn, and accessibility standards already baked in. No more pixel-pushing.\n\nSkill Builder is the meta-skill that multiplies everything else. It lets Claude create custom skills on the fly for your specific workflow.\n\nOne Superpowers workflow saved me 14 hours last week. Debugging, iteration, code review — all handled automatically while I worked on actual product decisions.\n\nWithout skills, you're using Claude as expensive autocomplete. With them, it's an autonomous developer.\n\nComment SKILLS and I'll send the full setup guide.",
+      "privacy": "PUBLIC_TO_EVERYONE"
+    }
+  },
+  "thumbnail": "thumbnail.png"
+}
