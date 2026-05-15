@@ -1,0 +1,39 @@
+{
+  "video": "video.mp4",
+  "platforms": {
+    "youtube": {
+      "title": "AI Water Usage: Truth Behind '500ml' Myth 🌊",
+      "description": "Every ChatGPT conversation supposedly uses 500 milliliters of water, or at least that's what the headlines scream. But here's the kicker: that 500ml is the cooling cost per hour of server operation, not per AI query. Each AI prompt only sips about 10 milliliters, while a Google search hardly takes 0.3! Compare that to a single toilet flush, which guzzles 600 times more.\n\nThe real water impact comes from manufacturing the chips. Each AI chip uses a whopping 15,000 liters, but it powers millions of queries over years, shrinking the per-query footprint significantly.\n\nShare this video with anyone stressing about AI's water use. And if you're curious about the full water usage numbers, comment WATER and I'll hook you up with the breakdown chart!",
+      "tags": [
+        "shorts",
+        "ai",
+        "water usage",
+        "chatgpt",
+        "data centers",
+        "tech myths",
+        "environment",
+        "sustainability",
+        "server cooling",
+        "google search",
+        "ai chips",
+        "tech facts",
+        "cloud computing",
+        "myth vs reality",
+        "programming"
+      ],
+      "privacy": "public",
+      "made_for_kids": false
+    },
+    "instagram": {
+      "caption": "Every ChatGPT conversation supposedly uses 500 milliliters of water, or at least that's what the headlines scream. But here's the kicker: that 500ml is the cooling cost per hour of server operation, not per AI query. Each AI prompt only sips about 10 milliliters, while a Google search hardly takes 0.3! Compare that to a single toilet flush, which guzzles 600 times more.\n\nThe real water impact comes from manufacturing the chips. Each AI chip uses a whopping 15,000 liters, but it powers millions of queries over years, shrinking the per-query footprint significantly.\n\nShare this video with anyone stressing about AI's water use. And if you're curious about the full water usage numbers, comment WATER and I'll hook you up with the breakdown chart!"
+    },
+    "tiktok": {
+      "description": "Every ChatGPT conversation supposedly uses 500 milliliters of water, or at least that's what the headlines scream. But here's the kicker: that 500ml is the cooling cost per hour of server operation, not per AI query. Each AI prompt only sips about 10 milliliters, while a Google search hardly takes 0.3! Compare that to a single toilet flush, which guzzles 600 times more.\n\nThe real water impact comes from manufacturing the chips. Each AI chip uses a whopping 15,000 liters, but it powers millions of queries over years, shrinking the per-query footprint significantly.\n\nShare this video with anyone stressing about AI's water use. And if you're curious about the full water usage numbers, comment WATER and I'll hook you up with the breakdown chart!",
+      "privacy": "PUBLIC_TO_EVERYONE"
+    },
+    "linkedin": {
+      "text": "Every ChatGPT conversation supposedly uses 500 milliliters of water. But have you ever wondered if that's the whole story?\n\nI recently dug into this myth and made a short video about it.\n\nYou'd think each chat is soaking up water like a sponge. The truth is, the 500ml figure is for cooling data centers per hour, not per chat. Each query actually uses just about 10 milliliters. To put it in perspective, a Google search only takes 0.3 milliliters!\n\nThe real water cost? Manufacturing the AI chips. Each chip requires 15,000 liters, but it runs millions of queries over its lifespan.\n\nSo the next time you see headlines about AI and water use, remember: it's more nuanced than it seems.\n\nHave you ever questioned tech myths before? Let's talk about it in the comments.\n\n#AI #WaterUsage #Sustainability #TechFacts"
+    }
+  },
+  "thumbnail": "thumbnail.png"
+}
