@@ -1,0 +1,38 @@
+{
+  "video": "video.mp4",
+  "platforms": {
+    "youtube": {
+      "title": "RTX 4090s with 48GB? 😲 Uncover the Secret!",
+      "description": "You've probably been using underpowered GPUs without even realizing it. Did you know RTX 4090s originally ship with twenty-four gigabytes of VRAM? But here's the kicker: Chinese modders have figured out how to double that to forty-eight gigabytes by physically replacing the VRAM chips. No firmware hacks, just pure hardware magic. If you're into running local AI models, this could be a game-changer. Imagine running Llama 70B at full precision instead of just quantized. And the price difference? Well, NVIDIA's pro cards with forty-eight gigs cost a whopping twelve thousand dollars, but these modded versions come in at just twenty-two hundred. That's a massive saving! If you're building local AI infrastructure, this is something you need to see. Curious about how these modded GPUs stack up? Comment 'SPECS' and I'll send over the modder comparison chart.",
+      "tags": [
+        "shorts",
+        "chinas modded gpus",
+        "gpu modding",
+        "rtx 4090",
+        "vram upgrade",
+        "local ai models",
+        "llama 70B",
+        "ai infrastructure",
+        "nvidia",
+        "tech innovation",
+        "programming",
+        "hardware modding",
+        "computer hardware",
+        "cost efficiency"
+      ],
+      "privacy": "public",
+      "made_for_kids": false
+    },
+    "instagram": {
+      "caption": "You've probably been using underpowered GPUs without even realizing it. Did you know RTX 4090s originally ship with twenty-four gigabytes of VRAM? But here's the kicker: Chinese modders have figured out how to double that to forty-eight gigabytes by physically replacing the VRAM chips. No firmware hacks, just pure hardware magic. If you're into running local AI models, this could be a game-changer. Imagine running Llama 70B at full precision instead of just quantized. And the price difference? Well, NVIDIA's pro cards with forty-eight gigs cost a whopping twelve thousand dollars, but these modded versions come in at just twenty-two hundred. That's a massive saving! If you're building local AI infrastructure, this is something you need to see. Curious about how these modded GPUs stack up? Comment 'SPECS' and I'll send over the modder comparison chart."
+    },
+    "tiktok": {
+      "description": "You've probably been using underpowered GPUs without even realizing it. Did you know RTX 4090s originally ship with twenty-four gigabytes of VRAM? But here's the kicker: Chinese modders have figured out how to double that to forty-eight gigabytes by physically replacing the VRAM chips. No firmware hacks, just pure hardware magic. If you're into running local AI models, this could be a game-changer. Imagine running Llama 70B at full precision instead of just quantized. And the price difference? Well, NVIDIA's pro cards with forty-eight gigs cost a whopping twelve thousand dollars, but these modded versions come in at just twenty-two hundred. That's a massive saving! If you're building local AI infrastructure, this is something you need to see. Curious about how these modded GPUs stack up? Comment 'SPECS' and I'll send over the modder comparison chart.",
+      "privacy": "PUBLIC_TO_EVERYONE"
+    },
+    "linkedin": {
+      "text": "You ever get the feeling you're being shortchanged by big tech? \n\nI recently discovered that RTX 4090s, which come with twenty-four gigs of VRAM, are being completely transformed by some savvy Chinese modders. They've managed to double the memory capacity to forty-eight gigabytes by swapping out the VRAM chips. \n\nThis isn't some sketchy firmware hack—it’s a solid hardware mod. And the implications for running local AI models are huge. Imagine running Llama 70B at full precision rather than a watered-down version. \n\nHere's the kicker: these modded cards only cost twenty-two hundred dollars, compared to NVIDIA's professional cards with a twelve thousand dollar price tag. It’s a huge cost-saving with nearly the same power. \n\nWhy isn’t NVIDIA selling these versions directly? Because it would flatten their margins. \n\nI made a short video about this fascinating trend. Check it out and let me know—would you trust a modded GPU in your setup?\n\n#GPUModding #AIModels #TechHacks #Innovation"
+    }
+  },
+  "thumbnail": "thumbnail.png"
+}
