@@ -1,0 +1,38 @@
+{
+  "video": "video.mp4",
+  "platforms": {
+    "youtube": {
+      "title": "How Orthrus-Qwen3-8B Boosts Token Speed 7.8x 🚀",
+      "description": "Most developers waste a whopping ninety percent of their GPU compute. Enter Orthrus-Qwen3-8B, which cranks out up to eight tokens per forward pass, unlike the standard Qwen3-8B's single token output. What does that mean for you? A massive speed boost — 7.8 times faster, to be exact, all without sacrificing quality or needing to retrain anything. It's like hitting the gas pedal on your local models without changing cars. No quality loss, same hardware — just instant acceleration. Comment ORTHRUS and I'll send the implementation guide. Stop wasting GPU cycles on slow inference.",
+      "tags": [
+        "shorts",
+        "orthrus_qwen3_8b",
+        "gpu efficiency",
+        "token generation",
+        "ai models",
+        "programming",
+        "tech",
+        "speculative decoding",
+        "local inference",
+        "frozen backbone",
+        "gpu compute",
+        "machine learning",
+        "developer tools",
+        "inference speedup"
+      ],
+      "privacy": "public",
+      "made_for_kids": false
+    },
+    "instagram": {
+      "caption": "Most developers waste a whopping ninety percent of their GPU compute. Enter Orthrus-Qwen3-8B, which cranks out up to eight tokens per forward pass, unlike the standard Qwen3-8B's single token output. What does that mean for you? A massive speed boost — 7.8 times faster, to be exact, all without sacrificing quality or needing to retrain anything. It's like hitting the gas pedal on your local models without changing cars. No quality loss, same hardware — just instant acceleration. Comment ORTHRUS and I'll send the implementation guide. Stop wasting GPU cycles on slow inference."
+    },
+    "tiktok": {
+      "description": "Most developers waste a whopping ninety percent of their GPU compute. Enter Orthrus-Qwen3-8B, which cranks out up to eight tokens per forward pass, unlike the standard Qwen3-8B's single token output. What does that mean for you? A massive speed boost — 7.8 times faster, to be exact, all without sacrificing quality or needing to retrain anything. It's like hitting the gas pedal on your local models without changing cars. No quality loss, same hardware — just instant acceleration. Comment ORTHRUS and I'll send the implementation guide. Stop wasting GPU cycles on slow inference.",
+      "privacy": "PUBLIC_TO_EVERYONE"
+    },
+    "linkedin": {
+      "text": "Most developers don't realize they're wasting 90% of their GPU compute power. \n\nI was shocked too, but then I discovered Orthrus-Qwen3-8B. It's a game-changer in token generation, boosting performance up to 7.8x faster without compromising on quality.\n\nImagine generating up to eight tokens per forward pass with the same output distribution. No retraining required, no extra hardware needed. Just a simple drop-in solution that instantly accelerates your local models.\n\nIt's amazing how much compute we waste without tools like this.\n\nHave you optimized your models recently, or are you also bleeding tokens? Comment ORTHRUS, and I'll send over the implementation guide.\n\n#AI #GPUEfficiency #MachineLearning"
+    }
+  },
+  "thumbnail": "thumbnail.png"
+}
