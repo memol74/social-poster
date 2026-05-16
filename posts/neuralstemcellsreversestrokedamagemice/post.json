@@ -1,0 +1,39 @@
+{
+  "video": "video.mp4",
+  "platforms": {
+    "youtube": {
+      "title": "🧠 Stroke Damage Reversed in Mice: Here's How!",
+      "description": "Scientists have successfully reversed brain damage in mice after a stroke—a first in the medical world! They used neural stem cells to rebuild the damaged brain tissue. But it wasn't smooth sailing: the initial injections failed due to inflammation. Timing turned out to be crucial. By waiting a few weeks for inflammation to subside before injecting again, new neurons were able to regrow, restoring lost functions. This breakthrough gives hope for stroke recovery in humans, showing that what was once considered permanent damage can potentially be repaired. If you're interested in learning more, comment BRAIN and I'll send you the research breakdown.",
+      "tags": [
+        "shorts",
+        "neural stem cells",
+        "stroke recovery",
+        "brain repair",
+        "neuroscience",
+        "mice experiments",
+        "brain tissue",
+        "neuron regrowth",
+        "medical research",
+        "science breakthrough",
+        "health innovation",
+        "stem cell therapy",
+        "stroke treatment",
+        "brain damage",
+        "medical science"
+      ],
+      "privacy": "public",
+      "made_for_kids": false
+    },
+    "instagram": {
+      "caption": "Scientists have successfully reversed brain damage in mice after a stroke—a first in the medical world! They used neural stem cells to rebuild the damaged brain tissue. But it wasn't smooth sailing: the initial injections failed due to inflammation. Timing turned out to be crucial. By waiting a few weeks for inflammation to subside before injecting again, new neurons were able to regrow, restoring lost functions. This breakthrough gives hope for stroke recovery in humans, showing that what was once considered permanent damage can potentially be repaired. If you're interested in learning more, comment BRAIN and I'll send you the research breakdown."
+    },
+    "tiktok": {
+      "description": "Scientists have successfully reversed brain damage in mice after a stroke—a first in the medical world! They used neural stem cells to rebuild the damaged brain tissue. But it wasn't smooth sailing: the initial injections failed due to inflammation. Timing turned out to be crucial. By waiting a few weeks for inflammation to subside before injecting again, new neurons were able to regrow, restoring lost functions. This breakthrough gives hope for stroke recovery in humans, showing that what was once considered permanent damage can potentially be repaired. If you're interested in learning more, comment BRAIN and I'll send you the research breakdown.",
+      "privacy": "PUBLIC_TO_EVERYONE"
+    },
+    "linkedin": {
+      "text": "One in four adults will suffer a stroke in their lifetime. It’s terrifying to think about, but what if I told you there’s a glimmer of hope? Scientists have done the unthinkable—they've reversed stroke damage in mice. \n\nThe secret weapon? Neural stem cells.\n\nInitially, it was a bit like two steps forward, one step back. The first attempt failed because of inflammation. But with patience and timing—waiting for swelling to subside before trying again—they succeeded. New neurons formed and the mice regained lost functions.\n\nThis experiment isn’t just a win for science; it's hope for countless people affected by stroke. \n\nI made a short video about how they did it and why timing was everything. \n\nDo you think this could change how we approach stroke recovery?\n\n#neuroscience #medicalresearch #brainhealth"
+    }
+  },
+  "thumbnail": "thumbnail.png"
+}
