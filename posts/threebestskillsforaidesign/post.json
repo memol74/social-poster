@@ -1,0 +1,29 @@
+{
+  "video": "video.mp4",
+  "platforms": {
+    "youtube": {
+      "title": "3 AI Skills to Make Your Site Look Like Apple's 🍎",
+      "description": "Did you know you can make your website look like Apple's using just three AI skills? This video breaks down the trio that can transform generic AI outputs into production-grade designs. First up, Impeccable: with 23 commands, this skill teaches AI the nuances of typography, color, and spatial design. No more purple gradients or ubiquitous Inter fonts. Next, Design Motion Principles brings three top motion designers to the table, helping your AI balance restraint and playfulness. Lastly, Claude's frontend design skill ensures every interface is genuinely tailored, steering clear of predictable layouts. Stop shipping sites that look like every other AI creation. Comment SKILLS if you want the installation guide for all three!",
+      "tags": [
+        "shorts",
+        "ai design",
+        "impeccable skill",
+        "design motion principles",
+        "claude frontend"
+      ],
+      "privacy": "public",
+      "made_for_kids": false
+    },
+    "instagram": {
+      "caption": "Did you know you can make your website look like Apple's using just three AI skills? This video breaks down the trio that can transform generic AI outputs into production-grade designs. First up, Impeccable: with 23 commands, this skill teaches AI the nuances of typography, color, and spatial design. No more purple gradients or ubiquitous Inter fonts. Next, Design Motion Principles brings three top motion designers to the table, helping your AI balance restraint and playfulness. Lastly, Claude's frontend design skill ensures every interface is genuinely tailored, steering clear of predictable layouts. Stop shipping sites that look like every other AI creation. Comment SKILLS if you want the installation guide for all three!"
+    },
+    "tiktok": {
+      "description": "Did you know you can make your website look like Apple's using just three AI skills? This video breaks down the trio that can transform generic AI outputs into production-grade designs. First up, Impeccable: with 23 commands, this skill teaches AI the nuances of typography, color, and spatial design. No more purple gradients or ubiquitous Inter fonts. Next, Design Motion Principles brings three top motion designers to the table, helping your AI balance restraint and playfulness. Lastly, Claude's frontend design skill ensures every interface is genuinely tailored, steering clear of predictable layouts. Stop shipping sites that look like every other AI creation. Comment SKILLS if you want the installation guide for all three!",
+      "privacy": "PUBLIC_TO_EVERYONE"
+    },
+    "linkedin": {
+      "text": "Ever wondered how to get your website to look and feel like Apple's, but using AI? Let me tell you, it's actually possible with just three skills.\n\nThe first skill, Impeccable, is all about teaching your AI some serious design principles — think real typography and color choices, not just the default Inter font and purple gradients.\n\nThen there's Design Motion Principles. Three top motion designers have cracked the code on making animations that don't look like every other AI site.\n\nAnd lastly, Claude's frontend design skill. This one forces your AI to really commit to a bold design direction before any code gets written.\n\nI made a short video about this if you're curious.\n\nAre your AI projects starting to look a bit too \"AI\"? Comment below if you'd like to discuss!\n\n#aidesign #ux #webdevelopment #frontend"
+    }
+  },
+  "thumbnail": "thumbnail.png"
+}
