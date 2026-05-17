@@ -1,0 +1,29 @@
+{
+  "video": "video.mp4",
+  "platforms": {
+    "youtube": {
+      "title": "🔍 Tracked 740 Job Offers Without Spreadsheets?",
+      "description": "You're wasting months tracking job applications in spreadsheets. But what if you didn't have to? Meet Career-Ops—a game-changer in the job search scene. This open-source AI system, boasting 45,000 stars, transforms Claude into your personal recruiter. It scans 45 company portals for new roles and even evaluates job fit by scoring roles from A to F. Plug in a job URL, and it generates an ATS-optimized PDF tailored for that position. No more manually copying resumes into forms! The creator used this system to evaluate 740 job listings and landed a Head of Applied AI role by automating the entire process. Stop letting companies filter you with AI while you click manually. Comment CAREER and I'll send you the setup guide!",
+      "tags": [
+        "career_ops",
+        "ai_job_search",
+        "automated_resume",
+        "claude",
+        "open_source"
+      ],
+      "privacy": "public",
+      "made_for_kids": false
+    },
+    "instagram": {
+      "caption": "You're wasting months tracking job applications in spreadsheets. But what if you didn't have to? Meet Career-Ops—a game-changer in the job search scene. This open-source AI system, boasting 45,000 stars, transforms Claude into your personal recruiter. It scans 45 company portals for new roles and even evaluates job fit by scoring roles from A to F. Plug in a job URL, and it generates an ATS-optimized PDF tailored for that position. No more manually copying resumes into forms! The creator used this system to evaluate 740 job listings and landed a Head of Applied AI role by automating the entire process. Stop letting companies filter you with AI while you click manually. Comment CAREER and I'll send you the setup guide!"
+    },
+    "tiktok": {
+      "description": "You're wasting months tracking job applications in spreadsheets. But what if you didn't have to? Meet Career-Ops—a game-changer in the job search scene. This open-source AI system, boasting 45,000 stars, transforms Claude into your personal recruiter. It scans 45 company portals for new roles and even evaluates job fit by scoring roles from A to F. Plug in a job URL, and it generates an ATS-optimized PDF tailored for that position. No more manually copying resumes into forms! The creator used this system to evaluate 740 job listings and landed a Head of Applied AI role by automating the entire process. Stop letting companies filter you with AI while you click manually. Comment CAREER and I'll send you the setup guide!",
+      "privacy": "PUBLIC_TO_EVERYONE"
+    },
+    "linkedin": {
+      "text": "You're wasting months tracking job applications in spreadsheets. But what if you didn't have to?\n\nI stumbled upon this developer who manually tracked 740 offers before deciding enough was enough.\n\nThey built Career-Ops, an AI system that turns Claude into a personal recruiter. It's open-source with 45,000 stars and automates the tedious parts of job hunting. Imagine pasting a job URL and getting a tailored resume spat out for you! This system scans 45 company portals, evaluates job fits, and generates ATS-friendly PDFs.\n\nThe creator evaluated 740 listings with it and landed a Head of Applied AI role. Talk about leveling the playing field!\n\nAre you still doing this manually? Comment below and let's chat!\n\n#AI #JobSearch #CareerOps #Automation #OpenSource"
+    }
+  },
+  "thumbnail": "thumbnail.png"
+}
