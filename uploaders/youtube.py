@@ -21,10 +21,10 @@ def _resize_thumbnail_for_shorts(src_path: str) -> str:
     GPT Image 2 generates at 2:3 ratio (1024x1536). YouTube Shorts profile shelf
     requires 9:16 to show the custom thumbnail instead of a random video frame.
     Strategy: scale height to 1920, then center-crop width to 1080.
-    Returns path to a temp JPEG (caller must delete it). JPEG keeps size under 2MB.
+    Returns path to a temp PNG (caller must delete it).
     """
     from PIL import Image
-    img = Image.open(src_path).convert("RGB")
+    img = Image.open(src_path)
     w, h = img.size
     # Scale so height = 1920
     scale = 1920 / h
@@ -33,8 +33,8 @@ def _resize_thumbnail_for_shorts(src_path: str) -> str:
     # Center-crop width to 1080
     left = (new_w - 1080) // 2
     img = img.crop((left, 0, left + 1080, 1920))
-    tmp = tempfile.NamedTemporaryFile(suffix=".jpg", delete=False)
-    img.save(tmp.name, "JPEG", quality=92)
+    tmp = tempfile.NamedTemporaryFile(suffix=".png", delete=False)
+    img.save(tmp.name, "PNG")
     tmp.close()
     return tmp.name
 
@@ -53,13 +53,6 @@ def authenticate():
     creds = None
     if os.path.exists(TOKEN_FILE):
         creds = Credentials.from_authorized_user_file(TOKEN_FILE, SCOPES)
-        # If the token is missing any required scope, force re-auth
-        granted = set(creds.scopes or [])
-        required = set(SCOPES)
-        if not required.issubset(granted):
-            print(f"  [auth] Token scopes outdated — re-authenticating to get: {required - granted}")
-            os.remove(TOKEN_FILE)
-            creds = None
     if not creds or not creds.valid:
         if creds and creds.expired and creds.refresh_token:
             creds.refresh(Request())
@@ -107,14 +100,11 @@ def upload(video_path, title, description="", tags=None, privacy="public", thumb
         tmp_thumb = None
         try:
             tmp_thumb = _resize_thumbnail_for_shorts(thumbnail)
-            size_kb = os.path.getsize(tmp_thumb) // 1024
-            print(f"  Uploading thumbnail ({size_kb} KB, 1080x1920 JPEG)...")
-            thumb_media = MediaFileUpload(tmp_thumb, mimetype="image/jpeg")
+            thumb_media = MediaFileUpload(tmp_thumb, mimetype="image/png")
             youtube.thumbnails().set(videoId=video_id, media_body=thumb_media).execute()
-            print(f"  Thumbnail set: {thumbnail}")
+            print(f"  Thumbnail set (1080x1920): {thumbnail}")
         except Exception as e:
-            print(f"  [error] Thumbnail upload failed: {e}")
-            raise
+            print(f"  [warn] Thumbnail upload failed: {e}")
         finally:
             if tmp_thumb and os.path.exists(tmp_thumb):
                 os.unlink(tmp_thumb)

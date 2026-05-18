@@ -1,0 +1,29 @@
+{
+  "video": "video.mp4",
+  "platforms": {
+    "youtube": {
+      "title": "Unlock FREE Claude Code Unlimited for AI Coding! 🚀",
+      "description": "Did you know you can run Claude Code unlimited for free? Most developers are shelling out twenty bucks a month for Claude or ChatGPT, but if you're coding with AI, you're probably overpaying. In this video, I'll break down how you can unlock unlimited AI coding without a subscription. \n\nIt's all thanks to Free Claude Code, a local proxy server that intercepts requests and routes them to various models like NVIDIA NIM or Kimi. What's incredible is that Claude Code thinks it’s still chatting with Anthropic! Plus, with NVIDIA NIM, you get free access to GLM-4.7 and Kimi models—no monthly charges involved. \n\nAlready twenty-five thousand developers have made the switch and are saving $240 every year! \n\nIt's a quick five-minute install that replaces twelve months of payments. The proxy works with VS Code, terminal, and even Discord bots. \n\nComment 'PROXY' and I'll send you the complete setup guide!",
+      "tags": [
+        "shorts",
+        "claude code",
+        "ai coding",
+        "proxy server",
+        "nvidia nim"
+      ],
+      "privacy": "public",
+      "made_for_kids": false
+    },
+    "instagram": {
+      "caption": "Did you know you can run Claude Code unlimited for free? Most developers are shelling out twenty bucks a month for Claude or ChatGPT, but if you're coding with AI, you're probably overpaying. In this video, I'll break down how you can unlock unlimited AI coding without a subscription. \n\nIt's all thanks to Free Claude Code, a local proxy server that intercepts requests and routes them to various models like NVIDIA NIM or Kimi. What's incredible is that Claude Code thinks it’s still chatting with Anthropic! Plus, with NVIDIA NIM, you get free access to GLM-4.7 and Kimi models—no monthly charges involved. \n\nAlready twenty-five thousand developers have made the switch and are saving $240 every year! \n\nIt's a quick five-minute install that replaces twelve months of payments. The proxy works with VS Code, terminal, and even Discord bots. \n\nComment 'PROXY' and I'll send you the complete setup guide!"
+    },
+    "tiktok": {
+      "description": "Did you know you can run Claude Code unlimited for free? Most developers are shelling out twenty bucks a month for Claude or ChatGPT, but if you're coding with AI, you're probably overpaying. In this video, I'll break down how you can unlock unlimited AI coding without a subscription. \n\nIt's all thanks to Free Claude Code, a local proxy server that intercepts requests and routes them to various models like NVIDIA NIM or Kimi. What's incredible is that Claude Code thinks it’s still chatting with Anthropic! Plus, with NVIDIA NIM, you get free access to GLM-4.7 and Kimi models—no monthly charges involved. \n\nAlready twenty-five thousand developers have made the switch and are saving $240 every year! \n\nIt's a quick five-minute install that replaces twelve months of payments. The proxy works with VS Code, terminal, and even Discord bots. \n\nComment 'PROXY' and I'll send you the complete setup guide!",
+      "privacy": "PUBLIC_TO_EVERYONE"
+    },
+    "linkedin": {
+      "text": "Did you know you might be overpaying for AI coding tools?\n\nMany developers fork over $20 a month for Claude or ChatGPT subscriptions. But there's a little-known secret that could save you that money.\n\nEnter Free Claude Code. It’s a local proxy server that reroutes Claude requests to models like NVIDIA NIM and Kimi, giving you unlimited access at zero cost. What's fascinating is how Claude Code continues to function as if it's communicating with Anthropic.\n\nI made a short video about this nifty trick. \n\nWith twenty-five thousand developers already on board, the savings add up—$240 annually, to be exact. And all this requires is a five-minute install. \n\nSo, are you still paying for your AI coding? \n\nComment 'PROXY' if you want to know how to set this up.\n\n#AICoding #ProxyServer #ClaudeCode"
+    }
+  },
+  "thumbnail": "thumbnail.png"
+}
