@@ -1,0 +1,28 @@
+{
+  "video": "video.mp4",
+  "platforms": {
+    "youtube": {
+      "title": "🤯 Qwen 3.7: 87% on Coding Benchmarks with Just 4 Billion Parameters!",
+      "description": "Here's something wild: you can achieve 87% on coding benchmarks with just a four-billion parameter model, and it runs locally! Introducing Qwen 3.7, which just dropped on Qwen Chat. If you're still paying for Cursor and Claude Code, this could change the game for you. This model is a beast at handling multi-step instructions and doesn't need the cloud to perform. \n\nMost other coding agents assume you've got ChatGPT or Claude Opus running, but Qwen 3.7 breaks that mold. Someone even built an agent with it that smoked the benchmarks, leaving Gemma and Llama in the dust. \n\nThe kicker? You can run it on a 24GB GPU for zero cost. No more monthly fees for agent capabilities with rate limits and cloud dependency. \n\nWant the setup guide with quantization settings? Comment 'QWEN' and I'll send it your way!",
+      "tags": [
+        "qwen 3.7",
+        "coding agents",
+        "local models",
+        "cursor alternative"
+      ],
+      "privacy": "public",
+      "made_for_kids": false
+    },
+    "instagram": {
+      "caption": "Here's something wild: you can achieve 87% on coding benchmarks with just a four-billion parameter model, and it runs locally! Introducing Qwen 3.7, which just dropped on Qwen Chat. If you're still paying for Cursor and Claude Code, this could change the game for you. This model is a beast at handling multi-step instructions and doesn't need the cloud to perform. \n\nMost other coding agents assume you've got ChatGPT or Claude Opus running, but Qwen 3.7 breaks that mold. Someone even built an agent with it that smoked the benchmarks, leaving Gemma and Llama in the dust. \n\nThe kicker? You can run it on a 24GB GPU for zero cost. No more monthly fees for agent capabilities with rate limits and cloud dependency. \n\nWant the setup guide with quantization settings? Comment 'QWEN' and I'll send it your way!"
+    },
+    "tiktok": {
+      "description": "Here's something wild: you can achieve 87% on coding benchmarks with just a four-billion parameter model, and it runs locally! Introducing Qwen 3.7, which just dropped on Qwen Chat. If you're still paying for Cursor and Claude Code, this could change the game for you. This model is a beast at handling multi-step instructions and doesn't need the cloud to perform. \n\nMost other coding agents assume you've got ChatGPT or Claude Opus running, but Qwen 3.7 breaks that mold. Someone even built an agent with it that smoked the benchmarks, leaving Gemma and Llama in the dust. \n\nThe kicker? You can run it on a 24GB GPU for zero cost. No more monthly fees for agent capabilities with rate limits and cloud dependency. \n\nWant the setup guide with quantization settings? Comment 'QWEN' and I'll send it your way!",
+      "privacy": "PUBLIC_TO_EVERYONE"
+    },
+    "linkedin": {
+      "text": "Imagine being able to run a coding agent that hits 87% on benchmarks, and it's not even relying on the cloud. That's what Qwen 3.7 offers. \n\nWe've all been there—shelling out monthly fees for services like Cursor, thinking there's no alternative. But what if you could get those same capabilities without the cost? \n\nQwen 3.7 is a four-billion parameter model that you can run locally. It's shaking things up by not following the usual script where you need ChatGPT or Claude Opus. Unlike older models that struggle, this one excels at multi-step tasks without cloud dependencies. \n\nThe bottom line? You could be saving money and still getting top performance. \n\nWould you consider switching to a local model if it meant saying goodbye to subscription fees? \n\n#Qwen #CodingAgents #AIModels"
+    }
+  },
+  "thumbnail": "thumbnail.png"
+}
