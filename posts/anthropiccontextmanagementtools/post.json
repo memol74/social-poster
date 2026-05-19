@@ -1,0 +1,30 @@
+{
+  "video": "video.mp4",
+  "platforms": {
+    "youtube": {
+      "title": "Unlock Claude's 4 Secret Tools! 🤯",
+      "description": "Did you know there's a way to manage Claude's context without starting from scratch? It's true! Most people only know about the basic /clear and /compact commands, but Anthropic's got four lesser-known tools that are absolute lifesavers for anyone working with code and Claude.\n\nFirst up is /btw. Got a side question that shouldn't clutter your main history? This is your go-to. Then there's /rewind, perfect for keeping the important setup while summarizing past the messy debugging.\n\nThe third tool lets you up your /compact game with custom instructions—decide what should stick around instead of letting Claude make the call. And don’t miss out on setting your compaction rules in CLAUDE.md for long-term sanity.\n\nIf you've ever had to clear your context, you might've waited too long. These tools keep your session tidy before it gets out of hand.\n\nComment CONTEXT, and I'll hook you up with the full command cheat sheet. Trust me, you'll want it for your toolkit!",
+      "tags": [
+        "shorts",
+        "anthropic",
+        "claude",
+        "context management",
+        "coding productivity",
+        "token optimization"
+      ],
+      "privacy": "public",
+      "made_for_kids": false
+    },
+    "instagram": {
+      "caption": "Did you know there's a way to manage Claude's context without starting from scratch? It's true! Most people only know about the basic /clear and /compact commands, but Anthropic's got four lesser-known tools that are absolute lifesavers for anyone working with code and Claude.\n\nFirst up is /btw. Got a side question that shouldn't clutter your main history? This is your go-to. Then there's /rewind, perfect for keeping the important setup while summarizing past the messy debugging.\n\nThe third tool lets you up your /compact game with custom instructions—decide what should stick around instead of letting Claude make the call. And don’t miss out on setting your compaction rules in CLAUDE.md for long-term sanity.\n\nIf you've ever had to clear your context, you might've waited too long. These tools keep your session tidy before it gets out of hand.\n\nComment CONTEXT, and I'll hook you up with the full command cheat sheet. Trust me, you'll want it for your toolkit!"
+    },
+    "tiktok": {
+      "description": "Did you know there's a way to manage Claude's context without starting from scratch? It's true! Most people only know about the basic /clear and /compact commands, but Anthropic's got four lesser-known tools that are absolute lifesavers for anyone working with code and Claude.\n\nFirst up is /btw. Got a side question that shouldn't clutter your main history? This is your go-to. Then there's /rewind, perfect for keeping the important setup while summarizing past the messy debugging.\n\nThe third tool lets you up your /compact game with custom instructions—decide what should stick around instead of letting Claude make the call. And don’t miss out on setting your compaction rules in CLAUDE.md for long-term sanity.\n\nIf you've ever had to clear your context, you might've waited too long. These tools keep your session tidy before it gets out of hand.\n\nComment CONTEXT, and I'll hook you up with the full command cheat sheet. Trust me, you'll want it for your toolkit!",
+      "privacy": "PUBLIC_TO_EVERYONE"
+    },
+    "linkedin": {
+      "text": "Did you know you can manage Claude's context without wiping your entire session clean? It's a game many of us play, but not all know the hidden rules.\n\nMost users stick to /clear and /compact, but if you're using Claude for coding, you're losing tokens over unnecessary noise. Anthropic's quietly launched four surgical tools, and they're game-changers.\n\nConsider /btw. It's your ally for side questions that shouldn't muddy your main conversation history. Or take /rewind, which lets you summarize smartly, keeping the golden nuggets and compressing the rest.\n\nEver wanted to control what Claude preserves? The third tool lets you instruct /compact directly. And, for the long haul, set your rules in CLAUDE.md just once.\n\nIf you've corrected Claude twice on the same issue, your context is already cluttered. These tools prevent that, no /clear needed.\n\nEver tried these in Claude or something similar? Comment and let's discuss!\n\n#productivity #codingtools #AI #Anthropic"
+    }
+  },
+  "thumbnail": "thumbnail.png"
+}
