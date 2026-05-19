@@ -123,14 +123,30 @@ def main():
             print(f"  [warn] Thumbnail not found: {thumbnail}")
             thumbnail = None
 
-    # If Instagram is in the list, upload to Drive first
+    # Always post YouTube first, then others
+    ordered = sorted(platforms.keys(), key=lambda p: (0 if p == "youtube" else 1))
+
+    # If Instagram is in the list, ask for token first
+    ig_token_override = None
+    if "instagram" in platforms:
+        print("\n>> Instagram posting:")
+        token_input = input("   Paste your Instagram access token (or press Enter to use saved token, 'skip' to skip): ").strip()
+        if token_input.lower() == "skip":
+            del platforms["instagram"]
+            ordered = [p for p in ordered if p != "instagram"]
+            print("   Skipping Instagram.")
+        elif token_input:
+            ig_token_override = token_input
+
+    # Upload to Drive only if Instagram is still in the list
     drive_file_id = None
     drive_url = None
     if "instagram" in platforms:
         drive_file_id, drive_url = upload_to_drive(video_path)
 
     results = {}
-    for platform, config in platforms.items():
+    for platform in ordered:
+        config = platforms[platform]
         print(f"\n>> Posting to {platform}...")
         try:
             if platform == "youtube":
@@ -147,7 +163,7 @@ def main():
 
             elif platform == "instagram":
                 from uploaders.instagram import upload_reel
-                mid = upload_reel(drive_url, caption=config.get("caption", ""))
+                mid = upload_reel(drive_url, caption=config.get("caption", ""), token=ig_token_override)
                 results[platform] = {"success": True, "id": mid}
 
             elif platform == "tiktok":

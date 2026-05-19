@@ -199,15 +199,22 @@ def _upload_to_gdrive(local_path):
     return public_url
 
 
-def upload_reel(video_url, caption=""):
+def upload_reel(video_url, caption="", token=None):
     """Upload a Reel to Instagram.
     
     Args:
         video_url: Local file path or public URL of the video.
         caption: Post caption.
+        token: Optional access token override. If provided, skips saved token lookup.
     """
-    token_data = authenticate()
-    token = token_data["access_token"]
+    if token:
+        ig_user_id = _resolve_ig_user_id(token)
+        token_data = {"access_token": token, "ig_user_id": ig_user_id}
+        _save_token({**token_data, "token_type": "fb_login_for_business"})
+        print(f"  Using provided token (Instagram account: {ig_user_id})")
+    else:
+        token_data = authenticate()
+        token = token_data["access_token"]
     ig_user_id = token_data["ig_user_id"]
 
     is_local = os.path.isfile(video_url)

@@ -5,7 +5,6 @@
       "title": "🔥 Cut AI Agent Costs by 90% — Stop Wasting 75% of Every Token",
       "description": "Your AI agent is burning 75% of every token on context it never uses.\n\nIf you're running agents or chatbots that pull memory or tools for every call, you're paying for thousands of tokens that do nothing. Most teams load all twenty tools into every single query — that's 3,000 tokens before the agent even thinks.\n\nSemantic tool selection fixes this. Use Redis vector search to match the user's query to only the three tools it actually needs. You drop from 3,000 tokens to 450. One company cut tool loading costs by 91% with this alone.\n\nStack it with prompt caching — Claude and ChatGPT both support it — and you save another 40-60% by reusing your system prompt. Add model tiering (cheap models for simple subtasks, expensive ones for reasoning) and you're at 90% total cost reduction.\n\nThis isn't theory. It's production-ready and already deployed at scale.\n\nComment OPTIMIZE and I'll send you the full implementation guide with code examples.",
       "tags": [
-        "shorts",
         "ai agents",
         "token optimization",
         "llm costs",
