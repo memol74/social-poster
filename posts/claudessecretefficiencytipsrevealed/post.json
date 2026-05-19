@@ -1,0 +1,28 @@
+{
+  "video": "video.mp4",
+  "platforms": {
+    "youtube": {
+      "title": "⏰ Save 230 Hours a Year with Claude's Projects Feature!",
+      "description": "Did you know Claude can save you hours every week? Most users are missing out on some truly time-saving features. If you're building with AI, Claude's Projects feature could be the key to streamlining your tasks. Imagine this: instead of spending up to five hours a week on manual sorting, you can cut it down to just 30 minutes. That's over 230 hours saved per year! Think of all the things you could do with that extra time. Efficiency isn't just about getting things done faster; it's about freeing yourself up for more creative and fulfilling activities. Let Claude handle the grind, so you can focus on what really matters. Comment CLAUDE if you want the complete guide to uncovering these hidden features!",
+      "tags": [
+        "claude",
+        "efficiency tips",
+        "ai tools",
+        "workflow optimization"
+      ],
+      "privacy": "public",
+      "made_for_kids": false
+    },
+    "instagram": {
+      "caption": "Did you know Claude can save you hours every week? Most users are missing out on some truly time-saving features. If you're building with AI, Claude's Projects feature could be the key to streamlining your tasks. Imagine this: instead of spending up to five hours a week on manual sorting, you can cut it down to just 30 minutes. That's over 230 hours saved per year! Think of all the things you could do with that extra time. Efficiency isn't just about getting things done faster; it's about freeing yourself up for more creative and fulfilling activities. Let Claude handle the grind, so you can focus on what really matters. Comment CLAUDE if you want the complete guide to uncovering these hidden features!"
+    },
+    "tiktok": {
+      "description": "Did you know Claude can save you hours every week? Most users are missing out on some truly time-saving features. If you're building with AI, Claude's Projects feature could be the key to streamlining your tasks. Imagine this: instead of spending up to five hours a week on manual sorting, you can cut it down to just 30 minutes. That's over 230 hours saved per year! Think of all the things you could do with that extra time. Efficiency isn't just about getting things done faster; it's about freeing yourself up for more creative and fulfilling activities. Let Claude handle the grind, so you can focus on what really matters. Comment CLAUDE if you want the complete guide to uncovering these hidden features!",
+      "privacy": "PUBLIC_TO_EVERYONE"
+    },
+    "linkedin": {
+      "text": "Did you know that manual sorting can eat up to five hours of your week? It sounds wild, but it's true. \n\nI recently discovered that Claude has a hidden gem called the Projects feature which can cut that time down to just 30 minutes. That's a potential savings of over 230 hours a year!\n\nThis isn't just about saving time—it's about gaining freedom. More time for creation, less time on the grind. \n\nEver imagine what you could do with those extra hours each week? I made a short video about how Claude could revolutionize your workflow (link in comments).\n\nWould you give it a try, or stick to your current methods?"
+    }
+  },
+  "thumbnail": "thumbnail.png"
+}
