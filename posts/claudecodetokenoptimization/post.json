@@ -1,0 +1,28 @@
+{
+  "video": "video.mp4",
+  "platforms": {
+    "youtube": {
+      "title": "🛑 Stop Wasting Tokens: Claude Resends EVERYTHING!",
+      "description": "Did you know Claude resends your entire conversation every turn? Yep, every single message, response, and file gets replayed each time. That's like ordering at the Krusty Krab and replaying its entire history every time.\n\nIn this video, I break down some tricks to save you tokens. Use slash init to load a CLAUDE.md file just once per session. Think of it as your coding recipe card. Slash context shows you what's in memory and how many tokens it’s gobbling up—like a memory profiler.\n\nIf your session's bloated, use slash compact to summarize everything. And for repeated tasks, create slash commands to save effort.\n\nFinally, switch models with slash model: use Opus for complex tasks and Sonnet for daily coding. You're not running errands in a racecar anymore!\n\nComment 'TRICKS' and I'll send you the full optimization checklist. Save tokens and maybe splurge on some ice cream!",
+      "tags": [
+        "claude_code_token_optimization",
+        "claude",
+        "token management",
+        "coding tips"
+      ],
+      "privacy": "public",
+      "made_for_kids": false
+    },
+    "instagram": {
+      "caption": "Did you know Claude resends your entire conversation every turn? Yep, every single message, response, and file gets replayed each time. That's like ordering at the Krusty Krab and replaying its entire history every time.\n\nIn this video, I break down some tricks to save you tokens. Use slash init to load a CLAUDE.md file just once per session. Think of it as your coding recipe card. Slash context shows you what's in memory and how many tokens it’s gobbling up—like a memory profiler.\n\nIf your session's bloated, use slash compact to summarize everything. And for repeated tasks, create slash commands to save effort.\n\nFinally, switch models with slash model: use Opus for complex tasks and Sonnet for daily coding. You're not running errands in a racecar anymore!\n\nComment 'TRICKS' and I'll send you the full optimization checklist. Save tokens and maybe splurge on some ice cream!"
+    },
+    "tiktok": {
+      "description": "Did you know Claude resends your entire conversation every turn? Yep, every single message, response, and file gets replayed each time. That's like ordering at the Krusty Krab and replaying its entire history every time.\n\nIn this video, I break down some tricks to save you tokens. Use slash init to load a CLAUDE.md file just once per session. Think of it as your coding recipe card. Slash context shows you what's in memory and how many tokens it’s gobbling up—like a memory profiler.\n\nIf your session's bloated, use slash compact to summarize everything. And for repeated tasks, create slash commands to save effort.\n\nFinally, switch models with slash model: use Opus for complex tasks and Sonnet for daily coding. You're not running errands in a racecar anymore!\n\nComment 'TRICKS' and I'll send you the full optimization checklist. Save tokens and maybe splurge on some ice cream!",
+      "privacy": "PUBLIC_TO_EVERYONE"
+    },
+    "linkedin": {
+      "text": "Ever feel like you're burning through tokens only to realize Claude resends every part of your conversation? It's like replaying the entire history of the Krusty Krab with every order.\n\nI discovered a few simple tricks to save those precious tokens. Running slash init creates a CLAUDE.md file that loads once per session, saving you from repeating yourself. It’s like having a recipe card ready to go.\n\nSlash context gives you a breakdown of what's in memory and how many tokens it’s consuming. Think of it as a memory profiler for your session.\n\nNeed to clean up a bloated session? Slash compact summarizes your session, keeping only the essentials.\n\nThe kicker? Switching models with slash model. Use Sonnet for everyday tasks and reserve Opus for the heavy lifting.\n\nI made a short video about these tips — link in comments. Curious to hear if you have other token-saving tricks?"
+    }
+  },
+  "thumbnail": "thumbnail.png"
+}

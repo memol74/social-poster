@@ -49,10 +49,10 @@ def upload(video_path, title, description="", tags=None, privacy="public", thumb
             "title": title,
             "description": description,
             "tags": tags or [],
-            "categoryId": "28",  # Science & Technology
         },
         "status": {
             "privacyStatus": privacy,
+            "selfDeclaredMadeForKids": False,
         },
     }
 
