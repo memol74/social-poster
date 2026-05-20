@@ -1,0 +1,29 @@
+{
+  "video": "video.mp4",
+  "platforms": {
+    "youtube": {
+      "title": "Unmask 26 AI Patterns in One Step 🚀",
+      "description": "Your Claude outputs have twenty-six detectable patterns that scream AI. If you're using tools like Claude or ChatGPT, your readers can spot that AI-generated content a mile away. But here's the good news: the Humanizer skill can rewrite any AI draft so it sounds like you wrote it yourself.\n\nThis skill works by running three passes to tweak voice, eliminate tells, and conduct an audit. It adds what AI skips, like actual opinions and natural rhythm, while removing obvious AI giveaways like overused em dashes and fake depth. The best part? It caught everything automatically and outperformed six other humanizer prompts on Reddit.\n\nCurious how this might transform your writing? Comment HUMAN below, and I'll share the full skill document with you!",
+      "tags": [
+        "shorts",
+        "humanizer skill",
+        "claude",
+        "ai writing",
+        "writing tips"
+      ],
+      "privacy": "public",
+      "made_for_kids": false
+    },
+    "instagram": {
+      "caption": "Your Claude outputs have twenty-six detectable patterns that scream AI. If you're using tools like Claude or ChatGPT, your readers can spot that AI-generated content a mile away. But here's the good news: the Humanizer skill can rewrite any AI draft so it sounds like you wrote it yourself.\n\nThis skill works by running three passes to tweak voice, eliminate tells, and conduct an audit. It adds what AI skips, like actual opinions and natural rhythm, while removing obvious AI giveaways like overused em dashes and fake depth. The best part? It caught everything automatically and outperformed six other humanizer prompts on Reddit.\n\nCurious how this might transform your writing? Comment HUMAN below, and I'll share the full skill document with you!"
+    },
+    "tiktok": {
+      "description": "Your Claude outputs have twenty-six detectable patterns that scream AI. If you're using tools like Claude or ChatGPT, your readers can spot that AI-generated content a mile away. But here's the good news: the Humanizer skill can rewrite any AI draft so it sounds like you wrote it yourself.\n\nThis skill works by running three passes to tweak voice, eliminate tells, and conduct an audit. It adds what AI skips, like actual opinions and natural rhythm, while removing obvious AI giveaways like overused em dashes and fake depth. The best part? It caught everything automatically and outperformed six other humanizer prompts on Reddit.\n\nCurious how this might transform your writing? Comment HUMAN below, and I'll share the full skill document with you!",
+      "privacy": "PUBLIC_TO_EVERYONE"
+    },
+    "linkedin": {
+      "text": "Did you know there's a way to make AI writing sound completely human?\n\nYour Claude drafts have up to twenty-six patterns that scream 'AI' to readers, and if you're using tools like Claude or ChatGPT, it's a dead giveaway.\n\nBut what if you could strip all that in one go?\n\nEnter the Humanizer skill. It rewrites AI content, running three meticulous passes—focusing on voice, AI tells, and an audit—to ensure the result reads like your own authentic words.\n\nThis skill has been tested against six other humanizer prompts and won every time for producing natural writing. \n\nWant to see how it works? Comment HUMAN, and I'll send you the details.\n\n#writing #AI #contentcreation #skills"
+    }
+  },
+  "thumbnail": "thumbnail.png"
+}
