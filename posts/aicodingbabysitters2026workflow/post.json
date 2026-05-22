@@ -1,0 +1,28 @@
+{
+  "video": "video.mp4",
+  "platforms": {
+    "youtube": {
+      "title": "Promoted to AI Babysitter in 2026? 🤖 Find Out Now!",
+      "description": "You've been promoted from coder to AI babysitter in 2026! Curious about what that actually means? This video dives into how developers are evolving their workflows with AI tools. Spoiler: you're not just writing code – you're building a library of skills.\n\nImagine a world where you rarely look at AI-generated code and instead read plans and ask the right questions to ship products effortlessly. One developer even managed to create three side projects entirely from his phone – all by understanding and documenting AI-generated plans.\n\nBut it doesn't stop there. Every error turns into reusable knowledge, streamlining your future projects. Coding isn't just about writing anymore; it's about feeding skills to your local models and speeding up processes.\n\nWant the full guide on AI babysitting? Comment WORKFLOW and I'll send it your way!",
+      "tags": [
+        "ai babysitting",
+        "coding workflow 2026",
+        "claude code",
+        "ai debugging"
+      ],
+      "privacy": "public",
+      "made_for_kids": false
+    },
+    "instagram": {
+      "caption": "You've been promoted from coder to AI babysitter in 2026! Curious about what that actually means? This video dives into how developers are evolving their workflows with AI tools. Spoiler: you're not just writing code – you're building a library of skills.\n\nImagine a world where you rarely look at AI-generated code and instead read plans and ask the right questions to ship products effortlessly. One developer even managed to create three side projects entirely from his phone – all by understanding and documenting AI-generated plans.\n\nBut it doesn't stop there. Every error turns into reusable knowledge, streamlining your future projects. Coding isn't just about writing anymore; it's about feeding skills to your local models and speeding up processes.\n\nWant the full guide on AI babysitting? Comment WORKFLOW and I'll send it your way!"
+    },
+    "tiktok": {
+      "description": "You've been promoted from coder to AI babysitter in 2026! Curious about what that actually means? This video dives into how developers are evolving their workflows with AI tools. Spoiler: you're not just writing code – you're building a library of skills.\n\nImagine a world where you rarely look at AI-generated code and instead read plans and ask the right questions to ship products effortlessly. One developer even managed to create three side projects entirely from his phone – all by understanding and documenting AI-generated plans.\n\nBut it doesn't stop there. Every error turns into reusable knowledge, streamlining your future projects. Coding isn't just about writing anymore; it's about feeding skills to your local models and speeding up processes.\n\nWant the full guide on AI babysitting? Comment WORKFLOW and I'll send it your way!",
+      "privacy": "PUBLIC_TO_EVERYONE"
+    },
+    "linkedin": {
+      "text": "Did you know you've been promoted from coder to AI babysitter?\n\nIn 2026, developers are using AI tools not just to write code but to revolutionize their entire workflow. Instead of debugging line by line, you're now documenting errors into reusable skills. Imagine saving hours by transforming every mistake into a lesson that speeds up your next project.\n\nOne developer managed to build three side projects just from his phone. How? By trusting AI to generate plans and asking the right questions.\n\nTraditional coding took hours to debug, but AI babysitting? Just thirty minutes to document the fix forever.\n\nI made a short video about this fascinating shift. If you're curious about how AI can change your coding game, check it out. \n\nWhat do you think—are we ready to babysit our AIs?\n\n#AICoding #FutureOfWork #TechTrends"
+    }
+  },
+  "thumbnail": "thumbnail.png"
+}
