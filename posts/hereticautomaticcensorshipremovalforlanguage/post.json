@@ -1,0 +1,29 @@
+{
+  "video": "video.mp4",
+  "platforms": {
+    "youtube": {
+      "title": "🔥 Uncensor AI Models with ONE Command!",
+      "description": "Heretic just hit 21,000 GitHub stars — and here's why. Imagine uncensoring any AI model with just one command. That's the power of Heretic. It's a tool designed for people who run local models and are tired of dealing with model refusals. By simply installing it via pip and pointing it at any model on Hugging Face, Heretic automatically finds the optimal abliteration parameters with TPE optimization.\n\nIt’s a game changer especially for those using models like GPT-OSS 20B. The tool maintains the same refusal rate while drastically lowering KL divergence by 64%. Plus, if you're familiar with Gemma 312B, it outperforms manual abliterations hands down.\n\nEven better, Heretic supports quantization, so you can run it on hardware as modest as a 16GB VRAM. Save time, boost performance, and join a community that’s already created over 3,000 Heretic models. Comment HERETIC and I’ll send you the installation guide!",
+      "tags": [
+        "heretic",
+        "language models",
+        "censorship removal",
+        "hugging face",
+        "gemma three-twelve-B"
+      ],
+      "privacy": "public",
+      "made_for_kids": false
+    },
+    "instagram": {
+      "caption": "Heretic just hit 21,000 GitHub stars — and here's why. Imagine uncensoring any AI model with just one command. That's the power of Heretic. It's a tool designed for people who run local models and are tired of dealing with model refusals. By simply installing it via pip and pointing it at any model on Hugging Face, Heretic automatically finds the optimal abliteration parameters with TPE optimization.\n\nIt’s a game changer especially for those using models like GPT-OSS 20B. The tool maintains the same refusal rate while drastically lowering KL divergence by 64%. Plus, if you're familiar with Gemma 312B, it outperforms manual abliterations hands down.\n\nEven better, Heretic supports quantization, so you can run it on hardware as modest as a 16GB VRAM. Save time, boost performance, and join a community that’s already created over 3,000 Heretic models. Comment HERETIC and I’ll send you the installation guide!"
+    },
+    "tiktok": {
+      "description": "Heretic just hit 21,000 GitHub stars — and here's why. Imagine uncensoring any AI model with just one command. That's the power of Heretic. It's a tool designed for people who run local models and are tired of dealing with model refusals. By simply installing it via pip and pointing it at any model on Hugging Face, Heretic automatically finds the optimal abliteration parameters with TPE optimization.\n\nIt’s a game changer especially for those using models like GPT-OSS 20B. The tool maintains the same refusal rate while drastically lowering KL divergence by 64%. Plus, if you're familiar with Gemma 312B, it outperforms manual abliterations hands down.\n\nEven better, Heretic supports quantization, so you can run it on hardware as modest as a 16GB VRAM. Save time, boost performance, and join a community that’s already created over 3,000 Heretic models. Comment HERETIC and I’ll send you the installation guide!",
+      "privacy": "PUBLIC_TO_EVERYONE"
+    },
+    "linkedin": {
+      "text": "Ever feel like your AI models are holding back? You’re not alone. Many struggle with model refusals, especially when running local models.\n\nEnter Heretic. This tool just hit 21,000 GitHub stars for a reason. It lets you uncensor AI models with a single command. Forget the hassle of Jupyter notebooks and manual parameter tweaking; Heretic finds optimal abliteration parameters automatically via TPE optimization.\n\nTake Gemma 312B, for instance. It beats manual abliterations with the same refusal rate but 64% lower KL divergence. And for those running models like GPT-OSS 20B, users rave about its uncensored performance.\n\nThe best part? It supports quantization, allowing it to operate on a 16GB VRAM setup. A tool like Heretic is a real game-changer for anyone running local models.\n\nI made a short video about how Heretic works. Curious to see how it could change your experience?\n\n#heretic #ai #censorshipremoval #huggingface"
+    }
+  },
+  "thumbnail": "thumbnail.png"
+}
