@@ -1,0 +1,28 @@
+{
+  "video": "video.mp4",
+  "platforms": {
+    "youtube": {
+      "title": "🚀 Refactor 120 Files with Slash Workflows!",
+      "description": "Imagine refactoring 120 files with just a few commands and spending only $3! That's what one developer did using Claude Code's slash workflows. This video shows how to ditch the old method of manually coordinating AI agents and embrace a declarative approach. With slash workflows, you can easily define the logic for agent coordination and let them run in parallel, without a main orchestrator. Claude Code takes care of execution, error recovery, and result merging, so you don't have to. Curious how it works? Check out the video and see how this simplifies building multi-agent systems. Comment WORKFLOWS and I'll send over the command reference guide!",
+      "tags": [
+        "claude code",
+        "multi-agent systems",
+        "agentic workflows",
+        "declarative workflows"
+      ],
+      "privacy": "public",
+      "made_for_kids": false
+    },
+    "instagram": {
+      "caption": "Imagine refactoring 120 files with just a few commands and spending only $3! That's what one developer did using Claude Code's slash workflows. This video shows how to ditch the old method of manually coordinating AI agents and embrace a declarative approach. With slash workflows, you can easily define the logic for agent coordination and let them run in parallel, without a main orchestrator. Claude Code takes care of execution, error recovery, and result merging, so you don't have to. Curious how it works? Check out the video and see how this simplifies building multi-agent systems. Comment WORKFLOWS and I'll send over the command reference guide!"
+    },
+    "tiktok": {
+      "description": "Imagine refactoring 120 files with just a few commands and spending only $3! That's what one developer did using Claude Code's slash workflows. This video shows how to ditch the old method of manually coordinating AI agents and embrace a declarative approach. With slash workflows, you can easily define the logic for agent coordination and let them run in parallel, without a main orchestrator. Claude Code takes care of execution, error recovery, and result merging, so you don't have to. Curious how it works? Check out the video and see how this simplifies building multi-agent systems. Comment WORKFLOWS and I'll send over the command reference guide!",
+      "privacy": "PUBLIC_TO_EVERYONE"
+    },
+    "linkedin": {
+      "text": "Ever felt bogged down by the tedious task of orchestrating AI agents manually?\n\nOne developer just refactored 120 files, covering 400 steps, using Claude Code's latest feature: slash workflows.\n\nAnd get this—it only cost $3 and required zero human input!\n\nSlash workflows allow you to define coordination logic declaratively. No more dealing with a main orchestrator or managing agent states manually. The agents execute in parallel, making your life a whole lot easier.\n\nI made a video about this transformative approach to building multi-agent systems. It's a must-watch for anyone still stuck in the old ways.\n\nWhat's your go-to method for coordinating AI agents? Would love to hear in the comments!\n\n#AI #SoftwareDevelopment #Automation"
+    }
+  },
+  "thumbnail": "thumbnail.png"
+}
