@@ -1,0 +1,31 @@
+{
+  "video": "video.mp4",
+  "platforms": {
+    "youtube": {
+      "title": "OpenAI Pays You $150 for 360° Surveillance? 🤔",
+      "description": "OpenAI is offering $150 to people willing to let 360-degree cameras document their every move at home. The footage from these cameras trains their future vision models. If you're in New York City, you might get approached about this opportunity.\n\nBut it's not just free money. While you get a quick payout, OpenAI gets something much more valuable: months of your private life to train their billion-dollar models. Everything from vacuuming to your morning coffee routine becomes part of their data.\n\nThis isn't a partnership; it's a one-sided data grab. Once they have your footage, it's theirs forever. Think about what privacy means to you and whether that $150 is worth it.\n\nIf you're considering this, or know someone who is, send this their way. Comment PRIVACY, and I'll share the details of what's really being collected.",
+      "tags": [
+        "shorts",
+        "openai",
+        "surveillance",
+        "360 cameras",
+        "privacy",
+        "new york city",
+        "vision models"
+      ],
+      "privacy": "public",
+      "made_for_kids": false
+    },
+    "instagram": {
+      "caption": "OpenAI is offering $150 to people willing to let 360-degree cameras document their every move at home. The footage from these cameras trains their future vision models. If you're in New York City, you might get approached about this opportunity.\n\nBut it's not just free money. While you get a quick payout, OpenAI gets something much more valuable: months of your private life to train their billion-dollar models. Everything from vacuuming to your morning coffee routine becomes part of their data.\n\nThis isn't a partnership; it's a one-sided data grab. Once they have your footage, it's theirs forever. Think about what privacy means to you and whether that $150 is worth it.\n\nIf you're considering this, or know someone who is, send this their way. Comment PRIVACY, and I'll share the details of what's really being collected."
+    },
+    "tiktok": {
+      "description": "OpenAI is offering $150 to people willing to let 360-degree cameras document their every move at home. The footage from these cameras trains their future vision models. If you're in New York City, you might get approached about this opportunity.\n\nBut it's not just free money. While you get a quick payout, OpenAI gets something much more valuable: months of your private life to train their billion-dollar models. Everything from vacuuming to your morning coffee routine becomes part of their data.\n\nThis isn't a partnership; it's a one-sided data grab. Once they have your footage, it's theirs forever. Think about what privacy means to you and whether that $150 is worth it.\n\nIf you're considering this, or know someone who is, send this their way. Comment PRIVACY, and I'll share the details of what's really being collected.",
+      "privacy": "PUBLIC_TO_EVERYONE"
+    },
+    "linkedin": {
+      "text": "Would you let 360° cameras record your every move for $150?\n\nThat's what OpenAI is offering in New York City right now. They're installing cameras that capture everything you do at home, from washing dishes to your morning coffee routine.\n\nThe footage becomes the training ground for their next generation of vision models. For you, it's a quick payday. For them, it's months of personal data for a bargain.\n\nIt's a stark reminder of how companies value data over privacy. It's not a partnership; you give up control, and they gain a data goldmine.\n\nIf you're considering this offer, ask yourself: Is my privacy worth $150?\n\nI made a short video about this – check it out.\n\n#privacy #surveillance #openai #datacollection"
+    }
+  },
+  "thumbnail": "thumbnail.png"
+}
