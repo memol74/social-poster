@@ -1,0 +1,29 @@
+{
+  "video": "video.mp4",
+  "platforms": {
+    "youtube": {
+      "title": "😲 $240 a Year? Discover 15 Developer Tools for 2026!",
+      "description": "Why pay $240 a year for AI coding tools when you don't have to? Most developers end up with multiple subscriptions like GitHub Copilot, Cursor, and Tabnine. But there's a better way to optimize your spending. In this video, I dive into 15 developer tools that can actually save you money. \n\nFrom OpenRouter, which gives access to all frontier models with a single API key, to Replicate, which runs image models at a fraction of the cost, these tools are game-changers. Groq is another standout, running language models at a blazing 1000 tokens per second. \n\nIf you're tired of paying for subscriptions with features you rarely use, these tools are worth checking out. Want the full list? Comment TOOLS and I'll send you the complete breakdown.",
+      "tags": [
+        "developer tools",
+        "ai coding tools",
+        "github copilot",
+        "openrouter",
+        "replicate"
+      ],
+      "privacy": "public",
+      "made_for_kids": false
+    },
+    "instagram": {
+      "caption": "Why pay $240 a year for AI coding tools when you don't have to? Most developers end up with multiple subscriptions like GitHub Copilot, Cursor, and Tabnine. But there's a better way to optimize your spending. In this video, I dive into 15 developer tools that can actually save you money. \n\nFrom OpenRouter, which gives access to all frontier models with a single API key, to Replicate, which runs image models at a fraction of the cost, these tools are game-changers. Groq is another standout, running language models at a blazing 1000 tokens per second. \n\nIf you're tired of paying for subscriptions with features you rarely use, these tools are worth checking out. Want the full list? Comment TOOLS and I'll send you the complete breakdown."
+    },
+    "tiktok": {
+      "description": "Why pay $240 a year for AI coding tools when you don't have to? Most developers end up with multiple subscriptions like GitHub Copilot, Cursor, and Tabnine. But there's a better way to optimize your spending. In this video, I dive into 15 developer tools that can actually save you money. \n\nFrom OpenRouter, which gives access to all frontier models with a single API key, to Replicate, which runs image models at a fraction of the cost, these tools are game-changers. Groq is another standout, running language models at a blazing 1000 tokens per second. \n\nIf you're tired of paying for subscriptions with features you rarely use, these tools are worth checking out. Want the full list? Comment TOOLS and I'll send you the complete breakdown.",
+      "privacy": "PUBLIC_TO_EVERYONE"
+    },
+    "linkedin": {
+      "text": "Did you know the average developer spends around $240 annually on AI coding tools? Sounds steep, right?\n\nBefore you resign yourself to these costs, there's a smarter way to work.\n\nI recently explored 15 developer tools that not only enhance productivity but also help recoup their costs.\n\nTake OpenRouter, for instance. With access to every frontier model through one API key, it's a solid alternative to multiple subscriptions.\n\nOr Replicate, which runs image models for just five cents compared to Midjourney's $30 cost.\n\nThese tools aren't just cost-effective; they’re efficient. Groq can run language models at an impressive speed of 1000 tokens per second.\n\nIf subscriptions are eating into your budget, maybe it’s time to reconsider what tools you really need.\n\nI made a short video diving into all 15 tools. Curious about the rest? Comment below or check the link in the comments for the full breakdown.\n\n#developer #AI #productivity #techtips"
+    }
+  },
+  "thumbnail": "thumbnail.png"
+}
