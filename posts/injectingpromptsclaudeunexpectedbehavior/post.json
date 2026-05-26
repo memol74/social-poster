@@ -1,0 +1,28 @@
+{
+  "video": "video.mp4",
+  "platforms": {
+    "youtube": {
+      "title": "Professor Caught Student Cheating with THIS Trick 🤯",
+      "description": "A student thought Claude was injecting hidden prompts into his chat. Turns out his PROFESSOR planted invisible text inside the assignment files as a trap to catch AI cheaters. The prompt injection triggered when uploaded to Claude, exposing the student instantly.\n\nThe best part? When the student confronted Claude about it, the AI suggested it might be a physical sticker on his screen. Reddit had a field day with that one.\n\nProfessors are now weaponizing prompt injection as an anti-cheating tool. Tiny invisible text, hidden instructions—if you upload assignment files to AI, you might get caught red-handed.\n\nComment BUSTED if your teacher would totally do this.",
+      "tags": [
+        "claude ai",
+        "prompt injection",
+        "ai cheating",
+        "academic integrity"
+      ],
+      "privacy": "public",
+      "made_for_kids": false
+    },
+    "instagram": {
+      "caption": "A student thought Claude was injecting hidden prompts into his chat. Turns out his PROFESSOR planted invisible text inside the assignment files as a trap to catch AI cheaters. The prompt injection triggered when uploaded to Claude, exposing the student instantly.\n\nThe best part? When the student confronted Claude about it, the AI suggested it might be a physical sticker on his screen. Reddit had a field day with that one.\n\nProfessors are now weaponizing prompt injection as an anti-cheating tool. Tiny invisible text, hidden instructions—if you upload assignment files to AI, you might get caught red-handed.\n\nComment BUSTED if your teacher would totally do this."
+    },
+    "tiktok": {
+      "description": "A student thought Claude was injecting hidden prompts into his chat. Turns out his PROFESSOR planted invisible text inside the assignment files as a trap to catch AI cheaters. The prompt injection triggered when uploaded to Claude, exposing the student instantly.\n\nThe best part? When the student confronted Claude about it, the AI suggested it might be a physical sticker on his screen. Reddit had a field day with that one.\n\nProfessors are now weaponizing prompt injection as an anti-cheating tool. Tiny invisible text, hidden instructions—if you upload assignment files to AI, you might get caught red-handed.\n\nComment BUSTED if your teacher would totally do this.",
+      "privacy": "PUBLIC_TO_EVERYONE"
+    },
+    "linkedin": {
+      "text": "A student posted on Reddit claiming Claude was injecting hidden prompts into his chat. He was confused, even angry.\n\nForty comments later, the community cracked the case: his professor had planted invisible text inside the assignment files—a prompt injection trap designed to catch students using AI.\n\nWhen the student confronted Claude about it, the AI suggested it might be a \"physical sticker on his screen.\" The internet lost it.\n\nThis is fascinating because professors are now reverse-engineering AI vulnerabilities as anti-cheating tools. Prompt injection isn't just a security concern anymore—it's becoming a pedagogical weapon.\n\nThe real lesson? If you're uploading assignment files to AI tools, you might be walking straight into a trap you can't see.\n\nHave you seen similar tactics in your field? Would love to hear your thoughts.\n\n#AI #Education #PromptInjection #AcademicIntegrity #EdTech"
+    }
+  },
+  "thumbnail": "thumbnail.png"
+}
