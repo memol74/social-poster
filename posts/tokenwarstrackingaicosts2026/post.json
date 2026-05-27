@@ -1,0 +1,28 @@
+{
+  "video": "video.mp4",
+  "platforms": {
+    "youtube": {
+      "title": "Uber Blew Their 2026 AI Budget in 4 Months! 💰",
+      "description": "Uber burned through their entire 2026 AI budget in just four months. Shocking, right? This video dives into the real cost of AI requests, especially if you're using tools like Claude or ChatGPT. You're likely overpaying for every single request without even knowing it.\n\nDiscover how OpenRouter can help you track costs in real-time, showing exactly what each conversation costs. It even includes features like prompt caching, which can slash costs by 90% on repeated queries. Compare this to DeepSeek V4 Pro, which costs a mere fourteen cents per million tokens, while ChatGPT charges two fifty for the same thing!\n\nDon't let price wars sneak up on you. Set token budgets per model now and see your costs drop overnight.\n\nComment TRACK and I'll send you the cost comparison spreadsheet.",
+      "tags": [
+        "uber ai costs 2026",
+        "openrouter",
+        "prompt caching",
+        "chatgpt costs"
+      ],
+      "privacy": "public",
+      "made_for_kids": false
+    },
+    "instagram": {
+      "caption": "Uber burned through their entire 2026 AI budget in just four months. Shocking, right? This video dives into the real cost of AI requests, especially if you're using tools like Claude or ChatGPT. You're likely overpaying for every single request without even knowing it.\n\nDiscover how OpenRouter can help you track costs in real-time, showing exactly what each conversation costs. It even includes features like prompt caching, which can slash costs by 90% on repeated queries. Compare this to DeepSeek V4 Pro, which costs a mere fourteen cents per million tokens, while ChatGPT charges two fifty for the same thing!\n\nDon't let price wars sneak up on you. Set token budgets per model now and see your costs drop overnight.\n\nComment TRACK and I'll send you the cost comparison spreadsheet."
+    },
+    "tiktok": {
+      "description": "Uber burned through their entire 2026 AI budget in just four months. Shocking, right? This video dives into the real cost of AI requests, especially if you're using tools like Claude or ChatGPT. You're likely overpaying for every single request without even knowing it.\n\nDiscover how OpenRouter can help you track costs in real-time, showing exactly what each conversation costs. It even includes features like prompt caching, which can slash costs by 90% on repeated queries. Compare this to DeepSeek V4 Pro, which costs a mere fourteen cents per million tokens, while ChatGPT charges two fifty for the same thing!\n\nDon't let price wars sneak up on you. Set token budgets per model now and see your costs drop overnight.\n\nComment TRACK and I'll send you the cost comparison spreadsheet.",
+      "privacy": "PUBLIC_TO_EVERYONE"
+    },
+    "linkedin": {
+      "text": "Did you know that without tracking, you're just guessing your AI costs until the bill arrives?\n\nUber learned this the hard way. They blew through their entire AI budget for 2026 in just four months. Imagine that shock!\n\nMost of us are unknowingly overpaying for AI requests. Tools like Claude and ChatGPT might seem efficient, but without cost tracking, it's hard to tell.\n\nThankfully, there's a way forward. OpenRouter lets you track costs per model in real-time. Even better, prompt caching can cut costs by a whopping 90% on repeated queries.\n\nDeepSeek V4 Pro charges fourteen cents per million tokens, while ChatGPT is seventeen times more expensive for the same output.\n\nPrice wars are happening right now. Are you ready?\n\nI made a short video about this. Check it out!\n\nComment below: Are you tracking your AI costs effectively?\n\n#ai #costmanagement #openrouter #chatgpt"
+    }
+  },
+  "thumbnail": "thumbnail.png"
+}
