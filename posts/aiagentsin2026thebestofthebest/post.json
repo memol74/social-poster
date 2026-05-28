@@ -1,0 +1,29 @@
+{
+  "video": "video.mp4",
+  "platforms": {
+    "youtube": {
+      "title": "Build Free AI Apps with Windsurf in 2026! 💡",
+      "description": "Did you know you can build production apps with AI agents that cost nothing? That's right! While tools like Copilot and Cursor charge upwards of $19-20, there's a growing list of zero-cost AI agents that are reshaping the way we code.\n\nIn this video, I introduce some of the best AI agents developers will be using in 2026. First up, Windsurf from Codeium—an AI that autonomously edits multiple files without any prompts. Its Cascade feature can build entire features as you watch, and the best part? The free tier gives you everything other tools charge for.\n\nThen there's Claude Projects for long-term memory. You can upload your entire codebase once and never have to explain the context again. With 200,000 tokens of persistent workspace memory, it's a lifesaver if you're tired of re-explaining your stack.\n\nFinally, Browser Use takes on autonomous web tasks, turning hours of manual testing into mere minutes. And it’s open source, runs locally, and costs nothing to deploy.\n\nComment 'AGENTS' and I'll send you the full comparison guide!",
+      "tags": [
+        "ai agents 2026",
+        "windsurf codeium",
+        "free ai tools",
+        "developer productivity",
+        "autonomous coding"
+      ],
+      "privacy": "public",
+      "made_for_kids": false
+    },
+    "instagram": {
+      "caption": "Did you know you can build production apps with AI agents that cost nothing? That's right! While tools like Copilot and Cursor charge upwards of $19-20, there's a growing list of zero-cost AI agents that are reshaping the way we code.\n\nIn this video, I introduce some of the best AI agents developers will be using in 2026. First up, Windsurf from Codeium—an AI that autonomously edits multiple files without any prompts. Its Cascade feature can build entire features as you watch, and the best part? The free tier gives you everything other tools charge for.\n\nThen there's Claude Projects for long-term memory. You can upload your entire codebase once and never have to explain the context again. With 200,000 tokens of persistent workspace memory, it's a lifesaver if you're tired of re-explaining your stack.\n\nFinally, Browser Use takes on autonomous web tasks, turning hours of manual testing into mere minutes. And it’s open source, runs locally, and costs nothing to deploy.\n\nComment 'AGENTS' and I'll send you the full comparison guide!"
+    },
+    "tiktok": {
+      "description": "Did you know you can build production apps with AI agents that cost nothing? That's right! While tools like Copilot and Cursor charge upwards of $19-20, there's a growing list of zero-cost AI agents that are reshaping the way we code.\n\nIn this video, I introduce some of the best AI agents developers will be using in 2026. First up, Windsurf from Codeium—an AI that autonomously edits multiple files without any prompts. Its Cascade feature can build entire features as you watch, and the best part? The free tier gives you everything other tools charge for.\n\nThen there's Claude Projects for long-term memory. You can upload your entire codebase once and never have to explain the context again. With 200,000 tokens of persistent workspace memory, it's a lifesaver if you're tired of re-explaining your stack.\n\nFinally, Browser Use takes on autonomous web tasks, turning hours of manual testing into mere minutes. And it’s open source, runs locally, and costs nothing to deploy.\n\nComment 'AGENTS' and I'll send you the full comparison guide!",
+      "privacy": "PUBLIC_TO_EVERYONE"
+    },
+    "linkedin": {
+      "text": "Imagine building production apps with AI agents that cost absolutely nothing.\n\nIn a world where tools like Copilot and Cursor are charging $19 and $20 respectively, the emergence of free AI agents is a game-changer for developers.\n\nI recently made a short video where I highlighted some of the top AI agents developers will be using by 2026.\n\nThe first agent, Windsurf from Codeium, can autonomously edit multiple files without any prompting. Its Cascade feature is capable of building entire features while you simply watch.\n\nThen there's Claude Projects, which offers 200,000 tokens of long-term memory, meaning you upload your codebase once and never have to explain the context again.\n\nFinally, Browser Use handles autonomous web tasks, massively reducing the time spent on manual testing.\n\nThe best part? These tools are free, making them invaluable resources for any developer.\n\nWhat would you do if you didn’t have to pay for AI tools?\n\n#AI #Development #CodingTools #AIagents"
+    }
+  },
+  "thumbnail": "thumbnail.png"
+}
