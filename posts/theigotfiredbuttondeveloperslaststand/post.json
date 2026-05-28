@@ -1,25 +1,177 @@
 {
-  "video": "video.mp4",
-  "platforms": {
-    "youtube": {
-      "title": "New Video",
-      "description": "New Video",
-      "tags": [
-        ""
-      ],
-      "privacy": "public",
-      "made_for_kids": false
-    },
-    "instagram": {
-      "caption": "New Video"
-    },
-    "tiktok": {
-      "description": "New Video",
-      "privacy": "PUBLIC_TO_EVERYONE"
-    },
-    "linkedin": {
-      "text": ""
-    }
+  "metadata": {
+    "topic": "the_i_got_fired_button_developers_last_stand",
+    "format": "Problem → Solution",
+    "hook_type": "shocking truth",
+    "total_shots": 4,
+    "total_sentences": 12,
+    "estimated_duration": "50 seconds"
   },
-  "thumbnail": "thumbnail.png"
+  "shots": [
+    {
+      "order": 1,
+      "overlays": [
+        "icon: red panic button hardware device glowing",
+        "icon: GitHub logo with public repo warning symbol",
+        "icon: scattered code files flying out"
+      ],
+      "overlay_map": [
+        1,
+        1,
+        2
+      ],
+      "overlay_kept": [],
+      "sentences": [
+        {
+          "text": "Did you know you can turn your entire company codebase public with one physical button press?",
+          "character": "staro",
+          "emotion": null,
+          "pose": "leaning forward pointing at camera with both index fingers",
+          "expression": "serious frown with raised eyebrows",
+          "framing": "closeup",
+          "lighting": "dramatic side light from the left, orange tones"
+        },
+        {
+          "text": "A developer built a real panic button that triggers instant exit revenge.",
+          "character": "staro",
+          "emotion": null,
+          "pose": "arms crossed with definitive nod",
+          "expression": "mischievous grin with raised eyebrow",
+          "framing": "midshot",
+          "lighting": "soft warm key light from upper-left, subtle orange rim"
+        },
+        {
+          "text": "If you've ever felt one bad meeting away from quitting, this is yours.",
+          "character": "staro",
+          "emotion": null,
+          "pose": "one finger raised cautionary gesture",
+          "expression": "knowing smirk",
+          "framing": "midshot",
+          "lighting": "soft warm key light from upper-left, subtle orange rim"
+        },
+        {
+          "text": "Here's how Claude Code turned revenge fantasies into actual hardware.",
+          "character": "staro",
+          "emotion": null,
+          "pose": "both hands palms up offering solution",
+          "expression": "excited grin with wide eyes",
+          "framing": "midshot",
+          "lighting": "soft warm key light from upper-left, subtle orange rim"
+        }
+      ]
+    },
+    {
+      "order": 2,
+      "overlays": [
+        "icon: physical red button labeled I GOT FIRED",
+        "icon: automation script code scrolling fast",
+        "icon: GitHub private to public toggle switching"
+      ],
+      "overlay_map": [
+        0,
+        1,
+        2
+      ],
+      "overlay_kept": [],
+      "recordings": [],
+      "sentences": [
+        {
+          "text": "The button connects to a full automated exit sequence script.",
+          "character": "staro",
+          "emotion": null,
+          "pose": "sweeping arm gesture showing connection",
+          "expression": "confident half-smile",
+          "framing": "midshot",
+          "lighting": "soft warm key light from upper-left, subtle orange rim"
+        },
+        {
+          "text": "Press it once and every private repo goes public instantly.",
+          "character": "staro",
+          "emotion": null,
+          "pose": "finger pressing down hard gesture",
+          "expression": "dramatic wide eyes with raised eyebrows",
+          "framing": "closeup",
+          "lighting": "dramatic side light from the left, orange tones"
+        },
+        {
+          "text": "Built entirely with Claude Code in under four hours.",
+          "character": "staro",
+          "emotion": null,
+          "pose": "checking imaginary watch on wrist",
+          "expression": "amazed open mouth",
+          "framing": "midshot",
+          "lighting": "soft warm key light from upper-left, subtle orange rim"
+        },
+        {
+          "text": "Hardware integration, GitHub API automation, zero prior electronics experience.",
+          "character": "staro",
+          "emotion": null,
+          "pose": "counting three things on fingers",
+          "expression": "excited enthusiastic grin",
+          "framing": "midshot",
+          "lighting": "soft warm key light from upper-left, subtle orange rim"
+        }
+      ]
+    },
+    {
+      "order": 3,
+      "overlays": [
+        "comparison: Traditional dev revenge vs Automated panic button features side by side"
+      ],
+      "overlay_map": [
+        0
+      ],
+      "overlay_kept": [],
+      "sentences": [
+        {
+          "text": "The old way was slow sabotage over weeks of planning.",
+          "character": "staro",
+          "emotion": null,
+          "pose": "arms crossed skeptical lean",
+          "expression": "skeptical raised eyebrow",
+          "framing": "midshot",
+          "lighting": "soft warm key light from upper-left, subtle orange rim"
+        },
+        {
+          "text": "This button executes the nuclear option in three seconds.",
+          "character": "staro",
+          "emotion": null,
+          "pose": "both hands spreading wide showing speed",
+          "expression": "dramatic stare",
+          "framing": "closeup",
+          "lighting": "dramatic side light from the left, orange tones"
+        },
+        {
+          "text": "Auto-commits, repo visibility flips, notifications to every stakeholder.",
+          "character": "staro",
+          "emotion": null,
+          "pose": "counting off items with finger taps",
+          "expression": "excited grin",
+          "framing": "midshot",
+          "lighting": "soft warm key light from upper-left, subtle orange rim"
+        }
+      ]
+    },
+    {
+      "order": 4,
+      "overlays": [
+        "cta: giant bold text COMMENT 'BUTTON' with glowing red panic button icon"
+      ],
+      "overlay_map": [
+        0
+      ],
+      "overlay_kept": [],
+      "sentences": [
+        {
+          "text": "Comment BUTTON and I'll send the full automation script and hardware guide.",
+          "character": "staro",
+          "emotion": null,
+          "pose": "pointing at camera with both index fingers forward",
+          "expression": "excited wide smile",
+          "framing": "midshot",
+          "lighting": "soft warm key light from upper-left, subtle orange rim"
+        }
+      ]
+    }
+  ]
 }
