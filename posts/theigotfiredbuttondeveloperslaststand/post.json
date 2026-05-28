@@ -1,0 +1,25 @@
+{
+  "video": "video.mp4",
+  "platforms": {
+    "youtube": {
+      "title": "New Video",
+      "description": "New Video",
+      "tags": [
+        ""
+      ],
+      "privacy": "public",
+      "made_for_kids": false
+    },
+    "instagram": {
+      "caption": "New Video"
+    },
+    "tiktok": {
+      "description": "New Video",
+      "privacy": "PUBLIC_TO_EVERYONE"
+    },
+    "linkedin": {
+      "text": ""
+    }
+  },
+  "thumbnail": "thumbnail.png"
+}
