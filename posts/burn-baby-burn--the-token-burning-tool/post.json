@@ -1,0 +1,27 @@
+{
+  "video": "video.mp4",
+  "platforms": {
+    "youtube": {
+      "title": "🔥 This Repo Will Get You Promoted (Sort Of)",
+      "description": "Ever wanted to look productive without actually being productive? burn-baby-burn is the most honest GitHub repo I've ever seen. It's a bash one-liner that deliberately burns Claude Code or OpenAI Codex tokens so your AI usage stats look impressive. 465 people have starred this masterpiece of corporate satire. The README promises you'll top internal leaderboards, pad your OKRs, and justify next year's AI budget. There's even a fake enterprise version with \"Role-Based Burn Access.\" Install it in 20 seconds with a curl command, then watch your token bill skyrocket while you sip coffee. Next time someone asks about AI productivity metrics, just point to your six-figure token burn rate. Comment BURN below and I'll send you the link to this legendary piece of developer humor. 🚀",
+      "tags": [
+        "github",
+        "ai",
+        "claude",
+        "programming"
+      ],
+      "privacy": "public",
+      "made_for_kids": false
+    },
+    "instagram": {
+      "caption": "Ever wanted to look productive without actually being productive? burn-baby-burn is the most honest GitHub repo I've ever seen. It's a bash one-liner that deliberately burns Claude Code or OpenAI Codex tokens so your AI usage stats look impressive. 465 people have starred this masterpiece of corporate satire. The README promises you'll top internal leaderboards, pad your OKRs, and justify next year's AI budget. There's even a fake enterprise version with \"Role-Based Burn Access.\" Install it in 20 seconds with a curl command, then watch your token bill skyrocket while you sip coffee. Next time someone asks about AI productivity metrics, just point to your six-figure token burn rate. Comment BURN below and I'll send you the link to this legendary piece of developer humor. 🚀"
+    },
+    "tiktok": {
+      "description": "Ever wanted to look productive without actually being productive? burn-baby-burn is the most honest GitHub repo I've ever seen. It's a bash one-liner that deliberately burns Claude Code or OpenAI Codex tokens so your AI usage stats look impressive. 465 people have starred this masterpiece of corporate satire. The README promises you'll top internal leaderboards, pad your OKRs, and justify next year's AI budget. There's even a fake enterprise version with \"Role-Based Burn Access.\" Install it in 20 seconds with a curl command, then watch your token bill skyrocket while you sip coffee. Next time someone asks about AI productivity metrics, just point to your six-figure token burn rate. Comment BURN below and I'll send you the link to this legendary piece of developer humor. 🚀",
+      "privacy": "PUBLIC_TO_EVERYONE"
+    },
+    "linkedin": {
+      "text": "I just found the most brutally honest GitHub repo ever made.\n\nIt's called burn-baby-burn. It deliberately wastes AI tokens so you look productive.\n\nThe README says: \"Nothing gets you promoted faster than a six-figure token bill.\"\n\n465 developers starred it. Why? Because it's the perfect satire of how companies measure AI productivity.\n\nThe features list includes:\n• Top the internal Claude Code leaderboard\n• Pad your OKRs\n• Make the CEO see how productive you are\n• Justify next year's bigger AI budget\n\nThere's even a fake enterprise version with \"Role-Based Burn Access\" and \"4x burn rate.\"\n\nThis is what happens when developers get tired of vanity metrics. Instead of complaining, they build a tool that exposes how absurd the measurement game has become.\n\nSometimes the best way to critique something is to automate it.\n\nLink in comments if you want to see this masterpiece yourself. 🔥"
+    }
+  }
+}
