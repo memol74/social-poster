@@ -1,0 +1,31 @@
+{
+  "video": "video.mp4",
+  "platforms": {
+    "youtube": {
+      "title": "Did You Know About IBM's $5 Billion AI Unlock? 🚀",
+      "description": "IBM and Red Hat just dropped a $5 billion bombshell with their investment in Project Lightwell, making cutting-edge AI models fully open source. What does this mean for you? No more vendor lock-in or proprietary constraints. It's like owning the car instead of renting it every time you need a ride.\n\nImagine running a million inferences without worrying about huge token fees. With Lightwell, you control everything: infrastructure, weights, deployment, and runtime. Red Hat's got the orchestration covered, whether you're on-prem, multi-cloud, or air-gapped.\n\nIt's a game-changer for anyone tired of paying sky-high API costs. Why rent when you can own?\n\nComment LIGHTWELL below, and I'll send over a handy deployment comparison chart.",
+      "tags": [
+        "shorts",
+        "ibm",
+        "red hat",
+        "project lightwell",
+        "open source ai",
+        "ai investment",
+        "cloud computing"
+      ],
+      "privacy": "public",
+      "made_for_kids": false
+    },
+    "instagram": {
+      "caption": "IBM and Red Hat just dropped a $5 billion bombshell with their investment in Project Lightwell, making cutting-edge AI models fully open source. What does this mean for you? No more vendor lock-in or proprietary constraints. It's like owning the car instead of renting it every time you need a ride.\n\nImagine running a million inferences without worrying about huge token fees. With Lightwell, you control everything: infrastructure, weights, deployment, and runtime. Red Hat's got the orchestration covered, whether you're on-prem, multi-cloud, or air-gapped.\n\nIt's a game-changer for anyone tired of paying sky-high API costs. Why rent when you can own?\n\nComment LIGHTWELL below, and I'll send over a handy deployment comparison chart."
+    },
+    "tiktok": {
+      "description": "IBM and Red Hat just dropped a $5 billion bombshell with their investment in Project Lightwell, making cutting-edge AI models fully open source. What does this mean for you? No more vendor lock-in or proprietary constraints. It's like owning the car instead of renting it every time you need a ride.\n\nImagine running a million inferences without worrying about huge token fees. With Lightwell, you control everything: infrastructure, weights, deployment, and runtime. Red Hat's got the orchestration covered, whether you're on-prem, multi-cloud, or air-gapped.\n\nIt's a game-changer for anyone tired of paying sky-high API costs. Why rent when you can own?\n\nComment LIGHTWELL below, and I'll send over a handy deployment comparison chart.",
+      "privacy": "PUBLIC_TO_EVERYONE"
+    },
+    "linkedin": {
+      "text": "Five billion dollars just shifted the AI landscape. \n\nIBM and Red Hat are unlocking the door to open-source AI with their massive investment in Project Lightwell. It’s like they've handed you the keys to a high-performance car.\n\nIf you're building with AI, your stack just got an upgrade. No more vendor lock-in or hidden fees. Instead, you get full control over your infrastructure and deployments. \n\nIt's a stark contrast to providers that charge per token and keep all the weights to themselves.\n\nImagine the power of running inferences without asking for permission or paying each time. \n\nI made a short video about this, showing what you can do now with Lightwell.\n\nWhat's your take on this shift? \n\n#ibm #opensource #cloudcomputing #ai #innovation"
+    }
+  },
+  "thumbnail": "thumbnail.png"
+}
