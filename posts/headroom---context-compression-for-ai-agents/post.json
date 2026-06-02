@@ -1,0 +1,26 @@
+{
+  "video": "video.mp4",
+  "platforms": {
+    "youtube": {
+      "title": "Stop Wasting Tokens on Tool Outputs",
+      "description": "Your AI agent reads thousands of tokens from logs, code search results, and RAG chunks. But what if you could compress all that context by 60-95% before it even reaches the LLM?\n\nHeadroom is a local compression layer that sits between your agent and the API. It uses smart algorithms to shrink JSON, code, and text while preserving the exact same answer quality. One real-world test showed code search results dropping from 17,765 tokens to just 1,408 — that's 92% savings.\n\nIt works as a library, proxy, or MCP server. You can wrap Claude Code, Cursor, Aider, or any OpenAI-compatible client with one command. The compression is reversible, so the LLM can retrieve full originals if needed. And it runs entirely on your machine — your data never leaves.\n\nIf you're running agents daily and your token bills keep climbing, Headroom could save you serious money. Comment COMPRESS for the install guide. Link in bio.",
+      "tags": [
+        "ai",
+        "llm",
+        "opensource"
+      ],
+      "privacy": "public",
+      "made_for_kids": false
+    },
+    "instagram": {
+      "caption": "Your AI agent reads thousands of tokens from logs, code search results, and RAG chunks. But what if you could compress all that context by 60-95% before it even reaches the LLM?\n\nHeadroom is a local compression layer that sits between your agent and the API. It uses smart algorithms to shrink JSON, code, and text while preserving the exact same answer quality. One real-world test showed code search results dropping from 17,765 tokens to just 1,408 — that's 92% savings.\n\nIt works as a library, proxy, or MCP server. You can wrap Claude Code, Cursor, Aider, or any OpenAI-compatible client with one command. The compression is reversible, so the LLM can retrieve full originals if needed. And it runs entirely on your machine — your data never leaves.\n\nIf you're running agents daily and your token bills keep climbing, Headroom could save you serious money. Comment COMPRESS for the install guide. Link in bio."
+    },
+    "tiktok": {
+      "description": "Your AI agent reads thousands of tokens from logs, code search results, and RAG chunks. But what if you could compress all that context by 60-95% before it even reaches the LLM?\n\nHeadroom is a local compression layer that sits between your agent and the API. It uses smart algorithms to shrink JSON, code, and text while preserving the exact same answer quality. One real-world test showed code search results dropping from 17,765 tokens to just 1,408 — that's 92% savings.\n\nIt works as a library, proxy, or MCP server. You can wrap Claude Code, Cursor, Aider, or any OpenAI-compatible client with one command. The compression is reversible, so the LLM can retrieve full originals if needed. And it runs entirely on your machine — your data never leaves.\n\nIf you're running agents daily and your token bills keep climbing, Headroom could save you serious money. Comment COMPRESS for the install guide. Link in bio.",
+      "privacy": "PUBLIC_TO_EVERYONE"
+    },
+    "linkedin": {
+      "text": "I used to watch my AI agent burn through thousands of tokens reading the same log files over and over. Every code search, every RAG lookup, every tool output — massive token counts, same answers.\n\nThen I found Headroom. It's a local compression layer that sits between your agent and the LLM. Before any context reaches the API, Headroom shrinks it by 60-95%. JSON gets crushed with SmartCrusher. Code gets compressed with an AST-aware algorithm. Text goes through a trained HuggingFace model.\n\nThe results are wild. Code search that used to cost 17,765 tokens now costs 1,408. Incident debugging dropped from 65,694 to 5,118. Same answers, fraction of the cost.\n\nWhat makes it different? It runs locally, so your data never leaves your machine. It's reversible — the LLM can retrieve full originals if needed. And it works with every major agent: Claude Code, Cursor, Aider, plus any OpenAI-compatible client.\n\nYou install it, wrap your agent, and your token bills drop instantly. No API calls to a third party. No accuracy loss. Just pure compression.\n\nIf you're running agents daily, this is worth checking out. Link in the comments."
+    }
+  }
+}
