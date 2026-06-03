@@ -1,0 +1,26 @@
+{
+  "video": "video.mp4",
+  "platforms": {
+    "youtube": {
+      "title": "🔥 Stop Re-Teaching Your AI Every Day",
+      "description": "You're wasting hours teaching Claude Code the same patterns every single session. ECC is the agent harness performance system that finally gives AI agents actual memory and skills.\n\nWith 205K stars and 249 pre-built skills, ECC turns one-shot prompting into persistent workflows. Your AI remembers context across sessions, runs security scans with AgentShield, and continuously learns from your patterns.\n\nIt works across Claude Code, Cursor, Codex, and 12 programming languages. Built from 10+ months of real production workflows, not theory.\n\n63 agents, 249 skills, automatic hooks — this is what professional AI-assisted development actually looks like.\n\nRepo: github.com/affaan-m/ECC",
+      "tags": [
+        "github",
+        "ai",
+        "claude"
+      ],
+      "privacy": "public",
+      "made_for_kids": false
+    },
+    "instagram": {
+      "caption": "You're wasting hours teaching Claude Code the same patterns every single session. ECC is the agent harness performance system that finally gives AI agents actual memory and skills.\n\nWith 205K stars and 249 pre-built skills, ECC turns one-shot prompting into persistent workflows. Your AI remembers context across sessions, runs security scans with AgentShield, and continuously learns from your patterns.\n\nIt works across Claude Code, Cursor, Codex, and 12 programming languages. Built from 10+ months of real production workflows, not theory.\n\n63 agents, 249 skills, automatic hooks — this is what professional AI-assisted development actually looks like.\n\nRepo: github.com/affaan-m/ECC"
+    },
+    "tiktok": {
+      "description": "You're wasting hours teaching Claude Code the same patterns every single session. ECC is the agent harness performance system that finally gives AI agents actual memory and skills.\n\nWith 205K stars and 249 pre-built skills, ECC turns one-shot prompting into persistent workflows. Your AI remembers context across sessions, runs security scans with AgentShield, and continuously learns from your patterns.\n\nIt works across Claude Code, Cursor, Codex, and 12 programming languages. Built from 10+ months of real production workflows, not theory.\n\n63 agents, 249 skills, automatic hooks — this is what professional AI-assisted development actually looks like.\n\nRepo: github.com/affaan-m/ECC",
+      "privacy": "PUBLIC_TO_EVERYONE"
+    },
+    "linkedin": {
+      "text": "I used to spend 20 minutes every morning re-teaching Claude Code the same architectural patterns.\n\nThen I found ECC.\n\nIt's not another AI tool. It's the performance layer that makes AI agents actually persistent.\n\n205,000 stars. 249 skills. Memory that survives sessions.\n\nWhat changed for me:\n\n→ My AI agent remembers project context automatically\n→ Security scanning runs before every commit (AgentShield built-in)\n→ Skills continuously improve from past sessions\n→ Works across Claude Code, Cursor, Codex — same muscle memory\n\nThis repo represents 10 months of real engineering workflows, not hypothetical examples.\n\nThe difference between copy-pasting prompts and having an actual agent system? Your AI gets smarter over time instead of resetting every day.\n\nIf you're doing serious work with AI agents, this is the missing infrastructure layer.\n\nLink in comments."
+    }
+  }
+}
