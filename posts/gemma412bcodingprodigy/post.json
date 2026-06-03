@@ -1,0 +1,29 @@
+{
+  "video": "video.mp4",
+  "platforms": {
+    "youtube": {
+      "title": "Run 12 Billion Parameter Model on Your Laptop! 💻",
+      "description": "Did you know you can run a twelve billion parameter coding model right from your own laptop? That's right, Google just released Gemma 4 12B, a model that operates with sixteen gigabytes of RAM, directly on your machine. If you've ever coded with AI and have been shelling out cash for cloud APIs, you might be overpaying. \n\nThis model handles vision and code simultaneously and runs smoothly on a MacBook Pro with no need for a cloud connection. Imagine: no API timeouts, no monthly bills, and no big brother logging your every request. Gemma nailed writing a Python script to read local files on the first attempt, and you don't have to worry about a single API call costing you money. \n\nWondering how to get started? Comment GEMMA, and I'll send you the complete setup guide!",
+      "tags": [
+        "shorts",
+        "gemma 4 12b",
+        "local coding models",
+        "vscodium",
+        "offline AI"
+      ],
+      "privacy": "public",
+      "made_for_kids": false
+    },
+    "instagram": {
+      "caption": "Did you know you can run a twelve billion parameter coding model right from your own laptop? That's right, Google just released Gemma 4 12B, a model that operates with sixteen gigabytes of RAM, directly on your machine. If you've ever coded with AI and have been shelling out cash for cloud APIs, you might be overpaying. \n\nThis model handles vision and code simultaneously and runs smoothly on a MacBook Pro with no need for a cloud connection. Imagine: no API timeouts, no monthly bills, and no big brother logging your every request. Gemma nailed writing a Python script to read local files on the first attempt, and you don't have to worry about a single API call costing you money. \n\nWondering how to get started? Comment GEMMA, and I'll send you the complete setup guide!"
+    },
+    "tiktok": {
+      "description": "Did you know you can run a twelve billion parameter coding model right from your own laptop? That's right, Google just released Gemma 4 12B, a model that operates with sixteen gigabytes of RAM, directly on your machine. If you've ever coded with AI and have been shelling out cash for cloud APIs, you might be overpaying. \n\nThis model handles vision and code simultaneously and runs smoothly on a MacBook Pro with no need for a cloud connection. Imagine: no API timeouts, no monthly bills, and no big brother logging your every request. Gemma nailed writing a Python script to read local files on the first attempt, and you don't have to worry about a single API call costing you money. \n\nWondering how to get started? Comment GEMMA, and I'll send you the complete setup guide!",
+      "privacy": "PUBLIC_TO_EVERYONE"
+    },
+    "linkedin": {
+      "text": "Did you know that you can run a twelve billion parameter coding model on your laptop right now? \n\nMeet Gemma 4 12B from Google. It's revolutionizing how we use AI for coding without the heavy expenses of cloud APIs. No API timeouts, no monthly bills, no logging of your prompts — just you and your machine. \n\nI was blown away when I saw it in action with VSCodium and the Pi Agent extension. Gemma 4 12B nailed a Python script task on the first try, all offline. \n\nRunning a model like this offline means you have your code, your machine, and your complete control. \n\nCurious about setting it up? Drop a comment, and I'll share a guide to get you started! \n\n#AI #Coding #GemmaModel #LocalTech"
+    }
+  },
+  "thumbnail": "thumbnail.png"
+}
