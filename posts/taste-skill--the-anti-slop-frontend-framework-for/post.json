@@ -1,0 +1,26 @@
+{
+  "video": "video.mp4",
+  "platforms": {
+    "youtube": {
+      "title": "🔥 This Repo Stops AI From Generating Ugly Websites",
+      "description": "Tired of AI-generated websites that all look the same? Taste-Skill is an anti-slop framework with 32K stars that teaches AI agents how to build premium frontends. It works with Codex, Cursor, Claude Code, and any AI coding tool. Instead of generic centered layouts with boring spacing, you get real typography, motion design, and visual hierarchy. Install it once with npx skills add and your AI starts shipping interfaces that actually look designed. No more placeholder comments, half-finished animations, or cookie-cutter layouts. The repo includes multiple specialized skills for different design directions: minimalist, brutalist, soft premium, and even image-generation workflows. Developers are using it because they're tired of AI slop that screams \"I was made by a robot.\" Next time you build with AI, add Taste-Skill and watch your frontends transform from generic to genuinely good. Link to the repo in the video.",
+      "tags": [
+        "ai",
+        "webdev",
+        "opensource"
+      ],
+      "privacy": "public",
+      "made_for_kids": false
+    },
+    "instagram": {
+      "caption": "Tired of AI-generated websites that all look the same? Taste-Skill is an anti-slop framework with 32K stars that teaches AI agents how to build premium frontends. It works with Codex, Cursor, Claude Code, and any AI coding tool. Instead of generic centered layouts with boring spacing, you get real typography, motion design, and visual hierarchy. Install it once with npx skills add and your AI starts shipping interfaces that actually look designed. No more placeholder comments, half-finished animations, or cookie-cutter layouts. The repo includes multiple specialized skills for different design directions: minimalist, brutalist, soft premium, and even image-generation workflows. Developers are using it because they're tired of AI slop that screams \"I was made by a robot.\" Next time you build with AI, add Taste-Skill and watch your frontends transform from generic to genuinely good. Link to the repo in the video."
+    },
+    "tiktok": {
+      "description": "Tired of AI-generated websites that all look the same? Taste-Skill is an anti-slop framework with 32K stars that teaches AI agents how to build premium frontends. It works with Codex, Cursor, Claude Code, and any AI coding tool. Instead of generic centered layouts with boring spacing, you get real typography, motion design, and visual hierarchy. Install it once with npx skills add and your AI starts shipping interfaces that actually look designed. No more placeholder comments, half-finished animations, or cookie-cutter layouts. The repo includes multiple specialized skills for different design directions: minimalist, brutalist, soft premium, and even image-generation workflows. Developers are using it because they're tired of AI slop that screams \"I was made by a robot.\" Next time you build with AI, add Taste-Skill and watch your frontends transform from generic to genuinely good. Link to the repo in the video.",
+      "privacy": "PUBLIC_TO_EVERYONE"
+    },
+    "linkedin": {
+      "text": "I just found something that solves a problem every developer using AI has experienced.\n\nYou know when you ask ChatGPT or Cursor to build a website and it comes back with that same centered layout, generic spacing, and zero personality? That \"AI slop\" look that screams it was generated?\n\nTaste-Skill changes that completely.\n\nIt's an open-source framework with 32,000 stars that you install once, and suddenly your AI coding assistant has actual design taste. Real typography. Motion design that isn't just opacity fades. Visual hierarchy that makes sense.\n\nWhat makes it brilliant: it works with every major AI coding tool. Codex, Cursor, Claude Code, you name it. One install, and your AI stops generating placeholder comments and half-finished work.\n\nThe creator built multiple specialized skills for different design directions. Need a minimalist Notion-style interface? There's a skill. Want brutalist industrial design? There's a skill. Premium soft aesthetics? Covered.\n\nThey even have image-generation skills so you can create design comps first, then let the AI implement them.\n\n32,000 developers starred it because we're all tired of AI-generated interfaces looking identical and soulless.\n\nNext project I build with AI, I'm adding Taste-Skill first. The difference between generic AI output and something that looks intentionally designed is one command: npx skills add taste-skill.\n\nIf you're building with AI and care about the final product not looking like everyone else's, this is worth checking out.\n\nLink in comments."
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "video": "video.mp4",
+  "platforms": {
+    "youtube": {
+      "title": "This Browser Passes EVERY Bot Detection Test",
+      "description": "CloakBrowser is a stealth Chromium build that passes Cloudflare, reCAPTCHA v3, and every major bot detection system. Unlike JavaScript injection tools like playwright-stealth or undetected-chromedriver that break with every Chrome update, CloakBrowser patches Chromium at the C++ source level with 58 fingerprint modifications. It's a drop-in replacement for Playwright and Puppeteer—same API, just swap your import. Get 0.9 reCAPTCHA scores, auto-pass Cloudflare Turnstile, and fool FingerprintJS. 23,000+ stars, MIT licensed, works in Python and JavaScript. Perfect for web scraping, AI agents, and any automation that needs to look human. No subscriptions, no usage limits, just install and run. Check out the repo for benchmarks against 30+ detection services.",
+      "tags": [
+        "webscraping",
+        "automation",
+        "playwright"
+      ],
+      "privacy": "public",
+      "made_for_kids": false
+    },
+    "instagram": {
+      "caption": "CloakBrowser is a stealth Chromium build that passes Cloudflare, reCAPTCHA v3, and every major bot detection system. Unlike JavaScript injection tools like playwright-stealth or undetected-chromedriver that break with every Chrome update, CloakBrowser patches Chromium at the C++ source level with 58 fingerprint modifications. It's a drop-in replacement for Playwright and Puppeteer—same API, just swap your import. Get 0.9 reCAPTCHA scores, auto-pass Cloudflare Turnstile, and fool FingerprintJS. 23,000+ stars, MIT licensed, works in Python and JavaScript. Perfect for web scraping, AI agents, and any automation that needs to look human. No subscriptions, no usage limits, just install and run. Check out the repo for benchmarks against 30+ detection services."
+    },
+    "tiktok": {
+      "description": "CloakBrowser is a stealth Chromium build that passes Cloudflare, reCAPTCHA v3, and every major bot detection system. Unlike JavaScript injection tools like playwright-stealth or undetected-chromedriver that break with every Chrome update, CloakBrowser patches Chromium at the C++ source level with 58 fingerprint modifications. It's a drop-in replacement for Playwright and Puppeteer—same API, just swap your import. Get 0.9 reCAPTCHA scores, auto-pass Cloudflare Turnstile, and fool FingerprintJS. 23,000+ stars, MIT licensed, works in Python and JavaScript. Perfect for web scraping, AI agents, and any automation that needs to look human. No subscriptions, no usage limits, just install and run. Check out the repo for benchmarks against 30+ detection services.",
+      "privacy": "PUBLIC_TO_EVERYONE"
+    },
+    "linkedin": {
+      "text": "I just found a repo that solves a problem every web scraper faces: getting blocked.\n\nYou've probably tried playwright-stealth or undetected-chromedriver. They break constantly. Detection systems evolved past JavaScript injection years ago.\n\nCloakBrowser takes a different approach: patch Chromium at the C++ source level. 58 modifications to canvas, WebGL, audio fingerprints, GPU reporting, network timing—compiled into the binary itself.\n\nThe result? 0.9 reCAPTCHA v3 scores (human-level). Auto-passing Cloudflare Turnstile. FingerprintJS can't tell the difference.\n\nIt's a drop-in Playwright replacement. Change one import line. Your existing automation code works unchanged.\n\n23,000 stars. MIT licensed. Active maintenance. Works in Python and JavaScript.\n\nThis is the kind of tool that makes you rethink your entire scraping stack. Sometimes the right solution isn't working around the problem—it's rebuilding the foundation.\n\nLink to repo in the comments. Worth a look if bot detection has ever cost you hours of debugging."
+    }
+  }
+}

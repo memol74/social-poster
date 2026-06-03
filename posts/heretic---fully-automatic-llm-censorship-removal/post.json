@@ -1,0 +1,26 @@
+{
+  "video": "video.mp4",
+  "platforms": {
+    "youtube": {
+      "title": "🔥 Remove AI Censorship Automatically",
+      "description": "Ever frustrated by AI models refusing legitimate questions? Heretic is a groundbreaking tool that removes censorship from language models completely automatically. No manual parameter tuning, no deep knowledge of transformers required—just one command.\n\nUsing advanced directional ablation and TPE-based optimization, Heretic finds optimal parameters that minimize refusals while preserving the model's intelligence. When tested on Gemma-3-12B, the Heretic version achieved the same 3/100 refusal rate as expert human abliterations, but with only 0.16 KL divergence versus 0.45-1.04 for competitors. That's 3x less damage to the model's capabilities.\n\nThe community has already created over 3,000 models with Heretic. It supports most dense models including multimodal and MoE architectures. Works with quantization (bitsandbytes) to fit on consumer GPUs. Takes 20-30 minutes on an RTX 3090 for a 4B model.\n\nLink in bio to check out the repo—23K+ stars and growing. If you need uncensored models without sacrificing intelligence, this is your solution.\n\n#opensource #ai #llm #machinelearning #python",
+      "tags": [
+        "opensource",
+        "ai",
+        "llm"
+      ],
+      "privacy": "public",
+      "made_for_kids": false
+    },
+    "instagram": {
+      "caption": "Ever frustrated by AI models refusing legitimate questions? Heretic is a groundbreaking tool that removes censorship from language models completely automatically. No manual parameter tuning, no deep knowledge of transformers required—just one command.\n\nUsing advanced directional ablation and TPE-based optimization, Heretic finds optimal parameters that minimize refusals while preserving the model's intelligence. When tested on Gemma-3-12B, the Heretic version achieved the same 3/100 refusal rate as expert human abliterations, but with only 0.16 KL divergence versus 0.45-1.04 for competitors. That's 3x less damage to the model's capabilities.\n\nThe community has already created over 3,000 models with Heretic. It supports most dense models including multimodal and MoE architectures. Works with quantization (bitsandbytes) to fit on consumer GPUs. Takes 20-30 minutes on an RTX 3090 for a 4B model.\n\nLink in bio to check out the repo—23K+ stars and growing. If you need uncensored models without sacrificing intelligence, this is your solution.\n\n#opensource #ai #llm #machinelearning #python"
+    },
+    "tiktok": {
+      "description": "Ever frustrated by AI models refusing legitimate questions? Heretic is a groundbreaking tool that removes censorship from language models completely automatically. No manual parameter tuning, no deep knowledge of transformers required—just one command.\n\nUsing advanced directional ablation and TPE-based optimization, Heretic finds optimal parameters that minimize refusals while preserving the model's intelligence. When tested on Gemma-3-12B, the Heretic version achieved the same 3/100 refusal rate as expert human abliterations, but with only 0.16 KL divergence versus 0.45-1.04 for competitors. That's 3x less damage to the model's capabilities.\n\nThe community has already created over 3,000 models with Heretic. It supports most dense models including multimodal and MoE architectures. Works with quantization (bitsandbytes) to fit on consumer GPUs. Takes 20-30 minutes on an RTX 3090 for a 4B model.\n\nLink in bio to check out the repo—23K+ stars and growing. If you need uncensored models without sacrificing intelligence, this is your solution.\n\n#opensource #ai #llm #machinelearning #python",
+      "privacy": "PUBLIC_TO_EVERYONE"
+    },
+    "linkedin": {
+      "text": "AI alignment just got flipped on its head.\n\nI've been watching the censorship debate in LLMs for months. Models refuse harmless requests. Researchers manually tune parameters for days. Intelligence gets sacrificed for safety theatre.\n\nThen I found Heretic.\n\nIt removes model censorship automatically. One command. No expertise required. The results? Better than human experts.\n\nWhen tested on Gemma-3-12B:\n→ Same 3% refusal rate as manual abliterations\n→ But 3x less damage to model capabilities (0.16 vs 0.45-1.04 KL divergence)\n→ 20-30 minutes vs days of manual work\n\nThe secret? Directional ablation combined with TPE-based optimization. It co-minimizes refusals and deviation from the original model. Automatically finds the sweet spot between freedom and intelligence.\n\n23K+ GitHub stars. 3,000+ community models already in production. Works on consumer GPUs with quantization.\n\nThis isn't just a tool. It's a statement about who controls AI capabilities.\n\nLink in bio to the repo. Your models. Your rules.\n\n#AI #OpenSource #MachineLearning #LLM"
+    }
+  }
+}
