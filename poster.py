@@ -6,6 +6,20 @@ import sys
 import os
 
 
+def _requirements_install_command():
+    requirements = os.path.join(os.path.dirname(os.path.abspath(__file__)), "requirements.txt")
+    return f'"{sys.executable}" -m pip install -r "{requirements}"'
+
+
+def _missing_dependency_message(error):
+    missing = getattr(error, "name", None) or str(error)
+    install_cmd = _requirements_install_command()
+    return (
+        f"Missing Python dependency '{missing}'. Install project dependencies with:\n"
+        f"  {install_cmd}"
+    )
+
+
 def main():
     parser = argparse.ArgumentParser(description="Post videos to social media")
     subparsers = parser.add_subparsers(dest="command")
@@ -13,7 +27,12 @@ def main():
     # Post command
     post_parser = subparsers.add_parser("post", help="Post a video using a manifest")
     post_parser.add_argument("manifest", help="Path to post manifest JSON file")
-    post_parser.add_argument("--platforms", help="Comma-separated platforms (default: all in manifest)")
+    post_parser.add_argument(
+        "--platform",
+        "--platforms",
+        dest="platforms",
+        help="Platform name or comma-separated platforms (default: all in manifest)",
+    )
 
     # Setup command
     setup_parser = subparsers.add_parser("setup", help="Setup platform authentication")
@@ -27,7 +46,11 @@ def main():
         sys.exit(1)
 
     if args.command == "setup":
-        run_setup(args)
+        try:
+            run_setup(args)
+        except ModuleNotFoundError as e:
+            print(_missing_dependency_message(e))
+            sys.exit(1)
     elif args.command == "post":
         run_post(args)
 
@@ -52,7 +75,7 @@ def run_setup(args):
 
 
 def run_post(args):
-    with open(args.manifest) as f:
+    with open(args.manifest, encoding="utf-8") as f:
         manifest = json.load(f)
 
     # Resolve paths relative to the manifest directory
@@ -114,6 +137,10 @@ def run_post(args):
             else:
                 print(f"  Platform '{platform}' not yet supported")
                 results[platform] = {"success": False, "error": "not supported"}
+        except ModuleNotFoundError as e:
+            message = _missing_dependency_message(e)
+            print(f"  FAILED: {message}")
+            results[platform] = {"success": False, "error": str(message)}
         except Exception as e:
             print(f"  FAILED: {e}")
             results[platform] = {"success": False, "error": str(e)}
