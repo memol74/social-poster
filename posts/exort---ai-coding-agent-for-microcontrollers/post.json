@@ -1,0 +1,26 @@
+{
+  "video": "video.mp4",
+  "platforms": {
+    "youtube": {
+      "title": "🤖 AI Coding Agent for Arduino & ESP32 Projects",
+      "description": "Exort is changing how developers build embedded systems. Instead of juggling Arduino IDE, serial monitors, AI chat windows, and Stack Overflow tabs, you get one desktop app that does it all. Open your microcontroller project, ask the AI agent to write or debug code, compile and upload with one click, then watch live serial output and sensor plots in the same window. It's built on OpenCode and works with Arduino, ESP32, ESP8266, RP2040, STM32, Teensy, and any Arduino CLI-compatible board. The entire workflow—from AI-assisted coding to flashing firmware to debugging hardware—happens in one place. Exort is completely free, open source under AGPL-3.0, and includes free AI models so you can start prototyping embedded projects today without switching between tools. Download at exort.dev or check the repo link below.",
+      "tags": [
+        "arduino",
+        "esp32",
+        "ai"
+      ],
+      "privacy": "public",
+      "made_for_kids": false
+    },
+    "instagram": {
+      "caption": "Exort is changing how developers build embedded systems. Instead of juggling Arduino IDE, serial monitors, AI chat windows, and Stack Overflow tabs, you get one desktop app that does it all. Open your microcontroller project, ask the AI agent to write or debug code, compile and upload with one click, then watch live serial output and sensor plots in the same window. It's built on OpenCode and works with Arduino, ESP32, ESP8266, RP2040, STM32, Teensy, and any Arduino CLI-compatible board. The entire workflow—from AI-assisted coding to flashing firmware to debugging hardware—happens in one place. Exort is completely free, open source under AGPL-3.0, and includes free AI models so you can start prototyping embedded projects today without switching between tools. Download at exort.dev or check the repo link below."
+    },
+    "tiktok": {
+      "description": "Exort is changing how developers build embedded systems. Instead of juggling Arduino IDE, serial monitors, AI chat windows, and Stack Overflow tabs, you get one desktop app that does it all. Open your microcontroller project, ask the AI agent to write or debug code, compile and upload with one click, then watch live serial output and sensor plots in the same window. It's built on OpenCode and works with Arduino, ESP32, ESP8266, RP2040, STM32, Teensy, and any Arduino CLI-compatible board. The entire workflow—from AI-assisted coding to flashing firmware to debugging hardware—happens in one place. Exort is completely free, open source under AGPL-3.0, and includes free AI models so you can start prototyping embedded projects today without switching between tools. Download at exort.dev or check the repo link below.",
+      "privacy": "PUBLIC_TO_EVERYONE"
+    },
+    "linkedin": {
+      "text": "I just found something that's going to change how I build embedded systems.\n\nFor years, working on Arduino and ESP32 projects meant juggling the Arduino IDE, a separate serial monitor, AI chat windows, Stack Overflow tabs, and VS Code extensions that never quite worked together.\n\nExort solves this. It's a free, open-source desktop app that brings AI coding, compilation, uploading, and serial debugging into one workspace.\n\nHere's what impressed me:\n\n→ AI agent that actually understands embedded systems\n→ Edits your code, explains circuits, debugs in real time\n→ One-click compile and upload to any Arduino CLI board\n→ Built-in serial monitor and plotter for sensor debugging\n→ Works with Arduino, ESP32, ESP8266, RP2040, STM32, Teensy\n→ Includes free AI models, or bring your own OpenCode provider\n\nThe workflow is seamless: open your project folder, ask the AI to implement a feature, review the changes, flash it to your board, and watch the serial output—all in one window.\n\nNo more context switching. No more copy-pasting code snippets from ChatGPT into another editor. The AI sees your workspace, knows your board constraints, and helps you iterate fast.\n\nIf you build embedded systems, this is worth checking out.\n\nRepo: github.com/Razz19/Exort\nWebsite: exort.dev"
+    }
+  }
+}
