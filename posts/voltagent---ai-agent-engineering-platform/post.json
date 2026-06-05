@@ -1,0 +1,26 @@
+{
+  "video": "video.mp4",
+  "platforms": {
+    "youtube": {
+      "title": "🔥 Stop Writing Custom Agent Code",
+      "description": "Are you still writing custom control flow for every AI agent you build? VoltAgent is a TypeScript framework that gives you memory, RAG, guardrails, and multi-step workflows out of the box. With 9,000+ stars, it lets you define agents with typed tools and swap between OpenAI, Anthropic, or Google by changing config—not rewriting logic. You can build supervisor agents that coordinate specialized sub-agents automatically, so your workflow engine runs teams without custom routing code. It includes resumable streaming, voice capabilities, and the VoltOps console for production observability and deployment tracking. Next time you need to ship production-ready AI agents, try VoltAgent and see how much faster you can build. Link in bio.",
+      "tags": [
+        "ai",
+        "typescript",
+        "opensource"
+      ],
+      "privacy": "public",
+      "made_for_kids": false
+    },
+    "instagram": {
+      "caption": "Are you still writing custom control flow for every AI agent you build? VoltAgent is a TypeScript framework that gives you memory, RAG, guardrails, and multi-step workflows out of the box. With 9,000+ stars, it lets you define agents with typed tools and swap between OpenAI, Anthropic, or Google by changing config—not rewriting logic. You can build supervisor agents that coordinate specialized sub-agents automatically, so your workflow engine runs teams without custom routing code. It includes resumable streaming, voice capabilities, and the VoltOps console for production observability and deployment tracking. Next time you need to ship production-ready AI agents, try VoltAgent and see how much faster you can build. Link in bio."
+    },
+    "tiktok": {
+      "description": "Are you still writing custom control flow for every AI agent you build? VoltAgent is a TypeScript framework that gives you memory, RAG, guardrails, and multi-step workflows out of the box. With 9,000+ stars, it lets you define agents with typed tools and swap between OpenAI, Anthropic, or Google by changing config—not rewriting logic. You can build supervisor agents that coordinate specialized sub-agents automatically, so your workflow engine runs teams without custom routing code. It includes resumable streaming, voice capabilities, and the VoltOps console for production observability and deployment tracking. Next time you need to ship production-ready AI agents, try VoltAgent and see how much faster you can build. Link in bio.",
+      "privacy": "PUBLIC_TO_EVERYONE"
+    },
+    "linkedin": {
+      "text": "I used to spend hours wiring together custom control flow for AI agents.\n\nEvery new agent meant rewriting the same orchestration logic, managing memory manually, and debugging streaming issues.\n\nThen I found VoltAgent.\n\nIt's a TypeScript framework that handles all the infrastructure I was building from scratch: memory persistence, RAG pipelines, guardrails, and multi-step workflows. Over 9,000 developers have already starred it.\n\nWhat makes it different? You define your agent once with typed tools and model providers. Want to swap from OpenAI to Anthropic? Change the config, not your code.\n\nThe workflow engine lets you build supervisor agents that coordinate specialized sub-agents automatically. No more custom routing logic.\n\nAnd when you're ready for production, the VoltOps console gives you observability and deployment tracking out of the box.\n\nI shipped my last agent in a fraction of the time. If you're building AI agents, this repo is worth checking out.\n\nLink to VoltAgent in the comments."
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "video": "video.mp4",
+  "platforms": {
+    "youtube": {
+      "title": "🔥 Stop Learning AI in Pieces — Build It All From Scratch",
+      "description": "Tired of tutorials that teach you to call APIs without understanding what's happening inside? AI Engineering from Scratch is a complete curriculum with 503 lessons across 20 phases that takes you from linear algebra to autonomous agent swarms. Every algorithm gets built from raw math first — backprop, tokenizers, attention mechanisms, agent loops — so by the time you use PyTorch or TensorFlow, you already know what they're doing under the hood. With 28,364 stars and growing, this MIT-licensed repo gives you Python, TypeScript, Rust, and Julia implementations. Each lesson ships a reusable artifact: prompts, skills, agents, or MCP servers you can deploy immediately. No more scattered knowledge. You build a complete portfolio of tools you actually understand because you coded them yourself. Link in bio to the repo. Stop copy-pasting — start engineering.",
+      "tags": [
+        "ai",
+        "machinelearning",
+        "programming"
+      ],
+      "privacy": "public",
+      "made_for_kids": false
+    },
+    "instagram": {
+      "caption": "Tired of tutorials that teach you to call APIs without understanding what's happening inside? AI Engineering from Scratch is a complete curriculum with 503 lessons across 20 phases that takes you from linear algebra to autonomous agent swarms. Every algorithm gets built from raw math first — backprop, tokenizers, attention mechanisms, agent loops — so by the time you use PyTorch or TensorFlow, you already know what they're doing under the hood. With 28,364 stars and growing, this MIT-licensed repo gives you Python, TypeScript, Rust, and Julia implementations. Each lesson ships a reusable artifact: prompts, skills, agents, or MCP servers you can deploy immediately. No more scattered knowledge. You build a complete portfolio of tools you actually understand because you coded them yourself. Link in bio to the repo. Stop copy-pasting — start engineering."
+    },
+    "tiktok": {
+      "description": "Tired of tutorials that teach you to call APIs without understanding what's happening inside? AI Engineering from Scratch is a complete curriculum with 503 lessons across 20 phases that takes you from linear algebra to autonomous agent swarms. Every algorithm gets built from raw math first — backprop, tokenizers, attention mechanisms, agent loops — so by the time you use PyTorch or TensorFlow, you already know what they're doing under the hood. With 28,364 stars and growing, this MIT-licensed repo gives you Python, TypeScript, Rust, and Julia implementations. Each lesson ships a reusable artifact: prompts, skills, agents, or MCP servers you can deploy immediately. No more scattered knowledge. You build a complete portfolio of tools you actually understand because you coded them yourself. Link in bio to the repo. Stop copy-pasting — start engineering.",
+      "privacy": "PUBLIC_TO_EVERYONE"
+    },
+    "linkedin": {
+      "text": "I used to learn AI in pieces. A paper here, a tutorial there, a demo that looked cool but I couldn't explain.\n\nThen I found AI Engineering from Scratch — 503 lessons, 20 phases, 28,364 stars. It's not another quickstart guide. It's the missing spine that connects everything.\n\nYou don't just use PyTorch. You build backprop by hand first, so you know what PyTorch is doing when you call .backward(). You don't just hook functions to agents. You write the agent loop yourself in 120 lines of pure Python.\n\nLinear algebra → transformers → autonomous swarms. Every step ships something reusable: a prompt, a skill, an agent, an MCP server. By the end, you have a portfolio of 503 tools you didn't copy — you built them.\n\nPython, TypeScript, Rust, Julia. Free. MIT license. Runs on your laptop.\n\nThis is how you close the gap between using AI and understanding it.\n\nLink in comments."
+    }
+  }
+}

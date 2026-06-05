@@ -1,0 +1,26 @@
+{
+  "video": "video.mp4",
+  "platforms": {
+    "youtube": {
+      "title": "🤖 This Framework Lets AI Agents Work as a Team",
+      "description": "CrewAI is changing how developers build AI systems. Instead of calling one LLM at a time, you can orchestrate entire teams of AI agents that collaborate autonomously. With over 52,000 GitHub stars and 100,000 certified developers, it's becoming the enterprise standard for multi-agent automation. Built completely from scratch (not dependent on LangChain), CrewAI gives you lightning-fast performance with both high-level simplicity and deep customization. Define specialized agents with roles like researcher, analyst, or content writer, assign them tasks, and watch them work together to solve complex problems. Perfect for building research systems, content pipelines, data analysis workflows, and more. The framework offers two powerful approaches: Crews for autonomous agent collaboration, and Flows for precise event-driven control in production. Link in bio to explore the repo and start building your first AI agent team.",
+      "tags": [
+        "ai",
+        "python",
+        "automation"
+      ],
+      "privacy": "public",
+      "made_for_kids": false
+    },
+    "instagram": {
+      "caption": "CrewAI is changing how developers build AI systems. Instead of calling one LLM at a time, you can orchestrate entire teams of AI agents that collaborate autonomously. With over 52,000 GitHub stars and 100,000 certified developers, it's becoming the enterprise standard for multi-agent automation. Built completely from scratch (not dependent on LangChain), CrewAI gives you lightning-fast performance with both high-level simplicity and deep customization. Define specialized agents with roles like researcher, analyst, or content writer, assign them tasks, and watch them work together to solve complex problems. Perfect for building research systems, content pipelines, data analysis workflows, and more. The framework offers two powerful approaches: Crews for autonomous agent collaboration, and Flows for precise event-driven control in production. Link in bio to explore the repo and start building your first AI agent team."
+    },
+    "tiktok": {
+      "description": "CrewAI is changing how developers build AI systems. Instead of calling one LLM at a time, you can orchestrate entire teams of AI agents that collaborate autonomously. With over 52,000 GitHub stars and 100,000 certified developers, it's becoming the enterprise standard for multi-agent automation. Built completely from scratch (not dependent on LangChain), CrewAI gives you lightning-fast performance with both high-level simplicity and deep customization. Define specialized agents with roles like researcher, analyst, or content writer, assign them tasks, and watch them work together to solve complex problems. Perfect for building research systems, content pipelines, data analysis workflows, and more. The framework offers two powerful approaches: Crews for autonomous agent collaboration, and Flows for precise event-driven control in production. Link in bio to explore the repo and start building your first AI agent team.",
+      "privacy": "PUBLIC_TO_EVERYONE"
+    },
+    "linkedin": {
+      "text": "I just discovered something that completely changes how I think about building AI systems.\n\nFor months, I've been chaining individual LLM calls together, manually orchestrating every step. It works, but it's tedious and brittle.\n\nThen I found CrewAI.\n\nInstead of one AI doing everything, you create a team of specialized AI agents. A researcher agent that gathers information. An analyst agent that processes data. A writer agent that creates content. Each with its own role, goal, and expertise.\n\nThe breakthrough? They collaborate autonomously.\n\nYou define the tasks, and the agents figure out how to work together to complete them. No more micromanaging every API call.\n\nWhat impressed me most:\n→ 52,000+ GitHub stars (this is proven, not experimental)\n→ 100,000 certified developers already using it\n→ Built from scratch for speed (not dependent on LangChain)\n→ Works for both simple scripts and enterprise production systems\n\nI just built a research pipeline that used to take me 2 hours. Now it runs in 5 minutes with three agents working in parallel.\n\nIf you're building with AI and tired of manual orchestration, this is worth exploring. Link to the repo in the comments.\n\n#AI #Python #Automation #SoftwareDevelopment"
+    }
+  }
+}

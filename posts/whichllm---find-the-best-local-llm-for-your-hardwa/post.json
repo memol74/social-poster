@@ -1,0 +1,26 @@
+{
+  "video": "video.mp4",
+  "platforms": {
+    "youtube": {
+      "title": "🔥 This Tool Picks the PERFECT Local LLM for Your GPU",
+      "description": "Stop wasting time downloading LLMs that don't fit your GPU or run too slow. whichllm auto-detects your hardware (NVIDIA, AMD, Apple Silicon, CPU) and ranks models by REAL benchmarks — not just parameter count.\n\nOne command: uvx whichllm@latest\n\nIt pulls live data from HuggingFace, merges 6 benchmark sources (LiveBench, Chatbot Arena, Aider coding tests, vision evals), and shows you the top models that actually run well on YOUR system. You can even simulate GPUs before buying: whichllm --gpu \"RTX 5090\"\n\nOver 2,700 stars because it solves the \"which model should I download?\" problem developers face every single day. Built by @Andyyyy64, MIT licensed, Python — installs in seconds with uv or pip.\n\nRepo: https://github.com/Andyyyy64/whichllm",
+      "tags": [
+        "ai",
+        "llm",
+        "github"
+      ],
+      "privacy": "public",
+      "made_for_kids": false
+    },
+    "instagram": {
+      "caption": "Stop wasting time downloading LLMs that don't fit your GPU or run too slow. whichllm auto-detects your hardware (NVIDIA, AMD, Apple Silicon, CPU) and ranks models by REAL benchmarks — not just parameter count.\n\nOne command: uvx whichllm@latest\n\nIt pulls live data from HuggingFace, merges 6 benchmark sources (LiveBench, Chatbot Arena, Aider coding tests, vision evals), and shows you the top models that actually run well on YOUR system. You can even simulate GPUs before buying: whichllm --gpu \"RTX 5090\"\n\nOver 2,700 stars because it solves the \"which model should I download?\" problem developers face every single day. Built by @Andyyyy64, MIT licensed, Python — installs in seconds with uv or pip.\n\nRepo: https://github.com/Andyyyy64/whichllm"
+    },
+    "tiktok": {
+      "description": "Stop wasting time downloading LLMs that don't fit your GPU or run too slow. whichllm auto-detects your hardware (NVIDIA, AMD, Apple Silicon, CPU) and ranks models by REAL benchmarks — not just parameter count.\n\nOne command: uvx whichllm@latest\n\nIt pulls live data from HuggingFace, merges 6 benchmark sources (LiveBench, Chatbot Arena, Aider coding tests, vision evals), and shows you the top models that actually run well on YOUR system. You can even simulate GPUs before buying: whichllm --gpu \"RTX 5090\"\n\nOver 2,700 stars because it solves the \"which model should I download?\" problem developers face every single day. Built by @Andyyyy64, MIT licensed, Python — installs in seconds with uv or pip.\n\nRepo: https://github.com/Andyyyy64/whichllm",
+      "privacy": "PUBLIC_TO_EVERYONE"
+    },
+    "linkedin": {
+      "text": "I've wasted countless hours downloading local LLMs only to find they either don't fit my GPU or run at 2 tokens per second.\n\nLast week I found whichllm and it completely changed how I choose models.\n\nInstead of guessing based on parameter count, it auto-detects your exact hardware and ranks models using REAL benchmark data from 6 sources — LiveBench, Chatbot Arena ELO, Aider coding tests, vision evaluations, and more.\n\nOne command: uvx whichllm@latest\n\nIt told me that on my RTX 4090, Qwen 27B (score 92.8) is actually better than Qwen 32B (score 83.0) — even though it's smaller — because it performs better on real tests and it's a newer generation.\n\nThe parameter count heuristic would've sent me the wrong direction.\n\nWhat makes this tool special:\n\n→ Live HuggingFace data (not a static list)\n→ Benchmark-aware scoring with confidence grades\n→ GPU simulation before you buy hardware\n→ One-command chat: whichllm run \"qwen 2.5 1.5b\"\n→ Works with NVIDIA, AMD, Apple Silicon, CPU-only\n\nOver 2,700 developers have starred it because it solves a real problem we all face.\n\nIf you run local LLMs, this tool will save you hours of trial and error.\n\nGitHub: Andyyyy64/whichllm"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "video": "video.mp4",
+  "platforms": {
+    "youtube": {
+      "title": "🔥 Stop Juggling Terminals — This 7MB IDE Runs Multiple AI Agents in Parallel",
+      "description": "If you're using Claude Code or Codex, you know the pain: constantly switching between terminals, editors, Git clients, and session logs. Your AI agents CAN work in parallel, but your workflow is stuck in sequence.\n\nNezha is the first agent-first IDE built specifically for parallel AI coding. It lets you run multiple Claude Code and Codex instances simultaneously across different projects, with one-click context switching while your terminals keep running in the background.\n\nWhat makes it special? The entire package is just 7MB — no bloated IDE required. It includes native Git integration with AI-assisted commit messages, built-in code editing with syntax highlighting, automatic session detection, and visual session history playback.\n\n1,400+ stars and actively maintained with TypeScript and Rust. Created by hanshuaikang, it's already featured on ProductHunt and HelloGitHub.\n\nNext time you're delegating coding tasks to AI, you can finally track them all in one place without losing context. Your agents work in parallel — now your workflow does too.\n\nLink in bio to try Nezha and reclaim your development flow.",
+      "tags": [
+        "ai",
+        "opensource",
+        "coding"
+      ],
+      "privacy": "public",
+      "made_for_kids": false
+    },
+    "instagram": {
+      "caption": "If you're using Claude Code or Codex, you know the pain: constantly switching between terminals, editors, Git clients, and session logs. Your AI agents CAN work in parallel, but your workflow is stuck in sequence.\n\nNezha is the first agent-first IDE built specifically for parallel AI coding. It lets you run multiple Claude Code and Codex instances simultaneously across different projects, with one-click context switching while your terminals keep running in the background.\n\nWhat makes it special? The entire package is just 7MB — no bloated IDE required. It includes native Git integration with AI-assisted commit messages, built-in code editing with syntax highlighting, automatic session detection, and visual session history playback.\n\n1,400+ stars and actively maintained with TypeScript and Rust. Created by hanshuaikang, it's already featured on ProductHunt and HelloGitHub.\n\nNext time you're delegating coding tasks to AI, you can finally track them all in one place without losing context. Your agents work in parallel — now your workflow does too.\n\nLink in bio to try Nezha and reclaim your development flow."
+    },
+    "tiktok": {
+      "description": "If you're using Claude Code or Codex, you know the pain: constantly switching between terminals, editors, Git clients, and session logs. Your AI agents CAN work in parallel, but your workflow is stuck in sequence.\n\nNezha is the first agent-first IDE built specifically for parallel AI coding. It lets you run multiple Claude Code and Codex instances simultaneously across different projects, with one-click context switching while your terminals keep running in the background.\n\nWhat makes it special? The entire package is just 7MB — no bloated IDE required. It includes native Git integration with AI-assisted commit messages, built-in code editing with syntax highlighting, automatic session detection, and visual session history playback.\n\n1,400+ stars and actively maintained with TypeScript and Rust. Created by hanshuaikang, it's already featured on ProductHunt and HelloGitHub.\n\nNext time you're delegating coding tasks to AI, you can finally track them all in one place without losing context. Your agents work in parallel — now your workflow does too.\n\nLink in bio to try Nezha and reclaim your development flow.",
+      "privacy": "PUBLIC_TO_EVERYONE"
+    },
+    "linkedin": {
+      "text": "I used to think the bottleneck in AI coding was the agents themselves.\n\nTurns out, it was me.\n\nEvery time I'd spin up Claude Code on one project, I'd have to wait. Switch to another terminal for a different task. Jump to my editor to review changes. Open a Git client to commit. Check session logs to see what happened.\n\nMy AI agents could work in parallel. My workflow couldn't.\n\nThen I found Nezha — an agent-first IDE that finally treats parallel AI coding as a first-class citizen. You run multiple Claude Code and Codex instances across projects simultaneously. One click switches contexts while terminals stay active in the background.\n\nThe kicker? The entire thing is 7MB. No bloated IDE. Just native Git, code editing, session playback, and task tracking in one interface.\n\nIt auto-detects sessions that need your input. Visualizes interaction history. Even generates AI commit messages.\n\n1,400 stars, GPL-3.0 license, actively maintained in TypeScript and Rust.\n\nIf you're using AI to code, your workflow should match the parallelism your agents are capable of.\n\nNezha makes that possible.\n\nLink to repo in the comments. Worth a look if you're tired of context-switching hell."
+    }
+  }
+}

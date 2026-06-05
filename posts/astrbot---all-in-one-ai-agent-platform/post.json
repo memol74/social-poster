@@ -1,0 +1,26 @@
+{
+  "video": "video.mp4",
+  "platforms": {
+    "youtube": {
+      "title": "🔥 This Repo Unifies All Your Chatbots",
+      "description": "AstrBot is the open-source platform that connects every messaging app to every AI model. With 34,000 stars and 15+ platform integrations, it's the Swiss Army knife of conversational AI. Deploy once with Docker, and your AI agent works on QQ, Telegram, Discord, Slack, WeChat, and more—all from one codebase. It supports OpenAI, Anthropic, Gemini, Ollama, and basically every LLM you've heard of. Plus there's a marketplace with 1,000+ plugins for instant features like customer service, role-playing, and automation. Whether you're building a personal AI companion or enterprise customer support, AstrBot gives you production-ready infrastructure in minutes. Stop managing separate bots for every platform. Check the link in bio to deploy AstrBot and unify your entire conversational AI stack today.",
+      "tags": [
+        "github",
+        "ai",
+        "opensource"
+      ],
+      "privacy": "public",
+      "made_for_kids": false
+    },
+    "instagram": {
+      "caption": "AstrBot is the open-source platform that connects every messaging app to every AI model. With 34,000 stars and 15+ platform integrations, it's the Swiss Army knife of conversational AI. Deploy once with Docker, and your AI agent works on QQ, Telegram, Discord, Slack, WeChat, and more—all from one codebase. It supports OpenAI, Anthropic, Gemini, Ollama, and basically every LLM you've heard of. Plus there's a marketplace with 1,000+ plugins for instant features like customer service, role-playing, and automation. Whether you're building a personal AI companion or enterprise customer support, AstrBot gives you production-ready infrastructure in minutes. Stop managing separate bots for every platform. Check the link in bio to deploy AstrBot and unify your entire conversational AI stack today."
+    },
+    "tiktok": {
+      "description": "AstrBot is the open-source platform that connects every messaging app to every AI model. With 34,000 stars and 15+ platform integrations, it's the Swiss Army knife of conversational AI. Deploy once with Docker, and your AI agent works on QQ, Telegram, Discord, Slack, WeChat, and more—all from one codebase. It supports OpenAI, Anthropic, Gemini, Ollama, and basically every LLM you've heard of. Plus there's a marketplace with 1,000+ plugins for instant features like customer service, role-playing, and automation. Whether you're building a personal AI companion or enterprise customer support, AstrBot gives you production-ready infrastructure in minutes. Stop managing separate bots for every platform. Check the link in bio to deploy AstrBot and unify your entire conversational AI stack today.",
+      "privacy": "PUBLIC_TO_EVERYONE"
+    },
+    "linkedin": {
+      "text": "I just found AstrBot, and it's exactly what I've been looking for—a single platform that connects all my messaging apps to any AI model I want to use. \n\nHere's the problem: every time I want to deploy a chatbot, I have to build separate integrations for QQ, Telegram, Discord, Slack, and whatever else my users are on. It's exhausting. And if I want to switch LLM providers, I'm rewriting everything.\n\nAstrBot solves this with a unified agent framework. You deploy it once, connect your platforms (15+ supported out of the box), plug in your LLM (OpenAI, Anthropic, Gemini, Ollama, you name it), and you're live everywhere. \n\nWhat really impressed me: the plugin marketplace has 1,000+ extensions. Need customer service? Install a plugin. Want role-playing personas? There's a plugin. The community has basically built everything you'd ever need.\n\nWith 34,000 stars on GitHub and Docker support, this isn't some experimental project—it's battle-tested infrastructure. If you're building conversational AI and don't want to reinvent the wheel for every platform, AstrBot is the move.\n\nCheck it out: https://github.com/AstrBotDevs/AstrBot"
+    }
+  }
+}
