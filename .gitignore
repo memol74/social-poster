@@ -5,3 +5,4 @@ __pycache__/
 *.pyc
 /*.mp4
 tools/
+posts/*/*.mp4
