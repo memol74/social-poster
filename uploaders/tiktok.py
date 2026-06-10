@@ -29,6 +29,8 @@ DEFAULT_REDIRECT_URI = "https://noborta.ai/tiktok-callback"
 SCOPES = "user.info.basic,video.publish,video.upload"
 LOCAL_REDIRECT_HOSTS = {"localhost", "127.0.0.1"}
 AUTH_CALLBACK_TIMEOUT_SECONDS = 180
+REQUEST_TIMEOUT_SECONDS = 120
+TIKTOK_UPLOAD_CHUNK_SIZE = 32 * 1024 * 1024
 ALLOWED_PRIVACY_LEVELS = {
     "SELF_ONLY",
     "MUTUAL_FOLLOW_FRIENDS",
@@ -108,6 +110,15 @@ def _extract_auth_code_from_input(user_input):
         return query.get("code", [None])[0]
 
     return raw
+
+
+def _plan_upload_chunks(file_size):
+    if file_size <= 0:
+        raise ValueError("Video file is empty")
+
+    chunk_size = min(file_size, TIKTOK_UPLOAD_CHUNK_SIZE)
+    total_chunk_count = (file_size + chunk_size - 1) // chunk_size
+    return chunk_size, total_chunk_count
 
 
 def _capture_auth_code_locally(redirect_uri, state, timeout_seconds=AUTH_CALLBACK_TIMEOUT_SECONDS):
@@ -389,6 +400,7 @@ def upload(video_path, description="", privacy="SELF_ONLY"):
     token_data = authenticate()
     token = token_data["access_token"]
     file_size = os.path.getsize(video_path)
+    chunk_size, total_chunk_count = _plan_upload_chunks(file_size)
 
     if privacy not in ALLOWED_PRIVACY_LEVELS:
         allowed = ", ".join(sorted(ALLOWED_PRIVACY_LEVELS))
@@ -408,8 +420,8 @@ def upload(video_path, description="", privacy="SELF_ONLY"):
         "source_info": {
             "source": "FILE_UPLOAD",
             "video_size": file_size,
-            "chunk_size": file_size,
-            "total_chunk_count": 1,
+            "chunk_size": chunk_size,
+            "total_chunk_count": total_chunk_count,
         },
     }
 
@@ -417,6 +429,7 @@ def upload(video_path, description="", privacy="SELF_ONLY"):
         f"{API_URL}/post/publish/video/init/",
         headers=headers,
         json=init_body,
+        timeout=REQUEST_TIMEOUT_SECONDS,
     )
     if not r.ok:
         raise Exception(f"Init failed ({r.status_code}): {r.text}")
@@ -428,17 +441,37 @@ def upload(video_path, description="", privacy="SELF_ONLY"):
     publish_id = resp["data"]["publish_id"]
     upload_url = resp["data"]["upload_url"]
     print(f"  Publish ID: {publish_id}")
+    print(f"  Upload plan: {total_chunk_count} chunk(s) of up to {chunk_size // (1024 * 1024)} MB")
 
-    # Step 2: Upload video binary
+    # Step 2: Upload video binary in chunks
+    uploaded_bytes = 0
     with open(video_path, "rb") as f:
-        video_data = f.read()
+        for chunk_index in range(total_chunk_count):
+            chunk = f.read(chunk_size)
+            if not chunk:
+                raise RuntimeError("Unexpected end of file while preparing TikTok upload chunks")
 
-    r = requests.put(upload_url, headers={
-        "Content-Type": "video/mp4",
-        "Content-Range": f"bytes 0-{file_size - 1}/{file_size}",
-    }, data=video_data)
-    r.raise_for_status()
-    print(f"  Video uploaded ({file_size // (1024*1024)} MB)")
+            chunk_start = uploaded_bytes
+            chunk_end = uploaded_bytes + len(chunk) - 1
+            uploaded_bytes += len(chunk)
+
+            r = requests.put(
+                upload_url,
+                headers={
+                    "Content-Type": "video/mp4",
+                    "Content-Length": str(len(chunk)),
+                    "Content-Range": f"bytes {chunk_start}-{chunk_end}/{file_size}",
+                },
+                data=chunk,
+                timeout=REQUEST_TIMEOUT_SECONDS,
+            )
+            r.raise_for_status()
+            print(
+                f"  Uploaded chunk {chunk_index + 1}/{total_chunk_count} "
+                f"({len(chunk) // (1024 * 1024)} MB)"
+            )
+
+    print(f"  Video uploaded ({file_size // (1024 * 1024)} MB)")
 
     # Step 3: Check status
     for i in range(18):  # 3 minutes max
@@ -447,6 +480,7 @@ def upload(video_path, description="", privacy="SELF_ONLY"):
             f"{API_URL}/post/publish/status/fetch/",
             headers=headers,
             json={"publish_id": publish_id},
+            timeout=REQUEST_TIMEOUT_SECONDS,
         )
         r.raise_for_status()
         status = r.json()
