@@ -39,6 +39,10 @@ def main():
     setup_parser.add_argument("platform", choices=["youtube", "instagram", "tiktok", "linkedin"])
     setup_parser.add_argument("--token", help="(unused, kept for compatibility)")
 
+    # Verify command
+    verify_parser = subparsers.add_parser("verify", help="Verify local platform configuration")
+    verify_parser.add_argument("platform", choices=["tiktok"])
+
     args = parser.parse_args()
 
     if not args.command:
@@ -48,6 +52,12 @@ def main():
     if args.command == "setup":
         try:
             run_setup(args)
+        except ModuleNotFoundError as e:
+            print(_missing_dependency_message(e))
+            sys.exit(1)
+    elif args.command == "verify":
+        try:
+            run_verify(args)
         except ModuleNotFoundError as e:
             print(_missing_dependency_message(e))
             sys.exit(1)
@@ -72,6 +82,14 @@ def run_setup(args):
         from uploaders.linkedin import authenticate
         authenticate()
         print("LinkedIn authentication complete!")
+
+
+def run_verify(args):
+    if args.platform == "tiktok":
+        from uploaders.tiktok import print_setup_status
+
+        ready = print_setup_status()
+        sys.exit(0 if ready else 1)
 
 
 def run_post(args):

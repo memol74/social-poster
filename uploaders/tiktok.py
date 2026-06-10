@@ -3,42 +3,275 @@
 import os
 import json
 import time
+import ssl
 import base64
 import hashlib
 import secrets
 import webbrowser
+from http.server import HTTPServer, BaseHTTPRequestHandler
 try:
     import truststore
     truststore.inject_into_ssl()
 except ImportError:
     pass
 import requests
-from urllib.parse import urlparse, parse_qs
+from urllib.parse import urlparse, parse_qs, urlencode
 
 DIR = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(DIR)
 TOKEN_FILE = os.path.join(ROOT, "tokens", "tiktok_token.json")
 CONFIG_FILE = os.path.join(ROOT, "config.json")
+CALLBACK_CERT_FILE = os.path.join(ROOT, "tokens", "_cert.pem")
+CALLBACK_KEY_FILE = os.path.join(ROOT, "tokens", "_key.pem")
 API_URL = "https://open.tiktokapis.com/v2"
 AUTH_URL = "https://www.tiktok.com/v2/auth/authorize/"
-REDIRECT_URI = "https://noborta.ai/tiktok-callback"
+DEFAULT_REDIRECT_URI = "https://noborta.ai/tiktok-callback"
 SCOPES = "user.info.basic,video.publish,video.upload"
+LOCAL_REDIRECT_HOSTS = {"localhost", "127.0.0.1"}
+AUTH_CALLBACK_TIMEOUT_SECONDS = 180
+ALLOWED_PRIVACY_LEVELS = {
+    "SELF_ONLY",
+    "MUTUAL_FOLLOW_FRIENDS",
+    "FOLLOWER_OF_CREATOR",
+    "PUBLIC_TO_EVERYONE",
+}
 
 
 def _load_config():
-    with open(CONFIG_FILE) as f:
+    with open(CONFIG_FILE, encoding="utf-8") as f:
         return json.load(f)["tiktok"]
 
 
 def _load_token():
-    with open(TOKEN_FILE) as f:
+    with open(TOKEN_FILE, encoding="utf-8") as f:
         return json.load(f)
 
 
 def _save_token(data):
     os.makedirs(os.path.dirname(TOKEN_FILE), exist_ok=True)
-    with open(TOKEN_FILE, "w") as f:
+    with open(TOKEN_FILE, "w", encoding="utf-8") as f:
         json.dump(data, f, indent=2)
+
+
+def _mask_value(value, prefix=6, suffix=4):
+    if not value:
+        return ""
+    if len(value) <= prefix + suffix:
+        return value
+    return f"{value[:prefix]}...{value[-suffix:]}"
+
+
+def _get_redirect_uri(cfg):
+    configured = cfg.get("redirect_uri", "").strip()
+    return configured or DEFAULT_REDIRECT_URI
+
+
+def _get_redirect_capture_mode(redirect_uri):
+    parsed = urlparse(redirect_uri)
+    if parsed.scheme in {"http", "https"} and parsed.hostname in LOCAL_REDIRECT_HOSTS:
+        return "localhost"
+    return "manual"
+
+
+def _get_local_callback_details(redirect_uri):
+    parsed = urlparse(redirect_uri)
+    if parsed.scheme not in {"http", "https"}:
+        raise ValueError(f"Unsupported redirect URI scheme for localhost callback: {parsed.scheme}")
+    if parsed.hostname not in LOCAL_REDIRECT_HOSTS:
+        raise ValueError("Redirect URI is not a localhost callback")
+
+    port = parsed.port
+    if port is None:
+        port = 443 if parsed.scheme == "https" else 80
+
+    path = parsed.path or "/"
+    return {
+        "scheme": parsed.scheme,
+        "host": parsed.hostname,
+        "port": port,
+        "path": path,
+    }
+
+
+def _extract_auth_code_from_input(user_input):
+    raw = user_input.strip()
+    if not raw:
+        return None
+
+    parsed = urlparse(raw)
+    if parsed.scheme and parsed.netloc:
+        query = parse_qs(parsed.query)
+        return query.get("code", [None])[0]
+
+    if "=" in raw:
+        query = parse_qs(raw.lstrip("?"))
+        return query.get("code", [None])[0]
+
+    return raw
+
+
+def _capture_auth_code_locally(redirect_uri, state, timeout_seconds=AUTH_CALLBACK_TIMEOUT_SECONDS):
+    details = _get_local_callback_details(redirect_uri)
+    auth_result = {"code": None, "error": None}
+
+    class Handler(BaseHTTPRequestHandler):
+        def do_GET(self):
+            request = urlparse(self.path)
+            if request.path != details["path"]:
+                self.send_response(404)
+                self.end_headers()
+                self.wfile.write(b"TikTok callback path not found.")
+                return
+
+            query = parse_qs(request.query)
+            received_state = query.get("state", [None])[0]
+            if received_state != state:
+                self.send_response(400)
+                self.end_headers()
+                self.wfile.write(b"State mismatch.")
+                return
+
+            error = query.get("error", [None])[0]
+            if error:
+                description = query.get("error_description", [error])[0]
+                auth_result["error"] = description
+                self.send_response(400)
+                self.send_header("Content-Type", "text/html")
+                self.end_headers()
+                self.wfile.write(b"<h2>TikTok authorization failed. You can close this tab.</h2>")
+                return
+
+            auth_result["code"] = query.get("code", [None])[0]
+            self.send_response(200)
+            self.send_header("Content-Type", "text/html")
+            self.end_headers()
+            self.wfile.write(b"<h2>TikTok authorized! You can close this tab.</h2>")
+
+    try:
+        server = HTTPServer((details["host"], details["port"]), Handler)
+    except OSError as exc:
+        raise RuntimeError(
+            f"Could not start local TikTok callback server on {details['host']}:{details['port']}: {exc}"
+        ) from exc
+
+    try:
+        if details["scheme"] == "https":
+            if not os.path.exists(CALLBACK_CERT_FILE) or not os.path.exists(CALLBACK_KEY_FILE):
+                raise RuntimeError(
+                    "HTTPS localhost callback requires tokens/_cert.pem and tokens/_key.pem"
+                )
+            context = ssl.SSLContext(ssl.PROTOCOL_TLS_SERVER)
+            context.load_cert_chain(CALLBACK_CERT_FILE, CALLBACK_KEY_FILE)
+            server.socket = context.wrap_socket(server.socket, server_side=True)
+
+        server.timeout = timeout_seconds
+        print(
+            f"  Waiting for TikTok callback on {details['scheme']}://{details['host']}:{details['port']}{details['path']}"
+        )
+        if details["scheme"] == "https":
+            print("  Your browser may show a localhost certificate warning before redirect completes.")
+        server.handle_request()
+    finally:
+        server.server_close()
+
+    if auth_result["error"]:
+        raise RuntimeError(f"TikTok authorization failed: {auth_result['error']}")
+    if not auth_result["code"]:
+        raise RuntimeError("No authorization code received from TikTok localhost callback")
+    return auth_result["code"]
+
+
+def get_setup_status():
+    """Inspect local TikTok setup without making network calls."""
+    status = {
+        "config_file": CONFIG_FILE,
+        "token_file": TOKEN_FILE,
+        "redirect_uri": DEFAULT_REDIRECT_URI,
+        "redirect_uri_configured": False,
+        "auth_capture": "manual",
+        "scopes": SCOPES.split(","),
+        "privacy_control": "manifest",
+        "client_key": "",
+        "token_present": os.path.exists(TOKEN_FILE),
+        "access_token_present": False,
+        "refresh_token_present": False,
+        "open_id_present": False,
+        "ready": False,
+        "issues": [],
+    }
+
+    if not os.path.exists(CONFIG_FILE):
+        status["issues"].append(f"Missing config file: {CONFIG_FILE}")
+        return status
+
+    try:
+        cfg = _load_config()
+    except (OSError, KeyError, ValueError) as exc:
+        status["issues"].append(f"Could not read TikTok config: {exc}")
+        return status
+
+    client_key = cfg.get("client_key", "")
+    client_secret = cfg.get("client_secret", "")
+    status["redirect_uri"] = _get_redirect_uri(cfg)
+    status["redirect_uri_configured"] = bool(cfg.get("redirect_uri", "").strip())
+    status["auth_capture"] = _get_redirect_capture_mode(status["redirect_uri"])
+    status["client_key"] = _mask_value(client_key)
+
+    if not client_key or client_key.startswith("YOUR_"):
+        status["issues"].append("TikTok client_key is missing in config.json")
+    if not client_secret or client_secret.startswith("YOUR_"):
+        status["issues"].append("TikTok client_secret is missing in config.json")
+    if not status["redirect_uri_configured"]:
+        status["issues"].append(
+            "TikTok redirect_uri is not set in config.json; add it and register the exact same value in the TikTok developer portal"
+        )
+
+    if status["token_present"]:
+        try:
+            token_data = _load_token()
+        except (OSError, ValueError) as exc:
+            status["issues"].append(f"Could not read TikTok token file: {exc}")
+        else:
+            status["access_token_present"] = bool(token_data.get("access_token"))
+            status["refresh_token_present"] = bool(token_data.get("refresh_token"))
+            status["open_id_present"] = bool(token_data.get("open_id"))
+            if not status["access_token_present"]:
+                status["issues"].append("TikTok token file is missing access_token")
+            if not status["refresh_token_present"]:
+                status["issues"].append("TikTok token file is missing refresh_token for automatic renewal")
+    else:
+        status["issues"].append("TikTok OAuth token is missing; run `py poster.py setup tiktok`")
+
+    status["ready"] = not status["issues"]
+    return status
+
+
+def print_setup_status():
+    status = get_setup_status()
+    print("TikTok setup status:")
+    print(f"  Config file: {'OK' if os.path.exists(CONFIG_FILE) else 'MISSING'}")
+    if status["client_key"]:
+        print(f"  Client key: {status['client_key']}")
+    print(f"  Token file: {'OK' if status['token_present'] else 'MISSING'}")
+    if status["token_present"]:
+        print(f"  Access token: {'OK' if status['access_token_present'] else 'MISSING'}")
+        print(f"  Refresh token: {'OK' if status['refresh_token_present'] else 'MISSING'}")
+    print(f"  Redirect URI: {status['redirect_uri']}")
+    print(f"  Redirect URI configured: {'YES' if status['redirect_uri_configured'] else 'NO'}")
+    print(f"  Auth capture: {'localhost callback server' if status['auth_capture'] == 'localhost' else 'manual pasteback'}")
+    print(f"  Scopes: {', '.join(status['scopes'])}")
+    print("  Privacy control: manifest value is sent to TikTok")
+    print("  Register this exact Redirect URI in the TikTok developer portal")
+
+    if status["issues"]:
+        print("  Ready: NO")
+        print("  Issues:")
+        for issue in status["issues"]:
+            print(f"    - {issue}")
+    else:
+        print("  Ready: YES")
+
+    return status["ready"]
 
 
 def authenticate():
@@ -46,8 +279,10 @@ def authenticate():
     cfg = _load_config()
     client_key = cfg["client_key"]
     client_secret = cfg["client_secret"]
+    redirect_uri = _get_redirect_uri(cfg)
     print(f"  Config loaded from: {CONFIG_FILE}")
-    print(f"  client_key: {client_key[:6]}...{client_key[-4:]}")
+    print(f"  client_key: {_mask_value(client_key)}")
+    print(f"  redirect_uri: {redirect_uri}")
 
     # Check for existing valid token
     if os.path.exists(TOKEN_FILE):
@@ -66,28 +301,32 @@ def authenticate():
         hashlib.sha256(code_verifier.encode()).digest()
     ).rstrip(b"=").decode()
 
-    auth_params = (
-        f"?client_key={client_key}"
-        f"&scope={SCOPES}"
-        f"&response_type=code"
-        f"&redirect_uri={REDIRECT_URI}"
-        f"&state={state}"
-        f"&code_challenge={code_challenge}"
-        f"&code_challenge_method=S256"
-    )
+    auth_params = "?" + urlencode({
+        "client_key": client_key,
+        "scope": SCOPES,
+        "response_type": "code",
+        "redirect_uri": redirect_uri,
+        "state": state,
+        "code_challenge": code_challenge,
+        "code_challenge_method": "S256",
+    })
 
     auth_code = None
+    auth_url = AUTH_URL + auth_params
+    capture_mode = _get_redirect_capture_mode(redirect_uri)
 
-    print(f"  Opening browser for TikTok login...")
-    webbrowser.open(AUTH_URL + auth_params)
-
-    print("  After logging in, the browser will redirect to a page that won't load.")
-    print("  Copy the FULL URL from your browser's address bar.\n")
-    redirect_url = input("  Paste redirect URL: ").strip()
-
-    # Extract code from URL
-    parsed = parse_qs(urlparse(redirect_url).query)
-    auth_code = parsed.get("code", [None])[0]
+    print("  Opening browser for TikTok login...")
+    print("  If TikTok rejects the login with a redirect_uri error, the value above does not exactly match the one registered in the TikTok developer portal.")
+    if capture_mode == "localhost":
+        webbrowser.open(auth_url)
+        auth_code = _capture_auth_code_locally(redirect_uri, state)
+    else:
+        print(f"  Auth URL: {auth_url}")
+        webbrowser.open(auth_url)
+        print("  After logging in, the browser will redirect to a page that won't load.")
+        print("  Copy either the FULL redirect URL or just the code value from your browser's address bar.\n")
+        redirect_input = input("  Paste redirect URL or code: ").strip()
+        auth_code = _extract_auth_code_from_input(redirect_input)
 
     if not auth_code:
         raise Exception("No authorization code found in URL")
@@ -98,7 +337,7 @@ def authenticate():
         "client_secret": client_secret,
         "code": auth_code,
         "grant_type": "authorization_code",
-        "redirect_uri": REDIRECT_URI,
+        "redirect_uri": redirect_uri,
         "code_verifier": code_verifier,
     })
     r.raise_for_status()
@@ -145,14 +384,15 @@ def upload(video_path, description="", privacy="SELF_ONLY"):
     """Upload a video to TikTok.
     
     privacy: SELF_ONLY, MUTUAL_FOLLOW_FRIENDS, FOLLOWER_OF_CREATOR, PUBLIC_TO_EVERYONE
-    In sandbox mode, only SELF_ONLY works.
+    The caller controls privacy; TikTok app permissions still apply.
     """
     token_data = authenticate()
     token = token_data["access_token"]
     file_size = os.path.getsize(video_path)
 
-    # Sandbox apps can only post as SELF_ONLY
-    privacy = "SELF_ONLY"
+    if privacy not in ALLOWED_PRIVACY_LEVELS:
+        allowed = ", ".join(sorted(ALLOWED_PRIVACY_LEVELS))
+        raise ValueError(f"Invalid TikTok privacy '{privacy}'. Expected one of: {allowed}")
 
     headers = {
         "Authorization": f"Bearer {token}",
