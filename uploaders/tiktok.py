@@ -30,7 +30,8 @@ SCOPES = "user.info.basic,video.publish,video.upload"
 LOCAL_REDIRECT_HOSTS = {"localhost", "127.0.0.1"}
 AUTH_CALLBACK_TIMEOUT_SECONDS = 180
 REQUEST_TIMEOUT_SECONDS = 120
-TIKTOK_UPLOAD_CHUNK_SIZE = 32 * 1024 * 1024
+TIKTOK_MIN_UPLOAD_CHUNK_SIZE = 5 * 1024 * 1024
+TIKTOK_TARGET_UPLOAD_CHUNK_SIZE = 10 * 1024 * 1024
 ALLOWED_PRIVACY_LEVELS = {
     "SELF_ONLY",
     "MUTUAL_FOLLOW_FRIENDS",
@@ -112,13 +113,61 @@ def _extract_auth_code_from_input(user_input):
     return raw
 
 
+def _token_matches_client(token_data, client_key):
+    if not token_data:
+        return False
+    token_client_key = token_data.get("client_key")
+    return bool(token_client_key) and token_client_key == client_key
+
+
 def _plan_upload_chunks(file_size):
     if file_size <= 0:
         raise ValueError("Video file is empty")
 
-    chunk_size = min(file_size, TIKTOK_UPLOAD_CHUNK_SIZE)
-    total_chunk_count = max(1, file_size // chunk_size)
-    return chunk_size, total_chunk_count
+    if file_size <= TIKTOK_TARGET_UPLOAD_CHUNK_SIZE:
+        return file_size, 1
+
+    total_chunk_count = (file_size + TIKTOK_TARGET_UPLOAD_CHUNK_SIZE - 1) // TIKTOK_TARGET_UPLOAD_CHUNK_SIZE
+    while total_chunk_count > 1:
+        chunk_size = (file_size + total_chunk_count - 1) // total_chunk_count
+        last_chunk_size = file_size - (chunk_size * (total_chunk_count - 1))
+        if last_chunk_size >= TIKTOK_MIN_UPLOAD_CHUNK_SIZE:
+            return chunk_size, total_chunk_count
+        total_chunk_count -= 1
+
+    return file_size, 1
+
+
+def _tiktok_error_code(response_json):
+    return response_json.get("error", {}).get("code")
+
+
+def _init_upload(headers, description, privacy, file_size):
+    init_body = {
+        "post_info": {
+            "title": description[:150],  # TikTok max 150 chars
+            "privacy_level": privacy,
+        },
+        "source_info": {
+            "source": "FILE_UPLOAD",
+            "video_size": file_size,
+        },
+    }
+
+    r = requests.post(
+        f"{API_URL}/post/publish/video/init/",
+        headers=headers,
+        json=init_body,
+        timeout=REQUEST_TIMEOUT_SECONDS,
+    )
+    if not r.ok:
+        raise Exception(f"Init failed ({r.status_code}): {r.text}")
+
+    resp = r.json()
+    if _tiktok_error_code(resp) != "ok":
+        raise Exception(f"Init failed: {resp.get('error', resp)}")
+
+    return resp
 
 
 def _capture_auth_code_locally(redirect_uri, state, timeout_seconds=AUTH_CALLBACK_TIMEOUT_SECONDS):
@@ -298,13 +347,15 @@ def authenticate():
     # Check for existing valid token
     if os.path.exists(TOKEN_FILE):
         token_data = _load_token()
-        if token_data.get("access_token"):
+        if token_data.get("access_token") and _token_matches_client(token_data, client_key):
             # Try refreshing if we have a refresh token
             if token_data.get("refresh_token"):
                 try:
                     return _refresh_token(client_key, client_secret, token_data["refresh_token"])
                 except Exception:
                     pass  # Fall through to re-auth
+        elif token_data.get("access_token"):
+            print("  Existing TikTok token belongs to a different app key; re-authenticating with current config.")
 
     state = secrets.token_urlsafe(16)
     code_verifier = secrets.token_urlsafe(64)
@@ -362,6 +413,7 @@ def authenticate():
         "refresh_token": data.get("refresh_token", ""),
         "open_id": data.get("open_id", ""),
         "expires_in": data.get("expires_in"),
+        "client_key": client_key,
     }
     _save_token(token_data)
     print(f"  TikTok authenticated! open_id: {token_data['open_id']}")
@@ -386,6 +438,7 @@ def _refresh_token(client_key, client_secret, refresh_token):
         "refresh_token": data.get("refresh_token", refresh_token),
         "open_id": data.get("open_id", ""),
         "expires_in": data.get("expires_in"),
+        "client_key": client_key,
     }
     _save_token(token_data)
     return token_data
@@ -412,35 +465,21 @@ def upload(video_path, description="", privacy="SELF_ONLY"):
     }
 
     # Step 1: Initialize upload
-    init_body = {
-        "post_info": {
-            "title": description[:150],  # TikTok max 150 chars
-            "privacy_level": privacy,
-        },
-        "source_info": {
-            "source": "FILE_UPLOAD",
-            "video_size": file_size,
-            "chunk_size": chunk_size,
-            "total_chunk_count": total_chunk_count,
-        },
-    }
-
-    r = requests.post(
-        f"{API_URL}/post/publish/video/init/",
-        headers=headers,
-        json=init_body,
-        timeout=REQUEST_TIMEOUT_SECONDS,
-    )
-    if not r.ok:
-        raise Exception(f"Init failed ({r.status_code}): {r.text}")
-    resp = r.json()
-
-    if resp.get("error", {}).get("code") != "ok":
-        raise Exception(f"Init failed: {resp.get('error', resp)}")
+    try:
+        resp = _init_upload(headers, description, privacy, file_size)
+    except Exception as exc:
+        error_text = str(exc)
+        if "unaudited_client_can_only_post_to_private_accounts" in error_text and privacy != "SELF_ONLY":
+            print("  TikTok app is unaudited for public posting; retrying as SELF_ONLY.")
+            privacy = "SELF_ONLY"
+            resp = _init_upload(headers, description, privacy, file_size)
+        else:
+            raise
 
     publish_id = resp["data"]["publish_id"]
     upload_url = resp["data"]["upload_url"]
     print(f"  Publish ID: {publish_id}")
+    print(f"  Privacy used: {privacy}")
     print(f"  Upload plan: {total_chunk_count} chunk(s) of up to {chunk_size // (1024 * 1024)} MB")
 
     # Step 2: Upload video binary in chunks
