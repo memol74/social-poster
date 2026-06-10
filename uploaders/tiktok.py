@@ -117,7 +117,7 @@ def _plan_upload_chunks(file_size):
         raise ValueError("Video file is empty")
 
     chunk_size = min(file_size, TIKTOK_UPLOAD_CHUNK_SIZE)
-    total_chunk_count = (file_size + chunk_size - 1) // chunk_size
+    total_chunk_count = max(1, file_size // chunk_size)
     return chunk_size, total_chunk_count
 
 
@@ -447,9 +447,18 @@ def upload(video_path, description="", privacy="SELF_ONLY"):
     uploaded_bytes = 0
     with open(video_path, "rb") as f:
         for chunk_index in range(total_chunk_count):
-            chunk = f.read(chunk_size)
+            bytes_remaining = file_size - uploaded_bytes
+            expected_chunk_size = chunk_size
+            if chunk_index == total_chunk_count - 1:
+                expected_chunk_size = bytes_remaining
+
+            chunk = f.read(expected_chunk_size)
             if not chunk:
                 raise RuntimeError("Unexpected end of file while preparing TikTok upload chunks")
+            if len(chunk) != expected_chunk_size:
+                raise RuntimeError(
+                    f"Prepared TikTok chunk size {len(chunk)} does not match expected {expected_chunk_size}"
+                )
 
             chunk_start = uploaded_bytes
             chunk_end = uploaded_bytes + len(chunk) - 1
