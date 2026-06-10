@@ -1,0 +1,26 @@
+{
+  "video": "video.mp4",
+  "platforms": {
+    "youtube": {
+      "title": "🔥 This Tool Shows What Your AI Agents Are Actually Doing",
+      "description": "Ever wonder what your AI coding agents are doing behind the scenes? abtop is like htop but for Claude Code, Codex CLI, and OpenCode sessions. See real-time token usage, context window percentages, rate limits, child processes, and open ports — all in one terminal window. Written in Rust for blazing performance across Mac, Linux, and Windows. With 2,600+ stars, it's completely read-only (no API keys needed), supports 12 themes including colorblind-friendly options, and even lets you kill orphan processes with a keystroke. Install with one curl command and finally know which agent is eating your tokens or spawning servers you forgot about. Perfect for anyone running multiple AI agents across projects. Check the link in bio to star it on GitHub and take back control of your AI workflow.",
+      "tags": [
+        "github",
+        "ai",
+        "rust"
+      ],
+      "privacy": "public",
+      "made_for_kids": false
+    },
+    "instagram": {
+      "caption": "Ever wonder what your AI coding agents are doing behind the scenes? abtop is like htop but for Claude Code, Codex CLI, and OpenCode sessions. See real-time token usage, context window percentages, rate limits, child processes, and open ports — all in one terminal window. Written in Rust for blazing performance across Mac, Linux, and Windows. With 2,600+ stars, it's completely read-only (no API keys needed), supports 12 themes including colorblind-friendly options, and even lets you kill orphan processes with a keystroke. Install with one curl command and finally know which agent is eating your tokens or spawning servers you forgot about. Perfect for anyone running multiple AI agents across projects. Check the link in bio to star it on GitHub and take back control of your AI workflow."
+    },
+    "tiktok": {
+      "description": "Ever wonder what your AI coding agents are doing behind the scenes? abtop is like htop but for Claude Code, Codex CLI, and OpenCode sessions. See real-time token usage, context window percentages, rate limits, child processes, and open ports — all in one terminal window. Written in Rust for blazing performance across Mac, Linux, and Windows. With 2,600+ stars, it's completely read-only (no API keys needed), supports 12 themes including colorblind-friendly options, and even lets you kill orphan processes with a keystroke. Install with one curl command and finally know which agent is eating your tokens or spawning servers you forgot about. Perfect for anyone running multiple AI agents across projects. Check the link in bio to star it on GitHub and take back control of your AI workflow.",
+      "privacy": "PUBLIC_TO_EVERYONE"
+    },
+    "linkedin": {
+      "text": "I just found a tool that solves a problem I didn't realize I had until now.\n\nIf you're using AI coding agents like Claude Code or Codex CLI, you know the feeling: you have 3 sessions running across different projects, one just hit a rate limit, another filled up its context window, and you have no idea which agent spawned that mystery server on port 8080.\n\nabtop changes that. It's htop but for AI agents.\n\nOne terminal window shows you:\n→ Every active agent session\n→ Real-time token usage\n→ Context window percentages with warnings\n→ Rate limit status\n→ Child processes and open ports\n→ All the metrics you actually need\n\nWhat makes it special? It's written in Rust so it's fast. It works natively on Mac, Linux, and Windows. It's completely read-only — no API keys, no authentication, just local process monitoring. And with 2,600+ GitHub stars, it's already proven in production environments.\n\nThe interface is beautiful too — 12 built-in themes including colorblind-friendly options, configurable panels, and keyboard shortcuts that feel natural.\n\nFor anyone running multiple AI agents, this is the visibility layer you didn't know you needed. Install it with one curl command and you'll wonder how you lived without it.\n\nLink to repo in the comments. Worth a star if you use AI coding tools."
+    }
+  }
+}
