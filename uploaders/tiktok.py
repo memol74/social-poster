@@ -142,7 +142,7 @@ def _tiktok_error_code(response_json):
     return response_json.get("error", {}).get("code")
 
 
-def _init_upload(headers, description, privacy, file_size):
+def _init_upload(headers, description, privacy, file_size, chunk_size, total_chunk_count):
     init_body = {
         "post_info": {
             "title": description[:150],  # TikTok max 150 chars
@@ -151,6 +151,8 @@ def _init_upload(headers, description, privacy, file_size):
         "source_info": {
             "source": "FILE_UPLOAD",
             "video_size": file_size,
+            "chunk_size": chunk_size,
+            "total_chunk_count": total_chunk_count,
         },
     }
 
@@ -466,13 +468,13 @@ def upload(video_path, description="", privacy="SELF_ONLY"):
 
     # Step 1: Initialize upload
     try:
-        resp = _init_upload(headers, description, privacy, file_size)
+        resp = _init_upload(headers, description, privacy, file_size, chunk_size, total_chunk_count)
     except Exception as exc:
         error_text = str(exc)
         if "unaudited_client_can_only_post_to_private_accounts" in error_text and privacy != "SELF_ONLY":
             print("  TikTok app is unaudited for public posting; retrying as SELF_ONLY.")
             privacy = "SELF_ONLY"
-            resp = _init_upload(headers, description, privacy, file_size)
+            resp = _init_upload(headers, description, privacy, file_size, chunk_size, total_chunk_count)
         else:
             raise
 
