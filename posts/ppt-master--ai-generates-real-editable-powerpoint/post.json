@@ -1,0 +1,26 @@
+{
+  "video": "video.mp4",
+  "platforms": {
+    "youtube": {
+      "title": "🔥 This Repo Generates REAL Editable PowerPoint",
+      "description": "Stop settling for AI presentation tools that give you flat slide images. PPT Master (26,000+ stars) generates native, fully editable PowerPoint files from any document. Every shape, text box, and chart is clickable in PowerPoint — not locked in an image. It adds real transitions, animations, and speaker notes you can convert to audio narration. You can even follow your own template to keep branding consistent. The entire workflow runs locally with your choice of AI model (Claude, GPT, Gemini). Your files stay on your machine, costs are transparent (just your model usage), and everything outputs as real PPTX you can present and keep editing. Next time you need a deck, drop in your document and let PPT Master handle the heavy lifting. Link in bio to the repo. #ai #github #opensource #powerpoint #productivity",
+      "tags": [
+        "github",
+        "ai",
+        "opensource"
+      ],
+      "privacy": "public",
+      "made_for_kids": false
+    },
+    "instagram": {
+      "caption": "Stop settling for AI presentation tools that give you flat slide images. PPT Master (26,000+ stars) generates native, fully editable PowerPoint files from any document. Every shape, text box, and chart is clickable in PowerPoint — not locked in an image. It adds real transitions, animations, and speaker notes you can convert to audio narration. You can even follow your own template to keep branding consistent. The entire workflow runs locally with your choice of AI model (Claude, GPT, Gemini). Your files stay on your machine, costs are transparent (just your model usage), and everything outputs as real PPTX you can present and keep editing. Next time you need a deck, drop in your document and let PPT Master handle the heavy lifting. Link in bio to the repo. #ai #github #opensource #powerpoint #productivity"
+    },
+    "tiktok": {
+      "description": "Stop settling for AI presentation tools that give you flat slide images. PPT Master (26,000+ stars) generates native, fully editable PowerPoint files from any document. Every shape, text box, and chart is clickable in PowerPoint — not locked in an image. It adds real transitions, animations, and speaker notes you can convert to audio narration. You can even follow your own template to keep branding consistent. The entire workflow runs locally with your choice of AI model (Claude, GPT, Gemini). Your files stay on your machine, costs are transparent (just your model usage), and everything outputs as real PPTX you can present and keep editing. Next time you need a deck, drop in your document and let PPT Master handle the heavy lifting. Link in bio to the repo. #ai #github #opensource #powerpoint #productivity",
+      "privacy": "PUBLIC_TO_EVERYONE"
+    },
+    "linkedin": {
+      "text": "I've been reviewing decks professionally for years, and the biggest frustration with AI presentation tools has always been the same: they give you images, not real PowerPoint files.\n\nYou can't click into a shape. You can't adjust a text box. You're stuck with what it gave you.\n\nThat's why PPT Master (26,000+ GitHub stars) caught my attention. It's the first open source tool I've seen that generates native, fully editable PPTX files — real DrawingML shapes, transitions, animations, the works.\n\nYou drop in a document. It outputs a complete PowerPoint deck. Every element is clickable and editable, just like you built it yourself.\n\nIt even adds speaker notes you can turn into audio narration, and you can follow your own template to keep your brand consistent.\n\nThe workflow runs locally. Your files stay on your machine. Costs are transparent — just your AI model usage, no hidden subscription stacked on top.\n\nIf you've been settling for image-based slides because that's all AI tools offered, this changes the game.\n\nLink to the repo in the comments."
+    }
+  }
+}

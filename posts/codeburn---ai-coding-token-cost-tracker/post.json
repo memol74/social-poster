@@ -1,0 +1,26 @@
+{
+  "video": "video.mp4",
+  "platforms": {
+    "youtube": {
+      "title": "🔥 Stop Burning Money on AI Coding Tools",
+      "description": "If you're using Cursor, Claude, Copilot, or any AI coding assistant, you're spending tokens — and money — with every chat. But do you actually know where that budget is going? CodeBurn is an open-source terminal dashboard that tracks token usage and cost across 25 AI coding tools, breaking down your spending by project, model, task type, and provider. It reads session data directly from your disk, runs completely locally, and uses LiteLLM pricing to show you exactly what every conversation cost. With 7,862 stars, it's gained traction fast because it solves a real pain point: visibility into AI spend. The optimize mode even scans your usage and suggests copy-paste fixes to reduce waste. Install with npm install -g codeburn, run it, and see your full AI coding spend in one beautiful TUI. Export to CSV, compare models side-by-side, track productive vs abandoned work. Link in bio.",
+      "tags": [
+        "github",
+        "ai",
+        "opensource"
+      ],
+      "privacy": "public",
+      "made_for_kids": false
+    },
+    "instagram": {
+      "caption": "If you're using Cursor, Claude, Copilot, or any AI coding assistant, you're spending tokens — and money — with every chat. But do you actually know where that budget is going? CodeBurn is an open-source terminal dashboard that tracks token usage and cost across 25 AI coding tools, breaking down your spending by project, model, task type, and provider. It reads session data directly from your disk, runs completely locally, and uses LiteLLM pricing to show you exactly what every conversation cost. With 7,862 stars, it's gained traction fast because it solves a real pain point: visibility into AI spend. The optimize mode even scans your usage and suggests copy-paste fixes to reduce waste. Install with npm install -g codeburn, run it, and see your full AI coding spend in one beautiful TUI. Export to CSV, compare models side-by-side, track productive vs abandoned work. Link in bio."
+    },
+    "tiktok": {
+      "description": "If you're using Cursor, Claude, Copilot, or any AI coding assistant, you're spending tokens — and money — with every chat. But do you actually know where that budget is going? CodeBurn is an open-source terminal dashboard that tracks token usage and cost across 25 AI coding tools, breaking down your spending by project, model, task type, and provider. It reads session data directly from your disk, runs completely locally, and uses LiteLLM pricing to show you exactly what every conversation cost. With 7,862 stars, it's gained traction fast because it solves a real pain point: visibility into AI spend. The optimize mode even scans your usage and suggests copy-paste fixes to reduce waste. Install with npm install -g codeburn, run it, and see your full AI coding spend in one beautiful TUI. Export to CSV, compare models side-by-side, track productive vs abandoned work. Link in bio.",
+      "privacy": "PUBLIC_TO_EVERYONE"
+    },
+    "linkedin": {
+      "text": "Ever wonder why your AI coding bill keeps climbing?\n\nI was using Cursor, Claude Code, and Copilot across multiple projects, and every month the invoice got bigger. But I had no idea which project was burning tokens, which model was the culprit, or whether I was getting value for the spend.\n\nThat's the problem CodeBurn solves.\n\nIt's an open-source TUI that reads session data directly from disk for 25 AI coding tools — Cursor, Claude, Codex, Copilot, Cline, and more. No wrapper, no proxy, no API keys. Just run 'codeburn' and you get a live dashboard showing cost by project, model, task type, and provider.\n\nThe optimize mode scans your usage history and tells you exactly where you're wasting tokens — with copy-paste fixes ready to go.\n\nSince launching in April 2026, it's hit 7,862 stars because developers finally have visibility into their AI spend. You can export to CSV, compare models side-by-side, track productive vs abandoned work, and see average cost per session.\n\nInstall: npm install -g codeburn\n\nIf you're paying for AI coding tools, you deserve to know where every dollar goes. CodeBurn gives you that visibility in 30 seconds.\n\nLink in comments."
+    }
+  }
+}

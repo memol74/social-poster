@@ -1,0 +1,26 @@
+{
+  "video": "video.mp4",
+  "platforms": {
+    "youtube": {
+      "title": "🔥 Stop Drowning in News - Let AI Filter It",
+      "description": "Horizon is your AI-powered news radar that turns platform chaos into a personalized daily briefing. It connects to Hacker News, Reddit, RSS feeds, Telegram, Twitter, and GitHub, then uses AI to score, deduplicate, and filter stories so you only see what matters. With 5,868 stars on GitHub, Horizon enriches items with web context, summarizes community comments, and delivers bilingual briefings to GitHub Pages, email, or webhooks. It supports Claude, GPT, Gemini, DeepSeek, and local Ollama models. The setup wizard generates your config from your interests, and GitHub Actions can automate daily runs. Instead of manually checking ten platforms, you get one curated reading list tuned to your threshold. Stop missing important stories buried in noise—let Horizon run the first pass while you focus on reading what actually matters. Link in bio for the full repo.",
+      "tags": [
+        "github",
+        "ai",
+        "opensource"
+      ],
+      "privacy": "public",
+      "made_for_kids": false
+    },
+    "instagram": {
+      "caption": "Horizon is your AI-powered news radar that turns platform chaos into a personalized daily briefing. It connects to Hacker News, Reddit, RSS feeds, Telegram, Twitter, and GitHub, then uses AI to score, deduplicate, and filter stories so you only see what matters. With 5,868 stars on GitHub, Horizon enriches items with web context, summarizes community comments, and delivers bilingual briefings to GitHub Pages, email, or webhooks. It supports Claude, GPT, Gemini, DeepSeek, and local Ollama models. The setup wizard generates your config from your interests, and GitHub Actions can automate daily runs. Instead of manually checking ten platforms, you get one curated reading list tuned to your threshold. Stop missing important stories buried in noise—let Horizon run the first pass while you focus on reading what actually matters. Link in bio for the full repo."
+    },
+    "tiktok": {
+      "description": "Horizon is your AI-powered news radar that turns platform chaos into a personalized daily briefing. It connects to Hacker News, Reddit, RSS feeds, Telegram, Twitter, and GitHub, then uses AI to score, deduplicate, and filter stories so you only see what matters. With 5,868 stars on GitHub, Horizon enriches items with web context, summarizes community comments, and delivers bilingual briefings to GitHub Pages, email, or webhooks. It supports Claude, GPT, Gemini, DeepSeek, and local Ollama models. The setup wizard generates your config from your interests, and GitHub Actions can automate daily runs. Instead of manually checking ten platforms, you get one curated reading list tuned to your threshold. Stop missing important stories buried in noise—let Horizon run the first pass while you focus on reading what actually matters. Link in bio for the full repo.",
+      "privacy": "PUBLIC_TO_EVERYONE"
+    },
+    "linkedin": {
+      "text": "I used to waste hours every morning jumping between Hacker News, Reddit, RSS feeds, Telegram channels, and GitHub trending. By the time I'd scanned everything, I'd already missed half the day.\n\nThen I found Horizon.\n\nIt's an open-source AI news radar that connects all those platforms in one config file. You set a score threshold, and Horizon fetches everything, deduplicates the same story across sources, and uses Claude, GPT, Gemini, or even local models to rank each item from 0-10. Only the stories above your threshold make it to your briefing.\n\nWhat blew me away: it doesn't just filter—it enriches. Horizon searches the web for context on unfamiliar terms and summarizes top community comments from HN and Reddit threads. You get the story and the conversation in one place.\n\nThe setup wizard generates your config from your interests. GitHub Actions runs it daily and publishes to Pages. You can deliver via email, webhooks to Slack or Feishu, or just local Markdown. It's already at 5,868 stars because it solves a real problem: information overload.\n\nNow I spend 10 minutes reading a curated briefing instead of two hours context-switching. If you're tired of drowning in feeds, check out Horizon on GitHub. It's MIT-licensed, Docker-ready, and supports bilingual output.\n\nLink: https://github.com/Thysrael/Horizon"
+    }
+  }
+}
