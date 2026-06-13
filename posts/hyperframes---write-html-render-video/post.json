@@ -1,0 +1,26 @@
+{
+  "video": "video.mp4",
+  "platforms": {
+    "youtube": {
+      "title": "🔥 Write HTML. Get Video. Built for AI Agents.",
+      "description": "HyperFrames by HeyGen is changing how developers create videos. Instead of wrestling with timeline editors, you write plain HTML with data attributes and render directly to MP4. It supports GSAP, CSS animations, Lottie, Three.js—any seekable animation library. No React required, no build step. AI coding agents can generate video projects because they already speak HTML. Same input always produces the same output, making it perfect for CI/CD pipelines and automated content generation. With 27,000+ stars and Apache 2.0 license, it's open source with no per-render fees. Use cases: product launches, data visualizations, social videos, docs-to-video, and automated content pipelines. Install with npx hyperframes init, preview in browser, render locally or on AWS Lambda. Check the repo for showcase examples, catalog of reusable blocks, and full documentation. Link in bio.",
+      "tags": [
+        "github",
+        "ai",
+        "opensource"
+      ],
+      "privacy": "public",
+      "made_for_kids": false
+    },
+    "instagram": {
+      "caption": "HyperFrames by HeyGen is changing how developers create videos. Instead of wrestling with timeline editors, you write plain HTML with data attributes and render directly to MP4. It supports GSAP, CSS animations, Lottie, Three.js—any seekable animation library. No React required, no build step. AI coding agents can generate video projects because they already speak HTML. Same input always produces the same output, making it perfect for CI/CD pipelines and automated content generation. With 27,000+ stars and Apache 2.0 license, it's open source with no per-render fees. Use cases: product launches, data visualizations, social videos, docs-to-video, and automated content pipelines. Install with npx hyperframes init, preview in browser, render locally or on AWS Lambda. Check the repo for showcase examples, catalog of reusable blocks, and full documentation. Link in bio."
+    },
+    "tiktok": {
+      "description": "HyperFrames by HeyGen is changing how developers create videos. Instead of wrestling with timeline editors, you write plain HTML with data attributes and render directly to MP4. It supports GSAP, CSS animations, Lottie, Three.js—any seekable animation library. No React required, no build step. AI coding agents can generate video projects because they already speak HTML. Same input always produces the same output, making it perfect for CI/CD pipelines and automated content generation. With 27,000+ stars and Apache 2.0 license, it's open source with no per-render fees. Use cases: product launches, data visualizations, social videos, docs-to-video, and automated content pipelines. Install with npx hyperframes init, preview in browser, render locally or on AWS Lambda. Check the repo for showcase examples, catalog of reusable blocks, and full documentation. Link in bio.",
+      "privacy": "PUBLIC_TO_EVERYONE"
+    },
+    "linkedin": {
+      "text": "Ever tried building product videos in a timeline editor and wished you could just... code them?\n\nThat's exactly what HyperFrames does. Write HTML. Get video.\n\nI came across this repo from HeyGen (27K+ stars) and it completely flips the script on video creation. Instead of dragging clips around a timeline, you write plain HTML files with data attributes for timing and tracks. Add GSAP or CSS animations. Run one command. Get an MP4.\n\nWhat blew my mind: AI coding agents can now generate complete video projects because they already know HTML. No need to teach them proprietary timeline formats or React component patterns.\n\nThe technical elegance is beautiful—it uses headless Chrome and FFmpeg to seek each frame and encode deterministically. Same HTML input = same video output, every single time. Perfect for CI/CD pipelines and automated content generation.\n\nReal use cases:\n→ Product launch videos with animated data\n→ PR walkthroughs with code diffs and narration\n→ Data visualizations and chart races\n→ Social videos with kinetic captions\n→ Docs-to-video pipelines\n\nNo React required. No build step. Apache 2.0 licensed. No per-render fees.\n\nIf you've ever needed to generate videos programmatically or wanted agents to create video content, this changes everything. Check out HeyGen's HyperFrames repo—link in comments."
+    }
+  }
+}

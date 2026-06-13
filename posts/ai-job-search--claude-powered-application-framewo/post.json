@@ -1,0 +1,26 @@
+{
+  "video": "video.mp4",
+  "platforms": {
+    "youtube": {
+      "title": "🔥 Stop Writing Generic Cover Letters",
+      "description": "This AI-powered job application framework turns Claude Code into your personal hiring assistant. Fork the repo, fill in your profile once, and let Claude evaluate jobs, tailor your CV, write cover letters, and prepare you for interviews. The system uses a drafter-reviewer workflow where two separate Claude agents collaborate—one drafts your materials, the other researches the company and critiques them until they're perfect. It even compiles LaTeX PDFs and automatically fixes layout breaks so your CV is exactly 2 pages and your cover letter fits on 1 page with proper formatting. With over 3,300 stars and built-in job portal search for the Danish market (easily adaptable to other countries), it's the most comprehensive open-source job search automation available. The framework encodes career guidance best practices including structured fit scoring, forward-looking cover letter framing, and optional salary benchmarking. Stop spending hours copy-pasting the same application. Link in bio to the repo.",
+      "tags": [
+        "github",
+        "ai",
+        "opensource"
+      ],
+      "privacy": "public",
+      "made_for_kids": false
+    },
+    "instagram": {
+      "caption": "This AI-powered job application framework turns Claude Code into your personal hiring assistant. Fork the repo, fill in your profile once, and let Claude evaluate jobs, tailor your CV, write cover letters, and prepare you for interviews. The system uses a drafter-reviewer workflow where two separate Claude agents collaborate—one drafts your materials, the other researches the company and critiques them until they're perfect. It even compiles LaTeX PDFs and automatically fixes layout breaks so your CV is exactly 2 pages and your cover letter fits on 1 page with proper formatting. With over 3,300 stars and built-in job portal search for the Danish market (easily adaptable to other countries), it's the most comprehensive open-source job search automation available. The framework encodes career guidance best practices including structured fit scoring, forward-looking cover letter framing, and optional salary benchmarking. Stop spending hours copy-pasting the same application. Link in bio to the repo."
+    },
+    "tiktok": {
+      "description": "This AI-powered job application framework turns Claude Code into your personal hiring assistant. Fork the repo, fill in your profile once, and let Claude evaluate jobs, tailor your CV, write cover letters, and prepare you for interviews. The system uses a drafter-reviewer workflow where two separate Claude agents collaborate—one drafts your materials, the other researches the company and critiques them until they're perfect. It even compiles LaTeX PDFs and automatically fixes layout breaks so your CV is exactly 2 pages and your cover letter fits on 1 page with proper formatting. With over 3,300 stars and built-in job portal search for the Danish market (easily adaptable to other countries), it's the most comprehensive open-source job search automation available. The framework encodes career guidance best practices including structured fit scoring, forward-looking cover letter framing, and optional salary benchmarking. Stop spending hours copy-pasting the same application. Link in bio to the repo.",
+      "privacy": "PUBLIC_TO_EVERYONE"
+    },
+    "linkedin": {
+      "text": "I just found a GitHub repo that completely changes how job applications work.\n\nMost of us have been there: you find a perfect job posting, then spend 2-3 hours tailoring your CV, writing a cover letter, researching the company, and triple-checking the PDF formatting. Then you do it all again for the next application.\n\nThis framework (3,300+ stars) turns Claude Code into a full application assistant. You run /setup once with your career history. Then for each job, you just paste the URL.\n\nWhat happens next is wild:\n\n→ Claude evaluates your fit score against the posting\n→ A drafter agent writes a tailored CV and cover letter in LaTeX\n→ A separate reviewer agent researches the company and critiques the drafts\n→ The drafter revises based on feedback\n→ Both PDFs compile and Claude visually inspects them for layout breaks\n→ You get interview-ready materials in minutes\n\nThe clever part isn't just automation—it's the two-agent architecture. The drafter writes; the reviewer (fresh context, no bias) researches and pushes back. This catches the generic language and missed keywords that single-pass AI writing always leaves in.\n\nI tested it on a real posting. The cover letter referenced a specific company initiative I would have missed manually. The CV relevance-weighted which bullets to keep when cutting to 2 pages—older experience that matched keywords survived over recent work that didn't.\n\nBuilt for the Danish job market but the core workflow is language-agnostic. MIT license, fully forkable.\n\nLink in the comments. If you're job searching right now, this will save you dozens of hours."
+    }
+  }
+}

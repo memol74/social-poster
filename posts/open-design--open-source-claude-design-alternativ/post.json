@@ -1,0 +1,26 @@
+{
+  "video": "video.mp4",
+  "platforms": {
+    "youtube": {
+      "title": "🔥 This Open-Source Tool Replaces Claude Design For Free",
+      "description": "Open Design is the local-first, open-source alternative to Claude Design that's taking over GitHub with 64,150 stars. It's a native desktop app that turns your coding agent into a full design studio.\n\nInstead of paying monthly subscriptions, you run everything locally. Type a brief, pick from 142 design systems, and it generates web prototypes, mobile apps, presentation decks, even animated videos — all exported to HTML, PDF, PPTX, or MP4.\n\nThe killer feature? It integrates with the coding agents you already use. Works with Claude Code, Cursor, GitHub Copilot, and 17+ other CLIs through a one-line MCP server install. Your team's design system becomes a DESIGN.md file the agent reads automatically, so every output matches your brand.\n\nNo API costs. No cloud lock-in. Just local-first design generation powered by the same agents you code with every day. Download it free at open-design.ai or check the repo link below.",
+      "tags": [
+        "github",
+        "ai",
+        "opensource"
+      ],
+      "privacy": "public",
+      "made_for_kids": false
+    },
+    "instagram": {
+      "caption": "Open Design is the local-first, open-source alternative to Claude Design that's taking over GitHub with 64,150 stars. It's a native desktop app that turns your coding agent into a full design studio.\n\nInstead of paying monthly subscriptions, you run everything locally. Type a brief, pick from 142 design systems, and it generates web prototypes, mobile apps, presentation decks, even animated videos — all exported to HTML, PDF, PPTX, or MP4.\n\nThe killer feature? It integrates with the coding agents you already use. Works with Claude Code, Cursor, GitHub Copilot, and 17+ other CLIs through a one-line MCP server install. Your team's design system becomes a DESIGN.md file the agent reads automatically, so every output matches your brand.\n\nNo API costs. No cloud lock-in. Just local-first design generation powered by the same agents you code with every day. Download it free at open-design.ai or check the repo link below."
+    },
+    "tiktok": {
+      "description": "Open Design is the local-first, open-source alternative to Claude Design that's taking over GitHub with 64,150 stars. It's a native desktop app that turns your coding agent into a full design studio.\n\nInstead of paying monthly subscriptions, you run everything locally. Type a brief, pick from 142 design systems, and it generates web prototypes, mobile apps, presentation decks, even animated videos — all exported to HTML, PDF, PPTX, or MP4.\n\nThe killer feature? It integrates with the coding agents you already use. Works with Claude Code, Cursor, GitHub Copilot, and 17+ other CLIs through a one-line MCP server install. Your team's design system becomes a DESIGN.md file the agent reads automatically, so every output matches your brand.\n\nNo API costs. No cloud lock-in. Just local-first design generation powered by the same agents you code with every day. Download it free at open-design.ai or check the repo link below.",
+      "privacy": "PUBLIC_TO_EVERYONE"
+    },
+    "linkedin": {
+      "text": "I just found the repo that's changing how developers approach design.\n\nOpen Design is an open-source alternative to Claude Design with 64,000+ GitHub stars. It runs entirely on your laptop — no subscriptions, no cloud dependency.\n\nHere's what caught my attention:\n\nYou type a design brief, pick a design system, and it generates production-ready prototypes in seconds. Web pages, mobile apps, presentation decks, even MP4 videos. Everything exports to HTML, PDF, PPTX, or video.\n\nBut the real breakthrough is how it works with coding agents. One command connects it to Claude Code, Cursor, GitHub Copilot, or 17+ other CLIs. Your design system lives in a DESIGN.md file, and every agent automatically applies your brand guidelines.\n\nThis isn't a toy. It ships with 259 skills, 142 design systems, and sandboxed iframe previews. The same workflow that costs $20/month elsewhere now runs locally for free.\n\nFor teams tired of subscription fatigue or developers who need design output without Figma, this changes the game.\n\nLink to the repo in the comments. Worth exploring if you're building anything visual."
+    }
+  }
+}
