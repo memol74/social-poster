@@ -1,0 +1,26 @@
+{
+  "video": "video.mp4",
+  "platforms": {
+    "youtube": {
+      "title": "🔥 This AI Tool Generates Infographics in Seconds",
+      "description": "Stop wasting hours in design tools. AntV Infographic is an AI-powered visualization engine that turns simple text into professional infographics instantly. With 5,400+ stars and 200 built-in templates, it's designed specifically for AI generation—meaning you can stream output from GPT or Claude and watch your infographic render in real-time. The syntax is dead simple: just write 'list-row-simple' and describe your content, and boom—you get publication-ready SVG graphics. It even includes a built-in editor for fine-tuning. Whether you're building dashboards, presentations, or documentation, this repo cuts your visualization workflow from hours to minutes. The TypeScript codebase is MIT licensed and actively maintained by the AntV team. Check the link in bio to see live examples and get started—your next infographic is just a few lines of code away.",
+      "tags": [
+        "github",
+        "ai",
+        "opensource"
+      ],
+      "privacy": "public",
+      "made_for_kids": false
+    },
+    "instagram": {
+      "caption": "Stop wasting hours in design tools. AntV Infographic is an AI-powered visualization engine that turns simple text into professional infographics instantly. With 5,400+ stars and 200 built-in templates, it's designed specifically for AI generation—meaning you can stream output from GPT or Claude and watch your infographic render in real-time. The syntax is dead simple: just write 'list-row-simple' and describe your content, and boom—you get publication-ready SVG graphics. It even includes a built-in editor for fine-tuning. Whether you're building dashboards, presentations, or documentation, this repo cuts your visualization workflow from hours to minutes. The TypeScript codebase is MIT licensed and actively maintained by the AntV team. Check the link in bio to see live examples and get started—your next infographic is just a few lines of code away."
+    },
+    "tiktok": {
+      "description": "Stop wasting hours in design tools. AntV Infographic is an AI-powered visualization engine that turns simple text into professional infographics instantly. With 5,400+ stars and 200 built-in templates, it's designed specifically for AI generation—meaning you can stream output from GPT or Claude and watch your infographic render in real-time. The syntax is dead simple: just write 'list-row-simple' and describe your content, and boom—you get publication-ready SVG graphics. It even includes a built-in editor for fine-tuning. Whether you're building dashboards, presentations, or documentation, this repo cuts your visualization workflow from hours to minutes. The TypeScript codebase is MIT licensed and actively maintained by the AntV team. Check the link in bio to see live examples and get started—your next infographic is just a few lines of code away.",
+      "privacy": "PUBLIC_TO_EVERYONE"
+    },
+    "linkedin": {
+      "text": "I used to spend 2-3 hours designing a single process diagram in Figma. Last week, I discovered AntV Infographic and generated the same diagram in 90 seconds.\n\nHere's what changed my workflow:\n\nInstead of dragging shapes and aligning text boxes, I now write something like:\n\n```\ninfographic list-row-simple-horizontal-arrow\ndata\n  lists\n    - label Research\n      desc Gather requirements\n    - label Design\n      desc Create mockups\n    - label Build\n      desc Ship the product\n```\n\nAnd it instantly renders a professional infographic. SVG output, multiple themes, 200 built-in templates.\n\nThe real magic? It's designed for AI. You can hook it up to GPT or Claude, stream the syntax as it's generated, and watch your infographic build itself in real-time. No more copying AI output into design tools.\n\nThe repo has 5,400 stars and was built by the AntV team (they're behind some of the most popular data viz libraries in China). The syntax is fault-tolerant, so even partial AI output renders correctly.\n\nFor anyone building dashboards, documentation, or presentations—this is a massive time saver. I've already integrated it into our internal tools, and our team is generating charts 10x faster.\n\nIf you've ever wished you could skip the design phase and go straight from data to diagram, check it out: github.com/antvis/infographic\n\nWhat's your current infographic workflow? Are you still doing it manually, or have you found better tools?"
+    }
+  }
+}

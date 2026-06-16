@@ -1,0 +1,26 @@
+{
+  "video": "video.mp4",
+  "platforms": {
+    "youtube": {
+      "title": "🧠 Build Your Digital Brain Locally (No Cloud Required)",
+      "description": "Flint is a local-first knowledge management system that connects your notes into an interactive graph and gives you AI-powered assistance without sending your data to the cloud. Write in Markdown, link notes with wiki-style brackets, and watch your ideas form a visual network. The built-in AI agent reads your entire note vault and answers questions using YOUR knowledge base—running completely locally with Ollama or GGUF models. No subscriptions, no cloud processing, no tracking. Your notes stay on your machine in simple folders you can backup anywhere. Perfect for developers, researchers, and anyone who wants a second brain that actually belongs to them. Works on macOS, Linux, and Windows. MIT licensed and actively developed. Link to repo in bio.",
+      "tags": [
+        "ai",
+        "notetaking",
+        "opensource"
+      ],
+      "privacy": "public",
+      "made_for_kids": false
+    },
+    "instagram": {
+      "caption": "Flint is a local-first knowledge management system that connects your notes into an interactive graph and gives you AI-powered assistance without sending your data to the cloud. Write in Markdown, link notes with wiki-style brackets, and watch your ideas form a visual network. The built-in AI agent reads your entire note vault and answers questions using YOUR knowledge base—running completely locally with Ollama or GGUF models. No subscriptions, no cloud processing, no tracking. Your notes stay on your machine in simple folders you can backup anywhere. Perfect for developers, researchers, and anyone who wants a second brain that actually belongs to them. Works on macOS, Linux, and Windows. MIT licensed and actively developed. Link to repo in bio."
+    },
+    "tiktok": {
+      "description": "Flint is a local-first knowledge management system that connects your notes into an interactive graph and gives you AI-powered assistance without sending your data to the cloud. Write in Markdown, link notes with wiki-style brackets, and watch your ideas form a visual network. The built-in AI agent reads your entire note vault and answers questions using YOUR knowledge base—running completely locally with Ollama or GGUF models. No subscriptions, no cloud processing, no tracking. Your notes stay on your machine in simple folders you can backup anywhere. Perfect for developers, researchers, and anyone who wants a second brain that actually belongs to them. Works on macOS, Linux, and Windows. MIT licensed and actively developed. Link to repo in bio.",
+      "privacy": "PUBLIC_TO_EVERYONE"
+    },
+    "linkedin": {
+      "text": "Ever feel like your notes are scattered across a dozen apps, and you can never find that one brilliant idea when you need it?\n\nI just found Flint—a completely local knowledge base that turns your notes into an actual second brain.\n\nHere's what makes it different: Your notes become a graph. When you link ideas together with wiki-style brackets, you can literally SEE how everything connects. Patterns emerge that you'd never notice in a linear notebook.\n\nBut the game-changer? It has a built-in AI agent that reads your entire note vault. Ask it a question, and it answers using YOUR knowledge—not generic internet facts. And it runs completely locally with Ollama. Zero cloud processing.\n\nYour vault is just a folder on your computer. No proprietary formats, no vendor lock-in, no subscription.\n\nI'm tired of tools that make my data someone else's business model. If you're building a knowledge system that should outlive the startup that made it, this is worth checking out.\n\nRepo link in my bio. MIT licensed, actively developed, works on all platforms."
+    }
+  }
+}
