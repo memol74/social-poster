@@ -1,0 +1,26 @@
+{
+  "video": "video.mp4",
+  "platforms": {
+    "youtube": {
+      "title": "🔥 This Plugin Cuts Your AI Agent's Code by 54%",
+      "description": "Tired of AI agents writing way too much code? Ponytail is a plugin that makes your AI agent think like the laziest senior developer in the room. Instead of installing libraries and writing wrappers, it teaches your agent to ask: does this even need to exist? Can stdlib do it? Is there a native platform feature?\n\nReal benchmark numbers from editing a production FastAPI + React repo: 54% less code on average (up to 94% on over-engineered tasks), 20% cheaper, 27% faster. And it never compromises on validation, error handling, security, or accessibility — 100% safe.\n\nYour date picker? One line: <input type=\"date\">. Your color picker? Native <input type=\"color\">. No libraries, no wrappers, just the minimum code that actually works.\n\nPonytail works with Claude Code, Cursor, GitHub Copilot, Codex, Windsurf, Cline, and 7 other agents. Install it once, save thousands of lines you never needed to write. 35,820 stars, MIT licensed, and actively maintained.\n\nThe best code is the code you never wrote. Link in bio to the repo.",
+      "tags": [
+        "ai",
+        "github",
+        "coding"
+      ],
+      "privacy": "public",
+      "made_for_kids": false
+    },
+    "instagram": {
+      "caption": "Tired of AI agents writing way too much code? Ponytail is a plugin that makes your AI agent think like the laziest senior developer in the room. Instead of installing libraries and writing wrappers, it teaches your agent to ask: does this even need to exist? Can stdlib do it? Is there a native platform feature?\n\nReal benchmark numbers from editing a production FastAPI + React repo: 54% less code on average (up to 94% on over-engineered tasks), 20% cheaper, 27% faster. And it never compromises on validation, error handling, security, or accessibility — 100% safe.\n\nYour date picker? One line: <input type=\"date\">. Your color picker? Native <input type=\"color\">. No libraries, no wrappers, just the minimum code that actually works.\n\nPonytail works with Claude Code, Cursor, GitHub Copilot, Codex, Windsurf, Cline, and 7 other agents. Install it once, save thousands of lines you never needed to write. 35,820 stars, MIT licensed, and actively maintained.\n\nThe best code is the code you never wrote. Link in bio to the repo."
+    },
+    "tiktok": {
+      "description": "Tired of AI agents writing way too much code? Ponytail is a plugin that makes your AI agent think like the laziest senior developer in the room. Instead of installing libraries and writing wrappers, it teaches your agent to ask: does this even need to exist? Can stdlib do it? Is there a native platform feature?\n\nReal benchmark numbers from editing a production FastAPI + React repo: 54% less code on average (up to 94% on over-engineered tasks), 20% cheaper, 27% faster. And it never compromises on validation, error handling, security, or accessibility — 100% safe.\n\nYour date picker? One line: <input type=\"date\">. Your color picker? Native <input type=\"color\">. No libraries, no wrappers, just the minimum code that actually works.\n\nPonytail works with Claude Code, Cursor, GitHub Copilot, Codex, Windsurf, Cline, and 7 other agents. Install it once, save thousands of lines you never needed to write. 35,820 stars, MIT licensed, and actively maintained.\n\nThe best code is the code you never wrote. Link in bio to the repo.",
+      "privacy": "PUBLIC_TO_EVERYONE"
+    },
+    "linkedin": {
+      "text": "I've been watching AI agents over-engineer simple tasks for months now.\n\nYou ask for a date picker. The agent installs flatpickr, writes a wrapper component, adds a stylesheet, starts discussing timezones. You wanted one feature, you got 50 lines and a new dependency.\n\nThen I found Ponytail.\n\nIt's a plugin that makes your AI agent think like that senior dev with the ponytail who's been at the company longer than version control. You show him 50 lines, he says nothing, and replaces them with one.\n\nPonytail teaches your agent a simple ladder: Does this need to exist? Can stdlib do it? Is there a native platform feature? Can an installed dependency handle it? Only then, write the minimum that works.\n\nThe numbers are real. Measured on actual Claude Code sessions editing a production FastAPI + React repo:\n• 54% less code on average (up to 94% where agents over-build)\n• 20% cheaper\n• 27% faster\n• 100% safe (never cuts validation, error handling, security, or accessibility)\n\nThat date picker? One line: <input type=\"date\">. The browser already has one.\n\nPonytail works with Claude Code, Cursor, GitHub Copilot, Codex, Windsurf, and 8 other agents. 35,820 GitHub stars. MIT licensed.\n\nThe best code is the code you never wrote.\n\n#AI #SoftwareEngineering #DeveloperTools #Productivity"
+    }
+  }
+}
