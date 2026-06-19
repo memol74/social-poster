@@ -1,0 +1,26 @@
+{
+  "video": "video.mp4",
+  "platforms": {
+    "youtube": {
+      "title": "🔥 Turn Any Document Into a Knowledge Graph With One Command",
+      "description": "Tired of drowning in unstructured PDFs and documents? Hyper-Extract is an LLM-powered CLI that transforms chaos into structured knowledge graphs with a single command. Just run 'he parse' on any document and it automatically extracts entities, relationships, and insights. With 80+ pre-built templates for finance, legal, medical, and academic domains, you get working extractions without writing a single line of code. It supports 8 different knowledge structures—from simple lists to complex spatio-temporal graphs—and runs locally with vLLM so your data never leaves your machine. Over 1,600 stars on GitHub and actively maintained. Whether you're analyzing research papers, earnings reports, or legal contracts, Hyper-Extract gives you interactive, searchable knowledge graphs in seconds. Stop reading endless documents. Start understanding them. Link in bio.",
+      "tags": [
+        "ai",
+        "opensource",
+        "python"
+      ],
+      "privacy": "public",
+      "made_for_kids": false
+    },
+    "instagram": {
+      "caption": "Tired of drowning in unstructured PDFs and documents? Hyper-Extract is an LLM-powered CLI that transforms chaos into structured knowledge graphs with a single command. Just run 'he parse' on any document and it automatically extracts entities, relationships, and insights. With 80+ pre-built templates for finance, legal, medical, and academic domains, you get working extractions without writing a single line of code. It supports 8 different knowledge structures—from simple lists to complex spatio-temporal graphs—and runs locally with vLLM so your data never leaves your machine. Over 1,600 stars on GitHub and actively maintained. Whether you're analyzing research papers, earnings reports, or legal contracts, Hyper-Extract gives you interactive, searchable knowledge graphs in seconds. Stop reading endless documents. Start understanding them. Link in bio."
+    },
+    "tiktok": {
+      "description": "Tired of drowning in unstructured PDFs and documents? Hyper-Extract is an LLM-powered CLI that transforms chaos into structured knowledge graphs with a single command. Just run 'he parse' on any document and it automatically extracts entities, relationships, and insights. With 80+ pre-built templates for finance, legal, medical, and academic domains, you get working extractions without writing a single line of code. It supports 8 different knowledge structures—from simple lists to complex spatio-temporal graphs—and runs locally with vLLM so your data never leaves your machine. Over 1,600 stars on GitHub and actively maintained. Whether you're analyzing research papers, earnings reports, or legal contracts, Hyper-Extract gives you interactive, searchable knowledge graphs in seconds. Stop reading endless documents. Start understanding them. Link in bio.",
+      "privacy": "PUBLIC_TO_EVERYONE"
+    },
+    "linkedin": {
+      "text": "I just found a tool that completely changed how I handle unstructured documents.\n\nEvery week I deal with dozens of PDFs—research papers, technical reports, legal docs. Reading them all? Impossible. Skimming? I miss critical details.\n\nThen I discovered Hyper-Extract.\n\nIt's an open-source CLI that uses LLMs to turn any document into a structured knowledge graph. Here's what blew my mind:\n\n→ One command extracts entities and relationships automatically\n→ 80+ ready-to-use templates for finance, medical, legal domains\n→ Runs locally with vLLM—your data stays on your machine\n→ Supports 8 knowledge structures from simple lists to spatio-temporal graphs\n\nLast week I fed it a 20-page academic paper. In 30 seconds I had an interactive graph of key concepts, authors, citations, and relationships. Instead of spending an hour reading, I spent 5 minutes exploring.\n\nThe repo has 1,600+ stars and it's actively maintained. The Python API is clean, the CLI is intuitive, and the documentation is solid.\n\nIf you work with lots of documents and need to extract insights fast, check out Hyper-Extract on GitHub.\n\nWhat tools are you using to make sense of unstructured data? Drop your favorites below."
+    }
+  }
+}

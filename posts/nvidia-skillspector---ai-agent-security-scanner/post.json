@@ -1,0 +1,26 @@
+{
+  "video": "video.mp4",
+  "platforms": {
+    "youtube": {
+      "title": "🔥 This Security Scanner Just Saved My Agent Setup",
+      "description": "Installing AI agent skills is like running random code from strangers — except we do it without thinking. SkillSpector from NVIDIA changes that. It's a security scanner that analyzes AI agent skills (Claude Code, Gemini CLI, etc.) BEFORE you install them. The scary part? Research shows 26.1% of skills contain vulnerabilities and 5.2% show malicious intent.\n\nSkillSpector detects 64 vulnerability patterns across 16 categories: prompt injection, data exfiltration, privilege escalation, malware signatures, and even checks live CVE databases. You get a 0-100 risk score with clear recommendations. Nearly 8,000 developers already use it because it catches what manual review misses.\n\nYou can scan GitHub repos, zip files, or single SKILL.md files in seconds. It works with static analysis (fast) or optional LLM semantic analysis (thorough). Outputs to terminal, JSON, Markdown, or SARIF for CI/CD. Apache 2.0 licensed, Python 3.12+, and works in Docker if you don't want to install Python.\n\nLink in bio to the repo. Stop installing skills blindly. Run SkillSpector first.",
+      "tags": [
+        "ai",
+        "security",
+        "python"
+      ],
+      "privacy": "public",
+      "made_for_kids": false
+    },
+    "instagram": {
+      "caption": "Installing AI agent skills is like running random code from strangers — except we do it without thinking. SkillSpector from NVIDIA changes that. It's a security scanner that analyzes AI agent skills (Claude Code, Gemini CLI, etc.) BEFORE you install them. The scary part? Research shows 26.1% of skills contain vulnerabilities and 5.2% show malicious intent.\n\nSkillSpector detects 64 vulnerability patterns across 16 categories: prompt injection, data exfiltration, privilege escalation, malware signatures, and even checks live CVE databases. You get a 0-100 risk score with clear recommendations. Nearly 8,000 developers already use it because it catches what manual review misses.\n\nYou can scan GitHub repos, zip files, or single SKILL.md files in seconds. It works with static analysis (fast) or optional LLM semantic analysis (thorough). Outputs to terminal, JSON, Markdown, or SARIF for CI/CD. Apache 2.0 licensed, Python 3.12+, and works in Docker if you don't want to install Python.\n\nLink in bio to the repo. Stop installing skills blindly. Run SkillSpector first."
+    },
+    "tiktok": {
+      "description": "Installing AI agent skills is like running random code from strangers — except we do it without thinking. SkillSpector from NVIDIA changes that. It's a security scanner that analyzes AI agent skills (Claude Code, Gemini CLI, etc.) BEFORE you install them. The scary part? Research shows 26.1% of skills contain vulnerabilities and 5.2% show malicious intent.\n\nSkillSpector detects 64 vulnerability patterns across 16 categories: prompt injection, data exfiltration, privilege escalation, malware signatures, and even checks live CVE databases. You get a 0-100 risk score with clear recommendations. Nearly 8,000 developers already use it because it catches what manual review misses.\n\nYou can scan GitHub repos, zip files, or single SKILL.md files in seconds. It works with static analysis (fast) or optional LLM semantic analysis (thorough). Outputs to terminal, JSON, Markdown, or SARIF for CI/CD. Apache 2.0 licensed, Python 3.12+, and works in Docker if you don't want to install Python.\n\nLink in bio to the repo. Stop installing skills blindly. Run SkillSpector first.",
+      "privacy": "PUBLIC_TO_EVERYONE"
+    },
+    "linkedin": {
+      "text": "I just found a repo that addresses something I've been ignoring for too long.\n\nWe're all installing AI agent skills without really knowing what they do. I grab a Claude Code skill from GitHub, drop it in, and assume it's fine. Turns out that's not fine at all.\n\nNVIDIA released SkillSpector — a security scanner for AI agent skills. Research backing this project found that 26.1% of skills contain vulnerabilities and 5.2% show likely malicious intent. That's one in four with problems and one in twenty potentially dangerous.\n\nWhat makes this useful: it detects 64 vulnerability patterns before you install anything. Prompt injection, data exfiltration, privilege escalation, malware signatures, and live CVE lookups. You scan a repo or skill file and get a 0-100 risk score with severity labels.\n\nThe practical part: it works on GitHub repos, zip files, or single files. Fast static analysis or optional LLM semantic checks. Outputs to terminal, JSON, Markdown, or SARIF for CI/CD integration. Apache 2.0 licensed, Python 3.12+, or run it in Docker.\n\nAlmost 8,000 developers starred it because it catches what manual review misses. I'm adding it to my workflow before installing any agent skill.\n\nGitHub link in first comment. If you're using AI agents, you probably need this."
+    }
+  }
+}

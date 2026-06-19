@@ -1,0 +1,26 @@
+{
+  "video": "video.mp4",
+  "platforms": {
+    "youtube": {
+      "title": "🤖 This AI Agent Writes Code Directly in VS Code",
+      "description": "Tired of copying AI-generated code line by line? Kilo Code is an open source coding agent that writes, debugs, and reviews code directly inside VS Code, JetBrains, or your terminal. With 22,000+ stars on GitHub, it gives you access to 500+ AI models—GPT-5.5, Claude Opus 4.7, Gemini 3.1—at provider pricing with zero markup. You describe what you want, and Kilo handles multi-file edits, terminal commands, test execution, and even autonomous CI/CD runs. No more context-switching between ChatGPT tabs and your editor. Install the extension, pick your model, and let the agent do the heavy lifting. MIT licensed, fork of OpenCode, built for developers who want AI that integrates into their actual workflow instead of living in a separate window. Link in bio.",
+      "tags": [
+        "ai",
+        "coding",
+        "vscode"
+      ],
+      "privacy": "public",
+      "made_for_kids": false
+    },
+    "instagram": {
+      "caption": "Tired of copying AI-generated code line by line? Kilo Code is an open source coding agent that writes, debugs, and reviews code directly inside VS Code, JetBrains, or your terminal. With 22,000+ stars on GitHub, it gives you access to 500+ AI models—GPT-5.5, Claude Opus 4.7, Gemini 3.1—at provider pricing with zero markup. You describe what you want, and Kilo handles multi-file edits, terminal commands, test execution, and even autonomous CI/CD runs. No more context-switching between ChatGPT tabs and your editor. Install the extension, pick your model, and let the agent do the heavy lifting. MIT licensed, fork of OpenCode, built for developers who want AI that integrates into their actual workflow instead of living in a separate window. Link in bio."
+    },
+    "tiktok": {
+      "description": "Tired of copying AI-generated code line by line? Kilo Code is an open source coding agent that writes, debugs, and reviews code directly inside VS Code, JetBrains, or your terminal. With 22,000+ stars on GitHub, it gives you access to 500+ AI models—GPT-5.5, Claude Opus 4.7, Gemini 3.1—at provider pricing with zero markup. You describe what you want, and Kilo handles multi-file edits, terminal commands, test execution, and even autonomous CI/CD runs. No more context-switching between ChatGPT tabs and your editor. Install the extension, pick your model, and let the agent do the heavy lifting. MIT licensed, fork of OpenCode, built for developers who want AI that integrates into their actual workflow instead of living in a separate window. Link in bio.",
+      "privacy": "PUBLIC_TO_EVERYONE"
+    },
+    "linkedin": {
+      "text": "I just found a repo that completely changes how I use AI for coding.\n\nKilo Code is an open source agent that lives inside VS Code, JetBrains, and the CLI. You tell it what feature you need, and it writes code across multiple files, runs tests, debugs failures, and even reviews its own work before you see it.\n\nWhat makes it different:\n\n→ 500+ models (GPT-5.5, Claude Opus 4.7, Gemini 3.1) at provider pricing—no markup\n→ Switch models mid-task to balance speed, cost, and reasoning\n→ Runs fully autonomous in CI/CD with --auto flag\n→ 22,000 stars, MIT licensed, backed by a real open source community\n\nI've been copying code from ChatGPT into my editor for months. This just removes that entire step. The agent controls the terminal, fixes errors, and handles multi-file edits without me babysitting it.\n\nIf you're tired of context-switching between AI chat windows and your codebase, this repo is worth installing.\n\nLink to Kilo Code in the comments."
+    }
+  }
+}
