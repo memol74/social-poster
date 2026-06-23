@@ -1,0 +1,26 @@
+{
+  "video": "video.mp4",
+  "platforms": {
+    "youtube": {
+      "title": "🤖 Stop Building Chatbots — Build Real Agents with Flue",
+      "description": "Flue is the TypeScript framework that gives your AI agents actual autonomy. From the team behind Astro, it provides a complete harness with tools, skills, sandboxes, and durable execution. Your agents can maintain context across sessions, delegate to specialized subagents, and recover from failures without losing progress. With 6,500+ GitHub stars, Flue is already powering autonomous agents that triage bugs, run workflows, and complete real tasks. Deploy to Node.js, Cloudflare Workers, GitHub Actions, or anywhere you need. Connect to tools via MCP servers, monitor with OpenTelemetry, and give your agents the environment they need to do actual work. Link in bio to start building agents that solve problems autonomously, not just respond to prompts.",
+      "tags": [
+        "ai",
+        "typescript",
+        "opensource"
+      ],
+      "privacy": "public",
+      "made_for_kids": false
+    },
+    "instagram": {
+      "caption": "Flue is the TypeScript framework that gives your AI agents actual autonomy. From the team behind Astro, it provides a complete harness with tools, skills, sandboxes, and durable execution. Your agents can maintain context across sessions, delegate to specialized subagents, and recover from failures without losing progress. With 6,500+ GitHub stars, Flue is already powering autonomous agents that triage bugs, run workflows, and complete real tasks. Deploy to Node.js, Cloudflare Workers, GitHub Actions, or anywhere you need. Connect to tools via MCP servers, monitor with OpenTelemetry, and give your agents the environment they need to do actual work. Link in bio to start building agents that solve problems autonomously, not just respond to prompts."
+    },
+    "tiktok": {
+      "description": "Flue is the TypeScript framework that gives your AI agents actual autonomy. From the team behind Astro, it provides a complete harness with tools, skills, sandboxes, and durable execution. Your agents can maintain context across sessions, delegate to specialized subagents, and recover from failures without losing progress. With 6,500+ GitHub stars, Flue is already powering autonomous agents that triage bugs, run workflows, and complete real tasks. Deploy to Node.js, Cloudflare Workers, GitHub Actions, or anywhere you need. Connect to tools via MCP servers, monitor with OpenTelemetry, and give your agents the environment they need to do actual work. Link in bio to start building agents that solve problems autonomously, not just respond to prompts.",
+      "privacy": "PUBLIC_TO_EVERYONE"
+    },
+    "linkedin": {
+      "text": "I've been building AI agents the hard way — raw API calls, fragile scripts, and praying nothing breaks.\n\nThen I found Flue.\n\nIt's the TypeScript framework from the Astro team that actually gives agents autonomy. Not \"chat with an API\" autonomy. Real \"give it a task and trust it to finish\" autonomy.\n\nYou define a harness: tools, skills, instructions, and a secure sandbox. Your agent gets context, persistence, and the ability to delegate to specialized subagents. If it fails, durable execution means it recovers without losing progress.\n\n6,500+ developers have already starred it because it solves the problem we've all been hacking around: how do you build agents that actually work?\n\nFlue deploys anywhere — Node, Cloudflare Workers, GitHub Actions. It connects to existing tools via MCP servers. It's TypeScript-native, so your entire workflow stays in one language.\n\nI'm done building chatbots that need constant handholding. If you're ready to build agents that autonomously solve problems, check out Flue.\n\nLink to repo in the comments. 👇"
+    }
+  }
+}
