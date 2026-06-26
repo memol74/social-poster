@@ -1,0 +1,26 @@
+{
+  "video": "video.mp4",
+  "platforms": {
+    "youtube": {
+      "title": "🔥 Clone Any Website With One AI Command",
+      "description": "Lost your website's source code? Migrating from WordPress to React? This repo solves both problems in one command. AI Website Cloner Template uses AI coding agents to reverse-engineer any live site into clean Next.js code. Just point it at a URL, run /clone-website, and your agent extracts design tokens, downloads assets, writes component specs, and rebuilds everything in TypeScript. Over 20,000 developers use this for platform migrations, recovering lost codebases, and learning how production sites work. Works with Claude Code, Cursor, Windsurf, and 10+ other agents. MIT licensed, modern stack with Next.js 16, shadcn/ui, and Tailwind CSS v4. Check the repo link in bio.",
+      "tags": [
+        "github",
+        "ai",
+        "nextjs"
+      ],
+      "privacy": "public",
+      "made_for_kids": false
+    },
+    "instagram": {
+      "caption": "Lost your website's source code? Migrating from WordPress to React? This repo solves both problems in one command. AI Website Cloner Template uses AI coding agents to reverse-engineer any live site into clean Next.js code. Just point it at a URL, run /clone-website, and your agent extracts design tokens, downloads assets, writes component specs, and rebuilds everything in TypeScript. Over 20,000 developers use this for platform migrations, recovering lost codebases, and learning how production sites work. Works with Claude Code, Cursor, Windsurf, and 10+ other agents. MIT licensed, modern stack with Next.js 16, shadcn/ui, and Tailwind CSS v4. Check the repo link in bio."
+    },
+    "tiktok": {
+      "description": "Lost your website's source code? Migrating from WordPress to React? This repo solves both problems in one command. AI Website Cloner Template uses AI coding agents to reverse-engineer any live site into clean Next.js code. Just point it at a URL, run /clone-website, and your agent extracts design tokens, downloads assets, writes component specs, and rebuilds everything in TypeScript. Over 20,000 developers use this for platform migrations, recovering lost codebases, and learning how production sites work. Works with Claude Code, Cursor, Windsurf, and 10+ other agents. MIT licensed, modern stack with Next.js 16, shadcn/ui, and Tailwind CSS v4. Check the repo link in bio.",
+      "privacy": "PUBLIC_TO_EVERYONE"
+    },
+    "linkedin": {
+      "text": "Ever lose a website's source code?\n\nYour client's developer disappears. The WordPress site is live but you can't touch the code. Or you need to migrate to modern React but rebuilding from scratch would take weeks.\n\nI just found a repo that fixes this: AI Website Cloner Template.\n\nOne command. Any URL. Your AI agent does the rest.\n\nIt screenshots the site, extracts every design token, downloads all assets, and reconstructs the entire thing in Next.js and TypeScript. Not a screenshot-to-code toy — real component specs with exact CSS values, responsive breakpoints, and interaction states.\n\nOver 20,000 developers are using it for platform migrations and code recovery.\n\nWorks with Claude Code, Cursor, Windsurf, and 13 other AI coding agents. MIT licensed. Ready to use today.\n\nNext time you face a lost codebase or legacy migration, you'll have a solution.\n\nRepo link: https://github.com/JCodesMore/ai-website-cloner-template"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "video": "video.mp4",
+  "platforms": {
+    "youtube": {
+      "title": "🔥 This Repo Turns AI Into Your Product Manager",
+      "description": "Stop getting walls of AI-generated text when you need product decisions. PM Skills Marketplace (21K stars) plugs 68 proven PM frameworks directly into Claude Code and Cowork. Type /discover and it walks you through Teresa Torres' Opportunity Solution Tree. Type /strategy and you get a complete Product Strategy Canvas. Type /write-prd and you get a real PRD, not generic doc bloat. Every command chains frameworks from Marty Cagan, Alberto Savoia, and other PM legends into your daily workflow. The result? Product decisions with actual rigor, not just faster documents. Install takes 2 minutes in Claude Cowork or CLI. Works with Codex CLI for OpenAI users too. Link in bio. Follow for more repos that level up how you build products.",
+      "tags": [
+        "github",
+        "productmanagement",
+        "ai"
+      ],
+      "privacy": "public",
+      "made_for_kids": false
+    },
+    "instagram": {
+      "caption": "Stop getting walls of AI-generated text when you need product decisions. PM Skills Marketplace (21K stars) plugs 68 proven PM frameworks directly into Claude Code and Cowork. Type /discover and it walks you through Teresa Torres' Opportunity Solution Tree. Type /strategy and you get a complete Product Strategy Canvas. Type /write-prd and you get a real PRD, not generic doc bloat. Every command chains frameworks from Marty Cagan, Alberto Savoia, and other PM legends into your daily workflow. The result? Product decisions with actual rigor, not just faster documents. Install takes 2 minutes in Claude Cowork or CLI. Works with Codex CLI for OpenAI users too. Link in bio. Follow for more repos that level up how you build products."
+    },
+    "tiktok": {
+      "description": "Stop getting walls of AI-generated text when you need product decisions. PM Skills Marketplace (21K stars) plugs 68 proven PM frameworks directly into Claude Code and Cowork. Type /discover and it walks you through Teresa Torres' Opportunity Solution Tree. Type /strategy and you get a complete Product Strategy Canvas. Type /write-prd and you get a real PRD, not generic doc bloat. Every command chains frameworks from Marty Cagan, Alberto Savoia, and other PM legends into your daily workflow. The result? Product decisions with actual rigor, not just faster documents. Install takes 2 minutes in Claude Cowork or CLI. Works with Codex CLI for OpenAI users too. Link in bio. Follow for more repos that level up how you build products.",
+      "privacy": "PUBLIC_TO_EVERYONE"
+    },
+    "linkedin": {
+      "text": "I just found a repo that solves a problem I didn't realize was killing my product workflow.\n\nEvery time I asked Claude to help with product thinking, I got walls of text. Generic advice. No structure. I'd end up copy-pasting frameworks from Notion docs just to force some rigor into the output.\n\nThen I installed PM Skills Marketplace (21K stars on GitHub).\n\nNow when I type /discover, Claude walks me through the Opportunity Solution Tree — ideation, assumption mapping, prioritization, experiment design — step by step. When I type /strategy, I get a complete Product Strategy Canvas. When I type /write-prd, I get an actual PRD with the structure of a top PM, not a doc template filled with fluff.\n\nIt's 68 PM skills and 42 workflows plugged directly into Claude Code and Cowork. Every command chains proven frameworks from Teresa Torres, Marty Cagan, Alberto Savoia.\n\nThe install takes 2 minutes. The result is product decisions with actual rigor behind them.\n\nIf you're a PM using AI assistants and you're tired of generic responses, this repo changes everything. Link in comments."
+    }
+  }
+}

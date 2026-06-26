@@ -1,0 +1,26 @@
+{
+  "video": "video.mp4",
+  "platforms": {
+    "youtube": {
+      "title": "🚀 This KV Cache Layer Makes LLMs 10x Faster",
+      "description": "Tired of waiting for your LLM to respond? LMCache is the fastest KV cache layer that supercharges inference speed by caching conversation context. Instead of recalculating tokens from scratch, your model retrieves them instantly from the cache—slashing time-to-first-token (TTFT) dramatically. With nearly 10,000 GitHub stars, LMCache integrates seamlessly with vLLM and supports both CUDA and AMD ROCm. You can even share cached KV data across multiple GPU instances, so your entire cluster benefits from one user's conversation history. Perfect for chatbots, QA systems, or any application with repeated context. Install with pip, add one config file, and watch your response times plummet. Link in bio to the repo. Stop wasting GPU cycles—start caching smarter.",
+      "tags": [
+        "llm",
+        "ai",
+        "python"
+      ],
+      "privacy": "public",
+      "made_for_kids": false
+    },
+    "instagram": {
+      "caption": "Tired of waiting for your LLM to respond? LMCache is the fastest KV cache layer that supercharges inference speed by caching conversation context. Instead of recalculating tokens from scratch, your model retrieves them instantly from the cache—slashing time-to-first-token (TTFT) dramatically. With nearly 10,000 GitHub stars, LMCache integrates seamlessly with vLLM and supports both CUDA and AMD ROCm. You can even share cached KV data across multiple GPU instances, so your entire cluster benefits from one user's conversation history. Perfect for chatbots, QA systems, or any application with repeated context. Install with pip, add one config file, and watch your response times plummet. Link in bio to the repo. Stop wasting GPU cycles—start caching smarter."
+    },
+    "tiktok": {
+      "description": "Tired of waiting for your LLM to respond? LMCache is the fastest KV cache layer that supercharges inference speed by caching conversation context. Instead of recalculating tokens from scratch, your model retrieves them instantly from the cache—slashing time-to-first-token (TTFT) dramatically. With nearly 10,000 GitHub stars, LMCache integrates seamlessly with vLLM and supports both CUDA and AMD ROCm. You can even share cached KV data across multiple GPU instances, so your entire cluster benefits from one user's conversation history. Perfect for chatbots, QA systems, or any application with repeated context. Install with pip, add one config file, and watch your response times plummet. Link in bio to the repo. Stop wasting GPU cycles—start caching smarter.",
+      "privacy": "PUBLIC_TO_EVERYONE"
+    },
+    "linkedin": {
+      "text": "Ever notice how your LLM recalculates everything every single time you ask a follow-up question? Even though the context hasn't changed, it's burning GPU cycles re-processing the same tokens.\n\nI just found LMCache—a KV cache layer that fixes this exact problem. After your first query, the second response is lightning fast because the conversation context is cached. No more redundant calculations.\n\nWhat's wild: you can share this cached data across multiple GPU instances. One user's conversation history benefits your entire cluster. That's a massive efficiency unlock if you're running chatbots or QA systems at scale.\n\nLMCache has nearly 10,000 stars, integrates directly with vLLM, and works on both CUDA and AMD ROCm. It's one pip install and a config file away from slashing your inference times.\n\nIf you're building with LLMs and response speed matters (and when doesn't it?), this is a repo worth exploring. Link in the comments."
+    }
+  }
+}
