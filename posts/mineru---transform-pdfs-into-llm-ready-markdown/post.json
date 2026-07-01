@@ -1,0 +1,26 @@
+{
+  "video": "video.mp4",
+  "platforms": {
+    "youtube": {
+      "title": "🔥 Stop Fighting PDFs — MinerU Extracts Everything Perfectly",
+      "description": "Tired of broken PDF extractions ruining your RAG pipeline? MinerU is a 72k-star open-source document parser that transforms complex PDFs, Word docs, PowerPoints, and Excel files into clean, LLM-ready markdown and JSON. It handles scanned documents, handwriting, multi-column layouts, and even cross-page table merging with dual VLM+OCR engines supporting 109 languages. Your tables become perfect HTML, your formulas turn into LaTeX, and everything follows human reading order with automatic header/footer removal. It integrates natively with LangChain, Dify, FastGPT, and RAG frameworks, plus offers MCP Server support for Cursor and Claude Desktop. Deploy it locally with Python/Go/TypeScript SDKs, CLI, REST API, or Docker — fully offline if needed. Whether you're building a RAG system, training models on documents, or automating data extraction, MinerU eliminates the hours you spend cleaning up corrupted text and broken layouts. Next time you need to process documents at scale, just pipe MinerU output into your vector store and ship your feature today instead of fighting with parser bugs all week. Check the link in bio to see the full README and integration examples.",
+      "tags": [
+        "ai",
+        "machinelearning",
+        "opensource"
+      ],
+      "privacy": "public",
+      "made_for_kids": false
+    },
+    "instagram": {
+      "caption": "Tired of broken PDF extractions ruining your RAG pipeline? MinerU is a 72k-star open-source document parser that transforms complex PDFs, Word docs, PowerPoints, and Excel files into clean, LLM-ready markdown and JSON. It handles scanned documents, handwriting, multi-column layouts, and even cross-page table merging with dual VLM+OCR engines supporting 109 languages. Your tables become perfect HTML, your formulas turn into LaTeX, and everything follows human reading order with automatic header/footer removal. It integrates natively with LangChain, Dify, FastGPT, and RAG frameworks, plus offers MCP Server support for Cursor and Claude Desktop. Deploy it locally with Python/Go/TypeScript SDKs, CLI, REST API, or Docker — fully offline if needed. Whether you're building a RAG system, training models on documents, or automating data extraction, MinerU eliminates the hours you spend cleaning up corrupted text and broken layouts. Next time you need to process documents at scale, just pipe MinerU output into your vector store and ship your feature today instead of fighting with parser bugs all week. Check the link in bio to see the full README and integration examples."
+    },
+    "tiktok": {
+      "description": "Tired of broken PDF extractions ruining your RAG pipeline? MinerU is a 72k-star open-source document parser that transforms complex PDFs, Word docs, PowerPoints, and Excel files into clean, LLM-ready markdown and JSON. It handles scanned documents, handwriting, multi-column layouts, and even cross-page table merging with dual VLM+OCR engines supporting 109 languages. Your tables become perfect HTML, your formulas turn into LaTeX, and everything follows human reading order with automatic header/footer removal. It integrates natively with LangChain, Dify, FastGPT, and RAG frameworks, plus offers MCP Server support for Cursor and Claude Desktop. Deploy it locally with Python/Go/TypeScript SDKs, CLI, REST API, or Docker — fully offline if needed. Whether you're building a RAG system, training models on documents, or automating data extraction, MinerU eliminates the hours you spend cleaning up corrupted text and broken layouts. Next time you need to process documents at scale, just pipe MinerU output into your vector store and ship your feature today instead of fighting with parser bugs all week. Check the link in bio to see the full README and integration examples.",
+      "privacy": "PUBLIC_TO_EVERYONE"
+    },
+    "linkedin": {
+      "text": "Ever spent an afternoon debugging why your RAG system can't read a simple PDF table?\n\nI just found a repo that turns that nightmare into a one-liner.\n\nMinerU has 72,000 stars because it solves the problem every AI developer hits: getting clean, structured data out of messy real-world documents.\n\nNo more broken layouts. No more corrupted extractions. No more manual cleanup.\n\nIt takes PDFs, Word docs, PowerPoints, and Excel files and gives you perfect markdown with tables as HTML and formulas as LaTeX. Scanned docs? Handwriting? Multi-column chaos? It handles all of it with dual VLM+OCR engines that support 109 languages.\n\nWhat really sold me: native LangChain, Dify, and FastGPT integration. You can literally pipe MinerU output straight into your vector store and start querying.\n\nThey also built MCP Server support so you can use it directly in Cursor and Claude Desktop while you code.\n\nFull Python/Go/TypeScript SDKs, REST API, Docker images — deploy it however you want, completely offline if needed.\n\nIf you're building anything with documents and LLMs, this repo just saved you weeks of parser hell.\n\nLink to the repo in my profile. Check it out before your next sprint planning."
+    }
+  }
+}

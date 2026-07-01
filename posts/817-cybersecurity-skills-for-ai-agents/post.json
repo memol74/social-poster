@@ -1,0 +1,26 @@
+{
+  "video": "video.mp4",
+  "platforms": {
+    "youtube": {
+      "title": "🔥 817 Cybersecurity Skills for AI Agents",
+      "description": "Stop reinventing the wheel every time you build an AI security agent. This repo contains 817 production-grade cybersecurity skills spanning 29 security domains—from red teaming and threat hunting to cloud forensics and incident response. Every skill is mapped to six major frameworks including MITRE ATT&CK v19.1, NIST CSF 2.0, and the brand-new MITRE Fight Fraud Framework (F3). It works instantly with Claude Code, GitHub Copilot, Cursor, and 20+ AI platforms. Clone it, point your agent at it, and your next security investigation gets expert-level guidance in seconds. With 23.5K+ stars and the agentskills.io standard, it's the largest open-source cybersecurity knowledge base built specifically for AI agents. Link in bio to get started.",
+      "tags": [
+        "cybersecurity",
+        "ai",
+        "opensource"
+      ],
+      "privacy": "public",
+      "made_for_kids": false
+    },
+    "instagram": {
+      "caption": "Stop reinventing the wheel every time you build an AI security agent. This repo contains 817 production-grade cybersecurity skills spanning 29 security domains—from red teaming and threat hunting to cloud forensics and incident response. Every skill is mapped to six major frameworks including MITRE ATT&CK v19.1, NIST CSF 2.0, and the brand-new MITRE Fight Fraud Framework (F3). It works instantly with Claude Code, GitHub Copilot, Cursor, and 20+ AI platforms. Clone it, point your agent at it, and your next security investigation gets expert-level guidance in seconds. With 23.5K+ stars and the agentskills.io standard, it's the largest open-source cybersecurity knowledge base built specifically for AI agents. Link in bio to get started."
+    },
+    "tiktok": {
+      "description": "Stop reinventing the wheel every time you build an AI security agent. This repo contains 817 production-grade cybersecurity skills spanning 29 security domains—from red teaming and threat hunting to cloud forensics and incident response. Every skill is mapped to six major frameworks including MITRE ATT&CK v19.1, NIST CSF 2.0, and the brand-new MITRE Fight Fraud Framework (F3). It works instantly with Claude Code, GitHub Copilot, Cursor, and 20+ AI platforms. Clone it, point your agent at it, and your next security investigation gets expert-level guidance in seconds. With 23.5K+ stars and the agentskills.io standard, it's the largest open-source cybersecurity knowledge base built specifically for AI agents. Link in bio to get started.",
+      "privacy": "PUBLIC_TO_EVERYONE"
+    },
+    "linkedin": {
+      "text": "I used to think AI agents needed months of training to handle real cybersecurity work. Then I found this repo with 817 production-grade security skills—every single one mapped to MITRE ATT&CK, NIST CSF, and four other frameworks. Now my agents can hunt threats, analyze memory dumps, and execute red-team workflows out of the box. No retraining. No custom prompts. Just clone and point. It's called Anthropic Cybersecurity Skills, and it's the largest open-source security knowledge base built for AI agents. If you're building security automation or dealing with the 4.8 million unfilled cybersecurity roles globally, this is your starting point. Check out github.com/mukul975/Anthropic-Cybersecurity-Skills and see what structured AI-native security knowledge actually looks like."
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "video": "video.mp4",
+  "platforms": {
+    "youtube": {
+      "title": "🔥 This Repo Turns You Into a 10-Person Engineering Team",
+      "description": "Garry Tan ships 810× faster than he did in 2013. Same person. Different era. The difference? gstack — his open source AI engineering team.\n\nThis isn't a copilot. It's 23 specialist roles inside Claude Code. A CEO who rethinks your product. An eng manager who locks architecture. A designer who catches AI slop. A QA lead who opens real browsers. A security officer who runs OWASP audits. A release engineer who ships the PR.\n\nEvery skill feeds into the next. /office-hours writes a design doc that /plan-ceo-review challenges. /plan-eng-review writes a test plan that /qa executes. /review catches bugs that /ship verifies are fixed. Nothing falls through the cracks.\n\n118K stars. MIT license. Works with Claude Code, OpenClaw, Cursor, and 7 other AI coding agents. Install takes 30 seconds. One command gets you the entire stack.\n\nNext time you ship a feature: /autoplan → implement → /ship. That's it. That's the workflow that produces 810× output.\n\nLink in bio to the repo. Try /office-hours first. You'll know in 5 minutes if this is for you.",
+      "tags": [
+        "github",
+        "ai",
+        "productivity"
+      ],
+      "privacy": "public",
+      "made_for_kids": false
+    },
+    "instagram": {
+      "caption": "Garry Tan ships 810× faster than he did in 2013. Same person. Different era. The difference? gstack — his open source AI engineering team.\n\nThis isn't a copilot. It's 23 specialist roles inside Claude Code. A CEO who rethinks your product. An eng manager who locks architecture. A designer who catches AI slop. A QA lead who opens real browsers. A security officer who runs OWASP audits. A release engineer who ships the PR.\n\nEvery skill feeds into the next. /office-hours writes a design doc that /plan-ceo-review challenges. /plan-eng-review writes a test plan that /qa executes. /review catches bugs that /ship verifies are fixed. Nothing falls through the cracks.\n\n118K stars. MIT license. Works with Claude Code, OpenClaw, Cursor, and 7 other AI coding agents. Install takes 30 seconds. One command gets you the entire stack.\n\nNext time you ship a feature: /autoplan → implement → /ship. That's it. That's the workflow that produces 810× output.\n\nLink in bio to the repo. Try /office-hours first. You'll know in 5 minutes if this is for you."
+    },
+    "tiktok": {
+      "description": "Garry Tan ships 810× faster than he did in 2013. Same person. Different era. The difference? gstack — his open source AI engineering team.\n\nThis isn't a copilot. It's 23 specialist roles inside Claude Code. A CEO who rethinks your product. An eng manager who locks architecture. A designer who catches AI slop. A QA lead who opens real browsers. A security officer who runs OWASP audits. A release engineer who ships the PR.\n\nEvery skill feeds into the next. /office-hours writes a design doc that /plan-ceo-review challenges. /plan-eng-review writes a test plan that /qa executes. /review catches bugs that /ship verifies are fixed. Nothing falls through the cracks.\n\n118K stars. MIT license. Works with Claude Code, OpenClaw, Cursor, and 7 other AI coding agents. Install takes 30 seconds. One command gets you the entire stack.\n\nNext time you ship a feature: /autoplan → implement → /ship. That's it. That's the workflow that produces 810× output.\n\nLink in bio to the repo. Try /office-hours first. You'll know in 5 minutes if this is for you.",
+      "privacy": "PUBLIC_TO_EVERYONE"
+    },
+    "linkedin": {
+      "text": "I coded every day in 2013. I shipped 14 logical lines per day building Bookface at YC.\n\nIn 2026? 11,417 logical lines per day. 810× faster. Same person. Different era.\n\nThe difference isn't typing speed. It's tooling. Specifically: gstack, my open source AI engineering team.\n\nI open sourced it because this should be available to everyone. 118K GitHub stars later, it turns out people want virtual specialists who actually work.\n\n23 roles. All slash commands:\n\n• /office-hours → YC-style interrogation that reframes your product\n• /plan-ceo-review → finds the 10-star product hiding in your request  \n• /plan-eng-review → locks architecture before you write code\n• /design-review → catches AI slop, rates every dimension 0-10\n• /review → finds production bugs that pass CI\n• /qa → opens real browsers, generates regression tests\n• /cso → OWASP + STRIDE security audits\n• /ship → tests, commits, opens PR\n\nEvery skill feeds into the next. The design doc from /office-hours flows into /plan-ceo-review. The test plan from /plan-eng-review flows into /qa. Nothing falls through the cracks.\n\nThis isn't about replacing engineers. It's about removing coordination overhead. One person can ship like a team when the tools encode the process.\n\nWorks with Claude Code, OpenClaw, Cursor, and 7 other AI agents. MIT license. Install takes 30 seconds.\n\nIf you're a founder, tech lead, or staff engineer — try /office-hours on your next feature. You'll know in 5 minutes if this is for you.\n\nRepo: github.com/garrytan/gstack"
+    }
+  }
+}

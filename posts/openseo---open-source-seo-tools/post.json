@@ -1,0 +1,26 @@
+{
+  "video": "video.mp4",
+  "platforms": {
+    "youtube": {
+      "title": "🔥 Stop Paying $200/mo for SEO Tools",
+      "description": "Tired of expensive SEO subscriptions? OpenSEO is an open-source alternative to Semrush and Ahrefs that you self-host for free. You only pay for the actual API usage through DataForSEO — tracking 100 keywords monthly costs about $1.20 instead of hundreds per month. It includes keyword research, rank tracking, backlinks analysis, competitor insights, and site audits. With almost 4,000 GitHub stars and built-in MCP support, your AI agents like Claude can now perform SEO research automatically. Deploy it on Cloudflare's free tier in minutes and take back control of your SEO stack. Link in bio to check out the repo. #seo #github #opensource",
+      "tags": [
+        "github",
+        "seo",
+        "opensource"
+      ],
+      "privacy": "public",
+      "made_for_kids": false
+    },
+    "instagram": {
+      "caption": "Tired of expensive SEO subscriptions? OpenSEO is an open-source alternative to Semrush and Ahrefs that you self-host for free. You only pay for the actual API usage through DataForSEO — tracking 100 keywords monthly costs about $1.20 instead of hundreds per month. It includes keyword research, rank tracking, backlinks analysis, competitor insights, and site audits. With almost 4,000 GitHub stars and built-in MCP support, your AI agents like Claude can now perform SEO research automatically. Deploy it on Cloudflare's free tier in minutes and take back control of your SEO stack. Link in bio to check out the repo. #seo #github #opensource"
+    },
+    "tiktok": {
+      "description": "Tired of expensive SEO subscriptions? OpenSEO is an open-source alternative to Semrush and Ahrefs that you self-host for free. You only pay for the actual API usage through DataForSEO — tracking 100 keywords monthly costs about $1.20 instead of hundreds per month. It includes keyword research, rank tracking, backlinks analysis, competitor insights, and site audits. With almost 4,000 GitHub stars and built-in MCP support, your AI agents like Claude can now perform SEO research automatically. Deploy it on Cloudflare's free tier in minutes and take back control of your SEO stack. Link in bio to check out the repo. #seo #github #opensource",
+      "privacy": "PUBLIC_TO_EVERYONE"
+    },
+    "linkedin": {
+      "text": "I just found something that could save SEO professionals thousands per year.\n\nI've been paying for Semrush. You probably have too. Or Ahrefs. Maybe both. Hundreds of dollars every single month for features you use maybe 10% of the time.\n\nOpenSEO flips that model completely. It's open source, you self-host it (for free), and you only pay for what you actually use through DataForSEO's API.\n\nThe numbers are wild:\n→ Track 100 keywords monthly: ~$1.20\n→ 100 keyword research queries: ~$3.50\n→ Full competitor backlink analysis: ~$10\n\nCompare that to your current subscription.\n\nIt's not just about cost though. It has everything you actually need: keyword research, rank tracking, backlinks, competitor analysis, site audits. Clean UI. No bloat.\n\nThe part that really got me: it works with Claude through MCP. Your AI agent can now do keyword research and competitive analysis automatically.\n\nAlmost 4,000 developers have already starred it. Deploy on Cloudflare's free tier in about 10 minutes.\n\nIf you're spending hundreds monthly on SEO tools, this is worth looking at. Link in comments."
+    }
+  }
+}
