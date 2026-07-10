@@ -1,0 +1,26 @@
+{
+  "video": "video.mp4",
+  "platforms": {
+    "youtube": {
+      "title": "🎨 Generate Architecture Diagrams Just by Talking",
+      "description": "Stop spending hours in draw.io trying to make your system architecture look professional. Archify is an agent skill that turns plain English descriptions into beautiful, theme-toggling diagrams.\n\nJust tell Claude or Codex what you're building — \"React frontend calls a Node API backed by PostgreSQL and Redis\" — and get a polished HTML diagram you can share instantly. Toggle between dark and light themes with one click, copy crisp PNGs straight to your clipboard for Slack or Notion, or export SVGs that automatically match your reader's color preference.\n\nOver 3,400 developers are using it for architecture diagrams, workflows, sequence diagrams, data flows, and state machines. The whole thing installs in 60 seconds with one command: npx skills add archify.\n\nNo design skills needed. No runtime dependencies. Just describe your system and iterate by chat until it's perfect. The generated diagrams are self-contained HTML files that work in any browser — dark mode, light mode, keyboard shortcuts, and ultra-sharp exports up to 4× resolution.\n\nLink in bio to try it now.",
+      "tags": [
+        "github",
+        "ai",
+        "developer-tools"
+      ],
+      "privacy": "public",
+      "made_for_kids": false
+    },
+    "instagram": {
+      "caption": "Stop spending hours in draw.io trying to make your system architecture look professional. Archify is an agent skill that turns plain English descriptions into beautiful, theme-toggling diagrams.\n\nJust tell Claude or Codex what you're building — \"React frontend calls a Node API backed by PostgreSQL and Redis\" — and get a polished HTML diagram you can share instantly. Toggle between dark and light themes with one click, copy crisp PNGs straight to your clipboard for Slack or Notion, or export SVGs that automatically match your reader's color preference.\n\nOver 3,400 developers are using it for architecture diagrams, workflows, sequence diagrams, data flows, and state machines. The whole thing installs in 60 seconds with one command: npx skills add archify.\n\nNo design skills needed. No runtime dependencies. Just describe your system and iterate by chat until it's perfect. The generated diagrams are self-contained HTML files that work in any browser — dark mode, light mode, keyboard shortcuts, and ultra-sharp exports up to 4× resolution.\n\nLink in bio to try it now."
+    },
+    "tiktok": {
+      "description": "Stop spending hours in draw.io trying to make your system architecture look professional. Archify is an agent skill that turns plain English descriptions into beautiful, theme-toggling diagrams.\n\nJust tell Claude or Codex what you're building — \"React frontend calls a Node API backed by PostgreSQL and Redis\" — and get a polished HTML diagram you can share instantly. Toggle between dark and light themes with one click, copy crisp PNGs straight to your clipboard for Slack or Notion, or export SVGs that automatically match your reader's color preference.\n\nOver 3,400 developers are using it for architecture diagrams, workflows, sequence diagrams, data flows, and state machines. The whole thing installs in 60 seconds with one command: npx skills add archify.\n\nNo design skills needed. No runtime dependencies. Just describe your system and iterate by chat until it's perfect. The generated diagrams are self-contained HTML files that work in any browser — dark mode, light mode, keyboard shortcuts, and ultra-sharp exports up to 4× resolution.\n\nLink in bio to try it now.",
+      "privacy": "PUBLIC_TO_EVERYONE"
+    },
+    "linkedin": {
+      "text": "I've been documenting architecture in scattered Google Docs and whiteboard photos for years. Last week I found something that changed how I communicate system design.\n\nArchify is an agent skill that turns plain English into professional diagrams. You describe your system to Claude or Codex — \"User submits request → Agent plans → Approval gate → Tool call → Final reply\" — and get a self-contained HTML file with dark/light theme toggle, copy-to-clipboard PNG, and crisp SVG export.\n\nWhat makes it different: it's not another diagramming tool you have to learn. You iterate by chat. \"Add Redis.\" \"Move auth left.\" \"Highlight the rollback path.\" The agent updates the diagram, and you get a new file in seconds.\n\nI used it this week to map our CI/CD pipeline for a new teammate. Five minutes of chatting with my agent, one click to copy the PNG, pasted into Slack. The diagram stayed crisp when zoomed, and when they opened the HTML file on their machine, it automatically matched their dark mode preference.\n\n3,400+ developers are using it. MIT licensed. Installs in 60 seconds. Works with Claude, Codex CLI, and opencode.\n\nIf you've ever spent an hour dragging boxes around in draw.io just to explain how your API works, try Archify. Link in comments."
+    }
+  }
+}

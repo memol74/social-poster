@@ -1,0 +1,26 @@
+{
+  "video": "video.mp4",
+  "platforms": {
+    "youtube": {
+      "title": "🔥 This AI Hacks Your App For Free",
+      "description": "Strix is changing how developers approach application security. Instead of waiting weeks for expensive penetration tests, you can now run autonomous AI hackers that find and validate vulnerabilities in hours. With 40,000+ GitHub stars, Strix goes beyond traditional scanners by providing working proof-of-concept exploits for every finding — no more false positives wasting your time. It detects everything from SQL injection to business logic flaws across the OWASP Top 10, then generates patches and compliance-ready reports automatically. Installation takes one command, and it integrates seamlessly into your CI/CD pipeline to block vulnerabilities before they reach production. The AI uses the same tools real pentesters use: HTTP proxies, browser automation, shell access, and custom exploit runtimes. Perfect for bug bounty hunters, security teams, and developers who need fast, accurate security testing without the overhead. Check out the repo link in my bio to try your first automated penetration test today.",
+      "tags": [
+        "cybersecurity",
+        "ai",
+        "opensource"
+      ],
+      "privacy": "public",
+      "made_for_kids": false
+    },
+    "instagram": {
+      "caption": "Strix is changing how developers approach application security. Instead of waiting weeks for expensive penetration tests, you can now run autonomous AI hackers that find and validate vulnerabilities in hours. With 40,000+ GitHub stars, Strix goes beyond traditional scanners by providing working proof-of-concept exploits for every finding — no more false positives wasting your time. It detects everything from SQL injection to business logic flaws across the OWASP Top 10, then generates patches and compliance-ready reports automatically. Installation takes one command, and it integrates seamlessly into your CI/CD pipeline to block vulnerabilities before they reach production. The AI uses the same tools real pentesters use: HTTP proxies, browser automation, shell access, and custom exploit runtimes. Perfect for bug bounty hunters, security teams, and developers who need fast, accurate security testing without the overhead. Check out the repo link in my bio to try your first automated penetration test today."
+    },
+    "tiktok": {
+      "description": "Strix is changing how developers approach application security. Instead of waiting weeks for expensive penetration tests, you can now run autonomous AI hackers that find and validate vulnerabilities in hours. With 40,000+ GitHub stars, Strix goes beyond traditional scanners by providing working proof-of-concept exploits for every finding — no more false positives wasting your time. It detects everything from SQL injection to business logic flaws across the OWASP Top 10, then generates patches and compliance-ready reports automatically. Installation takes one command, and it integrates seamlessly into your CI/CD pipeline to block vulnerabilities before they reach production. The AI uses the same tools real pentesters use: HTTP proxies, browser automation, shell access, and custom exploit runtimes. Perfect for bug bounty hunters, security teams, and developers who need fast, accurate security testing without the overhead. Check out the repo link in my bio to try your first automated penetration test today.",
+      "privacy": "PUBLIC_TO_EVERYONE"
+    },
+    "linkedin": {
+      "text": "I just found something that's going to save security teams thousands of dollars and weeks of time.\n\nMost companies pay $10k-50k for penetration tests that take 2-4 weeks to complete. Then you wait another week for the report. By the time you get findings, your code has already moved on.\n\nStrix flips this completely.\n\nIt's an open-source AI penetration testing tool that acts like a real hacker. Point it at your application, and autonomous AI agents run reconnaissance, find vulnerabilities, and validate them with working exploits — all in hours, not weeks.\n\nWhat makes this different from traditional scanners?\n\n→ Every finding includes a working proof-of-concept exploit\n→ Multi-agent teams collaborate like a real red team\n→ Validates vulnerabilities through actual exploitation, not guesswork\n→ Generates patches AND compliance-ready pentest reports\n→ Runs in your CI/CD to block vulnerabilities before production\n\nWith 40,000+ stars and 4,000+ forks, the community is already using it for bug bounty automation, rapid pentesting, and DevSecOps integration.\n\nI'm seeing more teams adopt AI-powered security testing to keep pace with modern development cycles. Tools like Strix are making professional-grade security accessible to everyone.\n\nWhat's your current approach to application security testing? Still doing manual pentests, or have you started automating with AI?"
+    }
+  }
+}

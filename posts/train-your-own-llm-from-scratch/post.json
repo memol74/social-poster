@@ -1,0 +1,26 @@
+{
+  "video": "video.mp4",
+  "platforms": {
+    "youtube": {
+      "title": "🔥 Stop Paying OpenAI: Train Your Own LLM",
+      "description": "This GitHub repo is a game-changer if you're tired of API bills. Train-llm-from-scratch is a complete transformer implementation in pure PyTorch with 8,200+ stars. It takes you from raw text all the way to a reasoning model—covering tokenization, pretraining, supervised fine-tuning, reward models, PPO, DPO, and GRPO. Every algorithm is hand-written so you actually learn what's happening, not just copy-paste from libraries. The whole pipeline runs on a single GPU, even a free Colab T4 for smaller models. Whether you're a student learning transformers or a developer building custom models, this repo gives you the full recipe. No black boxes, no hidden abstractions, just clean code and clear explanations. Stop renting compute from OpenAI—train your own models and keep them on your hardware. Link in bio.",
+      "tags": [
+        "ai",
+        "machinelearning",
+        "opensource"
+      ],
+      "privacy": "public",
+      "made_for_kids": false
+    },
+    "instagram": {
+      "caption": "This GitHub repo is a game-changer if you're tired of API bills. Train-llm-from-scratch is a complete transformer implementation in pure PyTorch with 8,200+ stars. It takes you from raw text all the way to a reasoning model—covering tokenization, pretraining, supervised fine-tuning, reward models, PPO, DPO, and GRPO. Every algorithm is hand-written so you actually learn what's happening, not just copy-paste from libraries. The whole pipeline runs on a single GPU, even a free Colab T4 for smaller models. Whether you're a student learning transformers or a developer building custom models, this repo gives you the full recipe. No black boxes, no hidden abstractions, just clean code and clear explanations. Stop renting compute from OpenAI—train your own models and keep them on your hardware. Link in bio."
+    },
+    "tiktok": {
+      "description": "This GitHub repo is a game-changer if you're tired of API bills. Train-llm-from-scratch is a complete transformer implementation in pure PyTorch with 8,200+ stars. It takes you from raw text all the way to a reasoning model—covering tokenization, pretraining, supervised fine-tuning, reward models, PPO, DPO, and GRPO. Every algorithm is hand-written so you actually learn what's happening, not just copy-paste from libraries. The whole pipeline runs on a single GPU, even a free Colab T4 for smaller models. Whether you're a student learning transformers or a developer building custom models, this repo gives you the full recipe. No black boxes, no hidden abstractions, just clean code and clear explanations. Stop renting compute from OpenAI—train your own models and keep them on your hardware. Link in bio.",
+      "privacy": "PUBLIC_TO_EVERYONE"
+    },
+    "linkedin": {
+      "text": "I just found a repo that completely changes how you think about LLMs. For months I've been paying API fees every time I needed a language model. Then I discovered train-llm-from-scratch on GitHub—8,200 stars, MIT license, pure PyTorch.\n\nWhat makes it special? It's not just another tutorial. It's a full production pipeline: raw text → tokenization → pretraining → SFT → reward models → PPO/DPO/GRPO → evaluation. Every single algorithm is implemented by hand. No trl, no peft, no transformers library. You actually see what happens inside.\n\nThe craziest part? It runs on a single GPU. I trained a 13M parameter model on a free Colab notebook. For bigger models, it has gradient checkpointing and mixed precision built in.\n\nIf you've ever wanted to understand how ChatGPT-style models are actually trained—not just the theory, but the real code—this is it. The README alone is a masterclass. Check it out and let me know what you think."
+    }
+  }
+}

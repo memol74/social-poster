@@ -1,0 +1,26 @@
+{
+  "video": "video.mp4",
+  "platforms": {
+    "youtube": {
+      "title": "🔓 Every AI's Secret Instructions (Leaked)",
+      "description": "Ever wonder what rules ChatGPT secretly follows? This repo reveals the actual system prompts behind Claude, GPT-5, Gemini, and every major AI assistant. Over 55,000 stars because it exposes what companies don't publish.\n\nYou get the exact instructions that shape how these models respond, updated with every new release. Side-by-side diffs show what changed between versions. Want to reverse-engineer prompts for your own tools? This is your blueprint.\n\nNext time you use an AI, you'll know exactly what it's been told to do behind the scenes. The ultimate resource for prompt engineering.\n\nRepo: github.com/asgeirtj/system_prompts_leaks",
+      "tags": [
+        "ai",
+        "chatgpt",
+        "opensource"
+      ],
+      "privacy": "public",
+      "made_for_kids": false
+    },
+    "instagram": {
+      "caption": "Ever wonder what rules ChatGPT secretly follows? This repo reveals the actual system prompts behind Claude, GPT-5, Gemini, and every major AI assistant. Over 55,000 stars because it exposes what companies don't publish.\n\nYou get the exact instructions that shape how these models respond, updated with every new release. Side-by-side diffs show what changed between versions. Want to reverse-engineer prompts for your own tools? This is your blueprint.\n\nNext time you use an AI, you'll know exactly what it's been told to do behind the scenes. The ultimate resource for prompt engineering.\n\nRepo: github.com/asgeirtj/system_prompts_leaks"
+    },
+    "tiktok": {
+      "description": "Ever wonder what rules ChatGPT secretly follows? This repo reveals the actual system prompts behind Claude, GPT-5, Gemini, and every major AI assistant. Over 55,000 stars because it exposes what companies don't publish.\n\nYou get the exact instructions that shape how these models respond, updated with every new release. Side-by-side diffs show what changed between versions. Want to reverse-engineer prompts for your own tools? This is your blueprint.\n\nNext time you use an AI, you'll know exactly what it's been told to do behind the scenes. The ultimate resource for prompt engineering.\n\nRepo: github.com/asgeirtj/system_prompts_leaks",
+      "privacy": "PUBLIC_TO_EVERYONE"
+    },
+    "linkedin": {
+      "text": "I just discovered something wild.\n\nYou know those AI assistants we all use — ChatGPT, Claude, Gemini?\n\nEach one has hidden instructions that guide every response. Rules you never see. Constraints the company chose. Personality traits baked in.\n\nI found a repo that leaks all of them.\n\nEvery system prompt. Every model. Updated constantly. 55,000+ stars.\n\nYou can read the exact instructions behind GPT-5's reasoning mode. See what changed when Claude upgraded to Fable 5. Compare how Google structures Gemini's safety guidelines.\n\nFor anyone building AI tools, this is gold. You're reverse-engineering the best prompts in the world. You see patterns in how companies instruct their models to handle edge cases, format responses, balance helpfulness with safety.\n\nIt's like getting the recipe after eating at a Michelin-star restaurant.\n\nNext time you chat with an AI, you'll notice things. \"Oh, that's the instruction about being concise.\" \"That refusal? Baked into the system prompt.\"\n\nThe veil lifts.\n\nLink in comments. Follow for more repos that change how you think about AI."
+    }
+  }
+}
