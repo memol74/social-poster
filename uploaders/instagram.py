@@ -31,7 +31,8 @@ FB_SCOPES = (
     "instagram_basic,"
     "instagram_content_publish,"
     "pages_read_engagement,"
-    "pages_manage_metadata"
+    "pages_manage_metadata,"
+    "pages_show_list"
 )
 
 
@@ -51,13 +52,13 @@ def _save_token(data):
         json.dump(data, f, indent=2)
 
 
-def _resolve_ig_user_id(token):
-    """Get the Instagram Business Account ID linked to the user's Facebook Page."""
+def _resolve_ig_account(token):
+    """Get the linked Instagram Business account and Page token."""
     # /me/accounts is broken with New Pages Experience — query token debug instead
     r = requests.get(f"{GRAPH_URL}/debug_token", params={
         "input_token": token,
         "access_token": token,
-    })
+    }, timeout=60)
     r.raise_for_status()
     debug = r.json().get("data", {})
     granular = debug.get("granular_scopes", [])
@@ -77,9 +78,9 @@ def _resolve_ig_user_id(token):
     # Check each page for a linked IG business account
     for page_id in page_ids:
         r = requests.get(f"{GRAPH_URL}/{page_id}", params={
-            "fields": "id,name,instagram_business_account{id,username}",
+            "fields": "id,name,access_token,instagram_business_account{id,username}",
             "access_token": token,
-        })
+        }, timeout=60)
         if r.status_code != 200:
             continue
         data = r.json()
@@ -87,12 +88,49 @@ def _resolve_ig_user_id(token):
         if ig_account:
             print(f"  Found Page: {data.get('name', page_id)}")
             print(f"  IG Account: @{ig_account.get('username', '?')} ({ig_account['id']})")
-            return ig_account["id"]
+            return {
+                "ig_user_id": ig_account["id"],
+                "page_id": page_id,
+                "page_name": data.get("name"),
+                "page_access_token": data.get("access_token"),
+            }
 
     raise Exception(
         "No Page has a linked Instagram Business account. "
         "Link your Instagram to a Facebook Page first."
     )
+
+
+def _resolve_ig_user_id(token):
+    return _resolve_ig_account(token)["ig_user_id"]
+
+
+def _refresh_page_token(token_data):
+    user_token = token_data.get("user_access_token") or token_data.get("access_token")
+    account = _resolve_ig_account(user_token)
+    refreshed = {
+        **token_data,
+        **account,
+        "user_access_token": user_token,
+    }
+    _save_token(refreshed)
+    return refreshed
+
+
+def _publishing_token(token_data, require_page_token=False):
+    page_token = token_data.get("page_access_token")
+    if page_token:
+        print("  Using Page access token for Instagram publishing")
+        return page_token
+
+    if require_page_token:
+        raise Exception(
+            "No Facebook Page access token found for Instagram publishing. "
+            "Run `python3.10 poster.py setup instagram` and grant the Page permissions again."
+        )
+
+    print("  [warn] Page access token unavailable; using saved access token")
+    return token_data["access_token"]
 
 
 def authenticate():
@@ -110,10 +148,13 @@ def authenticate():
         token_data = _load_token()
         if token_data.get("access_token") and token_data.get("ig_user_id"):
             # Verify token still works
+            user_token = token_data.get("user_access_token") or token_data["access_token"]
             r = requests.get(f"{GRAPH_URL}/me", params={
-                "access_token": token_data["access_token"]
-            })
+                "access_token": user_token
+            }, timeout=60)
             if r.status_code == 200:
+                if not token_data.get("page_access_token"):
+                    token_data = _refresh_page_token(token_data)
                 return token_data
             print("  Existing token expired, re-authenticating...")
 
@@ -137,7 +178,7 @@ def authenticate():
         "client_id": app_id,
         "client_secret": app_secret,
         "fb_exchange_token": short_token,
-    })
+    }, timeout=60)
     if r.status_code == 200 and "access_token" in r.json():
         token = r.json()["access_token"]
         print(f"  Exchanged for long-lived token (60 days)")
@@ -145,17 +186,18 @@ def authenticate():
         token = short_token
         print(f"  Using token as-is (couldn't exchange: {r.status_code})")
 
-    # Resolve IG user ID from linked Page
-    ig_user_id = _resolve_ig_user_id(token)
+    # Resolve linked Page, IG user ID, and Page token for publishing.
+    account = _resolve_ig_account(token)
 
     token_data = {
         "access_token": token,
-        "ig_user_id": ig_user_id,
+        "user_access_token": token,
+        **account,
         "token_type": "fb_login_for_business",
     }
     _save_token(token_data)
     print(f"  Long-lived token saved (expires in ~60 days)")
-    print(f"  Instagram Business Account ID: {ig_user_id}")
+    print(f"  Instagram Business Account ID: {account['ig_user_id']}")
     return token_data
 
 
@@ -189,6 +231,8 @@ def _upload_resumable_video(container_id, local_path, token):
         "Authorization": f"OAuth {token}",
         "offset": "0",
         "file_size": str(file_size),
+        "Content-Type": "application/octet-stream",
+        "Content-Length": str(file_size),
     }
     upload_url = f"https://rupload.facebook.com/ig-api-upload/{container_id}"
 
@@ -296,16 +340,16 @@ def upload_reel(video_url, caption="", token=None):
         token: Optional access token override. If provided, skips saved token lookup.
     """
     if token:
-        ig_user_id = _resolve_ig_user_id(token)
-        token_data = {"access_token": token, "ig_user_id": ig_user_id}
+        account = _resolve_ig_account(token)
+        token_data = {"access_token": token, "user_access_token": token, **account}
         _save_token({**token_data, "token_type": "fb_login_for_business"})
-        print(f"  Using provided token (Instagram account: {ig_user_id})")
+        print(f"  Using provided token (Instagram account: {account['ig_user_id']})")
     else:
         token_data = authenticate()
-        token = token_data["access_token"]
     ig_user_id = token_data["ig_user_id"]
 
     is_local = os.path.isfile(video_url)
+    token = _publishing_token(token_data, require_page_token=is_local)
     cleanup_path = None
 
     try:
