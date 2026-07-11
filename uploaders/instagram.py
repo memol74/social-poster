@@ -236,46 +236,13 @@ def _publish_container(ig_user_id, container_id, token):
     return media_id
 
 
-def _probe_video(local_path):
-    ffprobe = shutil.which("ffprobe")
-    if not ffprobe:
-        return None
-
-    result = subprocess.run([
-        ffprobe,
-        "-v", "error",
-        "-select_streams", "v:0",
-        "-show_entries", "stream=codec_name,pix_fmt,color_range,color_space",
-        "-of", "json",
-        local_path,
-    ], check=False, capture_output=True, text=True)
-    if result.returncode != 0:
-        return None
-
-    try:
-        streams = json.loads(result.stdout).get("streams", [])
-    except json.JSONDecodeError:
-        return None
-    return streams[0] if streams else None
-
-
-def _needs_instagram_normalization(local_path):
-    stream = _probe_video(local_path)
-    if not stream:
-        return False
-
-    return (
-        stream.get("codec_name") != "h264"
-        or stream.get("pix_fmt") != "yuv420p"
-        or stream.get("color_range") == "pc"
-        or stream.get("color_space") not in (None, "bt709")
-    )
-
-
 def _prepare_local_video(local_path):
     ffmpeg = shutil.which("ffmpeg")
-    if not ffmpeg or not _needs_instagram_normalization(local_path):
-        return local_path, None
+    if not ffmpeg:
+        raise Exception(
+            "ffmpeg is required for Instagram local video uploads. "
+            "Install ffmpeg so the MP4 can be normalized before Meta processing."
+        )
 
     fd, normalized_path = tempfile.mkstemp(suffix="_instagram.mp4")
     os.close(fd)
