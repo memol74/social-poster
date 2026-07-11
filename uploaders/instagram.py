@@ -156,21 +156,22 @@ def authenticate():
     return token_data
 
 
-def _upload_to_gdrive(local_path):
-    """Upload a file to Google Drive and return a public direct-download URL."""
+def _get_gdrive_service():
+    """Authenticate with Google Drive and return a Drive service."""
     from google_auth_oauthlib.flow import InstalledAppFlow
     from google.auth.transport.requests import Request as GRequest
     from google.oauth2.credentials import Credentials as GCredentials
     from googleapiclient.discovery import build as gbuild
-    from googleapiclient.http import MediaFileUpload
 
-    GDRIVE_TOKEN = os.path.join(ROOT, "tokens", "gdrive_token.json")
+    GDRIVE_TOKEN = os.path.join(ROOT, "tokens", "drive_token.json")
+    LEGACY_GDRIVE_TOKEN = os.path.join(ROOT, "tokens", "gdrive_token.json")
     CLIENT_SECRET = os.path.join(ROOT, "client_secret.json")
     GDRIVE_SCOPES = ["https://www.googleapis.com/auth/drive.file"]
 
     creds = None
-    if os.path.exists(GDRIVE_TOKEN):
-        creds = GCredentials.from_authorized_user_file(GDRIVE_TOKEN, GDRIVE_SCOPES)
+    token_path = GDRIVE_TOKEN if os.path.exists(GDRIVE_TOKEN) else LEGACY_GDRIVE_TOKEN
+    if os.path.exists(token_path):
+        creds = GCredentials.from_authorized_user_file(token_path, GDRIVE_SCOPES)
     if not creds or not creds.valid:
         if creds and creds.expired and creds.refresh_token:
             creds.refresh(GRequest())
@@ -178,10 +179,17 @@ def _upload_to_gdrive(local_path):
             flow = InstalledAppFlow.from_client_secrets_file(CLIENT_SECRET, GDRIVE_SCOPES)
             creds = flow.run_local_server(port=8083)
         os.makedirs(os.path.dirname(GDRIVE_TOKEN), exist_ok=True)
-        with open(GDRIVE_TOKEN, "w") as f:
+        with open(GDRIVE_TOKEN, "w", encoding="utf-8") as f:
             f.write(creds.to_json())
 
-    service = gbuild("drive", "v3", credentials=creds)
+    return gbuild("drive", "v3", credentials=creds)
+
+
+def _upload_to_gdrive(local_path):
+    """Upload a file to Google Drive and return a public direct-download URL."""
+    from googleapiclient.http import MediaFileUpload
+
+    service = _get_gdrive_service()
     fname = os.path.basename(local_path)
     media = MediaFileUpload(local_path, mimetype="video/mp4", resumable=True)
     file_meta = {"name": fname}
@@ -196,7 +204,14 @@ def _upload_to_gdrive(local_path):
 
     public_url = f"https://drive.google.com/uc?export=download&id={file_id}"
     print(f"  Google Drive file ID: {file_id}")
-    return public_url
+    return public_url, file_id
+
+
+def _delete_gdrive_file(file_id):
+    """Delete a Google Drive file created for Instagram hosting."""
+    service = _get_gdrive_service()
+    service.files().delete(fileId=file_id).execute()
+    print(f"  Cleaned up Google Drive file {file_id}")
 
 
 def upload_reel(video_url, caption="", token=None):
@@ -218,6 +233,7 @@ def upload_reel(video_url, caption="", token=None):
     ig_user_id = token_data["ig_user_id"]
 
     is_local = os.path.isfile(video_url)
+    cleanup_gdrive_file_id = None
 
     if is_local:
         file_size = os.path.getsize(video_url)
@@ -225,25 +241,33 @@ def upload_reel(video_url, caption="", token=None):
 
         public_url = None
 
-        # Try litterbox first (10s timeout)
+        # Google Drive is much more reliable for Meta ingestion than anonymous temp hosts.
         try:
-            print(f"  Uploading to temp host (litterbox.catbox.moe)...")
-            with open(video_url, "rb") as f:
-                r = requests.post(
-                    "https://litterbox.catbox.moe/resources/internals/api.php",
-                    data={"reqtype": "fileupload", "time": "72h"},
-                    files={"fileToUpload": (os.path.basename(video_url), f, "video/mp4")},
-                    timeout=10,
-                )
-            if r.status_code == 200 and r.text.startswith("http"):
-                public_url = r.text.strip()
+            print("  Uploading to Google Drive for Instagram processing...")
+            public_url, cleanup_gdrive_file_id = _upload_to_gdrive(video_url)
         except Exception as e:
-            print(f"  Litterbox failed: {e}")
+            print(f"  Google Drive failed: {e}")
+
+        # Try litterbox first (10s timeout)
+        if not public_url:
+            try:
+                print("  Uploading to temp host (litterbox.catbox.moe)...")
+                with open(video_url, "rb") as f:
+                    r = requests.post(
+                        "https://litterbox.catbox.moe/resources/internals/api.php",
+                        data={"reqtype": "fileupload", "time": "72h"},
+                        files={"fileToUpload": (os.path.basename(video_url), f, "video/mp4")},
+                        timeout=10,
+                    )
+                if r.status_code == 200 and r.text.startswith("http"):
+                    public_url = r.text.strip()
+            except Exception as e:
+                print(f"  Litterbox failed: {e}")
 
         # Fallback: 0x0.st (10s timeout)
         if not public_url:
             try:
-                print(f"  Trying fallback (0x0.st)...")
+                print("  Trying fallback (0x0.st)...")
                 with open(video_url, "rb") as f:
                     r = requests.post(
                         "https://0x0.st",
@@ -258,7 +282,7 @@ def upload_reel(video_url, caption="", token=None):
         # Fallback: tmpfiles.org
         if not public_url:
             try:
-                print(f"  Trying fallback (tmpfiles.org)...")
+                print("  Trying fallback (tmpfiles.org)...")
                 with open(video_url, "rb") as f:
                     r = requests.post(
                         "https://tmpfiles.org/api/v1/upload",
@@ -277,7 +301,7 @@ def upload_reel(video_url, caption="", token=None):
         # Fallback: uguu.se
         if not public_url:
             try:
-                print(f"  Trying fallback (uguu.se)...")
+                print("  Trying fallback (uguu.se)...")
                 with open(video_url, "rb") as f:
                     r = requests.post(
                         "https://uguu.se/upload",
@@ -296,53 +320,60 @@ def upload_reel(video_url, caption="", token=None):
         # Last resort: Google Drive
         if not public_url:
             try:
-                print(f"  Trying Google Drive upload...")
-                public_url = _upload_to_gdrive(video_url)
+                print("  Trying Google Drive upload...")
+                public_url, cleanup_gdrive_file_id = _upload_to_gdrive(video_url)
             except Exception as e:
                 print(f"  Google Drive failed: {e}")
 
         if not public_url:
             raise Exception("All temp hosts failed. Try again later or upload manually.")
 
-        print(f"  Temp URL: {public_url}")
+        print(f"  Hosted URL: {public_url}")
         video_url = public_url
 
-    # Create container with public video URL
-    print(f"  Creating container...")
-    r = requests.post(f"{GRAPH_URL}/{ig_user_id}/media", data={
-        "media_type": "REELS",
-        "video_url": video_url,
-        "caption": caption,
-        "access_token": token,
-    })
-    r.raise_for_status()
-    container_id = r.json()["id"]
-    print(f"  Container: {container_id}")
-
-    # Step 2: Wait for processing
-    for i in range(60):
-        time.sleep(5)
-        r = requests.get(f"{GRAPH_URL}/{container_id}", params={
-            "fields": "status_code,status",
+    try:
+        # Create container with public video URL
+        print("  Creating container...")
+        r = requests.post(f"{GRAPH_URL}/{ig_user_id}/media", data={
+            "media_type": "REELS",
+            "video_url": video_url,
+            "caption": caption,
             "access_token": token,
         })
         r.raise_for_status()
-        status = r.json()
-        code = status.get("status_code", "UNKNOWN")
-        print(f"  Processing... {code}")
-        if code == "FINISHED":
-            break
-        elif code == "ERROR":
-            raise Exception(f"Processing failed: {status}")
-    else:
-        raise Exception("Processing timed out (5 min)")
+        container_id = r.json()["id"]
+        print(f"  Container: {container_id}")
 
-    # Step 3: Publish
-    r = requests.post(f"{GRAPH_URL}/{ig_user_id}/media_publish", data={
-        "creation_id": container_id,
-        "access_token": token,
-    })
-    r.raise_for_status()
-    media_id = r.json()["id"]
-    print(f"  Published! Media ID: {media_id}")
-    return media_id
+        # Step 2: Wait for processing
+        for _ in range(60):
+            time.sleep(5)
+            r = requests.get(f"{GRAPH_URL}/{container_id}", params={
+                "fields": "status_code,status",
+                "access_token": token,
+            })
+            r.raise_for_status()
+            status = r.json()
+            code = status.get("status_code", "UNKNOWN")
+            print(f"  Processing... {code}")
+            if code == "FINISHED":
+                break
+            elif code == "ERROR":
+                raise Exception(f"Processing failed: {status}")
+        else:
+            raise Exception("Processing timed out (5 min)")
+
+        # Step 3: Publish
+        r = requests.post(f"{GRAPH_URL}/{ig_user_id}/media_publish", data={
+            "creation_id": container_id,
+            "access_token": token,
+        })
+        r.raise_for_status()
+        media_id = r.json()["id"]
+        print(f"  Published! Media ID: {media_id}")
+        return media_id
+    finally:
+        if cleanup_gdrive_file_id:
+            try:
+                _delete_gdrive_file(cleanup_gdrive_file_id)
+            except Exception as e:
+                print(f"  Warning: couldn't delete Google Drive file: {e}")
