@@ -249,6 +249,43 @@ def _upload_resumable_video(container_id, local_path, token):
     print("  Video upload complete")
 
 
+def _upload_resumable_video_with_curl(container_id, local_path, token):
+    curl = shutil.which("curl")
+    if not curl:
+        raise Exception("curl is not installed")
+
+    file_size = os.path.getsize(local_path)
+    upload_url = f"https://rupload.facebook.com/ig-api-upload/{container_id}"
+
+    print("  Uploading video binary to Meta with curl...")
+    result = subprocess.run([
+        curl,
+        "-sS",
+        "-X", "POST",
+        upload_url,
+        "-H", f"Authorization: OAuth {token}",
+        "-H", "offset: 0",
+        "-H", f"file_size: {file_size}",
+        "--data-binary", f"@{local_path}",
+    ], check=False, capture_output=True, text=True)
+
+    stdout = result.stdout.strip()
+    stderr = result.stderr.strip()
+    if result.returncode != 0:
+        raise Exception(f"curl upload failed: {stderr or stdout}")
+
+    try:
+        details = json.loads(stdout) if stdout else {}
+    except ValueError:
+        details = stdout
+
+    if isinstance(details, dict):
+        if details.get("success") is False or details.get("debug_info"):
+            raise Exception(f"curl video upload failed: {details}")
+
+    print("  Curl video upload complete")
+
+
 def _upload_resumable_file_url(container_id, file_url, token):
     headers = {
         "Authorization": f"OAuth {token}",
@@ -355,6 +392,15 @@ def _upload_resumable_with_fallback(ig_user_id, caption, local_path, token):
         return container_id
     except Exception as direct_error:
         print(f"  Direct binary upload failed: {direct_error}")
+
+    try:
+        print("  Trying curl binary upload with a fresh container...")
+        curl_container_id = _create_reel_container(ig_user_id, caption, token, resumable=True)
+        print(f"  Container: {curl_container_id}")
+        _upload_resumable_video_with_curl(curl_container_id, local_path, token)
+        return curl_container_id
+    except Exception as curl_error:
+        print(f"  Curl binary upload failed: {curl_error}")
         print("  Trying hosted resumable upload fallback...")
 
     last_error = None
@@ -428,24 +474,31 @@ def _prepare_local_video(local_path):
         "-i", local_path,
         "-map", "0:v:0",
         "-map", "0:a:0?",
-        "-vf", "scale=out_range=tv,format=yuv420p",
+        "-vf", "scale=1080:1920:flags=lanczos:in_range=pc:out_range=tv,format=yuv420p",
         "-c:v", "libx264",
-        "-profile:v", "high",
-        "-level", "4.1",
+        "-profile:v", "main",
+        "-level", "4.0",
         "-pix_fmt", "yuv420p",
         "-r", "30",
-        "-b:v", "8M",
-        "-maxrate", "12M",
-        "-bufsize", "16M",
+        "-g", "60",
+        "-keyint_min", "60",
+        "-sc_threshold", "0",
+        "-bf", "0",
+        "-refs", "1",
+        "-b:v", "5M",
+        "-maxrate", "8M",
+        "-bufsize", "10M",
         "-color_range", "tv",
         "-colorspace", "bt709",
         "-color_primaries", "bt709",
         "-color_trc", "bt709",
+        "-bsf:v", "h264_metadata=colour_primaries=1:transfer_characteristics=1:matrix_coefficients=1:video_full_range_flag=0",
         "-c:a", "aac",
         "-b:a", "128k",
         "-ar", "44100",
         "-ac", "2",
         "-movflags", "+faststart",
+        "-brand", "mp42",
         normalized_path,
     ], check=False, capture_output=True, text=True)
 
