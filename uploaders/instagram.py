@@ -7,6 +7,9 @@ Public URLs use the video_url approach.
 
 import os
 import json
+import shutil
+import subprocess
+import tempfile
 import time
 import webbrowser
 try:
@@ -156,62 +159,165 @@ def authenticate():
     return token_data
 
 
-def _get_gdrive_service():
-    """Authenticate with Google Drive and return a Drive service."""
-    from google_auth_oauthlib.flow import InstalledAppFlow
-    from google.auth.transport.requests import Request as GRequest
-    from google.oauth2.credentials import Credentials as GCredentials
-    from googleapiclient.discovery import build as gbuild
-
-    GDRIVE_TOKEN = os.path.join(ROOT, "tokens", "drive_token.json")
-    LEGACY_GDRIVE_TOKEN = os.path.join(ROOT, "tokens", "gdrive_token.json")
-    CLIENT_SECRET = os.path.join(ROOT, "client_secret.json")
-    GDRIVE_SCOPES = ["https://www.googleapis.com/auth/drive.file"]
-
-    creds = None
-    token_path = GDRIVE_TOKEN if os.path.exists(GDRIVE_TOKEN) else LEGACY_GDRIVE_TOKEN
-    if os.path.exists(token_path):
-        creds = GCredentials.from_authorized_user_file(token_path, GDRIVE_SCOPES)
-    if not creds or not creds.valid:
-        if creds and creds.expired and creds.refresh_token:
-            creds.refresh(GRequest())
-        else:
-            flow = InstalledAppFlow.from_client_secrets_file(CLIENT_SECRET, GDRIVE_SCOPES)
-            creds = flow.run_local_server(port=8083)
-        os.makedirs(os.path.dirname(GDRIVE_TOKEN), exist_ok=True)
-        with open(GDRIVE_TOKEN, "w", encoding="utf-8") as f:
-            f.write(creds.to_json())
-
-    return gbuild("drive", "v3", credentials=creds)
+def _response_details(response):
+    try:
+        return response.json()
+    except ValueError:
+        return response.text
 
 
-def _upload_to_gdrive(local_path):
-    """Upload a file to Google Drive and return a public direct-download URL."""
-    from googleapiclient.http import MediaFileUpload
+def _create_reel_container(ig_user_id, caption, token, video_url=None, resumable=False):
+    data = {
+        "media_type": "REELS",
+        "caption": caption,
+        "access_token": token,
+    }
+    if resumable:
+        data["upload_type"] = "resumable"
+    else:
+        data["video_url"] = video_url
 
-    service = _get_gdrive_service()
-    fname = os.path.basename(local_path)
-    media = MediaFileUpload(local_path, mimetype="video/mp4", resumable=True)
-    file_meta = {"name": fname}
-    gfile = service.files().create(body=file_meta, media_body=media, fields="id").execute()
-    file_id = gfile["id"]
-
-    # Make it publicly readable
-    service.permissions().create(
-        fileId=file_id,
-        body={"type": "anyone", "role": "reader"},
-    ).execute()
-
-    public_url = f"https://drive.google.com/uc?export=download&id={file_id}"
-    print(f"  Google Drive file ID: {file_id}")
-    return public_url, file_id
+    r = requests.post(f"{GRAPH_URL}/{ig_user_id}/media", data=data, timeout=60)
+    if not r.ok:
+        raise Exception(f"Container creation failed: {_response_details(r)}")
+    return r.json()["id"]
 
 
-def _delete_gdrive_file(file_id):
-    """Delete a Google Drive file created for Instagram hosting."""
-    service = _get_gdrive_service()
-    service.files().delete(fileId=file_id).execute()
-    print(f"  Cleaned up Google Drive file {file_id}")
+def _upload_resumable_video(container_id, local_path, token):
+    file_size = os.path.getsize(local_path)
+    headers = {
+        "Authorization": f"OAuth {token}",
+        "offset": "0",
+        "file_size": str(file_size),
+    }
+    upload_url = f"https://rupload.facebook.com/ig-api-upload/{container_id}"
+
+    print("  Uploading video binary to Meta...")
+    with open(local_path, "rb") as f:
+        r = requests.post(upload_url, headers=headers, data=f, timeout=(30, 900))
+
+    if not r.ok:
+        raise Exception(f"Video upload failed: {_response_details(r)}")
+
+    details = _response_details(r)
+    if isinstance(details, dict) and details.get("success") is False:
+        raise Exception(f"Video upload failed: {details}")
+
+    print("  Video upload complete")
+
+
+def _wait_for_container(container_id, token):
+    for _ in range(60):
+        time.sleep(5)
+        r = requests.get(f"{GRAPH_URL}/{container_id}", params={
+            "fields": "status_code,status",
+            "access_token": token,
+        }, timeout=60)
+        r.raise_for_status()
+        status = r.json()
+        code = status.get("status_code", "UNKNOWN")
+        print(f"  Processing... {code}")
+        if code == "FINISHED":
+            return
+        if code == "ERROR":
+            raise Exception(f"Processing failed: {status}")
+
+    raise Exception("Processing timed out (5 min)")
+
+
+def _publish_container(ig_user_id, container_id, token):
+    r = requests.post(f"{GRAPH_URL}/{ig_user_id}/media_publish", data={
+        "creation_id": container_id,
+        "access_token": token,
+    }, timeout=60)
+    r.raise_for_status()
+    media_id = r.json()["id"]
+    print(f"  Published! Media ID: {media_id}")
+    return media_id
+
+
+def _probe_video(local_path):
+    ffprobe = shutil.which("ffprobe")
+    if not ffprobe:
+        return None
+
+    result = subprocess.run([
+        ffprobe,
+        "-v", "error",
+        "-select_streams", "v:0",
+        "-show_entries", "stream=codec_name,pix_fmt,color_range,color_space",
+        "-of", "json",
+        local_path,
+    ], check=False, capture_output=True, text=True)
+    if result.returncode != 0:
+        return None
+
+    try:
+        streams = json.loads(result.stdout).get("streams", [])
+    except json.JSONDecodeError:
+        return None
+    return streams[0] if streams else None
+
+
+def _needs_instagram_normalization(local_path):
+    stream = _probe_video(local_path)
+    if not stream:
+        return False
+
+    return (
+        stream.get("codec_name") != "h264"
+        or stream.get("pix_fmt") != "yuv420p"
+        or stream.get("color_range") == "pc"
+        or stream.get("color_space") not in (None, "bt709")
+    )
+
+
+def _prepare_local_video(local_path):
+    ffmpeg = shutil.which("ffmpeg")
+    if not ffmpeg or not _needs_instagram_normalization(local_path):
+        return local_path, None
+
+    fd, normalized_path = tempfile.mkstemp(suffix="_instagram.mp4")
+    os.close(fd)
+
+    print("  Normalizing MP4 for Instagram processing...")
+    result = subprocess.run([
+        ffmpeg,
+        "-y",
+        "-i", local_path,
+        "-map", "0:v:0",
+        "-map", "0:a:0?",
+        "-vf", "scale=out_range=tv,format=yuv420p",
+        "-c:v", "libx264",
+        "-profile:v", "high",
+        "-level", "4.1",
+        "-pix_fmt", "yuv420p",
+        "-r", "30",
+        "-b:v", "8M",
+        "-maxrate", "12M",
+        "-bufsize", "16M",
+        "-color_range", "tv",
+        "-colorspace", "bt709",
+        "-color_primaries", "bt709",
+        "-color_trc", "bt709",
+        "-c:a", "aac",
+        "-b:a", "128k",
+        "-ar", "44100",
+        "-ac", "2",
+        "-movflags", "+faststart",
+        normalized_path,
+    ], check=False, capture_output=True, text=True)
+
+    if result.returncode != 0:
+        try:
+            os.remove(normalized_path)
+        except OSError:
+            pass
+        raise Exception(f"Instagram video normalization failed: {result.stderr.strip()}")
+
+    normalized_size = os.path.getsize(normalized_path)
+    print(f"  Normalized file: {normalized_size / 1024 / 1024:.1f} MB")
+    return normalized_path, normalized_path
 
 
 def upload_reel(video_url, caption="", token=None):
@@ -233,147 +339,27 @@ def upload_reel(video_url, caption="", token=None):
     ig_user_id = token_data["ig_user_id"]
 
     is_local = os.path.isfile(video_url)
-    cleanup_gdrive_file_id = None
-
-    if is_local:
-        file_size = os.path.getsize(video_url)
-        print(f"  Local file: {video_url} ({file_size / 1024 / 1024:.1f} MB)")
-
-        public_url = None
-
-        # Google Drive is much more reliable for Meta ingestion than anonymous temp hosts.
-        try:
-            print("  Uploading to Google Drive for Instagram processing...")
-            public_url, cleanup_gdrive_file_id = _upload_to_gdrive(video_url)
-        except Exception as e:
-            print(f"  Google Drive failed: {e}")
-
-        # Try litterbox first (10s timeout)
-        if not public_url:
-            try:
-                print("  Uploading to temp host (litterbox.catbox.moe)...")
-                with open(video_url, "rb") as f:
-                    r = requests.post(
-                        "https://litterbox.catbox.moe/resources/internals/api.php",
-                        data={"reqtype": "fileupload", "time": "72h"},
-                        files={"fileToUpload": (os.path.basename(video_url), f, "video/mp4")},
-                        timeout=10,
-                    )
-                if r.status_code == 200 and r.text.startswith("http"):
-                    public_url = r.text.strip()
-            except Exception as e:
-                print(f"  Litterbox failed: {e}")
-
-        # Fallback: 0x0.st (10s timeout)
-        if not public_url:
-            try:
-                print("  Trying fallback (0x0.st)...")
-                with open(video_url, "rb") as f:
-                    r = requests.post(
-                        "https://0x0.st",
-                        files={"file": (os.path.basename(video_url), f, "video/mp4")},
-                        timeout=10,
-                    )
-                if r.status_code == 200 and r.text.strip().startswith("http"):
-                    public_url = r.text.strip()
-            except Exception as e:
-                print(f"  0x0.st failed: {e}")
-
-        # Fallback: tmpfiles.org
-        if not public_url:
-            try:
-                print("  Trying fallback (tmpfiles.org)...")
-                with open(video_url, "rb") as f:
-                    r = requests.post(
-                        "https://tmpfiles.org/api/v1/upload",
-                        files={"file": (os.path.basename(video_url), f, "video/mp4")},
-                        timeout=120,
-                    )
-                if r.status_code == 200:
-                    data = r.json()
-                    tmp_url = data.get("data", {}).get("url", "")
-                    if tmp_url:
-                        # Convert view URL to direct download URL
-                        public_url = tmp_url.replace("tmpfiles.org/", "tmpfiles.org/dl/")
-            except Exception as e:
-                print(f"  tmpfiles.org failed: {e}")
-
-        # Fallback: uguu.se
-        if not public_url:
-            try:
-                print("  Trying fallback (uguu.se)...")
-                with open(video_url, "rb") as f:
-                    r = requests.post(
-                        "https://uguu.se/upload",
-                        files={"files[]": (os.path.basename(video_url), f, "video/mp4")},
-                        timeout=120,
-                    )
-                if r.status_code == 200:
-                    data = r.json()
-                    if isinstance(data, list) and data:
-                        public_url = data[0].get("url", "")
-                    elif isinstance(data, dict):
-                        public_url = data.get("url", "")
-            except Exception as e:
-                print(f"  uguu.se failed: {e}")
-
-        # Last resort: Google Drive
-        if not public_url:
-            try:
-                print("  Trying Google Drive upload...")
-                public_url, cleanup_gdrive_file_id = _upload_to_gdrive(video_url)
-            except Exception as e:
-                print(f"  Google Drive failed: {e}")
-
-        if not public_url:
-            raise Exception("All temp hosts failed. Try again later or upload manually.")
-
-        print(f"  Hosted URL: {public_url}")
-        video_url = public_url
+    cleanup_path = None
 
     try:
-        # Create container with public video URL
-        print("  Creating container...")
-        r = requests.post(f"{GRAPH_URL}/{ig_user_id}/media", data={
-            "media_type": "REELS",
-            "video_url": video_url,
-            "caption": caption,
-            "access_token": token,
-        })
-        r.raise_for_status()
-        container_id = r.json()["id"]
-        print(f"  Container: {container_id}")
-
-        # Step 2: Wait for processing
-        for _ in range(60):
-            time.sleep(5)
-            r = requests.get(f"{GRAPH_URL}/{container_id}", params={
-                "fields": "status_code,status",
-                "access_token": token,
-            })
-            r.raise_for_status()
-            status = r.json()
-            code = status.get("status_code", "UNKNOWN")
-            print(f"  Processing... {code}")
-            if code == "FINISHED":
-                break
-            elif code == "ERROR":
-                raise Exception(f"Processing failed: {status}")
+        if is_local:
+            file_size = os.path.getsize(video_url)
+            print(f"  Local file: {video_url} ({file_size / 1024 / 1024:.1f} MB)")
+            upload_path, cleanup_path = _prepare_local_video(video_url)
+            print("  Creating resumable upload container...")
+            container_id = _create_reel_container(ig_user_id, caption, token, resumable=True)
+            print(f"  Container: {container_id}")
+            _upload_resumable_video(container_id, upload_path, token)
         else:
-            raise Exception("Processing timed out (5 min)")
+            print("  Creating container from public video URL...")
+            container_id = _create_reel_container(ig_user_id, caption, token, video_url=video_url)
+            print(f"  Container: {container_id}")
 
-        # Step 3: Publish
-        r = requests.post(f"{GRAPH_URL}/{ig_user_id}/media_publish", data={
-            "creation_id": container_id,
-            "access_token": token,
-        })
-        r.raise_for_status()
-        media_id = r.json()["id"]
-        print(f"  Published! Media ID: {media_id}")
-        return media_id
+        _wait_for_container(container_id, token)
+        return _publish_container(ig_user_id, container_id, token)
     finally:
-        if cleanup_gdrive_file_id:
+        if cleanup_path:
             try:
-                _delete_gdrive_file(cleanup_gdrive_file_id)
-            except Exception as e:
-                print(f"  Warning: couldn't delete Google Drive file: {e}")
+                os.remove(cleanup_path)
+            except OSError:
+                pass
