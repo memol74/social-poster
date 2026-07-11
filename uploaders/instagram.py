@@ -306,6 +306,20 @@ def _upload_resumable_file_url(container_id, file_url, token):
     print("  Hosted video upload complete")
 
 
+def _create_video_url_container_with_wait(ig_user_id, caption, file_url, token):
+    print("  Trying standard video_url container with hosted video...")
+    container_id = _create_reel_container(
+        ig_user_id,
+        caption,
+        token,
+        video_url=file_url,
+        resumable=False,
+    )
+    print(f"  Container: {container_id}")
+    _wait_for_container(container_id, token)
+    return container_id
+
+
 def _validate_hosted_video_url(file_url):
     try:
         r = requests.get(
@@ -422,6 +436,14 @@ def _upload_resumable_with_fallback(ig_user_id, caption, local_path, token):
         except Exception as hosted_error:
             print(f"  {host_name} fallback failed: {hosted_error}")
             last_error = hosted_error
+
+        try:
+            return _create_video_url_container_with_wait(
+                ig_user_id, caption, file_url, token
+            )
+        except Exception as video_url_error:
+            print(f"  {host_name} video_url fallback failed: {video_url_error}")
+            last_error = video_url_error
 
     raise Exception(f"Hosted fallback failed for all temp hosts. Last error: {last_error}")
 
