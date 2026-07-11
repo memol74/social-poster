@@ -269,24 +269,30 @@ def _upload_resumable_file_url(container_id, file_url, token):
     print("  Hosted video upload complete")
 
 
-def _upload_to_temp_host(local_path):
-    file_name = os.path.basename(local_path)
-
+def _validate_hosted_video_url(file_url):
     try:
-        print("  Uploading normalized video to tmpfiles.org...")
-        with open(local_path, "rb") as f:
-            r = requests.post(
-                "https://tmpfiles.org/api/v1/upload",
-                files={"file": (file_name, f, "video/mp4")},
-                timeout=180,
-            )
-        if r.status_code == 200:
-            tmp_url = r.json().get("data", {}).get("url", "")
-            if tmp_url:
-                return tmp_url.replace("tmpfiles.org/", "tmpfiles.org/dl/")
-        print(f"  tmpfiles.org failed: {_response_details(r)}")
+        r = requests.get(
+            file_url,
+            headers={"Range": "bytes=0-0"},
+            stream=True,
+            allow_redirects=True,
+            timeout=(15, 60),
+        )
+        try:
+            if not r.ok:
+                return False, f"HTTP {r.status_code}"
+            content_type = r.headers.get("Content-Type", "").strip()
+            if not content_type.lower().startswith("video/"):
+                return False, f"content type {content_type or 'unknown'}"
+            return True, content_type
+        finally:
+            r.close()
     except Exception as e:
-        print(f"  tmpfiles.org failed: {e}")
+        return False, str(e)
+
+
+def _upload_to_temp_hosts(local_path):
+    file_name = os.path.basename(local_path)
 
     try:
         print("  Uploading normalized video to 0x0.st...")
@@ -297,8 +303,9 @@ def _upload_to_temp_host(local_path):
                 timeout=180,
             )
         if r.status_code == 200 and r.text.strip().startswith("http"):
-            return r.text.strip()
-        print(f"  0x0.st failed: {_response_details(r)}")
+            yield "0x0.st", r.text.strip()
+        else:
+            print(f"  0x0.st failed: {_response_details(r)}")
     except Exception as e:
         print(f"  0x0.st failed: {e}")
 
@@ -312,12 +319,30 @@ def _upload_to_temp_host(local_path):
                 timeout=180,
             )
         if r.status_code == 200 and r.text.strip().startswith("http"):
-            return r.text.strip()
-        print(f"  litterbox failed: {_response_details(r)}")
+            yield "litterbox", r.text.strip()
+        else:
+            print(f"  litterbox failed: {_response_details(r)}")
     except Exception as e:
         print(f"  litterbox failed: {e}")
 
-    raise Exception("Could not host normalized video for Instagram fallback upload.")
+    try:
+        print("  Uploading normalized video to tmpfiles.org...")
+        with open(local_path, "rb") as f:
+            r = requests.post(
+                "https://tmpfiles.org/api/v1/upload",
+                files={"file": (file_name, f, "video/mp4")},
+                timeout=180,
+            )
+        if r.status_code == 200:
+            tmp_url = r.json().get("data", {}).get("url", "")
+            if tmp_url:
+                yield "tmpfiles.org", tmp_url.replace("tmpfiles.org/", "tmpfiles.org/dl/")
+            else:
+                print(f"  tmpfiles.org failed: {_response_details(r)}")
+        else:
+            print(f"  tmpfiles.org failed: {_response_details(r)}")
+    except Exception as e:
+        print(f"  tmpfiles.org failed: {e}")
 
 
 def _upload_resumable_with_fallback(ig_user_id, caption, local_path, token):
@@ -332,13 +357,27 @@ def _upload_resumable_with_fallback(ig_user_id, caption, local_path, token):
         print(f"  Direct binary upload failed: {direct_error}")
         print("  Trying hosted resumable upload fallback...")
 
-    file_url = _upload_to_temp_host(local_path)
-    print(f"  Hosted URL: {file_url}")
-    print("  Creating fallback resumable upload container...")
-    fallback_container_id = _create_reel_container(ig_user_id, caption, token, resumable=True)
-    print(f"  Container: {fallback_container_id}")
-    _upload_resumable_file_url(fallback_container_id, file_url, token)
-    return fallback_container_id
+    last_error = None
+    for host_name, file_url in _upload_to_temp_hosts(local_path):
+        print(f"  Hosted URL ({host_name}): {file_url}")
+        is_valid, validation = _validate_hosted_video_url(file_url)
+        if not is_valid:
+            print(f"  {host_name} skipped: hosted URL returned {validation}")
+            last_error = validation
+            continue
+
+        print(f"  Hosted URL content type: {validation}")
+        print("  Creating fallback resumable upload container...")
+        fallback_container_id = _create_reel_container(ig_user_id, caption, token, resumable=True)
+        print(f"  Container: {fallback_container_id}")
+        try:
+            _upload_resumable_file_url(fallback_container_id, file_url, token)
+            return fallback_container_id
+        except Exception as hosted_error:
+            print(f"  {host_name} fallback failed: {hosted_error}")
+            last_error = hosted_error
+
+    raise Exception(f"Hosted fallback failed for all temp hosts. Last error: {last_error}")
 
 
 def _wait_for_container(container_id, token):
