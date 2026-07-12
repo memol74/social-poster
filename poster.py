@@ -36,7 +36,7 @@ def main():
 
     # Setup command
     setup_parser = subparsers.add_parser("setup", help="Setup platform authentication")
-    setup_parser.add_argument("platform", choices=["youtube", "instagram", "tiktok", "linkedin"])
+    setup_parser.add_argument("platform", nargs="?", choices=["youtube", "instagram", "tiktok", "linkedin"])
     setup_parser.add_argument("--token", help="(unused, kept for compatibility)")
 
     # Verify command
@@ -50,16 +50,26 @@ def main():
         sys.exit(1)
 
     if args.command == "setup":
+        if not args.platform:
+            print("Choose a platform: youtube, instagram, tiktok, or linkedin")
+            print("Example: python3.10 poster.py setup linkedin")
+            sys.exit(1)
         try:
             run_setup(args)
         except ModuleNotFoundError as e:
             print(_missing_dependency_message(e))
+            sys.exit(1)
+        except RuntimeError as e:
+            print(e)
             sys.exit(1)
     elif args.command == "verify":
         try:
             run_verify(args)
         except ModuleNotFoundError as e:
             print(_missing_dependency_message(e))
+            sys.exit(1)
+        except RuntimeError as e:
+            print(e)
             sys.exit(1)
     elif args.command == "post":
         run_post(args)

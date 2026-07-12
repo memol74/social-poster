@@ -25,9 +25,58 @@ LINKEDIN_VERSION = "202604"
 CALLBACK_TIMEOUT_SECONDS = 600
 
 
+LINKEDIN_CONFIG_SNIPPET = '''
+    "linkedin": {
+        "client_id": "YOUR_LINKEDIN_CLIENT_ID",
+        "client_secret": "YOUR_LINKEDIN_CLIENT_SECRET",
+        "post_as": "member",
+        "scopes": "openid profile w_member_social",
+        "redirect_uri": "http://localhost:8585/callback"
+    }
+'''.strip()
+
+
+def _is_configured(value):
+    if not value or not isinstance(value, str):
+        return False
+    return not value.startswith(("YOUR_", "OPTIONAL_"))
+
+
+def _config_error(message):
+    raise RuntimeError(
+        f"LinkedIn config error: {message}\n\n"
+        "Add or update this block in config.json:\n"
+        f"{LINKEDIN_CONFIG_SNIPPET}\n\n"
+        "Then run:\n"
+        "  python3.10 poster.py setup linkedin\n"
+        "  python3.10 poster.py verify linkedin"
+    )
+
+
 def _load_config():
+    if not os.path.exists(CONFIG_FILE):
+        _config_error("config.json was not found. Copy config.example.json to config.json first.")
+
     with open(CONFIG_FILE, encoding="utf-8-sig") as f:
-        return json.load(f)["linkedin"]
+        config = json.load(f)
+
+    if "linkedin" not in config:
+        _config_error("missing 'linkedin' section.")
+
+    cfg = config["linkedin"]
+    if not isinstance(cfg, dict):
+        _config_error("'linkedin' section must be a JSON object.")
+
+    missing = [key for key in ("client_id", "client_secret") if not _is_configured(cfg.get(key))]
+    post_as = _post_as(cfg)
+    if post_as not in {"member", "organization"}:
+        _config_error("'post_as' must be either 'member' or 'organization'.")
+    if post_as == "organization" and not _is_configured(cfg.get("organization_id")):
+        missing.append("organization_id")
+    if missing:
+        _config_error("missing required key(s): " + ", ".join(missing))
+
+    return cfg
 
 
 def _load_token():
