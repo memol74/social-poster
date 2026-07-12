@@ -41,7 +41,7 @@ def main():
 
     # Verify command
     verify_parser = subparsers.add_parser("verify", help="Verify local platform configuration")
-    verify_parser.add_argument("platform", choices=["tiktok"])
+    verify_parser.add_argument("platform", choices=["tiktok", "linkedin"])
 
     args = parser.parse_args()
 
@@ -87,6 +87,11 @@ def run_setup(args):
 def run_verify(args):
     if args.platform == "tiktok":
         from uploaders.tiktok import print_setup_status
+
+        ready = print_setup_status()
+        sys.exit(0 if ready else 1)
+    if args.platform == "linkedin":
+        from uploaders.linkedin import print_setup_status
 
         ready = print_setup_status()
         sys.exit(0 if ready else 1)
