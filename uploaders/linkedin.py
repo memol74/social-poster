@@ -29,8 +29,9 @@ LINKEDIN_CONFIG_SNIPPET = '''
     "linkedin": {
         "client_id": "YOUR_LINKEDIN_CLIENT_ID",
         "client_secret": "YOUR_LINKEDIN_CLIENT_SECRET",
-        "post_as": "member",
-        "scopes": "openid profile w_member_social",
+        "post_as": "organization",
+        "scopes": "w_organization_social",
+        "organization_id": "YOUR_LINKEDIN_ORGANIZATION_ID",
         "redirect_uri": "http://localhost:8585/callback"
     }
 '''.strip()
@@ -53,12 +54,38 @@ def _config_error(message):
     )
 
 
-def _load_config():
+def _read_root_config():
     if not os.path.exists(CONFIG_FILE):
         _config_error("config.json was not found. Copy config.example.json to config.json first.")
-
     with open(CONFIG_FILE, encoding="utf-8-sig") as f:
-        config = json.load(f)
+        return json.load(f)
+
+
+def set_posting_mode(post_as):
+    """Persist whether LinkedIn posts should target a member or organization."""
+    if post_as not in {"member", "organization"}:
+        _config_error("posting mode must be either 'member' or 'organization'.")
+
+    config = _read_root_config()
+    cfg = config.get("linkedin")
+    if not isinstance(cfg, dict):
+        _config_error("missing 'linkedin' section.")
+    if post_as == "organization" and not _is_configured(cfg.get("organization_id")):
+        _config_error("organization mode requires 'organization_id'.")
+
+    cfg["post_as"] = post_as
+    cfg["scopes"] = ORGANIZATION_SCOPES if post_as == "organization" else MEMBER_SCOPES
+    with open(CONFIG_FILE, "w", encoding="utf-8") as f:
+        json.dump(config, f, indent=2, ensure_ascii=False)
+        f.write("\n")
+
+    print(f"  LinkedIn posting mode set to: {post_as}")
+    print(f"  LinkedIn OAuth scopes set to: {cfg['scopes']}")
+    print("  A fresh OAuth authorization is required for this posting mode.")
+
+
+def _load_config():
+    config = _read_root_config()
 
     if "linkedin" not in config:
         _config_error("missing 'linkedin' section.")
@@ -125,6 +152,19 @@ def _linkedin_headers(access_token):
         "X-Restli-Protocol-Version": "2.0.0",
         "LinkedIn-Version": LINKEDIN_VERSION,
     }
+
+
+def _authorization_error_message(error, description, scopes):
+    base = f"{error}: {description}".strip()
+    if error == "unauthorized_scope_error" and "w_organization_social" in scopes:
+        return (
+            f"{base}\n\n"
+            "Your LinkedIn app is not approved for business-page posting. Request Community "
+            "Management API Development Tier access in the LinkedIn Developer Portal, then retry. "
+            "The LinkedIn account authorizing the app must also be an Administrator, Content Admin, "
+            "or Direct Sponsored Content Poster for the target Page."
+        )
+    return base
 
 
 def _resolve_member_author_urn(access_token, cfg):
@@ -200,7 +240,7 @@ def authenticate():
             if qs.get("error"):
                 error = qs.get("error", ["unknown"])[0]
                 description = qs.get("error_description", [""])[0]
-                auth_error[0] = f"{error}: {description}".strip()
+                auth_error[0] = _authorization_error_message(error, description, scopes)
                 self.send_response(400)
                 self.send_header("Content-Type", "text/html")
                 self.end_headers()
@@ -233,7 +273,7 @@ def authenticate():
         server.handle_request()
 
     if not auth_code[0] and auth_error[0]:
-        raise Exception(f"LinkedIn authorization failed: {auth_error[0]}")
+        raise RuntimeError(f"LinkedIn authorization failed: {auth_error[0]}")
 
     if not auth_code[0]:
         manual = input("  Paste final redirect URL or code here (Enter to cancel): ").strip()
@@ -245,13 +285,14 @@ def authenticate():
                 if qs.get("error"):
                     error = qs.get("error", ["unknown"])[0]
                     description = qs.get("error_description", [""])[0]
-                    raise Exception(f"LinkedIn authorization failed: {error}: {description}")
+                    detail = _authorization_error_message(error, description, scopes)
+                    raise RuntimeError(f"LinkedIn authorization failed: {detail}")
                 auth_code[0] = qs.get("code", [None])[0]
             else:
                 auth_code[0] = manual
 
     if not auth_code[0]:
-        raise Exception("No authorization code received from LinkedIn")
+        raise RuntimeError("No authorization code received from LinkedIn")
 
     # Exchange code for token
     r = requests.post("https://www.linkedin.com/oauth/v2/accessToken", data={

@@ -37,6 +37,12 @@ def main():
     # Setup command
     setup_parser = subparsers.add_parser("setup", help="Setup platform authentication")
     setup_parser.add_argument("platform", nargs="?", choices=["youtube", "instagram", "tiktok", "linkedin"])
+    setup_parser.add_argument(
+        "--as",
+        dest="post_as",
+        choices=["member", "organization"],
+        help="LinkedIn posting identity (personal member or business organization)",
+    )
     setup_parser.add_argument("--token", help="(unused, kept for compatibility)")
 
     # Verify command
@@ -89,7 +95,10 @@ def run_setup(args):
         authenticate()
         print("TikTok authentication complete!")
     elif args.platform == "linkedin":
-        from uploaders.linkedin import authenticate
+        from uploaders.linkedin import authenticate, set_posting_mode
+
+        if args.post_as:
+            set_posting_mode(args.post_as)
         authenticate()
         print("LinkedIn authentication complete!")
 
