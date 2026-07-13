@@ -174,7 +174,12 @@ def run_post(args):
             elif platform == "linkedin":
                 from uploaders.linkedin import post as linkedin_post
                 text = config.get("text", "")
-                pid = linkedin_post(text)
+                image_path = config.get("image")
+                if image_path and not os.path.isabs(image_path):
+                    image_path = os.path.join(manifest_dir, image_path)
+                if image_path and not os.path.exists(image_path):
+                    raise FileNotFoundError(f"LinkedIn image not found: {image_path}")
+                pid = linkedin_post(text, image_path=image_path)
                 results[platform] = {"success": True, "id": pid}
             else:
                 print(f"  Platform '{platform}' not yet supported")

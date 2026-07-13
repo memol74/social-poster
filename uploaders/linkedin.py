@@ -322,8 +322,51 @@ def authenticate():
     return token_data
 
 
-def post(text):
-    """Post a text update to LinkedIn."""
+def _upload_image(access_token, author, image_path):
+    """Upload one image and return its LinkedIn image URN."""
+    init_response = requests.post(
+        "https://api.linkedin.com/rest/images?action=initializeUpload",
+        json={"initializeUploadRequest": {"owner": author}},
+        headers={
+            **_linkedin_headers(access_token),
+            "Content-Type": "application/json",
+        },
+        timeout=30,
+    )
+    if init_response.status_code not in {200, 201}:
+        raise Exception(
+            f"LinkedIn image initialization failed ({init_response.status_code}): "
+            f"{init_response.text}"
+        )
+
+    value = init_response.json().get("value", {})
+    upload_url = value.get("uploadUrl")
+    image_urn = value.get("image")
+    if not upload_url or not image_urn:
+        raise Exception(f"LinkedIn image initialization returned invalid data: {init_response.text}")
+
+    with open(image_path, "rb") as image_file:
+        upload_response = requests.put(
+            upload_url,
+            data=image_file,
+            headers={
+                "Authorization": f"Bearer {access_token}",
+                "Content-Type": "application/octet-stream",
+            },
+            timeout=120,
+        )
+    if upload_response.status_code not in {200, 201}:
+        raise Exception(
+            f"LinkedIn image upload failed ({upload_response.status_code}): "
+            f"{upload_response.text}"
+        )
+
+    print(f"  LinkedIn image uploaded: {image_urn}")
+    return image_urn
+
+
+def post(text, image_path=None):
+    """Publish a LinkedIn post with an optional single image."""
     cfg = _load_config()
     post_as = _post_as(cfg)
 
@@ -350,6 +393,14 @@ def post(text):
         "lifecycleState": "PUBLISHED",
         "isReshareDisabledByAuthor": False,
     }
+
+    if image_path:
+        image_urn = _upload_image(access_token, author, image_path)
+        payload["content"] = {
+            "media": {
+                "id": image_urn,
+            }
+        }
 
     r = requests.post(
         "https://api.linkedin.com/rest/posts",
