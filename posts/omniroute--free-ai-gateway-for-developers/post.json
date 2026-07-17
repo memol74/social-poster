@@ -1,0 +1,28 @@
+{
+  "video": "video.mp4",
+  "platforms": {
+    "youtube": {
+      "title": "🔥 This Free AI Gateway Saves You $100s/Month",
+      "description": "Stop paying for AI quota you never use. OmniRoute is a free AI gateway that connects your coding tools to 250 providers—90+ of them completely free. It auto-routes Claude Code, Cursor, Cline, and Copilot across free tiers, fails over in milliseconds when you hit limits, and compresses tokens to save up to 95% on tool-heavy sessions. That adds up to 1.6 billion free tokens per month aggregated across providers. No more surprise bills, no more hitting rate limits mid-project. Just point your IDE at one endpoint and let OmniRoute handle the rest. Search OmniRoute on GitHub to get started with zero dollars and never burn unused quota again.",
+      "tags": [
+        "github",
+        "ai",
+        "opensource"
+      ],
+      "privacy": "public",
+      "made_for_kids": false
+    },
+    "instagram": {
+      "caption": "Stop paying for AI quota you never use. OmniRoute is a free AI gateway that connects your coding tools to 250 providers—90+ of them completely free. It auto-routes Claude Code, Cursor, Cline, and Copilot across free tiers, fails over in milliseconds when you hit limits, and compresses tokens to save up to 95% on tool-heavy sessions. That adds up to 1.6 billion free tokens per month aggregated across providers. No more surprise bills, no more hitting rate limits mid-project. Just point your IDE at one endpoint and let OmniRoute handle the rest. Search OmniRoute on GitHub to get started with zero dollars and never burn unused quota again."
+    },
+    "tiktok": {
+      "description": "Stop paying for AI quota you never use. OmniRoute is a free AI gateway that connects your coding tools to 250 providers—90+ of them completely free. It auto-routes Claude Code, Cursor, Cline, and Copilot across free tiers, fails over in milliseconds when you hit limits, and compresses tokens to save up to 95% on tool-heavy sessions. That adds up to 1.6 billion free tokens per month aggregated across providers. No more surprise bills, no more hitting rate limits mid-project. Just point your IDE at one endpoint and let OmniRoute handle the rest. Search OmniRoute on GitHub to get started with zero dollars and never burn unused quota again.",
+      "privacy": "PUBLIC_TO_EVERYONE"
+    },
+    "linkedin": {
+      "text": "Every month you pay for AI quota that expires unused.\n\nYou hit rate limits mid-coding session. You juggle 10 dashboards. And you still end up paying $20–$50 per provider just to keep working.\n\n🚨 That workflow is bleeding money.\n\nOmniRoute fixes it. It's a free AI gateway that connects every coding tool you use—Claude Code, Cursor, Cline, Copilot—to 250 AI providers through one endpoint.\n\n✅ 90+ providers with free tiers—11 free forever\n✅ Auto-failover in milliseconds when you hit a limit\n✅ Up to 95% token savings with built-in compression\n\nYou get 1.6 billion free tokens per month aggregated across all providers. 🛠️\n\nNext time you're about to pay for Claude or GPT quota, route through OmniRoute instead. You'll never hit a rate limit or burn unused quota again.\n\n⭐ 2,300+ GitHub stars prove developers are already saving hundreds.\n\nSearch \"OmniRoute\" on GitHub and see the setup guide.\n\nHave you tried auto-routing across free AI tiers yet?",
+      "image_script": "Create exactly one cohesive LinkedIn post image with all elements inside the same composition. Use these three files as strict image references: Staro character reference: C:\\Users\\mouled\\Noborta\\video-agent\\character\\lora\\staro_midshot_explaining_smileV2.png; GitHub repository card layout reference: C:\\Users\\mouled\\Noborta\\video-agent\\assets\\github_repo_icon_name.png; background reference: C:\\Users\\mouled\\Noborta\\video-agent\\assets\\backgrounds_images\\aff634607e19609c09710da65c8a57fd.jpg. Use the background reference as the full background without replacing its blue-to-orange gradient. Always show Staro, preserving the exact orange star-shaped face, black hoodie, white gloves, proportions, and four fingers per hand from the character reference. Pose him smiling and enthusiastically introducing or pointing toward the GitHub repository card. Create one stylish, premium GitHub repository card that respects the clean hierarchy of the card reference, with polished depth, rounded corners, crisp typography, and strong contrast. The card must contain only these three pieces of text: repository creator/name: 'diegosouzapw/OmniRoute'; description: 'OmniRoute — Free AI Gateway for Developers'; stars: '★ current count Stars'. Make the star icon and star count large, luminous, and especially attractive, using a warm gold accent that matches the orange area of the background. Do not add navigation, buttons, code, logos, headlines, captions, extra statistics, duplicate cards, extra characters, or any other text. Do not render the reference file paths.",
+      "image": "linkedin.png"
+    }
+  }
+}

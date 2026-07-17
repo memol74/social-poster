@@ -1,0 +1,28 @@
+{
+  "video": "video.mp4",
+  "platforms": {
+    "youtube": {
+      "title": "🔥 Your AI Assistant Just Got a Personality",
+      "description": "RockyVoice transforms Claude into Rocky the Eridian from Project Hail Mary. Install one skill file and your coding assistant speaks in short words, broken grammar, and genuine personality—while still delivering expert-level technical answers. The brain stays full, only the words are small. Includes custom voice mode powered by Hume AI so you can actually hear Rocky explain your code bugs. Over 150 developers have starred it because generic AI responses get old fast. Works with Claude Code and Hermes. Turn it on for fun coding sessions, turn it off for client work. Same intelligence, way more character. Search RockyVoice on GitHub to make your AI sound like an alien engineer who actually cares about your refactoring problems.",
+      "tags": [
+        "github",
+        "ai",
+        "claude"
+      ],
+      "privacy": "public",
+      "made_for_kids": false
+    },
+    "instagram": {
+      "caption": "RockyVoice transforms Claude into Rocky the Eridian from Project Hail Mary. Install one skill file and your coding assistant speaks in short words, broken grammar, and genuine personality—while still delivering expert-level technical answers. The brain stays full, only the words are small. Includes custom voice mode powered by Hume AI so you can actually hear Rocky explain your code bugs. Over 150 developers have starred it because generic AI responses get old fast. Works with Claude Code and Hermes. Turn it on for fun coding sessions, turn it off for client work. Same intelligence, way more character. Search RockyVoice on GitHub to make your AI sound like an alien engineer who actually cares about your refactoring problems."
+    },
+    "tiktok": {
+      "description": "RockyVoice transforms Claude into Rocky the Eridian from Project Hail Mary. Install one skill file and your coding assistant speaks in short words, broken grammar, and genuine personality—while still delivering expert-level technical answers. The brain stays full, only the words are small. Includes custom voice mode powered by Hume AI so you can actually hear Rocky explain your code bugs. Over 150 developers have starred it because generic AI responses get old fast. Works with Claude Code and Hermes. Turn it on for fun coding sessions, turn it off for client work. Same intelligence, way more character. Search RockyVoice on GitHub to make your AI sound like an alien engineer who actually cares about your refactoring problems.",
+      "privacy": "PUBLIC_TO_EVERYONE"
+    },
+    "linkedin": {
+      "text": "You spend 8 hours a day talking to Claude. And it sounds like every other corporate AI assistant on the planet.\n\nGeneric. Formal. Completely forgettable.\n\n🚨 Here's the problem: Your tools are getting smarter, but they're also getting more sterile. When your debugging companion sounds like a legal disclaimer, coding stops being fun.\n\nRockyVoice fixes this in under 2 minutes.\n\nIt's a Claude skill that turns your assistant into Rocky—the Eridian engineer from Andy Weir's Project Hail Mary. Short words. Broken grammar. Big brain. Your code advice stays expert-level, Rocky just delivers it like an alien learning English fast.\n\n✅ One-file install, works immediately\n✅ Custom voice clone through Hume AI (hear Rocky speak your fixes)\n✅ Auto-toggles off for serious work, back on when you want personality\n\n152 GitHub stars because developers are tired of AI that sounds like HR wrote it.\n\nThe coolest part? Rocky learns your name from conversation and uses it. Asks first if unsure. Never guesses. That's more thoughtful than most human coworkers.\n\nNext time Claude explains async rendering or database indexing, let Rocky do it. Same smart answer. Actually enjoyable to read.\n\nSearch \"RockyVoice\" on GitHub. Install the skill. Your AI just got interesting.\n\n💡 What would you want YOUR AI assistant's personality to be?",
+      "image_script": "Create exactly one cohesive LinkedIn post image with all elements inside the same composition. Use these three files as strict image references: Staro character reference: C:\\Users\\mouled\\Noborta\\video-agent\\character\\lora\\staro_midshot_explaining_smileV2.png; GitHub repository card layout reference: C:\\Users\\mouled\\Noborta\\video-agent\\assets\\github_repo_icon_name.png; background reference: C:\\Users\\mouled\\Noborta\\video-agent\\assets\\backgrounds_images\\aff634607e19609c09710da65c8a57fd.jpg. Use the background reference as the full background without replacing its blue-to-orange gradient. Always show Staro, preserving the exact orange star-shaped face, black hoodie, white gloves, proportions, and four fingers per hand from the character reference. Pose him smiling and enthusiastically introducing or pointing toward the GitHub repository card. Create one stylish, premium GitHub repository card that respects the clean hierarchy of the card reference, with polished depth, rounded corners, crisp typography, and strong contrast. The card must contain only these three pieces of text: repository creator/name: 'Lagunaswift/RockyVoice'; description: 'RockyVoice - Talk to Rocky from Project Hail Mary'; stars: '★ current count Stars'. Make the star icon and star count large, luminous, and especially attractive, using a warm gold accent that matches the orange area of the background. Do not add navigation, buttons, code, logos, headlines, captions, extra statistics, duplicate cards, extra characters, or any other text. Do not render the reference file paths.",
+      "image": "linkedin.png"
+    }
+  }
+}
