@@ -1,0 +1,27 @@
+{
+  "video": "video.mp4",
+  "platforms": {
+    "youtube": {
+      "title": "🔥 Stop Parsing LLM Output Like It's 2019",
+      "description": "Your LLM outputs valid JSON or breaks your entire pipeline. Outlines forces structured generation during inference so you never parse broken responses again. Trusted by 15,000+ developers at NVIDIA, Cohere, and vLLM. Comment the word 'outlines' and I'll send you the link and tutorial for this repo.",
+      "tags": [
+        "github",
+        "ai",
+        "opensource"
+      ],
+      "privacy": "public",
+      "made_for_kids": false
+    },
+    "instagram": {
+      "caption": "Your LLM outputs valid JSON or breaks your entire pipeline. Outlines forces structured generation during inference so you never parse broken responses again. Trusted by 15,000+ developers at NVIDIA, Cohere, and vLLM. Comment the word 'outlines' and I'll send you the link and tutorial for this repo."
+    },
+    "tiktok": {
+      "description": "Your LLM outputs valid JSON or breaks your entire pipeline. Outlines forces structured generation during inference so you never parse broken responses again. Trusted by 15,000+ developers at NVIDIA, Cohere, and vLLM. Comment the word 'outlines' and I'll send you the link and tutorial for this repo.",
+      "privacy": "PUBLIC_TO_EVERYONE"
+    },
+    "linkedin": {
+      "text": "🚨 You're losing production uptime every time an LLM returns malformed JSON.\n\nMost teams fix bad outputs after generation. They write fragile regex, catch JSON parse errors, retry with different prompts, and pray the model cooperates next time.\n\nOutlines guarantees structured outputs during generation — before the model can hallucinate invalid data.\n\n✅ Write Python types (Literal, int, Pydantic models) and Outlines constrains the LLM to only output valid structure\n✅ Switch providers (OpenAI → Ollama → vLLM) without changing your code because the output type stays the same\n✅ No more parsing headaches, retry loops, or 3 a.m. alerts from broken pipelines\n\n15,421 ⭐ on GitHub from engineers at NVIDIA, Cohere, HuggingFace, and vLLM who got tired of regex archaeology.\n\nSearch GitHub for dottxt-ai/outlines and see how one import changes your LLM workflow.\n\nWhat's the worst LLM parsing bug you've debugged in production?",
+      "image_script": "Create exactly one cohesive LinkedIn post image with all elements inside the same composition. Use these three files as strict image references: Staro character reference: C:\\Users\\mouled\\Noborta\\video-agent\\character\\lora\\staro_midshot_explaining_smileV2.png; GitHub repository card layout reference: C:\\Users\\mouled\\Noborta\\video-agent\\assets\\github_repo_icon_name.png; background reference: C:\\Users\\mouled\\Noborta\\video-agent\\assets\\backgrounds_images\\aff634607e19609c09710da65c8a57fd.jpg. Use the background reference as the full background without replacing its blue-to-orange gradient. Always show Staro, preserving the exact orange star-shaped face, black hoodie, white gloves, proportions, and four fingers per hand from the character reference. Pose him smiling and enthusiastically introducing or pointing toward the GitHub repository card. Create one stylish, premium GitHub repository card that respects the clean hierarchy of the card reference, with polished depth, rounded corners, crisp typography, and strong contrast. The card must contain only these three pieces of text: repository creator/name: 'dottxt-ai/outlines'; description: 'Structured Outputs'; stars: '★ 15,421 Stars'. Make the star icon and star count large, luminous, and especially attractive, using a warm gold accent that matches the orange area of the background. Do not add navigation, buttons, code, logos, headlines, captions, extra statistics, duplicate cards, extra characters, or any other text. Do not render the reference file paths."
+    }
+  }
+}

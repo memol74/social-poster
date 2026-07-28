@@ -1,0 +1,27 @@
+{
+  "video": "video.mp4",
+  "platforms": {
+    "youtube": {
+      "title": "🎨 This Design Skill Fixes AI Slop",
+      "description": "Your AI agents keep shipping identical-looking pages. Hallmark teaches Claude and Cursor to refuse every AI slop pattern with fifty-seven anti-slop gates. Two pages by Hallmark for different briefs feel like different designers made them, not color-swaps of the same template. Comment the word 'hallmark' and I'll send you the link and tutorial for this repo.",
+      "tags": [
+        "github",
+        "ai",
+        "webdev"
+      ],
+      "privacy": "public",
+      "made_for_kids": false
+    },
+    "instagram": {
+      "caption": "Your AI agents keep shipping identical-looking pages. Hallmark teaches Claude and Cursor to refuse every AI slop pattern with fifty-seven anti-slop gates. Two pages by Hallmark for different briefs feel like different designers made them, not color-swaps of the same template. Comment the word 'hallmark' and I'll send you the link and tutorial for this repo."
+    },
+    "tiktok": {
+      "description": "Your AI agents keep shipping identical-looking pages. Hallmark teaches Claude and Cursor to refuse every AI slop pattern with fifty-seven anti-slop gates. Two pages by Hallmark for different briefs feel like different designers made them, not color-swaps of the same template. Comment the word 'hallmark' and I'll send you the link and tutorial for this repo.",
+      "privacy": "PUBLIC_TO_EVERYONE"
+    },
+    "linkedin": {
+      "text": "🚨 Your AI code agent just shipped another page that looks exactly like every other AI-built site.\n\nYou've seen it: the same hero layout, the same gradient buttons, the same feature grid. Every AI tool was trained on the same templates, so they all output the same design fingerprint.\n\n🛠️ Hallmark is a design skill for Claude Code, Cursor, and Codex that refuses to look AI-generated.\n\nIt runs 57 anti-slop gates before letting your agent ship a page. It picks one of twenty themes (or builds a custom one), applies a macrostructure that fits your brief, and refuses the on-distribution defaults every LLM was trained into.\n\n✅ What you get:\n• Pages that feel like different designers made them, not color-swaps\n• Audit existing code against AI slop patterns\n• Study sites you admire and extract their design DNA\n\n⭐ 19,240 stars on GitHub because it fixes the thing everyone hates about AI-generated UI.\n\nTwo pages by Hallmark for two different briefs feel like different sites. Same tool, different creative fingerprint every time.\n\n🚀 Search \"Nutlope hallmark\" on GitHub to add it to your AI coding agent.\n\nWhat's the most obvious AI slop pattern you've seen lately?",
+      "image_script": "Create exactly one cohesive LinkedIn post image with all elements inside the same composition. Use these three files as strict image references: Staro character reference: C:\\Users\\mouled\\Noborta\\video-agent\\character\\lora\\staro_midshot_explaining_smileV2.png; GitHub repository card layout reference: C:\\Users\\mouled\\Noborta\\video-agent\\assets\\github_repo_icon_name.png; background reference: C:\\Users\\mouled\\Noborta\\video-agent\\assets\\backgrounds_images\\aff634607e19609c09710da65c8a57fd.jpg. Use the background reference as the full background without replacing its blue-to-orange gradient. Always show Staro, preserving the exact orange star-shaped face, black hoodie, white gloves, proportions, and four fingers per hand from the character reference. Pose him smiling and enthusiastically introducing or pointing toward the GitHub repository card. Create one stylish, premium GitHub repository card that respects the clean hierarchy of the card reference, with polished depth, rounded corners, crisp typography, and strong contrast. The card must contain only these three pieces of text: repository creator/name: 'Nutlope/hallmark'; description: 'Anti-AI-slop design skill for Claude Code, Cursor, and Codex.'; stars: '★ 19,240 Stars'. Make the star icon and star count large, luminous, and especially attractive, using a warm gold accent that matches the orange area of the background. Do not add navigation, buttons, code, logos, headlines, captions, extra statistics, duplicate cards, extra characters, or any other text. Do not render the reference file paths."
+    }
+  }
+}

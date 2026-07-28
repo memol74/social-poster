@@ -1,0 +1,27 @@
+{
+  "video": "video.mp4",
+  "platforms": {
+    "youtube": {
+      "title": "🔥 This Plugin Stops AI Agents From Rambling",
+      "description": "Your coding agent buries the answer in three paragraphs when you need one command. i-have-adhd is a plugin that makes Claude and Codex give you action-first responses with numbered steps. Twelve thousand developers already installed it to skip the Hope this helps. Comment the word 'i-have-adhd' and I'll send you the link and tutorial for this repo.",
+      "tags": [
+        "github",
+        "ai",
+        "productivity"
+      ],
+      "privacy": "public",
+      "made_for_kids": false
+    },
+    "instagram": {
+      "caption": "Your coding agent buries the answer in three paragraphs when you need one command. i-have-adhd is a plugin that makes Claude and Codex give you action-first responses with numbered steps. Twelve thousand developers already installed it to skip the Hope this helps. Comment the word 'i-have-adhd' and I'll send you the link and tutorial for this repo."
+    },
+    "tiktok": {
+      "description": "Your coding agent buries the answer in three paragraphs when you need one command. i-have-adhd is a plugin that makes Claude and Codex give you action-first responses with numbered steps. Twelve thousand developers already installed it to skip the Hope this helps. Comment the word 'i-have-adhd' and I'll send you the link and tutorial for this repo.",
+      "privacy": "PUBLIC_TO_EVERYONE"
+    },
+    "linkedin": {
+      "text": "🚨 Your AI coding agent just sent you three paragraphs when you needed one command.\n\nYou asked how to fix your auth flow. It replied with Great question, gave you context about middleware, rambled about dependency versions, then buried the actual fix somewhere in the middle.\n\nYou scrolled. You re-read. You finally found the answer.\n\n12,485 developers got tired of that workflow and installed i-have-adhd — a plugin that rewires Claude and Codex to lead with the action, number the steps, and cut the recap.\n\n✅ Every response starts with the command you need to run\n✅ Multi-step tasks get numbered lists, not prose\n✅ No preamble, no Hope this helps, no tangents\n\nThe plugin enforces 10 rules: action-first structure, visible wins, matter-of-fact errors, and capped lists. You install it once with one CLI command and your agent stops burying answers in backstory.\n\nSearch i-have-adhd on GitHub and check the before/after table in the README. What coding agent response pattern drives you the most crazy?",
+      "image_script": "Create exactly one cohesive LinkedIn post image with all elements inside the same composition. Use these three files as strict image references: Staro character reference: C:\\Users\\mouled\\Noborta\\video-agent\\character\\lora\\staro_midshot_explaining_smileV2.png; GitHub repository card layout reference: C:\\Users\\mouled\\Noborta\\video-agent\\assets\\github_repo_icon_name.png; background reference: C:\\Users\\mouled\\Noborta\\video-agent\\assets\\backgrounds_images\\aff634607e19609c09710da65c8a57fd.jpg. Use the background reference as the full background without replacing its blue-to-orange gradient. Always show Staro, preserving the exact orange star-shaped face, black hoodie, white gloves, proportions, and four fingers per hand from the character reference. Pose him smiling and enthusiastically introducing or pointing toward the GitHub repository card. Create one stylish, premium GitHub repository card that respects the clean hierarchy of the card reference, with polished depth, rounded corners, crisp typography, and strong contrast. The card must contain only these three pieces of text: repository creator/name: 'ayghri/i-have-adhd'; description: 'A skill for your coding agent to stop it from burying the answer. ADHD-friendly output.'; stars: '★ 12,485 Stars'. Make the star icon and star count large, luminous, and especially attractive, using a warm gold accent that matches the orange area of the background. Do not add navigation, buttons, code, logos, headlines, captions, extra statistics, duplicate cards, extra characters, or any other text. Do not render the reference file paths."
+    }
+  }
+}

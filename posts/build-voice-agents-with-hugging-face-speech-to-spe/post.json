@@ -1,0 +1,27 @@
+{
+  "video": "video.mp4",
+  "platforms": {
+    "youtube": {
+      "title": "🔥 Build Voice Agents Without Paying API Bills",
+      "description": "Every video call vendor charges two hundred dollars per month for voice API access. Hugging Face Speech-to-Speech runs voice-activity detection, speech-to-text, a language model, and text-to-speech locally through one WebSocket. It powers thousands of Reachy Mini robots in production and lets you swap any component with one command. Comment the word 'speech-to-speech' and I'll send you the link and tutorial for this repo.",
+      "tags": [
+        "github",
+        "ai",
+        "opensource"
+      ],
+      "privacy": "public",
+      "made_for_kids": false
+    },
+    "instagram": {
+      "caption": "Every video call vendor charges two hundred dollars per month for voice API access. Hugging Face Speech-to-Speech runs voice-activity detection, speech-to-text, a language model, and text-to-speech locally through one WebSocket. It powers thousands of Reachy Mini robots in production and lets you swap any component with one command. Comment the word 'speech-to-speech' and I'll send you the link and tutorial for this repo."
+    },
+    "tiktok": {
+      "description": "Every video call vendor charges two hundred dollars per month for voice API access. Hugging Face Speech-to-Speech runs voice-activity detection, speech-to-text, a language model, and text-to-speech locally through one WebSocket. It powers thousands of Reachy Mini robots in production and lets you swap any component with one command. Comment the word 'speech-to-speech' and I'll send you the link and tutorial for this repo.",
+      "privacy": "PUBLIC_TO_EVERYONE"
+    },
+    "linkedin": {
+      "text": "Every startup I talk to is bleeding money on voice API subscriptions. 💸\n\nTwo hundred dollars a month per seat, per project, per environment — and that's before you scale. If you want a production-ready voice agent you're also paying for uptime guarantees, custom models, and support tiers that don't answer emails.\n\nHugging Face just released **Speech-to-Speech**, a fully local, fully modular voice pipeline. 🛠️\n\n✅ VAD, STT, LLM, and TTS run on your own hardware  \n✅ Every component is swappable — use Parakeet TDT for speech-to-text or swap it for Whisper with one flag  \n✅ 7,074 stars and already powering thousands of Reachy Mini robots in production ⭐\n\nNo vendor lock-in. No per-call billing. No middleware that breaks when the provider changes their schema. You `pip install speech-to-speech`, run the server, and connect any OpenAI Realtime-compatible client.\n\nIf you're prototyping a voice assistant, building a robot, or trying to cut your infrastructure bill, this is the repo that gives you full control. 🚀\n\n👉 Search GitHub for `huggingface/speech-to-speech` and try it yourself.\n\nWhat's the biggest friction point you've hit with voice API providers?",
+      "image_script": "Create exactly one cohesive LinkedIn post image with all elements inside the same composition. Use these three files as strict image references: Staro character reference: C:\\Users\\mouled\\Noborta\\video-agent\\character\\lora\\staro_midshot_explaining_smileV2.png; GitHub repository card layout reference: C:\\Users\\mouled\\Noborta\\video-agent\\assets\\github_repo_icon_name.png; background reference: C:\\Users\\mouled\\Noborta\\video-agent\\assets\\backgrounds_images\\aff634607e19609c09710da65c8a57fd.jpg. Use the background reference as the full background without replacing its blue-to-orange gradient. Always show Staro, preserving the exact orange star-shaped face, black hoodie, white gloves, proportions, and four fingers per hand from the character reference. Pose him smiling and enthusiastically introducing or pointing toward the GitHub repository card. Create one stylish, premium GitHub repository card that respects the clean hierarchy of the card reference, with polished depth, rounded corners, crisp typography, and strong contrast. The card must contain only these three pieces of text: repository creator/name: 'huggingface/speech-to-speech'; description: 'Build local voice agents with open-source models'; stars: '★ 7,074 Stars'. Make the star icon and star count large, luminous, and especially attractive, using a warm gold accent that matches the orange area of the background. Do not add navigation, buttons, code, logos, headlines, captions, extra statistics, duplicate cards, extra characters, or any other text. Do not render the reference file paths."
+    }
+  }
+}
