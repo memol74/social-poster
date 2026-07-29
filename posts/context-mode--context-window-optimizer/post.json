@@ -1,0 +1,27 @@
+{
+  "video": "video.mp4",
+  "platforms": {
+    "youtube": {
+      "title": "🔥 This Repo Saves 98% of Your Context Window",
+      "description": "Your AI agent loses forty percent of its context after thirty minutes because raw tool output floods the window. Context Mode sandboxes tool data and cuts bloat by ninety-eight percent while persisting session memory in SQLite. Nineteen thousand stars, used at Microsoft and Google, with hooks for seventeen platforms. Comment the word 'context-mode' and I'll send you the link and tutorial for this repo.",
+      "tags": [
+        "github",
+        "ai",
+        "mcp"
+      ],
+      "privacy": "public",
+      "made_for_kids": false
+    },
+    "instagram": {
+      "caption": "Your AI agent loses forty percent of its context after thirty minutes because raw tool output floods the window. Context Mode sandboxes tool data and cuts bloat by ninety-eight percent while persisting session memory in SQLite. Nineteen thousand stars, used at Microsoft and Google, with hooks for seventeen platforms. Comment the word 'context-mode' and I'll send you the link and tutorial for this repo."
+    },
+    "tiktok": {
+      "description": "Your AI agent loses forty percent of its context after thirty minutes because raw tool output floods the window. Context Mode sandboxes tool data and cuts bloat by ninety-eight percent while persisting session memory in SQLite. Nineteen thousand stars, used at Microsoft and Google, with hooks for seventeen platforms. Comment the word 'context-mode' and I'll send you the link and tutorial for this repo.",
+      "privacy": "PUBLIC_TO_EVERYONE"
+    },
+    "linkedin": {
+      "text": "🚨 Your AI coding agent just forgot what file it was editing.\n\nAfter 30 minutes, 40% of your context window is gone. One Playwright snapshot costs 56 KB. Twenty GitHub issues? 59 KB. A single access log? 45 KB. The agent compacts the conversation to free space — and loses your active file list, task history, and the question you asked five minutes ago.\n\nMost context optimization stops at prompt compression. Context Mode fixes the other half: **where tool output goes**.\n\n✅ **98% context reduction** — sandboxes raw tool data; a 315 KB dump becomes 5.4 KB  \n✅ **Session continuity** — SQLite + BM25 search persists file edits, git ops, and task state across compactions  \n✅ **Think in code** — the LLM writes scripts that compute results, not token-burning data processors\n\n⭐ **19,438 stars.** Used across teams at Microsoft, Google, Meta, Amazon, NVIDIA, and Stripe. Hooks for 17 platforms: Claude Code, Cursor, Gemini CLI, VS Code Copilot, JetBrains, and more.\n\nSearch GitHub for \"mksglu/context-mode\" and reclaim your context budget.\n\nHave you hit a context limit mid-refactor this week?",
+      "image_script": "Create exactly one cohesive LinkedIn post image with all elements inside the same composition. Use these three files as strict image references: Staro character reference: C:\\Users\\mouled\\Noborta\\video-agent\\character\\lora\\staro_midshot_explaining_smileV2.png; GitHub repository card layout reference: C:\\Users\\mouled\\Noborta\\video-agent\\assets\\github_repo_icon_name.png; background reference: C:\\Users\\mouled\\Noborta\\video-agent\\assets\\backgrounds_images\\aff634607e19609c09710da65c8a57fd.jpg. Use the background reference as the full background without replacing its blue-to-orange gradient. Always show Staro, preserving the exact orange star-shaped face, black hoodie, white gloves, proportions, and four fingers per hand from the character reference. Pose him smiling and enthusiastically introducing or pointing toward the GitHub repository card. Create one stylish, premium GitHub repository card that respects the clean hierarchy of the card reference, with polished depth, rounded corners, crisp typography, and strong contrast. The card must contain only these three pieces of text: repository creator/name: 'mksglu/context-mode'; description: 'Context window optimization for AI coding agents. Sandboxes tool output (98% reduction), persists session memory, and enforces routing across 17 platforms via MCP + hooks.'; stars: '★ 19,438 Stars'. Make the star icon and star count large, luminous, and especially attractive, using a warm gold accent that matches the orange area of the background. Do not add navigation, buttons, code, logos, headlines, captions, extra statistics, duplicate cards, extra characters, or any other text. Do not render the reference file paths."
+    }
+  }
+}
