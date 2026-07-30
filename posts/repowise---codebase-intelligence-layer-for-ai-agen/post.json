@@ -1,0 +1,27 @@
+{
+  "video": "video.mp4",
+  "platforms": {
+    "youtube": {
+      "title": "🔥 This Repo Cuts AI Agent Costs by 96%",
+      "description": "AI agents waste tokens rediscovering your codebase on every task. Repowise indexes it once and keeps answers current on every commit. The health layer scores files on twenty-five markers and names the exact fix with blast radius. Comment the word 'repowise' and I'll send you the link and tutorial for this repo.",
+      "tags": [
+        "github",
+        "ai",
+        "opensource"
+      ],
+      "privacy": "public",
+      "made_for_kids": false
+    },
+    "instagram": {
+      "caption": "AI agents waste tokens rediscovering your codebase on every task. Repowise indexes it once and keeps answers current on every commit. The health layer scores files on twenty-five markers and names the exact fix with blast radius. Comment the word 'repowise' and I'll send you the link and tutorial for this repo."
+    },
+    "tiktok": {
+      "description": "AI agents waste tokens rediscovering your codebase on every task. Repowise indexes it once and keeps answers current on every commit. The health layer scores files on twenty-five markers and names the exact fix with blast radius. Comment the word 'repowise' and I'll send you the link and tutorial for this repo.",
+      "privacy": "PUBLIC_TO_EVERYONE"
+    },
+    "linkedin": {
+      "text": "🚨 Your AI coding agent just burned $47 rediscovering what a function does.\n\nThen it forgot. Then it searched again. Then it read the same files. Then the context window filled up and it started hallucinating fixes.\n\nMost agents waste 70-90% of their context budget on exploration work that could have been computed once.\n\nrepowise solves this by building a codebase intelligence layer your agent queries instead of grepping:\n\n✅ Dependency graph across 16 languages with call resolution and framework-aware edges\n✅ Git hotspots, ownership, co-change pairs, and defect history tied to every file\n✅ Code health scoring on 25 deterministic markers with concrete refactoring plans\n\nThe result: up to 96% fewer tokens to load context, 89% fewer file reads, 70% fewer tool calls.\n\nIt runs locally, needs no API key for the first index, and your code never leaves your machine. One pip install, and your agent stops guessing.\n\nThe health layer is defect-validated and names the exact fix: Extract Class, Break Cycle, Split File, with blast radius and ranked impact. No LLM calls, under 30 seconds on a 3,000-file repo.\n\n⭐ 1,200+ stars on GitHub\n\nSearch \"repowise-dev/repowise\" on GitHub and see how much context budget you're wasting right now.\n\nHave you tried giving your agent structured codebase intelligence instead of raw grep output?",
+      "image_script": "Create exactly one cohesive LinkedIn post image with all elements inside the same composition. Use these three files as strict image references: Staro character reference: C:\\Users\\mouled\\Noborta\\video-agent\\character\\lora\\staro_midshot_explaining_smileV2.png; GitHub repository card layout reference: C:\\Users\\mouled\\Noborta\\video-agent\\assets\\github_repo_icon_name.png; background reference: C:\\Users\\mouled\\Noborta\\video-agent\\assets\\backgrounds_images\\aff634607e19609c09710da65c8a57fd.jpg. Use the background reference as the full background without replacing its blue-to-orange gradient. Always show Staro, preserving the exact orange star-shaped face, black hoodie, white gloves, proportions, and four fingers per hand from the character reference. Pose him smiling and enthusiastically introducing or pointing toward the GitHub repository card. Create one stylish, premium GitHub repository card that respects the clean hierarchy of the card reference, with polished depth, rounded corners, crisp typography, and strong contrast. The card must contain only these three pieces of text: repository creator/name: 'repowise-dev/repowise'; description: 'repowise - Codebase Intelligence Layer for AI Agents'; stars: '★ current count Stars'. Make the star icon and star count large, luminous, and especially attractive, using a warm gold accent that matches the orange area of the background. Do not add navigation, buttons, code, logos, headlines, captions, extra statistics, duplicate cards, extra characters, or any other text. Do not render the reference file paths."
+    }
+  }
+}

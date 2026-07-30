@@ -1,0 +1,27 @@
+{
+  "video": "video.mp4",
+  "platforms": {
+    "youtube": {
+      "title": "🔥 Turn Trading Agents Into Wall Street Teams",
+      "description": "Your trading agent forgets what you're watching between sessions. OpenAlice turns trading into a file-backed workspace with issues, tracked entities, and approval-gated execution. Everything runs local with sealed credentials and git-style trade review. Comment the word 'openalice' and I'll send you the link and tutorial for this repo.",
+      "tags": [
+        "ai",
+        "trading",
+        "opensource"
+      ],
+      "privacy": "public",
+      "made_for_kids": false
+    },
+    "instagram": {
+      "caption": "Your trading agent forgets what you're watching between sessions. OpenAlice turns trading into a file-backed workspace with issues, tracked entities, and approval-gated execution. Everything runs local with sealed credentials and git-style trade review. Comment the word 'openalice' and I'll send you the link and tutorial for this repo."
+    },
+    "tiktok": {
+      "description": "Your trading agent forgets what you're watching between sessions. OpenAlice turns trading into a file-backed workspace with issues, tracked entities, and approval-gated execution. Everything runs local with sealed credentials and git-style trade review. Comment the word 'openalice' and I'll send you the link and tutorial for this repo.",
+      "privacy": "PUBLIC_TO_EVERYONE"
+    },
+    "linkedin": {
+      "text": "🚨 Your trading agent burns context rediscovering your watchlist every single session.\n\nThe usual approach? Chat with an AI that forgets everything, fumbles your broker credentials, and can't persist work between conversations.\n\nOpenAlice maps trading onto the workspace coding agents already understand: git repos, markdown issues, tracked entities, and durable reports.\n\n✅ Agents collaborate through issues and inbox delivery, not disappearing chat history\n✅ Trading becomes staged commits with approval gates instead of direct order firing\n✅ Everything runs local with sealed credentials and file-backed state you can inspect\n\nThe repo hit experimental beta with workspaces, scheduled runs, market data CLIs, and unified broker account support.\n\n⭐ 2.2k stars and growing fast.\n\n🚀 GitHub search: TraderAlice/OpenAlice\n\nAre you building trading automation with AI agents? What's your biggest workflow pain right now?",
+      "image_script": "Create exactly one cohesive LinkedIn post image with all elements inside the same composition. Use these three files as strict image references: Staro character reference: C:\\Users\\mouled\\Noborta\\video-agent\\character\\lora\\staro_midshot_explaining_smileV2.png; GitHub repository card layout reference: C:\\Users\\mouled\\Noborta\\video-agent\\assets\\github_repo_icon_name.png; background reference: C:\\Users\\mouled\\Noborta\\video-agent\\assets\\backgrounds_images\\aff634607e19609c09710da65c8a57fd.jpg. Use the background reference as the full background without replacing its blue-to-orange gradient. Always show Staro, preserving the exact orange star-shaped face, black hoodie, white gloves, proportions, and four fingers per hand from the character reference. Pose him smiling and enthusiastically introducing or pointing toward the GitHub repository card. Create one stylish, premium GitHub repository card that respects the clean hierarchy of the card reference, with polished depth, rounded corners, crisp typography, and strong contrast. The card must contain only these three pieces of text: repository creator/name: 'TraderAlice/OpenAlice'; description: 'OpenAlice - Local Trading Workspace for AI Agents'; stars: '★ 2.2k Stars'. Make the star icon and star count large, luminous, and especially attractive, using a warm gold accent that matches the orange area of the background. Do not add navigation, buttons, code, logos, headlines, captions, extra statistics, duplicate cards, extra characters, or any other text. Do not render the reference file paths."
+    }
+  }
+}

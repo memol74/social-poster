@@ -23,7 +23,9 @@ DIR = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(DIR)
 TOKEN_FILE = os.path.join(ROOT, "tokens", "instagram_token.json")
 CONFIG_FILE = os.path.join(ROOT, "config.json")
-GRAPH_URL = "https://graph.facebook.com/v22.0"
+GRAPH_API_VERSION = "v22.0"
+GRAPH_URL = f"https://graph.facebook.com/{GRAPH_API_VERSION}"
+RUPLOAD_URL = f"https://rupload.facebook.com/ig-api-upload/{GRAPH_API_VERSION}"
 REDIRECT_URI = "https://localhost:8082/"
 
 # Scopes needed for Instagram content publishing via FB Login for Business
@@ -232,7 +234,7 @@ def _upload_resumable_video(container_id, local_path, token):
         "offset": "0",
         "file_size": str(file_size),
     }
-    upload_url = f"https://rupload.facebook.com/ig-api-upload/{container_id}"
+    upload_url = f"{RUPLOAD_URL}/{container_id}"
 
     print("  Uploading video binary to Meta...")
     with open(local_path, "rb") as f:
@@ -255,7 +257,7 @@ def _upload_resumable_video_with_curl(container_id, local_path, token):
         raise Exception("curl is not installed")
 
     file_size = os.path.getsize(local_path)
-    upload_url = f"https://rupload.facebook.com/ig-api-upload/{container_id}"
+    upload_url = f"{RUPLOAD_URL}/{container_id}"
 
     print("  Uploading video binary to Meta with curl...")
     result = subprocess.run([
@@ -291,7 +293,7 @@ def _upload_resumable_file_url(container_id, file_url, token):
         "Authorization": f"OAuth {token}",
         "file_url": file_url,
     }
-    upload_url = f"https://rupload.facebook.com/ig-api-upload/{container_id}"
+    upload_url = f"{RUPLOAD_URL}/{container_id}"
 
     print("  Asking Meta to fetch hosted video...")
     r = requests.post(upload_url, headers=headers, timeout=(30, 300))

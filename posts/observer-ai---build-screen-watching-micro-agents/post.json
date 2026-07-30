@@ -1,0 +1,27 @@
+{
+  "video": "video.mp4",
+  "platforms": {
+    "youtube": {
+      "title": "🔥 Vision Models Now Watch Your Screen For You",
+      "description": "Screen-change detection usually means polling APIs or brittle pixel checks. Observer AI runs local vision models that watch your screen, camera, or mic and trigger JavaScript actions when they see what you specify. Over two thousand stars prove developers want agents that monitor and react without custom detection logic. Comment the word 'observer-ai' and I'll send you the link and tutorial for this repo.",
+      "tags": [
+        "ai",
+        "automation",
+        "opensource"
+      ],
+      "privacy": "public",
+      "made_for_kids": false
+    },
+    "instagram": {
+      "caption": "Screen-change detection usually means polling APIs or brittle pixel checks. Observer AI runs local vision models that watch your screen, camera, or mic and trigger JavaScript actions when they see what you specify. Over two thousand stars prove developers want agents that monitor and react without custom detection logic. Comment the word 'observer-ai' and I'll send you the link and tutorial for this repo."
+    },
+    "tiktok": {
+      "description": "Screen-change detection usually means polling APIs or brittle pixel checks. Observer AI runs local vision models that watch your screen, camera, or mic and trigger JavaScript actions when they see what you specify. Over two thousand stars prove developers want agents that monitor and react without custom detection logic. Comment the word 'observer-ai' and I'll send you the link and tutorial for this repo.",
+      "privacy": "PUBLIC_TO_EVERYONE"
+    },
+    "linkedin": {
+      "text": "You check dashboards, logs, and notification windows all day because automation can't see what you see.\n\n🚨 The usual approach is fragile:\n• Pixel-based checks break when UIs change\n• API polling misses visual-only alerts\n• Writing custom detectors wastes hours\n\nObserver AI solves this with micro-agents that use local vision models to watch your screen, camera, microphone, or clipboard.\n\n✅ You get three powerful capabilities:\n1️⃣ Vision models check your screen in a loop and trigger code when they spot what you specified\n2️⃣ Built-in notification tools send Discord, Telegram, WhatsApp, email, or SMS alerts instantly\n3️⃣ Smart video recording with custom labels captures critical moments automatically\n\nThe repo has over 2,000 stars ⭐ and runs entirely locally with bundled llama.cpp or any OpenAI-compatible endpoint.\n\nSearch GitHub for \"Roy3838/Observer\" and see the three-line agent example in the README.\n\nWhat repetitive screen-watching task would you automate first?",
+      "image_script": "Create exactly one cohesive LinkedIn post image with all elements inside the same composition. Use these three files as strict image references: Staro character reference: C:\\Users\\mouled\\Noborta\\video-agent\\character\\lora\\staro_midshot_explaining_smileV2.png; GitHub repository card layout reference: C:\\Users\\mouled\\Noborta\\video-agent\\assets\\github_repo_icon_name.png; background reference: C:\\Users\\mouled\\Noborta\\video-agent\\assets\\backgrounds_images\\aff634607e19609c09710da65c8a57fd.jpg. Use the background reference as the full background without replacing its blue-to-orange gradient. Always show Staro, preserving the exact orange star-shaped face, black hoodie, white gloves, proportions, and four fingers per hand from the character reference. Pose him smiling and enthusiastically introducing or pointing toward the GitHub repository card. Create one stylish, premium GitHub repository card that respects the clean hierarchy of the card reference, with polished depth, rounded corners, crisp typography, and strong contrast. The card must contain only these three pieces of text: repository creator/name: 'Roy3838/Observer'; description: 'Observer AI - Build Screen-Watching Micro-Agents'; stars: '★ 2,000 Stars'. Make the star icon and star count large, luminous, and especially attractive, using a warm gold accent that matches the orange area of the background. Do not add navigation, buttons, code, logos, headlines, captions, extra statistics, duplicate cards, extra characters, or any other text. Do not render the reference file paths."
+    }
+  }
+}

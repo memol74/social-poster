@@ -1,0 +1,27 @@
+{
+  "video": "video.mp4",
+  "platforms": {
+    "youtube": {
+      "title": "🤖 AI Agents Can Finally Control Office",
+      "description": "AI agents hit a wall when they try to create Word docs or Excel sheets. OfficeCLI collapses fifty lines of Python into one bash command and gives agents live visual feedback. Single binary, no Office install, works everywhere. Comment the word 'officecli' and I'll send you the link and tutorial for this repo.",
+      "tags": [
+        "github",
+        "ai",
+        "opensource"
+      ],
+      "privacy": "public",
+      "made_for_kids": false
+    },
+    "instagram": {
+      "caption": "AI agents hit a wall when they try to create Word docs or Excel sheets. OfficeCLI collapses fifty lines of Python into one bash command and gives agents live visual feedback. Single binary, no Office install, works everywhere. Comment the word 'officecli' and I'll send you the link and tutorial for this repo."
+    },
+    "tiktok": {
+      "description": "AI agents hit a wall when they try to create Word docs or Excel sheets. OfficeCLI collapses fifty lines of Python into one bash command and gives agents live visual feedback. Single binary, no Office install, works everywhere. Comment the word 'officecli' and I'll send you the link and tutorial for this repo.",
+      "privacy": "PUBLIC_TO_EVERYONE"
+    },
+    "linkedin": {
+      "text": "🚨 Your AI agent can write code, debug APIs, and analyze data — but it still can't create a simple PowerPoint.\n\nWhy? Because document automation is stuck in 2010. Fifty lines of Python, three different libraries, zero visual feedback, and your agent is flying blind.\n\n🛠️ OfficeCLI fixes this in one command:\n\n✅ Single binary — no Office install, no runtime dependencies\n✅ Built-in HTML renderer — agents can see their edits live\n✅ Full CRUD on Word, Excel, PowerPoint — create, read, modify, reorganize\n\nWhat used to take a custom Python pipeline now takes:\n\n```bash\nofficecli add deck.pptx / --type slide --prop title=\"Q4 Report\"\n```\n\nThat's it. Your agent just created a slide.\n\n⭐ 3,500+ stars. Built by developers who got tired of wrestling with python-pptx in production.\n\n🚀 Search GitHub for **OfficeCLI** and clone the repo.\n\nQuestion: What's the gnarliest document-generation problem you've had to solve with code?",
+      "image_script": "Create exactly one cohesive LinkedIn post image with all elements inside the same composition. Use these three files as strict image references: Staro character reference: C:\\Users\\mouled\\Noborta\\video-agent\\character\\lora\\staro_midshot_explaining_smileV2.png; GitHub repository card layout reference: C:\\Users\\mouled\\Noborta\\video-agent\\assets\\github_repo_icon_name.png; background reference: C:\\Users\\mouled\\Noborta\\video-agent\\assets\\backgrounds_images\\aff634607e19609c09710da65c8a57fd.jpg. Use the background reference as the full background without replacing its blue-to-orange gradient. Always show Staro, preserving the exact orange star-shaped face, black hoodie, white gloves, proportions, and four fingers per hand from the character reference. Pose him smiling and enthusiastically introducing or pointing toward the GitHub repository card. Create one stylish, premium GitHub repository card that respects the clean hierarchy of the card reference, with polished depth, rounded corners, crisp typography, and strong contrast. The card must contain only these three pieces of text: repository creator/name: 'iOfficeAI/OfficeCLI'; description: 'OfficeCLI - Office Suite for AI Agents'; stars: '★ current count Stars'. Make the star icon and star count large, luminous, and especially attractive, using a warm gold accent that matches the orange area of the background. Do not add navigation, buttons, code, logos, headlines, captions, extra statistics, duplicate cards, extra characters, or any other text. Do not render the reference file paths."
+    }
+  }
+}
