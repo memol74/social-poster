@@ -1,0 +1,27 @@
+{
+  "video": "video.mp4",
+  "platforms": {
+    "youtube": {
+      "title": "🔥 Stop Paying for Five AI Apps",
+      "description": "You're paying monthly subscriptions for chat, research, docs, and email separately. Odysseus bundles chat, agents, deep research, email, documents, notes, tasks, and calendar into one self-hosted workspace. It runs locally with Docker and supports local or API models. Comment the word 'odysseus-ai-workspace' and I'll send you the link and tutorial for this repo.",
+      "tags": [
+        "github",
+        "ai",
+        "opensource"
+      ],
+      "privacy": "public",
+      "made_for_kids": false
+    },
+    "instagram": {
+      "caption": "You're paying monthly subscriptions for chat, research, docs, and email separately. Odysseus bundles chat, agents, deep research, email, documents, notes, tasks, and calendar into one self-hosted workspace. It runs locally with Docker and supports local or API models. Comment the word 'odysseus-ai-workspace' and I'll send you the link and tutorial for this repo."
+    },
+    "tiktok": {
+      "description": "You're paying monthly subscriptions for chat, research, docs, and email separately. Odysseus bundles chat, agents, deep research, email, documents, notes, tasks, and calendar into one self-hosted workspace. It runs locally with Docker and supports local or API models. Comment the word 'odysseus-ai-workspace' and I'll send you the link and tutorial for this repo.",
+      "privacy": "PUBLIC_TO_EVERYONE"
+    },
+    "linkedin": {
+      "text": "You're paying $80/month across ChatGPT Plus, Notion AI, and superhuman email. 💸\n\nThen you hit the problem: your chat tool can't read your inbox, your research assistant can't schedule follow-ups, and your document editor doesn't know what your agents discovered yesterday.\n\nOdysseus fixes this. 🛠️\n\nIt's a self-hosted AI workspace that bundles:\n✅ Chat + agents with tools, MCP, memory, and shell access\n✅ Deep research with multi-step web reading and report generation\n✅ Email inbox with IMAP/SMTP, triage, summaries, and reply drafts\n✅ Documents, notes, tasks, and calendar with CalDAV sync\n\nYou Docker compose up, open localhost:7000, and your entire AI productivity stack runs on your hardware with local or API models. No monthly bills, no data leaving your machine. ⭐\n\nThe repo has hardware-aware model recommendations, built-in serving, and a full setup guide for native installs, GPU configs, and HTTPS.\n\nSearch \"Odysseus AI workspace\" on GitHub and check the quick start. 🚀\n\nWhat's the first workflow you'd move off SaaS and into a local workspace?",
+      "image_script": "Create exactly one cohesive LinkedIn post image with all elements inside the same composition. Use these three files as strict image references: Staro character reference: C:\\Users\\mouled\\Noborta\\video-agent\\character\\lora\\staro_midshot_explaining_smileV2.png; GitHub repository card layout reference: C:\\Users\\mouled\\Noborta\\video-agent\\assets\\github_repo_icon_name.png; background reference: C:\\Users\\mouled\\Noborta\\video-agent\\assets\\backgrounds_images\\aff634607e19609c09710da65c8a57fd.jpg. Use the background reference as the full background without replacing its blue-to-orange gradient. Always show Staro, preserving the exact orange star-shaped face, black hoodie, white gloves, proportions, and four fingers per hand from the character reference. Pose him smiling and enthusiastically introducing or pointing toward the GitHub repository card. Create one stylish, premium GitHub repository card that respects the clean hierarchy of the card reference, with polished depth, rounded corners, crisp typography, and strong contrast. The card must contain only these three pieces of text: repository creator/name: 'odysseus-dev/odysseus'; description: 'Odysseus - Self-Hosted AI Workspace'; stars: '★ current count Stars'. Make the star icon and star count large, luminous, and especially attractive, using a warm gold accent that matches the orange area of the background. Do not add navigation, buttons, code, logos, headlines, captions, extra statistics, duplicate cards, extra characters, or any other text. Do not render the reference file paths."
+    }
+  }
+}
