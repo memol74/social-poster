@@ -1,0 +1,27 @@
+{
+  "video": "video.mp4",
+  "platforms": {
+    "youtube": {
+      "title": "🔥 Stop Wasting Tokens on Repeat File Reads",
+      "description": "Your AI agent reads the same file twelve times and bills you two thousand tokens each time. LeanCTX compresses those re-reads down to thirteen tokens and remembers everything across chats. Cuts sixty to ninety percent of your context window budget without breaking prompt caching. Comment the word 'lean-ctx' and I'll send you the link and tutorial for this repo.",
+      "tags": [
+        "ai",
+        "github",
+        "opensource"
+      ],
+      "privacy": "public",
+      "made_for_kids": false
+    },
+    "instagram": {
+      "caption": "Your AI agent reads the same file twelve times and bills you two thousand tokens each time. LeanCTX compresses those re-reads down to thirteen tokens and remembers everything across chats. Cuts sixty to ninety percent of your context window budget without breaking prompt caching. Comment the word 'lean-ctx' and I'll send you the link and tutorial for this repo."
+    },
+    "tiktok": {
+      "description": "Your AI agent reads the same file twelve times and bills you two thousand tokens each time. LeanCTX compresses those re-reads down to thirteen tokens and remembers everything across chats. Cuts sixty to ninety percent of your context window budget without breaking prompt caching. Comment the word 'lean-ctx' and I'll send you the link and tutorial for this repo.",
+      "privacy": "PUBLIC_TO_EVERYONE"
+    },
+    "linkedin": {
+      "text": "🚨 Your AI coding agent just read the same utility file for the twelfth time today.\n\nEach read: 2,000 tokens.\nYour context window: bleeding out.\nYour bill: climbing.\n\nMost developers think context waste is just the cost of using AI agents. It's not. LeanCTX is a single Rust binary that sits between your agent (Cursor, Claude Code, Copilot, Windsurf) and your codebase—and it decides what your agent actually sees.\n\n✅ Cached re-reads cost ~13 tokens instead of 2,000\n✅ Shell output (git status, npm logs) compresses 95% smaller\n✅ Session memory persists across chats so you stop re-explaining your codebase\n\nIt cuts 60–90% of your tokens without breaking prompt caching or discarding content. Raw git status normally costs 800 tokens. LeanCTX compresses it to 120. And when your agent asks for a file again, it pulls from cache instead of re-tokenizing the whole thing.\n\nOne command: `lean-ctx setup`. Zero config. Works with every major AI coding tool. Local-first, model-agnostic, and yours—not locked in a vendor's memory black box.\n\nOver 1,000 stars on GitHub. Developers are using it to keep context windows open twice as long and cut API bills in half.\n\n🔍 Search \"LeanCTX\" on GitHub and check the benchmarks yourself.\n\nAre you still paying full price for repeat reads?",
+      "image_script": "Create exactly one cohesive LinkedIn post image with all elements inside the same composition. Use these three files as strict image references: Staro character reference: C:\\Users\\mouled\\Noborta\\video-agent\\character\\lora\\staro_midshot_explaining_smileV2.png; GitHub repository card layout reference: C:\\Users\\mouled\\Noborta\\video-agent\\assets\\github_repo_icon_name.png; background reference: C:\\Users\\mouled\\Noborta\\video-agent\\assets\\backgrounds_images\\aff634607e19609c09710da65c8a57fd.jpg. Use the background reference as the full background without replacing its blue-to-orange gradient. Always show Staro, preserving the exact orange star-shaped face, black hoodie, white gloves, proportions, and four fingers per hand from the character reference. Pose him smiling and enthusiastically introducing or pointing toward the GitHub repository card. Create one stylish, premium GitHub repository card that respects the clean hierarchy of the card reference, with polished depth, rounded corners, crisp typography, and strong contrast. The card must contain only these three pieces of text: repository creator/name: 'yvgude/lean-ctx'; description: 'LeanCTX - Context Engineering for AI Agents'; stars: '★ 1,000 Stars'. Make the star icon and star count large, luminous, and especially attractive, using a warm gold accent that matches the orange area of the background. Do not add navigation, buttons, code, logos, headlines, captions, extra statistics, duplicate cards, extra characters, or any other text. Do not render the reference file paths."
+    }
+  }
+}
