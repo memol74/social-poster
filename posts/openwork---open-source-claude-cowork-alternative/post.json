@@ -1,0 +1,27 @@
+{
+  "video": "video.mp4",
+  "platforms": {
+    "youtube": {
+      "title": "🔥 This Open-Source Tool Syncs Your AI Agents",
+      "description": "You waste time rebuilding the same agent skills in every tool. OpenWork gives you one MCP connection that syncs skills, plugins, and services across Cursor, Claude Code, Codex, and more. Over 20,000 developers use it to share workflows across teams and machines. Comment the word 'openwork' and I'll send you the link and tutorial for this repo.",
+      "tags": [
+        "ai",
+        "opensource",
+        "developer"
+      ],
+      "privacy": "public",
+      "made_for_kids": false
+    },
+    "instagram": {
+      "caption": "You waste time rebuilding the same agent skills in every tool. OpenWork gives you one MCP connection that syncs skills, plugins, and services across Cursor, Claude Code, Codex, and more. Over 20,000 developers use it to share workflows across teams and machines. Comment the word 'openwork' and I'll send you the link and tutorial for this repo."
+    },
+    "tiktok": {
+      "description": "You waste time rebuilding the same agent skills in every tool. OpenWork gives you one MCP connection that syncs skills, plugins, and services across Cursor, Claude Code, Codex, and more. Over 20,000 developers use it to share workflows across teams and machines. Comment the word 'openwork' and I'll send you the link and tutorial for this repo.",
+      "privacy": "PUBLIC_TO_EVERYONE"
+    },
+    "linkedin": {
+      "text": "You switch from Claude Code to Cursor and suddenly none of your custom skills work. You rebuild them. Two weeks later you try Codex and rebuild them again. Every tool restart means redoing integrations, reconnecting services, and rewriting the same workflows.\n\n🚨 That's hours of duplicate work that should happen once.\n\nOpenWork solves it with one MCP server. You connect it to any compatible agent and your entire workflow follows you — skills, plugins, MCPs, Google Workspace, Microsoft 365 connections, everything.\n\n✅ Install one MCP and every agent sees your capabilities\n✅ Share workflows across teammates without rebuilding\n✅ Admin controls for teams managing models and access at scale\n\nOver 20,000 developers use it as the open-source alternative to Claude Cowork. It runs on Mac, Windows, and Linux and works with Cursor, Claude Code, Codex, ChatGPT, and any MCP-compatible agent.\n\n🛠️ Search GitHub for \"different-ai/openwork\" and check the README.\n\nHave you tried syncing agent workflows across multiple tools?",
+      "image_script": "Create exactly one cohesive LinkedIn post image with all elements inside the same composition. Use these three files as strict image references: Staro character reference: C:\\Users\\mouled\\Noborta\\video-agent\\character\\lora\\staro_midshot_explaining_smileV2.png; GitHub repository card layout reference: C:\\Users\\mouled\\Noborta\\video-agent\\assets\\github_repo_icon_name.png; background reference: C:\\Users\\mouled\\Noborta\\video-agent\\assets\\backgrounds_images\\aff634607e19609c09710da65c8a57fd.jpg. Use the background reference as the full background without replacing its blue-to-orange gradient. Always show Staro, preserving the exact orange star-shaped face, black hoodie, white gloves, proportions, and four fingers per hand from the character reference. Pose him smiling and enthusiastically introducing or pointing toward the GitHub repository card. Create one stylish, premium GitHub repository card that respects the clean hierarchy of the card reference, with polished depth, rounded corners, crisp typography, and strong contrast. The card must contain only these three pieces of text: repository creator/name: 'different-ai/openwork'; description: 'The open-source alternative to Claude Cowork (powered by opencode)'; stars: '★ 20,877 Stars'. Make the star icon and star count large, luminous, and especially attractive, using a warm gold accent that matches the orange area of the background. Do not add navigation, buttons, code, logos, headlines, captions, extra statistics, duplicate cards, extra characters, or any other text. Do not render the reference file paths."
+    }
+  }
+}

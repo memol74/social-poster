@@ -1,0 +1,27 @@
+{
+  "video": "video.mp4",
+  "platforms": {
+    "youtube": {
+      "title": "🔥 This Auth Gateway Changes Agent Development",
+      "description": "Your agent needs Gmail, Slack, and GitHub access. You authenticate each app once through OpenConnector. Every agent in your system now calls ten thousand prebuilt actions without touching credentials. Comment the word 'open-connector' and I'll send you the link and tutorial for this repo.",
+      "tags": [
+        "ai",
+        "agents",
+        "opensource"
+      ],
+      "privacy": "public",
+      "made_for_kids": false
+    },
+    "instagram": {
+      "caption": "Your agent needs Gmail, Slack, and GitHub access. You authenticate each app once through OpenConnector. Every agent in your system now calls ten thousand prebuilt actions without touching credentials. Comment the word 'open-connector' and I'll send you the link and tutorial for this repo."
+    },
+    "tiktok": {
+      "description": "Your agent needs Gmail, Slack, and GitHub access. You authenticate each app once through OpenConnector. Every agent in your system now calls ten thousand prebuilt actions without touching credentials. Comment the word 'open-connector' and I'll send you the link and tutorial for this repo.",
+      "privacy": "PUBLIC_TO_EVERYONE"
+    },
+    "linkedin": {
+      "text": "🚨 You're rebuilding OAuth flows for every SaaS tool your agent touches.\n\nThe usual approach? Copy-paste credential handling into every integration, debug token refresh failures at 2 AM, and pray your agent doesn't leak API keys into logs.\n\n🛠️ OpenConnector is the open-source auth gateway that solves this:\n\n✅ Authenticate Gmail, Slack, GitHub, or 1,000+ providers once\n✅ Agents call 10,000+ prebuilt actions without seeing credentials\n✅ Self-host on Docker, Cloudflare Workers, or use OOMOL's managed runtime\n\n⭐ 4,250 stars prove developers are done rebuilding auth.\n\n🚀 Search \"oomol-lab open-connector\" on GitHub and try the Docker quickstart.\n\nWhich SaaS provider do you wish your agent could safely access?",
+      "image_script": "Create exactly one cohesive LinkedIn post image with all elements inside the same composition. Use these three files as strict image references: Staro character reference: C:\\Users\\mouled\\Noborta\\video-agent\\character\\lora\\staro_midshot_explaining_smileV2.png; GitHub repository card layout reference: C:\\Users\\mouled\\Noborta\\video-agent\\assets\\github_repo_icon_name.png; background reference: C:\\Users\\mouled\\Noborta\\video-agent\\assets\\backgrounds_images\\aff634607e19609c09710da65c8a57fd.jpg. Use the background reference as the full background without replacing its blue-to-orange gradient. Always show Staro, preserving the exact orange star-shaped face, black hoodie, white gloves, proportions, and four fingers per hand from the character reference. Pose him smiling and enthusiastically introducing or pointing toward the GitHub repository card. Create one stylish, premium GitHub repository card that respects the clean hierarchy of the card reference, with polished depth, rounded corners, crisp typography, and strong contrast. The card must contain only these three pieces of text: repository creator/name: 'oomol-lab/open-connector'; description: 'Open-source auth gateway connecting 1000+ SaaS providers to AI agents through SDK, CLI, MCP, HTTP, and OpenAPI.'; stars: '★ 4,250 Stars'. Make the star icon and star count large, luminous, and especially attractive, using a warm gold accent that matches the orange area of the background. Do not add navigation, buttons, code, logos, headlines, captions, extra statistics, duplicate cards, extra characters, or any other text. Do not render the reference file paths."
+    }
+  }
+}
