@@ -1,0 +1,27 @@
+{
+  "video": "video.mp4",
+  "platforms": {
+    "youtube": {
+      "title": "🔥 AI Agents That Actually Work Together",
+      "description": "Your AI agent forgets everything when you restart. Multiple SwarmForge agents pass git commits to each other and keep refining code across sessions. Seventeen hundred developers trust Uncle Bob's tmux-based orchestration system. Comment the word 'swarm_forge' and I'll send you the link and tutorial for this repo.",
+      "tags": [
+        "github",
+        "ai",
+        "clojure"
+      ],
+      "privacy": "public",
+      "made_for_kids": false
+    },
+    "instagram": {
+      "caption": "Your AI agent forgets everything when you restart. Multiple SwarmForge agents pass git commits to each other and keep refining code across sessions. Seventeen hundred developers trust Uncle Bob's tmux-based orchestration system. Comment the word 'swarm_forge' and I'll send you the link and tutorial for this repo."
+    },
+    "tiktok": {
+      "description": "Your AI agent forgets everything when you restart. Multiple SwarmForge agents pass git commits to each other and keep refining code across sessions. Seventeen hundred developers trust Uncle Bob's tmux-based orchestration system. Comment the word 'swarm_forge' and I'll send you the link and tutorial for this repo.",
+      "privacy": "PUBLIC_TO_EVERYONE"
+    },
+    "linkedin": {
+      "text": "🚨 Your AI coding agent has amnesia.\n\nEvery time you close the terminal, it forgets what it built. Every new session starts from scratch. You're stuck babysitting one confused assistant that can't remember yesterday's work.\n\nSwarmForge fixes this with persistent multi-agent teams.\n\n✅ One agent writes TDD code, another refactors it, a third writes Gherkin specs\n✅ They pass git commits like a relay race and keep context across sessions\n✅ All coordination happens through tmux and local handoff files—no cloud orchestration costs\n\n1,765 stars. Built by Uncle Bob Martin in Clojure. Runs entirely on your machine with git worktrees and a handoff daemon.\n\nYour next feature gets specced, coded, refactored, and QA'd by a team that never sleeps and never forgets.\n\n💡 Search GitHub for \"unclebob/swarm-forge\" and grab the workflow branch that fits your project size.\n\nHave you tried multi-agent workflows yet, or are you still stuck with single-agent amnesia?",
+      "image_script": "Create exactly one cohesive LinkedIn post image with all elements inside the same composition. Use these three files as strict image references: Staro character reference: C:\\Users\\mouled\\Noborta\\video-agent\\character\\lora\\staro_midshot_explaining_smileV2.png; GitHub repository card layout reference: C:\\Users\\mouled\\Noborta\\video-agent\\assets\\github_repo_icon_name.png; background reference: C:\\Users\\mouled\\Noborta\\video-agent\\assets\\backgrounds_images\\aff634607e19609c09710da65c8a57fd.jpg. Use the background reference as the full background without replacing its blue-to-orange gradient. Always show Staro, preserving the exact orange star-shaped face, black hoodie, white gloves, proportions, and four fingers per hand from the character reference. Pose him smiling and enthusiastically introducing or pointing toward the GitHub repository card. Create one stylish, premium GitHub repository card that respects the clean hierarchy of the card reference, with polished depth, rounded corners, crisp typography, and strong contrast. The card must contain only these three pieces of text: repository creator/name: 'unclebob/swarm-forge'; description: 'A simple tool for coordinating several AI agents.'; stars: '★ 1,765 Stars'. Make the star icon and star count large, luminous, and especially attractive, using a warm gold accent that matches the orange area of the background. Do not add navigation, buttons, code, logos, headlines, captions, extra statistics, duplicate cards, extra characters, or any other text. Do not render the reference file paths."
+    }
+  }
+}

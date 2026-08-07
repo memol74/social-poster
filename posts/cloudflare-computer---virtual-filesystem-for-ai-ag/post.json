@@ -1,0 +1,27 @@
+{
+  "video": "video.mp4",
+  "platforms": {
+    "youtube": {
+      "title": "🔥 Stop Spinning Up Containers For Every Agent File",
+      "description": "You're wasting time spinning up containers just so your agent can write one file. Cloudflare Computer puts a real filesystem in a Durable Object that your agent can mount anywhere and keeps state across runs. It mounts faster than local disk on metadata operations and has five thousand stars. Comment the word 'cloudflare-computer' and I'll send you the link and tutorial for this repo.",
+      "tags": [
+        "cloudflare",
+        "ai",
+        "opensource"
+      ],
+      "privacy": "public",
+      "made_for_kids": false
+    },
+    "instagram": {
+      "caption": "You're wasting time spinning up containers just so your agent can write one file. Cloudflare Computer puts a real filesystem in a Durable Object that your agent can mount anywhere and keeps state across runs. It mounts faster than local disk on metadata operations and has five thousand stars. Comment the word 'cloudflare-computer' and I'll send you the link and tutorial for this repo."
+    },
+    "tiktok": {
+      "description": "You're wasting time spinning up containers just so your agent can write one file. Cloudflare Computer puts a real filesystem in a Durable Object that your agent can mount anywhere and keeps state across runs. It mounts faster than local disk on metadata operations and has five thousand stars. Comment the word 'cloudflare-computer' and I'll send you the link and tutorial for this repo.",
+      "privacy": "PUBLIC_TO_EVERYONE"
+    },
+    "linkedin": {
+      "text": "🚨 You're still spinning up containers just to let your agent write one file.\n\nCloudflare Computer solves this with a virtual filesystem backed by SQLite inside a Durable Object. Your agent mounts it as a real FUSE filesystem, writes files, runs shell commands, and the state survives across every run.\n\nNo container rebuild. No ephemeral storage headaches. No reinventing persistence.\n\n✅ Real filesystem that agents can mount anywhere\n✅ Faster than local disk on metadata-heavy operations\n✅ State persists across runs in a Durable Object\n\nThe repo already has 5,382 stars and runs three execution backends: container, isolate shell, and isolate JavaScript. MIT licensed, TypeScript implementation, and designed specifically for agent workflows.\n\nNext time your agent needs to remember anything between runs, just mount a Computer workspace.\n\nSearch GitHub for \"cloudflare computer\" and clone the repo.\n\nHow are you currently handling persistent state for your agents? 🤔",
+      "image_script": "Create exactly one cohesive LinkedIn post image with all elements inside the same composition. Use these three files as strict image references: Staro character reference: C:\\Users\\mouled\\Noborta\\video-agent\\character\\lora\\staro_midshot_explaining_smileV2.png; GitHub repository card layout reference: C:\\Users\\mouled\\Noborta\\video-agent\\assets\\github_repo_icon_name.png; background reference: C:\\Users\\mouled\\Noborta\\video-agent\\assets\\backgrounds_images\\aff634607e19609c09710da65c8a57fd.jpg. Use the background reference as the full background without replacing its blue-to-orange gradient. Always show Staro, preserving the exact orange star-shaped face, black hoodie, white gloves, proportions, and four fingers per hand from the character reference. Pose him smiling and enthusiastically introducing or pointing toward the GitHub repository card. Create one stylish, premium GitHub repository card that respects the clean hierarchy of the card reference, with polished depth, rounded corners, crisp typography, and strong contrast. The card must contain only these three pieces of text: repository creator/name: 'cloudflare/computer'; description: 'Give your agent a computer 👾'; stars: '★ 5,382 Stars'. Make the star icon and star count large, luminous, and especially attractive, using a warm gold accent that matches the orange area of the background. Do not add navigation, buttons, code, logos, headlines, captions, extra statistics, duplicate cards, extra characters, or any other text. Do not render the reference file paths."
+    }
+  }
+}

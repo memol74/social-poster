@@ -1,0 +1,27 @@
+{
+  "video": "video.mp4",
+  "platforms": {
+    "youtube": {
+      "title": "🔥 This Agent Remembers Everything",
+      "description": "Your AI agent forgets everything when you close the terminal. Prime Agent keeps running in the background and refines itself after every session. Almost 6,000 developers use it for research tasks that take days to finish. Comment the word 'prime-agent' and I'll send you the link and tutorial for this repo.",
+      "tags": [
+        "github",
+        "ai",
+        "opensource"
+      ],
+      "privacy": "public",
+      "made_for_kids": false
+    },
+    "instagram": {
+      "caption": "Your AI agent forgets everything when you close the terminal. Prime Agent keeps running in the background and refines itself after every session. Almost 6,000 developers use it for research tasks that take days to finish. Comment the word 'prime-agent' and I'll send you the link and tutorial for this repo."
+    },
+    "tiktok": {
+      "description": "Your AI agent forgets everything when you close the terminal. Prime Agent keeps running in the background and refines itself after every session. Almost 6,000 developers use it for research tasks that take days to finish. Comment the word 'prime-agent' and I'll send you the link and tutorial for this repo.",
+      "privacy": "PUBLIC_TO_EVERYONE"
+    },
+    "linkedin": {
+      "text": "🚨 Your AI agent dies every time you close the terminal.\n\nYou lose context. You lose progress. You restart from scratch.\n\nEvery. Single. Time.\n\nPrime Agent changes that. It's a self-improving RLM agent that treats your workflow like persistent variables and keeps running even when you disconnect.\n\n✅ Spawns child agents with code—they talk directly without routing through you\n✅ Runs a persistent Python REPL so context survives crashes and terminal closes\n✅ Refines itself across sessions and learns reusable patterns from every run\n\nAlmost 6,000 developers trust it for long research tasks that take days to finish. ⭐\n\nSearch GitHub for 'PrimeIntellect-ai/prime-agent' and give your agent the memory it deserves.\n\nWhat's the longest task you've tried running with an AI agent?",
+      "image_script": "Create exactly one cohesive LinkedIn post image with all elements inside the same composition. Use these three files as strict image references: Staro character reference: C:\\Users\\mouled\\Noborta\\video-agent\\character\\lora\\staro_midshot_explaining_smileV2.png; GitHub repository card layout reference: C:\\Users\\mouled\\Noborta\\video-agent\\assets\\github_repo_icon_name.png; background reference: C:\\Users\\mouled\\Noborta\\video-agent\\assets\\backgrounds_images\\aff634607e19609c09710da65c8a57fd.jpg. Use the background reference as the full background without replacing its blue-to-orange gradient. Always show Staro, preserving the exact orange star-shaped face, black hoodie, white gloves, proportions, and four fingers per hand from the character reference. Pose him smiling and enthusiastically introducing or pointing toward the GitHub repository card. Create one stylish, premium GitHub repository card that respects the clean hierarchy of the card reference, with polished depth, rounded corners, crisp typography, and strong contrast. The card must contain only these three pieces of text: repository creator/name: 'PrimeIntellect-ai/prime-agent'; description: 'A self-improving RLM agent for coding workflows and long-running autonomous tasks.'; stars: '★ 5,877 Stars'. Make the star icon and star count large, luminous, and especially attractive, using a warm gold accent that matches the orange area of the background. Do not add navigation, buttons, code, logos, headlines, captions, extra statistics, duplicate cards, extra characters, or any other text. Do not render the reference file paths."
+    }
+  }
+}
