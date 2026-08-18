@@ -1,0 +1,27 @@
+{
+  "video": "video.mp4",
+  "platforms": {
+    "youtube": {
+      "title": "🎨 Your Diagrams Finally Match Your Brand",
+      "description": "Your agent ships generic rounded boxes that look nothing like your site. Diagram Design pulls your exact colors and fonts from your website in 60 seconds. Twenty-eight editorial diagram types ship as self-contained HTML with zero build step. Comment the word 'diagram-design' and I'll send you the link and tutorial for this repo.",
+      "tags": [
+        "github",
+        "ai",
+        "design"
+      ],
+      "privacy": "public",
+      "made_for_kids": false
+    },
+    "instagram": {
+      "caption": "Your agent ships generic rounded boxes that look nothing like your site. Diagram Design pulls your exact colors and fonts from your website in 60 seconds. Twenty-eight editorial diagram types ship as self-contained HTML with zero build step. Comment the word 'diagram-design' and I'll send you the link and tutorial for this repo."
+    },
+    "tiktok": {
+      "description": "Your agent ships generic rounded boxes that look nothing like your site. Diagram Design pulls your exact colors and fonts from your website in 60 seconds. Twenty-eight editorial diagram types ship as self-contained HTML with zero build step. Comment the word 'diagram-design' and I'll send you the link and tutorial for this repo.",
+      "privacy": "PUBLIC_TO_EVERYONE"
+    },
+    "linkedin": {
+      "text": "🚨 Your AI agent just shipped another flowchart.\n\nIt's clean. It's readable. And it looks absolutely nothing like your brand.\n\nYou have three choices: spend 30 minutes fighting with Figma, skip the diagram entirely, or ship the generic rounded-box thing and pretend you don't care.\n\nDiagram Design fixes this in 60 seconds:\n\n✅ Point it at your website — it extracts your exact colors, fonts, and accent palette\n✅ 28 editorial diagram types (architecture, sequence, quadrant, Gantt, loop, state machine...)\n✅ Self-contained HTML + SVG — no build step, no JavaScript, no external image dependencies\n\nEvery diagram inherits your brand tokens automatically. Your homepage background becomes the diagram paper. Your CTA color becomes the focal accent. Your body font becomes the node labels.\n\nThe repo has 21,613 stars and works with Claude Code, Codex, and Pi out of the box.\n\n🔎 Search GitHub for \"cathrynlavery/diagram-design\" to see the full gallery and install instructions.\n\nWhat diagram type do you fight with most — architecture, sequence, or quadrant? 👇",
+      "image_script": "Create exactly one cohesive LinkedIn post image with all elements inside the same composition. Use these three files as strict image references: Staro character reference: C:\\Users\\mouled\\Noborta\\video-agent\\character\\lora\\staro_midshot_explaining_smileV2.png; GitHub repository card layout reference: C:\\Users\\mouled\\Noborta\\video-agent\\assets\\github_repo_icon_name.png; background reference: C:\\Users\\mouled\\Noborta\\video-agent\\assets\\backgrounds_images\\aff634607e19609c09710da65c8a57fd.jpg. Use the background reference as the full background without replacing its blue-to-orange gradient. Always show Staro, preserving the exact orange star-shaped face, black hoodie, white gloves, proportions, and four fingers per hand from the character reference. Pose him smiling and enthusiastically introducing or pointing toward the GitHub repository card. Create one stylish, premium GitHub repository card that respects the clean hierarchy of the card reference, with polished depth, rounded corners, crisp typography, and strong contrast. The card must contain only these three pieces of text: repository creator/name: 'cathrynlavery/diagram-design'; description: '27 editorial diagram types for Claude Code. Self-contained HTML + SVG. No shadows, no Mermaid-slop.'; stars: '★ 21,613 Stars'. Make the star icon and star count large, luminous, and especially attractive, using a warm gold accent that matches the orange area of the background. Do not add navigation, buttons, code, logos, headlines, captions, extra statistics, duplicate cards, extra characters, or any other text. Do not render the reference file paths."
+    }
+  }
+}
