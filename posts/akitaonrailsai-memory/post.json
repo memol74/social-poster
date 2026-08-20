@@ -1,0 +1,27 @@
+{
+  "video": "video.mp4",
+  "platforms": {
+    "youtube": {
+      "title": "🔥 AI Agents Now Remember Across Sessions",
+      "description": "Your AI coding agent forgets everything when you close the session. ai-memory gives agents a shared wiki that persists decisions, failed attempts, and context across Claude Code, Codex, Cursor, and more. Over 3,500 developers are already using it. Comment the word 'ai-memory' and I'll send you the link and tutorial for this repo.",
+      "tags": [
+        "github",
+        "ai",
+        "devtools"
+      ],
+      "privacy": "public",
+      "made_for_kids": false
+    },
+    "instagram": {
+      "caption": "Your AI coding agent forgets everything when you close the session. ai-memory gives agents a shared wiki that persists decisions, failed attempts, and context across Claude Code, Codex, Cursor, and more. Over 3,500 developers are already using it. Comment the word 'ai-memory' and I'll send you the link and tutorial for this repo."
+    },
+    "tiktok": {
+      "description": "Your AI coding agent forgets everything when you close the session. ai-memory gives agents a shared wiki that persists decisions, failed attempts, and context across Claude Code, Codex, Cursor, and more. Over 3,500 developers are already using it. Comment the word 'ai-memory' and I'll send you the link and tutorial for this repo.",
+      "privacy": "PUBLIC_TO_EVERYONE"
+    },
+    "linkedin": {
+      "text": "🚨 You've been re-explaining the same architecture to your AI coding agent for the third time this week.\n\nWhy? Because agents lose everything when the session ends. Every switch from Claude Code to Codex means starting from zero. Every resume means re-stating your tech stack, your failed approaches, your open questions.\n\nai-memory fixes this.\n\n✅ Persistent wiki compiled from lifecycle observations\n✅ Cross-agent handoffs that preserve context\n✅ Plain markdown in a git repo—grep it, back it up, open it in Obsidian\n\nNo vector database to manage. No manual note-taking ceremony. Just install the hooks and your agents start remembering.\n\nQuit Claude Code mid-task. Start Codex hours later. Your next agent sees \"where you left off\" before the first prompt.\n\nOver 3,500 stars. MIT licensed. Supports Claude Code, Codex, Cursor, Gemini CLI, and 15+ other harnesses.\n\n⭐ Search \"akitaonrails ai-memory\" on GitHub.\n\nHow much time do you lose re-explaining context to your agent every week?",
+      "image_script": "Create exactly one cohesive LinkedIn post image with all elements inside the same composition. Use these three files as strict image references: Staro character reference: C:\\Users\\mouled\\Noborta\\video-agent\\character\\lora\\staro_midshot_explaining_smileV2.png; GitHub repository card layout reference: C:\\Users\\mouled\\Noborta\\video-agent\\assets\\github_repo_icon_name.png; background reference: C:\\Users\\mouled\\Noborta\\video-agent\\assets\\backgrounds_images\\aff634607e19609c09710da65c8a57fd.jpg. Use the background reference as the full background without replacing its blue-to-orange gradient. Always show Staro, preserving the exact orange star-shaped face, black hoodie, white gloves, proportions, and four fingers per hand from the character reference. Pose him smiling and enthusiastically introducing or pointing toward the GitHub repository card. Create one stylish, premium GitHub repository card that respects the clean hierarchy of the card reference, with polished depth, rounded corners, crisp typography, and strong contrast. The card must contain only these three pieces of text: repository creator/name: 'akitaonrails/ai-memory'; description: 'Solution for long term memory for agent coding CLIs and to facilitate handoff between different agent vendors'; stars: '★ 3,545 Stars'. Make the star icon and star count large, luminous, and especially attractive, using a warm gold accent that matches the orange area of the background. Do not add navigation, buttons, code, logos, headlines, captions, extra statistics, duplicate cards, extra characters, or any other text. Do not render the reference file paths."
+    }
+  }
+}
