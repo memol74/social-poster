@@ -1,0 +1,27 @@
+{
+  "video": "video.mp4",
+  "platforms": {
+    "youtube": {
+      "title": "🔥 Text → Game-Ready 3D Creature in One Command",
+      "description": "Someone just open sourced a creature compiler that turns plain text into skinned game characters. One command compiles a skinned rigged creature from a text order. The engine builds mesh, joints, and animations with zero art files or photogrammetry. Comment the word 'anycreature' and I'll send you the link and tutorial for this repo.",
+      "tags": [
+        "github",
+        "gamedev",
+        "opensource"
+      ],
+      "privacy": "public",
+      "made_for_kids": false
+    },
+    "instagram": {
+      "caption": "Someone just open sourced a creature compiler that turns plain text into skinned game characters. One command compiles a skinned rigged creature from a text order. The engine builds mesh, joints, and animations with zero art files or photogrammetry. Comment the word 'anycreature' and I'll send you the link and tutorial for this repo."
+    },
+    "tiktok": {
+      "description": "Someone just open sourced a creature compiler that turns plain text into skinned game characters. One command compiles a skinned rigged creature from a text order. The engine builds mesh, joints, and animations with zero art files or photogrammetry. Comment the word 'anycreature' and I'll send you the link and tutorial for this repo.",
+      "privacy": "PUBLIC_TO_EVERYONE"
+    },
+    "linkedin": {
+      "text": "🚨 Game dev reality check:\n\nYou need 50 enemy types for your indie game. Hiring a 3D artist costs $5K per creature. Fiverr takes two weeks per model. Asset packs all look the same.\n\nSomeone just open sourced anyCreature — a text-to-creature compiler that ships game-ready GLBs in one session.\n\nYou type \"menacing mountain giant,\" answer at most two questions, and the engine compiles a skinned, rigged, vertex-colored character with animations. No mesh files. No downloaded art packs. No photogrammetry. The example wolf is 2,211 vertices written from plain JSON.\n\n✅ Zero runtime dependencies — node cli.js spec.json out.glb is the whole interface\n✅ Automated quality gates with context-free silhouette readers so nothing ships broken\n✅ MIT licensed with presets for minions, NPCs, and bosses\n\nThe repo has 345 stars and ships with calibration tests that prove the quality rulers work on your machine before you trust anything else.\n\nSearch GitHub for \"Ariescar/anyCreature\" and check the README.\n\nWhat's the first creature you'd compile if you could type it into existence?",
+      "image_script": "Create exactly one cohesive LinkedIn post image with all elements inside the same composition. Use these three files as strict image references: Staro character reference: C:\\Users\\mouled\\Noborta\\video-agent\\character\\lora\\staro_midshot_explaining_smileV2.png; GitHub repository card layout reference: C:\\Users\\mouled\\Noborta\\video-agent\\assets\\github_repo_icon_name.png; background reference: C:\\Users\\mouled\\Noborta\\video-agent\\assets\\backgrounds_images\\aff634607e19609c09710da65c8a57fd.jpg. Use the background reference as the full background without replacing its blue-to-orange gradient. Always show Staro, preserving the exact orange star-shaped face, black hoodie, white gloves, proportions, and four fingers per hand from the character reference. Pose him smiling and enthusiastically introducing or pointing toward the GitHub repository card. Create one stylish, premium GitHub repository card that respects the clean hierarchy of the card reference, with polished depth, rounded corners, crisp typography, and strong contrast. The card must contain only these three pieces of text: repository creator/name: 'Ariescar/anyCreature'; description: 'You can now generate creatures directly within your project. Drop the open-source into your Agent, and start prompting what you want.'; stars: '★ 345 Stars'. Make the star icon and star count large, luminous, and especially attractive, using a warm gold accent that matches the orange area of the background. Do not add navigation, buttons, code, logos, headlines, captions, extra statistics, duplicate cards, extra characters, or any other text. Do not render the reference file paths."
+    }
+  }
+}

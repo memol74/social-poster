@@ -1,0 +1,27 @@
+{
+  "video": "video.mp4",
+  "platforms": {
+    "youtube": {
+      "title": "🔥 This CLI Cuts AI Browsing Costs 100x",
+      "description": "Are you tired of AI agents burning thousands of tokens on raw HTML every time they browse? One npm package turns any website into a numbered action list that fits in five hundred tokens. A typical Hacker News page drops from markup sludge to clean numbered links your agent can actually use. Comment the word 'only-cli-oc' and I'll send you the link and tutorial for this repo.",
+      "tags": [
+        "github",
+        "ai",
+        "cli"
+      ],
+      "privacy": "public",
+      "made_for_kids": false
+    },
+    "instagram": {
+      "caption": "Are you tired of AI agents burning thousands of tokens on raw HTML every time they browse? One npm package turns any website into a numbered action list that fits in five hundred tokens. A typical Hacker News page drops from markup sludge to clean numbered links your agent can actually use. Comment the word 'only-cli-oc' and I'll send you the link and tutorial for this repo."
+    },
+    "tiktok": {
+      "description": "Are you tired of AI agents burning thousands of tokens on raw HTML every time they browse? One npm package turns any website into a numbered action list that fits in five hundred tokens. A typical Hacker News page drops from markup sludge to clean numbered links your agent can actually use. Comment the word 'only-cli-oc' and I'll send you the link and tutorial for this repo.",
+      "privacy": "PUBLIC_TO_EVERYONE"
+    },
+    "linkedin": {
+      "text": "🚨 Your AI coding agent just spent 50,000 tokens reading one Stack Overflow page.\n\nThat's $0.15 per search. Every single time it needs docs.\n\nThe usual fix? Build scrapers for every site. Write adapters. Pray the HTML stays stable.\n\nMeet **only-cli** — one npm package that turns any website into a numbered CLI for AI agents.\n\n✅ Distills pages from 50k tokens to 500\n✅ Works on any static site with zero per-site config\n✅ Ships shortcuts for 20+ dev sites (GitHub, AWS, Stack Overflow, MDN)\n\n⭐ 400+ stars\n\nYou run `oc open news.ycombinator.com` and your agent gets:\n```\n[1] Show HN: I built a tiny CSV toolkit\n[2] 312 comments\nactions: do <n> | read <n> | next\n```\n\nInstead of tens of thousands of tokens of markup.\n\nNext time Claude needs AWS docs, you type `oc aws guide s3` instead of burning tokens on raw HTML. The agent follows numbered links with `oc do 3` and never touches a URL.\n\n🔍 Search GitHub for \"only-cli/oc\" and install it in 30 seconds.\n\nHow much are you spending on agent browsing tokens right now?",
+      "image_script": "Create exactly one cohesive LinkedIn post image with all elements inside the same composition. Use these three files as strict image references: Staro character reference: C:\\Users\\mouled\\Noborta\\video-agent\\character\\lora\\staro_midshot_explaining_smileV2.png; GitHub repository card layout reference: C:\\Users\\mouled\\Noborta\\video-agent\\assets\\github_repo_icon_name.png; background reference: C:\\Users\\mouled\\Noborta\\video-agent\\assets\\backgrounds_images\\aff634607e19609c09710da65c8a57fd.jpg. Use the background reference as the full background without replacing its blue-to-orange gradient. Always show Staro, preserving the exact orange star-shaped face, black hoodie, white gloves, proportions, and four fingers per hand from the character reference. Pose him smiling and enthusiastically introducing or pointing toward the GitHub repository card. Create one stylish, premium GitHub repository card that respects the clean hierarchy of the card reference, with polished depth, rounded corners, crisp typography, and strong contrast. The card must contain only these three pieces of text: repository creator/name: 'only-cli/oc'; description: 'only-cli/oc - CLI web browser for AI agents'; stars: '★ current count Stars'. Make the star icon and star count large, luminous, and especially attractive, using a warm gold accent that matches the orange area of the background. Do not add navigation, buttons, code, logos, headlines, captions, extra statistics, duplicate cards, extra characters, or any other text. Do not render the reference file paths."
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "video": "video.mp4",
+  "platforms": {
+    "youtube": {
+      "title": "🔥 Every AI Website Looks the Same — Until Now",
+      "description": "Tired of scroll animations that look like every AI website? It also runs a headless browser to catch dead scroll and contrast failures you would ship otherwise. Comment the word 'scroll-craft' and I'll send you the link and tutorial for this repo.",
+      "tags": [
+        "github",
+        "webdev",
+        "claude"
+      ],
+      "privacy": "public",
+      "made_for_kids": false
+    },
+    "instagram": {
+      "caption": "Tired of scroll animations that look like every AI website? It also runs a headless browser to catch dead scroll and contrast failures you would ship otherwise. Comment the word 'scroll-craft' and I'll send you the link and tutorial for this repo."
+    },
+    "tiktok": {
+      "description": "Tired of scroll animations that look like every AI website? It also runs a headless browser to catch dead scroll and contrast failures you would ship otherwise. Comment the word 'scroll-craft' and I'll send you the link and tutorial for this repo.",
+      "privacy": "PUBLIC_TO_EVERYONE"
+    },
+    "linkedin": {
+      "text": "You have built three scroll-driven pages with AI and they all look suspiciously similar.\n\nSame six sections. Same gradient text. Same feature-card grid. The scroll animations work, but the typographic spacing makes designers wince, and you cannot unsee the 2.1:1 body text once someone points it out.\n\n🛠️ scrollcraft is a Claude Code skill that treats interaction and design craft as one unified job, not two separate phases that produce forgettable pages or flashy messes.\n\nWhat makes it different:\n\n✅ **Eight mutually exclusive page grammars** — filmic one-shot, continuous world, typographic poster, split stage, gallery. Pick one and it forbids what the others require, so two builds cannot quietly become the same site.\n\n✅ **A fingerprint gate** — new builds must differ from your previous pages on at least 4 of 6 dimensions: grammar, nav, hero, act shape, close, signature move. Fail the gate and you change the plan, not the registry.\n\n✅ **Automated verification pass** — a headless browser walks your finished page at every scroll position and reports dead scroll, faded copy that never reaches full opacity, and real contrast measured on the composited page per line.\n\nIt is opinionated on purpose. It will refuse the layouts and palettes that make AI pages recognizable, and it will argue with you about your peak.\n\n⭐ 200+ stars on GitHub. MIT licensed. Built as a plugin for Claude Code.\n\nSearch GitHub for `nateherkai/scroll-craft` to install it.\n\nHave you ever shipped a scroll animation that looked great in the builder but failed contrast on the actual page?",
+      "image_script": "Create exactly one cohesive LinkedIn post image with all elements inside the same composition. Use these three files as strict image references: Staro character reference: C:\\Users\\mouled\\Noborta\\video-agent\\character\\lora\\staro_midshot_explaining_smileV2.png; GitHub repository card layout reference: C:\\Users\\mouled\\Noborta\\video-agent\\assets\\github_repo_icon_name.png; background reference: C:\\Users\\mouled\\Noborta\\video-agent\\assets\\backgrounds_images\\aff634607e19609c09710da65c8a57fd.jpg. Use the background reference as the full background without replacing its blue-to-orange gradient. Always show Staro, preserving the exact orange star-shaped face, black hoodie, white gloves, proportions, and four fingers per hand from the character reference. Pose him smiling and enthusiastically introducing or pointing toward the GitHub repository card. Create one stylish, premium GitHub repository card that respects the clean hierarchy of the card reference, with polished depth, rounded corners, crisp typography, and strong contrast. The card must contain only these three pieces of text: repository creator/name: 'nateherkai/scroll-craft'; description: 'scrollcraft — Claude Code skill for premium scroll-driven websites'; stars: '★ current count Stars'. Make the star icon and star count large, luminous, and especially attractive, using a warm gold accent that matches the orange area of the background. Do not add navigation, buttons, code, logos, headlines, captions, extra statistics, duplicate cards, extra characters, or any other text. Do not render the reference file paths."
+    }
+  }
+}

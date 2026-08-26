@@ -1,0 +1,27 @@
+{
+  "video": "video.mp4",
+  "platforms": {
+    "youtube": {
+      "title": "🔥 Turn Any Video Into Mixamo Animations",
+      "description": "Tired of paying for mocap suits or hand-keying fight animations frame by frame? Mixamo LLM Mocap turns locked-camera footage into clean FK animations on any Mixamo character with zero manual keyframing. Ten Python stages extract mesh-quality joints, retarget with real ground contact, and plant feet without IK because Mixamo rigs are FK-only. Comment the word 'mixamo-llm-mocap' and I'll send you the link and tutorial for this repo.",
+      "tags": [
+        "mocap",
+        "animation",
+        "blender"
+      ],
+      "privacy": "public",
+      "made_for_kids": false
+    },
+    "instagram": {
+      "caption": "Tired of paying for mocap suits or hand-keying fight animations frame by frame? Mixamo LLM Mocap turns locked-camera footage into clean FK animations on any Mixamo character with zero manual keyframing. Ten Python stages extract mesh-quality joints, retarget with real ground contact, and plant feet without IK because Mixamo rigs are FK-only. Comment the word 'mixamo-llm-mocap' and I'll send you the link and tutorial for this repo."
+    },
+    "tiktok": {
+      "description": "Tired of paying for mocap suits or hand-keying fight animations frame by frame? Mixamo LLM Mocap turns locked-camera footage into clean FK animations on any Mixamo character with zero manual keyframing. Ten Python stages extract mesh-quality joints, retarget with real ground contact, and plant feet without IK because Mixamo rigs are FK-only. Comment the word 'mixamo-llm-mocap' and I'll send you the link and tutorial for this repo.",
+      "privacy": "PUBLIC_TO_EVERYONE"
+    },
+    "linkedin": {
+      "text": "🚨 Your animator just quoted 6 weeks to hand-key a 30-second fight sequence.\n\nMocap suits cost $15K. Contractors charge $200/day. And every revision means another round trip through the keyframe swamp.\n\nMixamo LLM Mocap changes that math completely.\n\nYou film a performer throwing kicks — or generate AI footage with T-pose bookends — and ten Python stages turn it into clean FK animations on any Mixamo character you already own:\n\n✅ GVHMR extracts mesh-quality joints from locked-camera video\n✅ Direction-preserving retarget rebuilds positions from YOUR rig's bone lengths\n✅ Real ground contact with zero foot skate — planted feet solve to ground height every frame\n\nNo manual keyframing. No IK (because Mixamo rigs are FK-only). No cleanup.\n\n198 GitHub stars because the pipeline includes a QA gate that catches exploded bones, hip pops, and foot skate *before* a human looks. Every stage is scriptable enough that an AI agent can run the whole loop.\n\nTwo-character plates? Split tracks by screen side, retarget onto different proportions, place them at measured distances, then run mesh-vs-mesh collision to verify clearance.\n\nSearch \"Mixamo LLM Mocap\" on GitHub and clone it today.\n\nWhat's the longest fight sequence you've hand-keyed? 💬",
+      "image_script": "Create exactly one cohesive LinkedIn post image with all elements inside the same composition. Use these three files as strict image references: Staro character reference: C:\\Users\\mouled\\Noborta\\video-agent\\character\\lora\\staro_midshot_explaining_smileV2.png; GitHub repository card layout reference: C:\\Users\\mouled\\Noborta\\video-agent\\assets\\github_repo_icon_name.png; background reference: C:\\Users\\mouled\\Noborta\\video-agent\\assets\\backgrounds_images\\aff634607e19609c09710da65c8a57fd.jpg. Use the background reference as the full background without replacing its blue-to-orange gradient. Always show Staro, preserving the exact orange star-shaped face, black hoodie, white gloves, proportions, and four fingers per hand from the character reference. Pose him smiling and enthusiastically introducing or pointing toward the GitHub repository card. Create one stylish, premium GitHub repository card that respects the clean hierarchy of the card reference, with polished depth, rounded corners, crisp typography, and strong contrast. The card must contain only these three pieces of text: repository creator/name: 'squall01337/mixamo-llm-mocap'; description: 'Turn any video into a Mixamo-rig animation - GVHMR estimator, spec-driven retarget, FK apply in Blender via MCP. Works with any Mixamo character; built to be operated end-to-end by an AI agent.'; stars: '★ 198 Stars'. Make the star icon and star count large, luminous, and especially attractive, using a warm gold accent that matches the orange area of the background. Do not add navigation, buttons, code, logos, headlines, captions, extra statistics, duplicate cards, extra characters, or any other text. Do not render the reference file paths."
+    }
+  }
+}

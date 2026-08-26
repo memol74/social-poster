@@ -1,0 +1,27 @@
+{
+  "video": "video.mp4",
+  "platforms": {
+    "youtube": {
+      "title": "🔥 This Prompt Library Changes AI Image Generation",
+      "description": "Tired of AI images that ignore your layout every time? GPT-Image2 fixes it with structured templates that split subject, lighting, and layout into composable slots. You get 538 reverse-engineered cases and 20 industrial templates organized by category. Comment the word 'awesome-gpt-image-2' and I'll send you the link and tutorial for this repo.",
+      "tags": [
+        "github",
+        "ai",
+        "design"
+      ],
+      "privacy": "public",
+      "made_for_kids": false
+    },
+    "instagram": {
+      "caption": "Tired of AI images that ignore your layout every time? GPT-Image2 fixes it with structured templates that split subject, lighting, and layout into composable slots. You get 538 reverse-engineered cases and 20 industrial templates organized by category. Comment the word 'awesome-gpt-image-2' and I'll send you the link and tutorial for this repo."
+    },
+    "tiktok": {
+      "description": "Tired of AI images that ignore your layout every time? GPT-Image2 fixes it with structured templates that split subject, lighting, and layout into composable slots. You get 538 reverse-engineered cases and 20 industrial templates organized by category. Comment the word 'awesome-gpt-image-2' and I'll send you the link and tutorial for this repo.",
+      "privacy": "PUBLIC_TO_EVERYONE"
+    },
+    "linkedin": {
+      "text": "🚨 You spend 30 minutes tweaking an AI image prompt, hit generate, and the layout is completely wrong.\n\nYou adjust the wording. Still wrong. You try caps, brackets, reordering. Still breaks.\n\nWhy? Because prose-style prompts don't give you structured control over hierarchy, copy placement, or visual composition. You're hoping the model guesses your intent.\n\nGPT-Image2 turns scattered prompt examples into composable templates:\n✅ 538 reverse-engineered cases organized by visual category\n✅ 20 industrial templates with atomic slots for subject, lighting, layout, and materials\n✅ Designed for agents, batch workflows, and production automation\n\nInstead of rewriting prompts from scratch every time, you pull a UI template, swap the subject and copy, and generate 1,000 consistent posters without layout drift.\n\n⭐ 1,800+ stars on GitHub and growing fast.\n\nSearch \"freestylefly/awesome-gpt-image-2\" on GitHub to grab the templates.\n\nHave you tried structured prompt systems for batch generation, or are you still writing prose prompts one at a time?",
+      "image_script": "Create exactly one cohesive LinkedIn post image with all elements inside the same composition. Use these three files as strict image references: Staro character reference: C:\\Users\\mouled\\Noborta\\video-agent\\character\\lora\\staro_midshot_explaining_smileV2.png; GitHub repository card layout reference: C:\\Users\\mouled\\Noborta\\video-agent\\assets\\github_repo_icon_name.png; background reference: C:\\Users\\mouled\\Noborta\\video-agent\\assets\\backgrounds_images\\aff634607e19609c09710da65c8a57fd.jpg. Use the background reference as the full background without replacing its blue-to-orange gradient. Always show Staro, preserving the exact orange star-shaped face, black hoodie, white gloves, proportions, and four fingers per hand from the character reference. Pose him smiling and enthusiastically introducing or pointing toward the GitHub repository card. Create one stylish, premium GitHub repository card that respects the clean hierarchy of the card reference, with polished depth, rounded corners, crisp typography, and strong contrast. The card must contain only these three pieces of text: repository creator/name: 'freestylefly/awesome-gpt-image-2'; description: 'GPT-Image2 Prompt Template Library'; stars: '★ current count Stars'. Make the star icon and star count large, luminous, and especially attractive, using a warm gold accent that matches the orange area of the background. Do not add navigation, buttons, code, logos, headlines, captions, extra statistics, duplicate cards, extra characters, or any other text. Do not render the reference file paths."
+    }
+  }
+}

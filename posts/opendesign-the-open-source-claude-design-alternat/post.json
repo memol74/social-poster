@@ -1,0 +1,27 @@
+{
+  "video": "video.mp4",
+  "platforms": {
+    "youtube": {
+      "title": "🎨 Your Agent Just Became a Design Studio",
+      "description": "Tired of agents that forget your brand the second they restart? OpenDesign turns them into persistent design studios that remember your fonts, colors, and components across sessions. It works with DeepSeek, Claude Code, Cursor, and 23 other agents through a simple DESIGN.md file in your project directory. Comment the word 'open-design' and I'll send you the link and tutorial for this repo.",
+      "tags": [
+        "github",
+        "ai",
+        "design"
+      ],
+      "privacy": "public",
+      "made_for_kids": false
+    },
+    "instagram": {
+      "caption": "Tired of agents that forget your brand the second they restart? OpenDesign turns them into persistent design studios that remember your fonts, colors, and components across sessions. It works with DeepSeek, Claude Code, Cursor, and 23 other agents through a simple DESIGN.md file in your project directory. Comment the word 'open-design' and I'll send you the link and tutorial for this repo."
+    },
+    "tiktok": {
+      "description": "Tired of agents that forget your brand the second they restart? OpenDesign turns them into persistent design studios that remember your fonts, colors, and components across sessions. It works with DeepSeek, Claude Code, Cursor, and 23 other agents through a simple DESIGN.md file in your project directory. Comment the word 'open-design' and I'll send you the link and tutorial for this repo.",
+      "privacy": "PUBLIC_TO_EVERYONE"
+    },
+    "linkedin": {
+      "text": "🎨 Your design handoffs shouldn't require a new tool\n\nEvery time you ask Claude, Cursor, or DeepSeek to generate a prototype, you're re-explaining your brand system. Colors. Fonts. Component rules. The same context, delivered fresh, because agents don't remember across sessions.\n\nOpenDesign fixes that with one DESIGN.md file in your project directory.\n\n✅ Your coding agents now read your brand system automatically\n✅ Prototypes, decks, dashboards, and images arrive pre-styled\n✅ Works with DeepSeek Harness, Claude Code, Cursor, Codex, and 23 other CLI agents\n\nIt's the open-source Claude Design alternative — local-first, sandboxed preview, export to HTML/PDF/PPTX/MP4, and zero vendor lock-in.\n\n⭐ Already live on GitHub with native runtime adapters and MCP support for mainstream coding agents.\n\nSearch **nexu-io/open-design** on GitHub.\n\nWhat's the most annoying part of your current design-to-dev handoff?",
+      "image_script": "Create exactly one cohesive LinkedIn post image with all elements inside the same composition. Use these three files as strict image references: Staro character reference: C:\\Users\\mouled\\Noborta\\video-agent\\character\\lora\\staro_midshot_explaining_smileV2.png; GitHub repository card layout reference: C:\\Users\\mouled\\Noborta\\video-agent\\assets\\github_repo_icon_name.png; background reference: C:\\Users\\mouled\\Noborta\\video-agent\\assets\\backgrounds_images\\aff634607e19609c09710da65c8a57fd.jpg. Use the background reference as the full background without replacing its blue-to-orange gradient. Always show Staro, preserving the exact orange star-shaped face, black hoodie, white gloves, proportions, and four fingers per hand from the character reference. Pose him smiling and enthusiastically introducing or pointing toward the GitHub repository card. Create one stylish, premium GitHub repository card that respects the clean hierarchy of the card reference, with polished depth, rounded corners, crisp typography, and strong contrast. The card must contain only these three pieces of text: repository creator/name: 'nexu-io/open-design'; description: 'OpenDesign: The open-source Claude Design alternative'; stars: '★ current count Stars'. Make the star icon and star count large, luminous, and especially attractive, using a warm gold accent that matches the orange area of the background. Do not add navigation, buttons, code, logos, headlines, captions, extra statistics, duplicate cards, extra characters, or any other text. Do not render the reference file paths."
+    }
+  }
+}

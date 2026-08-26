@@ -1,0 +1,27 @@
+{
+  "video": "video.mp4",
+  "platforms": {
+    "youtube": {
+      "title": "🔥 This Repo Writes and Ships Blog Posts Under Contract",
+      "description": "Someone just open sourced a Claude Code skill that writes, scores, and ships blog posts under delivery contract. It ships with thirty sub-skills, five agents, and a hundred-point rubric. Comment the word 'claude-blog' and I'll send you the link and tutorial for this repo.",
+      "tags": [
+        "github",
+        "ai",
+        "claude"
+      ],
+      "privacy": "public",
+      "made_for_kids": false
+    },
+    "instagram": {
+      "caption": "Someone just open sourced a Claude Code skill that writes, scores, and ships blog posts under delivery contract. It ships with thirty sub-skills, five agents, and a hundred-point rubric. Comment the word 'claude-blog' and I'll send you the link and tutorial for this repo."
+    },
+    "tiktok": {
+      "description": "Someone just open sourced a Claude Code skill that writes, scores, and ships blog posts under delivery contract. It ships with thirty sub-skills, five agents, and a hundred-point rubric. Comment the word 'claude-blog' and I'll send you the link and tutorial for this repo.",
+      "privacy": "PUBLIC_TO_EVERYONE"
+    },
+    "linkedin": {
+      "text": "🚨 Your blog drafts are shipping with broken links, missing schema, and zero AI citation readiness.\n\nMost writers hit publish and hope the SEO gods smile. But Google wants usefulness signals, and AI systems want source-ready structure.\n\nThat's why claude-blog exists: a Claude Code skill suite that writes, scores, and ships articles under a 5-gate delivery contract.\n\n✅ Every draft must hit 90+ on a 100-point rubric or it auto-retries up to 3 times\n✅ You get markdown, HTML, PDF, hero image, screenshots, schema, and preflight report in one artifact folder\n✅ 32 skill directories, 30 user-facing commands, 5 specialized agents, and 250+ passing tests\n\nThe orchestrator routes /blog write through sub-skills for strategy, briefs, outlines, rewrites, multilingual, topic clusters, and content decay detection. You never see a draft until format, visuals, content, and asset integrity all pass.\n\n⭐ 1,908 stars and MIT-licensed.\n\nSearch GitHub for \"AgriciDaniel/claude-blog\" and ship posts that actually rank.\n\nWhat's the last SEO task you automated that actually saved you hours?",
+      "image_script": "Create exactly one cohesive LinkedIn post image with all elements inside the same composition. Use these three files as strict image references: Staro character reference: C:\\Users\\mouled\\Noborta\\video-agent\\character\\lora\\staro_midshot_explaining_smileV2.png; GitHub repository card layout reference: C:\\Users\\mouled\\Noborta\\video-agent\\assets\\github_repo_icon_name.png; background reference: C:\\Users\\mouled\\Noborta\\video-agent\\assets\\backgrounds_images\\aff634607e19609c09710da65c8a57fd.jpg. Use the background reference as the full background without replacing its blue-to-orange gradient. Always show Staro, preserving the exact orange star-shaped face, black hoodie, white gloves, proportions, and four fingers per hand from the character reference. Pose him smiling and enthusiastically introducing or pointing toward the GitHub repository card. Create one stylish, premium GitHub repository card that respects the clean hierarchy of the card reference, with polished depth, rounded corners, crisp typography, and strong contrast. The card must contain only these three pieces of text: repository creator/name: 'AgriciDaniel/claude-blog'; description: 'Claude Code blog skill suite: 30 sub-skills, 5 agents, 5-gate v1.9.0 Blog Delivery Contract, dual-optimized for Google rankings and AI citations. Active development at AI-Marketing-Hub/claude-blog (AI Marketing Hub Pro community); public releases ship here.'; stars: '★ 1,908 Stars'. Make the star icon and star count large, luminous, and especially attractive, using a warm gold accent that matches the orange area of the background. Do not add navigation, buttons, code, logos, headlines, captions, extra statistics, duplicate cards, extra characters, or any other text. Do not render the reference file paths."
+    }
+  }
+}
