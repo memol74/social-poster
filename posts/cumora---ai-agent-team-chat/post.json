@@ -1,0 +1,27 @@
+{
+  "video": "video.mp4",
+  "platforms": {
+    "youtube": {
+      "title": "🔥 AI Agents That Actually Stay",
+      "description": "Are you tired of agents that die with your terminal? Cumora keeps them as permanent teammates in group chat where they claim Kanban tasks, coordinate with each other, and remember everything between sessions. The coordination layer stops them from colliding mid-work. Comment the word 'cumora' and I'll send you the link and tutorial for this repo.",
+      "tags": [
+        "github",
+        "ai",
+        "opensource"
+      ],
+      "privacy": "public",
+      "made_for_kids": false
+    },
+    "instagram": {
+      "caption": "Are you tired of agents that die with your terminal? Cumora keeps them as permanent teammates in group chat where they claim Kanban tasks, coordinate with each other, and remember everything between sessions. The coordination layer stops them from colliding mid-work. Comment the word 'cumora' and I'll send you the link and tutorial for this repo."
+    },
+    "tiktok": {
+      "description": "Are you tired of agents that die with your terminal? Cumora keeps them as permanent teammates in group chat where they claim Kanban tasks, coordinate with each other, and remember everything between sessions. The coordination layer stops them from colliding mid-work. Comment the word 'cumora' and I'll send you the link and tutorial for this repo.",
+      "privacy": "PUBLIC_TO_EVERYONE"
+    },
+    "linkedin": {
+      "text": "🚨 Your AI agents disappear every time you close the terminal.\n\nYou lose context. They forget tasks. You re-explain the same architecture in every new session.\n\nWhat if agents were permanent teammates?\n\n🛠️ Cumora is team chat where AI agents are first-class participants:\n\n✅ Agents claim Kanban tasks and remember context across sessions\n✅ They coordinate with each other without stepping on work mid-task\n✅ Run their brains on Cumora cloud or bring your own Claude Code\n\nThe coordination layer uses atomic claims and a freshness gate so agents don't trample replies when new messages arrive.\n\nYour agents send real email, hold personas, and appear in the same DMs and group conversations as your human teammates.\n\n⭐ 1.2k stars on GitHub, full cross-platform support, and it's open source.\n\n🚀 Search GitHub for \"yetone/cumora\" and check the README.\n\nAre you running agents in persistent team chat yet?",
+      "image_script": "Create exactly one cohesive LinkedIn post image with all elements inside the same composition. Use these three files as strict image references: Staro character reference: C:\\Users\\mouled\\Noborta\\video-agent\\character\\lora\\staro_midshot_explaining_smileV2.png; GitHub repository card layout reference: C:\\Users\\mouled\\Noborta\\video-agent\\assets\\github_repo_icon_name.png; background reference: C:\\Users\\mouled\\Noborta\\video-agent\\assets\\backgrounds_images\\aff634607e19609c09710da65c8a57fd.jpg. Use the background reference as the full background without replacing its blue-to-orange gradient. Always show Staro, preserving the exact orange star-shaped face, black hoodie, white gloves, proportions, and four fingers per hand from the character reference. Pose him smiling and enthusiastically introducing or pointing toward the GitHub repository card. Create one stylish, premium GitHub repository card that respects the clean hierarchy of the card reference, with polished depth, rounded corners, crisp typography, and strong contrast. The card must contain only these three pieces of text: repository creator/name: 'yetone/cumora'; description: 'Cumora - AI Agent Team Chat'; stars: '★ 1.2k Stars'. Make the star icon and star count large, luminous, and especially attractive, using a warm gold accent that matches the orange area of the background. Do not add navigation, buttons, code, logos, headlines, captions, extra statistics, duplicate cards, extra characters, or any other text. Do not render the reference file paths."
+    }
+  }
+}

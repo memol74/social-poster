@@ -1,4 +1,4 @@
-🚨 Your AI agent forgets the entire conversation the second you close the terminal.
+🚨 Tired of your AI agent forgetting everything when you restart?
 
 Every new session starts from scratch. No memory of past decisions. No recall of what worked or what failed. You're basically paying to re-teach the same context over and over.
 
