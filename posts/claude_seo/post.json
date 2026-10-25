@@ -1,0 +1,35 @@
+{
+  "video": "video.mp4",
+  "platforms": {
+    "youtube": {
+      "title": "🔍 This Free Claude Code Plugin Replaces Your SEO Audit",
+      "description": "Agencies charge thousands for one SEO audit. Claude SEO is a free, open-source Claude Code plugin: give it any website and up to 17 agents audit it in parallel. Technical SEO, Core Web Vitals, schema, content quality and AI search citations, then a prioritized action plan in 10 to 15 minutes. MIT licensed, 20K stars. Comment the word 'SEO' and I'll send you the link and tutorial for this repo.",
+      "tags": [
+        "github",
+        "seo",
+        "ai"
+      ],
+      "privacy": "public",
+      "made_for_kids": false
+    },
+    "instagram": {
+      "caption": "Agencies charge thousands for one SEO audit. Claude SEO is a free, open-source Claude Code plugin: give it any website and up to 17 agents audit it in parallel. Technical SEO, Core Web Vitals, schema, content quality and AI search citations, then a prioritized action plan in 10 to 15 minutes. MIT licensed, 20K stars. Comment the word 'SEO' and I'll send you the link and tutorial for this repo."
+    },
+    "tiktok": {
+      "description": "Agencies charge thousands for one SEO audit. Claude SEO is a free, open-source Claude Code plugin: give it any website and up to 17 agents audit it in parallel. Technical SEO, Core Web Vitals, schema, content quality and AI search citations, then a prioritized action plan in 10 to 15 minutes. MIT licensed, 20K stars. Comment the word 'SEO' and I'll send you the link and tutorial for this repo.",
+      "privacy": "PUBLIC_TO_EVERYONE"
+    },
+    "linkedin": {
+      "text": "🔍 How much did your last SEO audit cost?\n\nAgency audits run anywhere from $2K to $15K+ per project, and you usually wait weeks for a PDF.\n\nClaude SEO is a free, open-source plugin for Claude Code that runs the whole audit from your terminal:\n\n✅ 26 sub-skills and 19 specialist agents, with up to 17 working on your site at the same time\n✅ Technical SEO: crawlability, indexing, sitemaps, robots.txt, Core Web Vitals\n✅ Content quality (E-E-A-T) and Schema.org structured data\n✅ AI search (GEO): how likely AI Overviews, ChatGPT, Perplexity and Gemini are to cite your pages\n✅ A prioritized action plan in 10 to 15 minutes, where every recommendation explains why it matters\n\nThe author audited the project's own site with it from day one: 10.8K Search Console clicks in its first 12 weeks.\n\n20K+ GitHub stars. MIT licensed. Two commands to install: /plugin marketplace add AgriciDaniel/claude-seo, then /plugin install.\n\nWould you trust an AI agent team with your next SEO audit? 👇",
+      "image_script": {
+        "format": "single square LinkedIn feed image",
+        "dimensions": "1:1 square",
+        "quality": "medium",
+        "headline": "17 Agents, One SEO Audit",
+        "visual": "Pixel-art deep-space scene in the Noborta pixel style: Staro (orange star head, black hoodie, white gloves) pointing at a browser window being scanned by a swarm of tiny colorful robot agents, next to an ACTION PLAN panel with CRITICAL / HIGH / MEDIUM / LOW rows and a green MIT stamp.",
+        "supporting_text": "AgriciDaniel/claude-seo · ★ 20K",
+        "alt_text": "Pixel-art Staro character presenting Claude SEO's parallel AI agents auditing a website in a space setting."
+      }
+    }
+  }
+}
