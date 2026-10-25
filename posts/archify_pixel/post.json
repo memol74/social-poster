@@ -2,33 +2,33 @@
   "video": "video.mp4",
   "platforms": {
     "youtube": {
-      "title": "🗺️ This Agent Skill Turns One Sentence Into an Interactive Diagram",
-      "description": "Tired of drawing architecture diagrams box by box? Archify is an open-source agent skill with 89K GitHub stars. Describe a system in one sentence and your agent builds an interactive diagram, or point it at a repo for a source-backed map. Click any node, trace a path, and share it all as one HTML file. Works with Claude Code, Codex, Cursor and OpenCode. Apache-2.0. Comment the word 'map' and I'll send you the link and tutorial for this repo.",
+      "title": "🗺️ This AI Skill Turns Any Repo Into an Interactive Diagram",
+      "description": "Tired of drawing architecture diagrams box by box? Archify is an open-source agent skill with 89K stars: describe a system in one sentence and your agent draws an interactive diagram. Point it at a repo and it maps the code with source links. Click any node, trace a path, and share it as one HTML file. Works with Claude Code, Codex and Cursor. Your whiteboard can finally retire. Comment the word 'map' and I'll send you the link and tutorial for this repo.",
       "tags": [
         "github",
         "ai",
-        "diagrams"
+        "devtools"
       ],
       "privacy": "public",
       "made_for_kids": false
     },
     "instagram": {
-      "caption": "Tired of drawing architecture diagrams box by box? Archify is an open-source agent skill with 89K GitHub stars. Describe a system in one sentence and your agent builds an interactive diagram, or point it at a repo for a source-backed map. Click any node, trace a path, and share it all as one HTML file. Works with Claude Code, Codex, Cursor and OpenCode. Apache-2.0. Comment the word 'map' and I'll send you the link and tutorial for this repo."
+      "caption": "Tired of drawing architecture diagrams box by box? Archify is an open-source agent skill with 89K stars: describe a system in one sentence and your agent draws an interactive diagram. Point it at a repo and it maps the code with source links. Click any node, trace a path, and share it as one HTML file. Works with Claude Code, Codex and Cursor. Your whiteboard can finally retire. Comment the word 'map' and I'll send you the link and tutorial for this repo."
     },
     "tiktok": {
-      "description": "Tired of drawing architecture diagrams box by box? Archify is an open-source agent skill with 89K GitHub stars. Describe a system in one sentence and your agent builds an interactive diagram, or point it at a repo for a source-backed map. Click any node, trace a path, and share it all as one HTML file. Works with Claude Code, Codex, Cursor and OpenCode. Apache-2.0. Comment the word 'map' and I'll send you the link and tutorial for this repo.",
+      "description": "Tired of drawing architecture diagrams box by box? Archify is an open-source agent skill with 89K stars: describe a system in one sentence and your agent draws an interactive diagram. Point it at a repo and it maps the code with source links. Click any node, trace a path, and share it as one HTML file. Works with Claude Code, Codex and Cursor. Your whiteboard can finally retire. Comment the word 'map' and I'll send you the link and tutorial for this repo.",
       "privacy": "PUBLIC_TO_EVERYONE"
     },
     "linkedin": {
-      "text": "🗺️ When did your architecture diagram last match your code?\n\nMost diagrams are drawn once on a whiteboard, exported as a PNG, and go stale the week after.\n\nArchify is an open-source agent skill that lets your coding agent build the diagram for you:\n\n✅ Describe a system in one sentence (\"Browser calls the API, the API checks Redis, a cache miss queries PostgreSQL\") and get an interactive diagram\n✅ Point it at a repository for a source-backed architecture map, with links back to the code\n✅ Click any node, trace a path, highlight what sits downstream\n✅ Ask a question and get a one-page explainer: conclusion first, then steps beside the diagram they walk through\n✅ Everything ships as one standalone HTML file with light and dark themes, easy to share\n\n89K+ GitHub stars, 130K+ installs, Apache-2.0. Works with Claude Code, Codex, Cursor and OpenCode.\n\nInstall: npx skills add tt-a1i/archify -g\n\nWhat would you diagram first: your codebase, or your next trip? 👇",
+      "text": "🗺️ Still drawing architecture diagrams box by box?\n\nYou describe the system in a meeting, someone opens a whiteboard tool, and twenty minutes later you have a diagram that's already outdated.\n\nArchify is an open-source agent skill that turns any idea, plan, or codebase into an interactive diagram:\n\n✅ Describe a system in one sentence, your agent draws it (e.g. \"browser calls the API, API checks Redis, cache miss queries PostgreSQL\")\n✅ Point it at a real repository and it traces the architecture with source links pinned to a commit\n✅ Click any node to open the full interactive view, trace everything downstream, or highlight a specific route\n✅ Explainer mode answers a question as a one-page, source-cited report with tables, steps and diagrams\n✅ Exports as one standalone HTML file, four styles, light or dark theme, plus PNG/WebP/JPG or PDF for explainer pages\n✅ Works with Claude Code, Codex CLI, Cursor and OpenCode\n\n89K+ GitHub stars, 130K+ installs on skills.sh, Apache-2.0 licensed.\n\nInstall: npx skills add tt-a1i/archify -g\n\nCould this finally replace your whiteboard? 👇",
       "image_script": {
         "format": "single square LinkedIn feed image",
         "dimensions": "1:1 square",
         "quality": "medium",
-        "headline": "One Sentence, One Interactive Diagram",
-        "visual": "Pixel-art deep-space scene in the Noborta pixel style: Staro (orange star head, black hoodie, white gloves) pointing at a glowing diagram panel with BROWSER, API, REDIS and POSTGRES nodes connected by animated arrows, a terminal above showing a one-sentence prompt, and a white HTML file icon labelled diagram.html.",
+        "headline": "Any Idea → Interactive Diagram",
+        "visual": "Pixel-art deep-space scene in the Noborta pixel style: Staro (orange star head, black hoodie, white gloves) standing beside a glowing interactive diagram made of connected nodes and boxes, one node highlighted and expanding into a source-code card, a terminal panel showing npx skills add tt-a1i/archify -g.",
         "supporting_text": "tt-a1i/archify · ★ 89K",
-        "alt_text": "Pixel-art Staro character presenting an interactive architecture diagram generated by Archify in a space setting."
+        "alt_text": "Pixel-art Staro character presenting Archify turning an idea or codebase into an interactive diagram in a space setting."
       }
     }
   }
