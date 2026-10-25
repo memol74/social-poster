@@ -1,0 +1,35 @@
+{
+  "video": "video.mp4",
+  "platforms": {
+    "youtube": {
+      "title": "💬 The Open-Source ManyChat Alternative",
+      "description": "Still paying monthly just to auto-DM people who comment? OpenReply is the open-source ManyChat alternative: someone comments a keyword on your reel and it DMs them your link, through the official Meta API, with no scraping and no password. Tracked links, a follow gate, and a queue that respects Meta's rate limits. MIT licensed, self-hosted, 2.8K stars. Comment the word 'reply' and I'll send you the link and tutorial for this repo.",
+      "tags": [
+        "github",
+        "opensource",
+        "instagram"
+      ],
+      "privacy": "public",
+      "made_for_kids": false
+    },
+    "instagram": {
+      "caption": "Still paying monthly just to auto-DM people who comment? OpenReply is the open-source ManyChat alternative: someone comments a keyword on your reel and it DMs them your link, through the official Meta API, with no scraping and no password. Tracked links, a follow gate, and a queue that respects Meta's rate limits. MIT licensed, self-hosted, 2.8K stars. Comment the word 'reply' and I'll send you the link and tutorial for this repo."
+    },
+    "tiktok": {
+      "description": "Still paying monthly just to auto-DM people who comment? OpenReply is the open-source ManyChat alternative: someone comments a keyword on your reel and it DMs them your link, through the official Meta API, with no scraping and no password. Tracked links, a follow gate, and a queue that respects Meta's rate limits. MIT licensed, self-hosted, 2.8K stars. Comment the word 'reply' and I'll send you the link and tutorial for this repo.",
+      "privacy": "PUBLIC_TO_EVERYONE"
+    },
+    "linkedin": {
+      "text": "💬 Comment-to-DM is one feature. Why is it always a monthly subscription?\n\nOpenReply is an open-source, MIT-licensed alternative to ManyChat for Instagram comment-to-DM automation. You self-host it, so there are no seat limits or plan caps (hosting costs are your own).\n\nHow it works:\n✅ Someone comments a keyword on your post or reel (or DMs you, or replies to your Story)\n✅ OpenReply matches it against your campaigns and queues a job\n✅ A background worker sends the private reply through the official Meta API, no scraping, no browser automation, no Instagram password\n\nWhat stands out:\n✅ Tracked links with clicks and CTR per campaign\n✅ Optional follow gate before the link is sent\n✅ Per-account rate limiting under Meta's 750 private replies/hour cap, overflow is queued instead of dropped\n✅ Next.js 16, Prisma + PostgreSQL, BullMQ on Redis\n\n2.8K GitHub stars. Search \"diwenne openreply GitHub\" to deploy your own copy.\n\nWould you self-host your DM automation to drop a subscription? 👇",
+      "image_script": {
+        "format": "single square LinkedIn feed image",
+        "dimensions": "1:1 square",
+        "quality": "medium",
+        "headline": "Comment → DM, Self-Hosted",
+        "visual": "Pixel-art deep-space scene in the Noborta pixel style: Staro (orange star head, black hoodie, white gloves) pointing at two pixel phones, a reel with a comment 'LINK' highlighted yellow on the left and a DM inbox with a cyan 'GET LINK' button on the right, an envelope flying between them.",
+        "supporting_text": "diwenne/openreply · ★ 2.8K · MIT",
+        "alt_text": "Pixel-art Staro character presenting OpenReply, an open-source Instagram comment-to-DM tool, in a space setting."
+      }
+    }
+  }
+}
