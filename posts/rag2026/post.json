@@ -1,0 +1,35 @@
+{
+  "video": "video.mp4",
+  "platforms": {
+    "youtube": {
+      "title": "🧠 Production RAG in 2026: The 5-Step Stack That Fixes Retrieval",
+      "description": "RAG fails when retrieval fails. Most teams treat it like magic search, but it's really an open-book exam for LLMs: search, prompt, then answer, and naive chunks lose their context the moment you split a document. This video walks the full production stack: contextual chunks, hybrid search with RRF, reranking top 150 to top 20, permission filters, and evals gating every deploy. Retrieval failure rate drops from 5.7% to 1.9%. Comment the word 'RAG' and I'll send you the production RAG checklist.",
+      "tags": [
+        "rag",
+        "github",
+        "ai"
+      ],
+      "privacy": "public",
+      "made_for_kids": false
+    },
+    "instagram": {
+      "caption": "RAG fails when retrieval fails. Most teams treat it like magic search, but it's really an open-book exam for LLMs: search, prompt, then answer, and naive chunks lose their context the moment you split a document. This video walks the full production stack: contextual chunks, hybrid search with RRF, reranking top 150 to top 20, permission filters, and evals gating every deploy. Retrieval failure rate drops from 5.7% to 1.9%. Comment the word 'RAG' and I'll send you the production RAG checklist."
+    },
+    "tiktok": {
+      "description": "RAG fails when retrieval fails. Most teams treat it like magic search, but it's really an open-book exam for LLMs: search, prompt, then answer, and naive chunks lose their context the moment you split a document. This video walks the full production stack: contextual chunks, hybrid search with RRF, reranking top 150 to top 20, permission filters, and evals gating every deploy. Retrieval failure rate drops from 5.7% to 1.9%. Comment the word 'RAG' and I'll send you the production RAG checklist.",
+      "privacy": "PUBLIC_TO_EVERYONE"
+    },
+    "linkedin": {
+      "text": "🧠 Why does your RAG app confidently answer with the wrong document?\n\nMost teams ship RAG as naive chunk-and-embed, then wonder why retrieval quietly fails in production.\n\nA chunk like \"The company's revenue grew by 3% over the previous quarter\" says nothing about which company or which quarter. Strip the context, and even a perfect LLM can't save you.\n\nHere's the 5-step stack that fixes it:\n\n✅ Contextual chunks: prepend 50-100 tokens of LLM-generated context (Claude Haiku + prompt caching) before embedding and before building the BM25 index\n✅ Hybrid search: combine dense vectors with BM25 keyword matching so exact strings like \"Error code TS-999\" don't get missed\n✅ Fuse rankings with RRF (Reciprocal Rank Fusion), summing 1 / (k + rank) across both result sets\n✅ Rerank: retrieve top 150 candidates, rerank with Cohere or Voyage, keep the top 20\n✅ Filter by permissions: payload filters (Qdrant) or row-level security (Postgres) before results ever reach the prompt\n✅ Evals gate every deploy: Ragas metrics (Faithfulness, Context Recall, Context Precision, Response Relevancy) run in CI\n\nThe payoff: top-20 retrieval failure rate goes from 5.7% baseline down to 1.9% with contextual chunks, contextual BM25, and reranking combined.\n\nSmall corpus under 200K tokens? Skip retrieval entirely and put the whole knowledge base in the prompt with caching.\n\npip install ragas\n\nWhich of these 5 steps is missing from your RAG pipeline today? 👇",
+      "image_script": {
+        "format": "single square LinkedIn feed image",
+        "dimensions": "1:1 square",
+        "quality": "medium",
+        "headline": "The 5-Step Production RAG Stack",
+        "visual": "Pixel-art deep-space background in the Noborta style with five connected pixel panels in a row: a document splitting into contextualized chunks, a dual-path search diagram merging vector and BM25 icons into an RRF fusion node, a funnel narrowing 150 candidates to 20, a padlock filter icon over a database, and a checklist panel with green checkmarks labeled CI. No characters, clean pixel icons and thin connecting lines.",
+        "supporting_text": "Retrieval failure: 5.7% → 1.9%",
+        "alt_text": "Pixel-art diagram of a production RAG pipeline showing contextual chunking, hybrid search with RRF fusion, reranking, permission filters and CI evals."
+      }
+    }
+  }
+}
