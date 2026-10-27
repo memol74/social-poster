@@ -1,0 +1,35 @@
+{
+  "video": "video.mp4",
+  "platforms": {
+    "youtube": {
+      "title": "🚀 Forget Vercel. This Free Platform Deploys Anywhere",
+      "description": "Forget Vercel. Use this free deploy platform instead. Coolify is an open-source, self-hosted Heroku and Netlify alternative with 65K+ stars. Install it with one command on any server reachable over SSH, even a Raspberry Pi. Push to GitHub and it deploys, with automatic HTTPS and preview builds. Add databases and 360+ one-click services, with backups included. Your cloud bill just got nervous. Comment the word 'deploy' and I'll send you the link and tutorial for this repo.",
+      "tags": [
+        "github",
+        "selfhosted",
+        "devops"
+      ],
+      "privacy": "public",
+      "made_for_kids": false
+    },
+    "instagram": {
+      "caption": "Forget Vercel. Use this free deploy platform instead. Coolify is an open-source, self-hosted Heroku and Netlify alternative with 65K+ stars. Install it with one command on any server reachable over SSH, even a Raspberry Pi. Push to GitHub and it deploys, with automatic HTTPS and preview builds. Add databases and 360+ one-click services, with backups included. Your cloud bill just got nervous. Comment the word 'deploy' and I'll send you the link and tutorial for this repo."
+    },
+    "tiktok": {
+      "description": "Forget Vercel. Use this free deploy platform instead. Coolify is an open-source, self-hosted Heroku and Netlify alternative with 65K+ stars. Install it with one command on any server reachable over SSH, even a Raspberry Pi. Push to GitHub and it deploys, with automatic HTTPS and preview builds. Add databases and 360+ one-click services, with backups included. Your cloud bill just got nervous. Comment the word 'deploy' and I'll send you the link and tutorial for this repo.",
+      "privacy": "PUBLIC_TO_EVERYONE"
+    },
+    "linkedin": {
+      "text": "🚀 What if you never paid a PaaS bill again?\n\nVercel, Heroku, and Netlify are great until the invoice shows up.\n\nCoolify is a free, open-source, self-hostable alternative that runs on servers you already control:\n\n✅ Deploys apps, databases, and services on your own VPS, bare metal, or even a Raspberry Pi\n✅ Builds from GitHub, GitLab, Bitbucket, or Gitea\n✅ Automatic deployments on Git push, with pull-request previews\n✅ Automatic HTTPS and one-click rollbacks\n✅ 360+ one-click services, persistent storage, generated credentials, and backups\n\n65,015 GitHub stars. 5,835 forks. Apache-2.0 licensed. Free forever.\n\nInstall it with one command:\ncurl -fsSL https://cdn.coollabs.io/coolify/install.sh | bash\n\nWould you trade your cloud bill for a server you control? 👇",
+      "image_script": {
+        "format": "single square LinkedIn feed image",
+        "dimensions": "1:1 square",
+        "quality": "medium",
+        "headline": "Your Server. Your Rules.",
+        "visual": "Pixel-art deep-space scene in the Noborta pixel style: Staro (orange star head, black hoodie, white gloves) standing beside a glowing server rack with a rocket icon labeled DEPLOY, a GitHub logo sending a push arrow into the rack, a padlock icon for HTTPS, and tiny database and backup icons floating nearby.",
+        "supporting_text": "coollabsio/coolify · ★ 65K",
+        "alt_text": "Pixel-art Staro character deploying apps to a self-hosted server rack in a space setting."
+      }
+    }
+  }
+}
