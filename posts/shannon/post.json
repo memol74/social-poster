@@ -1,0 +1,35 @@
+{
+  "video": "video.mp4",
+  "platforms": {
+    "youtube": {
+      "title": "🕵️ This AI Pentester Hacks Your App Before Hackers Do",
+      "description": "You can now hack your own app before real hackers do. Shannon is an open-source AI pentester with 49K stars on GitHub. It reads your source code, maps every possible attack path, then drives a real browser and fires actual exploits. No exploit, no report, every finding comes with working proof. Launch it with one npx command, and yes, you can say: Hey Claude, run Shannon. Comment the word 'hack' and I'll send you the link and tutorial for this repo.",
+      "tags": [
+        "github",
+        "cybersecurity",
+        "ai"
+      ],
+      "privacy": "public",
+      "made_for_kids": false
+    },
+    "instagram": {
+      "caption": "You can now hack your own app before real hackers do. Shannon is an open-source AI pentester with 49K stars on GitHub. It reads your source code, maps every possible attack path, then drives a real browser and fires actual exploits. No exploit, no report, every finding comes with working proof. Launch it with one npx command, and yes, you can say: Hey Claude, run Shannon. Comment the word 'hack' and I'll send you the link and tutorial for this repo."
+    },
+    "tiktok": {
+      "description": "You can now hack your own app before real hackers do. Shannon is an open-source AI pentester with 49K stars on GitHub. It reads your source code, maps every possible attack path, then drives a real browser and fires actual exploits. No exploit, no report, every finding comes with working proof. Launch it with one npx command, and yes, you can say: Hey Claude, run Shannon. Comment the word 'hack' and I'll send you the link and tutorial for this repo.",
+      "privacy": "PUBLIC_TO_EVERYONE"
+    },
+    "linkedin": {
+      "text": "🕵️ What if you could hack your own app before real hackers do?\n\nMost security audits give you a list of theoretical risks and a long PDF you never finish reading.\n\nShannon is an open-source AI pentester that skips the guesswork entirely:\n\n✅ Combines source-code analysis with live exploitation\n✅ Identifies attack paths across your web app and APIs\n✅ Uses browser automation and command-line tools to run real exploits\n✅ Follows one rule: \"No exploit, no report\" — only working proof-of-concept findings make the cut\n✅ Launches with a single command, and yes: \"Hey Claude, run Shannon.\"\n\n49,671 GitHub stars. AGPL-3.0 licensed. Install with: npx @keygraph/shannon@latest\n\nOnly run it against apps and environments you own or have explicit written authorization to test.\n\nWould you trust an AI agent to pentest your own code? 👇",
+      "image_script": {
+        "format": "single square LinkedIn feed image",
+        "dimensions": "1:1 square",
+        "quality": "medium",
+        "headline": "No Exploit, No Report",
+        "visual": "Pixel-art deep-space scene in the Noborta pixel style: Staro (orange star head, black hoodie, white gloves) standing before a glowing terminal window running 'npx @keygraph/shannon@latest', with a holographic map of attack paths branching out and a browser window showing a live exploit in progress, a green checkmark stamp labeled PROOF nearby.",
+        "supporting_text": "KeygraphHQ/shannon · ★ 49.6K",
+        "alt_text": "Pixel-art Staro character launching Shannon, an AI pentester, showing attack path mapping and live exploit proof in a space setting."
+      }
+    }
+  }
+}
