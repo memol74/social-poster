@@ -1,0 +1,35 @@
+{
+  "video": "video.mp4",
+  "platforms": {
+    "youtube": {
+      "title": "🐟 This AI Simulates the Future With Thousands of Agents",
+      "description": "You can now simulate the future with thousands of AI agents. MiroFish is an open-source prediction engine with 82K stars: upload a news report, a policy draft, or even a novel, and it builds a digital world where agents with memory interact. You get a hypothetical prediction report and can chat with any agent, including the one running the whole show. It even simulated the lost ending of a classic novel. Comment 'fish' and I'll send you the link.",
+      "tags": [
+        "github",
+        "ai",
+        "opensource"
+      ],
+      "privacy": "public",
+      "made_for_kids": false
+    },
+    "instagram": {
+      "caption": "You can now simulate the future with thousands of AI agents. MiroFish is an open-source prediction engine with 82K stars: upload a news report, a policy draft, or even a novel, and it builds a digital world where agents with memory interact. You get a hypothetical prediction report and can chat with any agent, including the one running the whole show. It even simulated the lost ending of a classic novel. Comment 'fish' and I'll send you the link."
+    },
+    "tiktok": {
+      "description": "You can now simulate the future with thousands of AI agents. MiroFish is an open-source prediction engine with 82K stars: upload a news report, a policy draft, or even a novel, and it builds a digital world where agents with memory interact. You get a hypothetical prediction report and can chat with any agent, including the one running the whole show. It even simulated the lost ending of a classic novel. Comment 'fish' and I'll send you the link.",
+      "privacy": "PUBLIC_TO_EVERYONE"
+    },
+    "linkedin": {
+      "text": "🐟 What if you could run a what-if scenario with thousands of AI agents instead of just your own head?\n\nMiroFish is an open-source prediction engine that turns seed material into a simulated world you can question and explore.\n\n✅ Upload news, a policy draft, a data report, or even a story as your seed material\n✅ Builds a graph and sets up agent personas and relationships\n✅ Runs simulations where agents update their memory as events unfold\n✅ Generates a prediction report, and you can chat directly with individual agents or the ReportAgent\n✅ Demo includes simulating the lost ending of Dream of the Red Chamber from its first 80 chapters\n\nWorth noting: these are hypothetical simulation outputs, not guaranteed predictions, and setup requires your own OpenAI-compatible LLM API key plus a Zep Cloud API key, so usage isn't free.\n\n82K+ GitHub stars. AGPL-3.0 licensed.\n\nWhat scenario would you want thousands of agents to play out? 👇",
+      "image_script": {
+        "format": "single square LinkedIn feed image",
+        "dimensions": "1:1 square",
+        "quality": "medium",
+        "headline": "Simulate the Future, Agent by Agent",
+        "visual": "Pixel-art deep-space scene in the Noborta pixel style: Staro (orange star head, black hoodie, white gloves) standing before a glowing digital world graph filled with tiny colorful agent nodes connected by lines, a floating REPORT panel beside him showing prediction bullet points, and a small book icon labeled SEED drifting nearby.",
+        "supporting_text": "666ghj/MiroFish · ★ 82K",
+        "alt_text": "Pixel-art Staro character presenting MiroFish's multi-agent simulation world used to generate prediction reports."
+      }
+    }
+  }
+}
