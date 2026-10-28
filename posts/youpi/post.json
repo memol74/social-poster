@@ -1,0 +1,35 @@
+{
+  "video": "video.mp4",
+  "platforms": {
+    "youtube": {
+      "title": "💸 Stop Losing 3% Per Sale: Self-Hosted UPI Gateway",
+      "description": "Tired of losing three percent on every payment? YouPI PG is a self-hosted UPI and COD payment gateway with zero gateway fees, straight to your bank. It supports dynamic QR codes, direct deep links to GPay, PhonePe, Paytm and CRED, WhatsApp OTP checkout, and automated payment verification via bank SMS and Gmail alerts. It's experimental and not bank-approved, so don't bet your empire on it yet. Comment the word 'UPI' and I'll send you the link and tutorial for this repo.",
+      "tags": [
+        "github",
+        "upi",
+        "javascript"
+      ],
+      "privacy": "public",
+      "made_for_kids": false
+    },
+    "instagram": {
+      "caption": "Tired of losing three percent on every payment? YouPI PG is a self-hosted UPI and COD payment gateway with zero gateway fees, straight to your bank. It supports dynamic QR codes, direct deep links to GPay, PhonePe, Paytm and CRED, WhatsApp OTP checkout, and automated payment verification via bank SMS and Gmail alerts. It's experimental and not bank-approved, so don't bet your empire on it yet. Comment the word 'UPI' and I'll send you the link and tutorial for this repo."
+    },
+    "tiktok": {
+      "description": "Tired of losing three percent on every payment? YouPI PG is a self-hosted UPI and COD payment gateway with zero gateway fees, straight to your bank. It supports dynamic QR codes, direct deep links to GPay, PhonePe, Paytm and CRED, WhatsApp OTP checkout, and automated payment verification via bank SMS and Gmail alerts. It's experimental and not bank-approved, so don't bet your empire on it yet. Comment the word 'UPI' and I'll send you the link and tutorial for this repo.",
+      "privacy": "PUBLIC_TO_EVERYONE"
+    },
+    "linkedin": {
+      "text": "💸 How much of every sale do payment aggregators quietly take?\n\nTraditional aggregators charge 2% to 3% plus GST on every transaction, cutting into margins you never get back.\n\nYouPI PG is a self-hosted UPI and COD payment gateway built to settle directly to your bank, with no gateway fees on top:\n\n✅ Zero gateway fees, direct-to-bank settlement\n✅ Dynamic QR codes for payments\n✅ Direct deep links to GPay, PhonePe, Paytm and CRED\n✅ WhatsApp OTP authentication before checkout\n✅ Payment verification by watching bank SMS and Gmail alerts\n✅ Universal JavaScript checkout integration\n\n2,688 stars and 937 forks since launching in September 2026.\n\nIt's an independent experimental research project, not certified, bank-approved, NPCI-approved, audited, or production-ready, so bank reconciliation is still recommended.\n\nWould you experiment with a self-hosted UPI gateway for a side project? 👇",
+      "image_script": {
+        "format": "single square LinkedIn feed image",
+        "dimensions": "1:1 square",
+        "quality": "medium",
+        "headline": "Zero Fee UPI, Straight to Your Bank",
+        "visual": "Pixel-art deep-space scene in the Noborta pixel style: Staro (orange star head, black hoodie, white gloves) standing beside a glowing dynamic QR code panel, with pixelated phone icons showing GPay, PhonePe, Paytm and CRED deep links, a WhatsApp OTP bubble, and coins flowing directly into a bank vault icon labeled 0% FEE.",
+        "supporting_text": "youpi-pg/YouPI-PG · ★ 2.6K",
+        "alt_text": "Pixel-art Staro character presenting a self-hosted UPI payment gateway with zero fees and direct bank settlement in a space setting."
+      }
+    }
+  }
+}
