@@ -1,0 +1,27 @@
+{
+  "topic": "Google Maps Scraper Kit",
+  "video_topic": "Turn Google Maps searches into local CSV lead lists, with Docker and no Maps API key",
+  "repo_url": "https://github.com/Mahanaicoach/google-maps-scraper-kit",
+  "format": "pixel_space",
+  "video_source": "output/pixel_maps_leads/final_A_maps_leads_1x_nomusic.mp4",
+  "posting": {
+    "title": "📍 Turn Google Maps Into a CSV Lead List, No API Key",
+    "tags": [
+      "github",
+      "webscraping",
+      "docker"
+    ],
+    "caption": "You can now turn Google Maps into a lead list. Google Maps Scraper Kit runs locally in Docker, no Google Maps API key needed. Pick a business type and city, like dentists in Denver, and it exports names, phones, websites, ratings and published emails into CSV. Add an optional --socials flag for profile links, or let the bundled Claude Code skill run the job. It's free and MIT licensed, but Google's terms restrict scraping. Comment the word 'MAPS' and I'll send you the link and tutorial for this repo.",
+    "linkedin": "📍 How much time do you spend copy-pasting business leads off Google Maps?\n\nOpening dozens of listings by hand, copying phone numbers and websites one at a time, then guessing at emails - it adds up fast.\n\nGoogle Maps Scraper Kit is a free, open-source tool that runs the whole thing locally:\n\n✅ Runs in Docker, no Google Maps API key required\n✅ Pick a business type and city, like \"dentists in Denver CO\"\n✅ Exports name, phone, email, website, category, address, rating and review count to CSV\n✅ Visits business websites to find published emails, including contact/about pages\n✅ Optional --socials flag adds Instagram, Facebook and LinkedIn links found on those sites\n✅ Works via a dependency-free Python CLI, a local web UI, or a bundled Claude Code skill\n\n2,038 stars, 399 forks, MIT licensed.\n\nAfter cloning the repo and opening its folder:\ndocker compose up -d\n\nThen run something like:\npython3 scripts/scrape.py \"dentists in Denver CO\" --city \"Denver, CO\" --depth 5 --socials\n\nWorth noting: Google's terms prohibit scraping and privacy laws apply to the contact data you collect, so use it carefully.\n\nWould this save you hours on your next lead list? 👇",
+    "linkedin_image_script": {
+      "format": "single square LinkedIn feed image",
+      "dimensions": "1:1 square",
+      "quality": "medium",
+      "headline": "Maps to Leads, No API Key",
+      "visual": "Pixel-art deep-space scene in the Noborta pixel style: Staro (orange star head, black hoodie, white gloves) standing beside a glowing pixel-art map dotted with location pins, with an arrow flowing from the map into a CSV spreadsheet panel showing columns like name, phone, email and website, a small Docker whale icon floating nearby.",
+      "supporting_text": "Mahanaicoach/google-maps-scraper-kit · ★ 2,038",
+      "alt_text": "Pixel-art Staro character turning Google Maps pins into a CSV lead list using Docker, in a space setting."
+    },
+    "thumbnail_prompt": "Pixel-art deep-space scene, orange star-headed character in a black hoodie pointing at a glowing map covered in location pins that stream into a scrolling CSV spreadsheet, a small Docker whale icon floating beside a terminal window, 9:16."
+  }
+}
