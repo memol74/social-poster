@@ -1,0 +1,35 @@
+{
+  "video": "video.mp4",
+  "platforms": {
+    "youtube": {
+      "title": "🏆 Top 5 Open-Source Repos to Supercharge Your AI Agent",
+      "description": "Five open-source repos to supercharge your AI coding agent. HyperFrames turns HTML into video. CodeGraph gives agents a pre-indexed map of your code to burn fewer tokens. OmniRoute is a free gateway to 375+ providers and models. gstack is Garry Tan's Claude Code setup with a CEO, designer and QA, no salaries. ECC tops the list at 292K stars with skills, memory and security. Follow to keep up with AI news.",
+      "tags": [
+        "github",
+        "aiagents",
+        "opensource"
+      ],
+      "privacy": "public",
+      "made_for_kids": false
+    },
+    "instagram": {
+      "caption": "Five open-source repos to supercharge your AI coding agent. HyperFrames turns HTML into video. CodeGraph gives agents a pre-indexed map of your code to burn fewer tokens. OmniRoute is a free gateway to 375+ providers and models. gstack is Garry Tan's Claude Code setup with a CEO, designer and QA, no salaries. ECC tops the list at 292K stars with skills, memory and security. Follow to keep up with AI news."
+    },
+    "tiktok": {
+      "description": "Five open-source repos to supercharge your AI coding agent. HyperFrames turns HTML into video. CodeGraph gives agents a pre-indexed map of your code to burn fewer tokens. OmniRoute is a free gateway to 375+ providers and models. gstack is Garry Tan's Claude Code setup with a CEO, designer and QA, no salaries. ECC tops the list at 292K stars with skills, memory and security. Follow to keep up with AI news.",
+      "privacy": "PUBLIC_TO_EVERYONE"
+    },
+    "linkedin": {
+      "text": "🏆 What's actually worth adding to your AI coding agent right now?\n\nThere are thousands of repos promising to make your agent smarter, faster or cheaper to run. Most aren't worth your time.\n\nHere are five that are, ranked by stars:\n\n✅ #5 HyperFrames (HeyGen) - write HTML, CSS and media, your agent turns it into deterministic MP4 video\n✅ #4 CodeGraph - a pre-indexed knowledge graph of your codebase so agents make fewer tool calls\n✅ #3 OmniRoute - a free gateway with one endpoint to 375+ providers and over 1,400 models\n✅ #2 gstack - Garry Tan's Claude Code setup with virtual CEO, designer and QA roles, no salaries\n✅ #1 ECC - a coding-agent harness with skills, memory and security features\n\nECC leads the pack at 292K stars.\n\nWhich one are you adding to your stack first? 👇",
+      "image_script": {
+        "format": "single square LinkedIn feed image",
+        "dimensions": "1:1 square",
+        "quality": "medium",
+        "headline": "Top 5 Repos for Your AI Agent",
+        "visual": "Pixel-art deep-space scene in the Noborta pixel style: Staro (orange star head, black hoodie, white gloves) standing beside a glowing countdown cartridge rack numbered 5 to 1, with a small code graph, a router node, team role cards and a trophy glowing at the number one slot.",
+        "supporting_text": "HyperFrames · CodeGraph · OmniRoute · gstack · ECC",
+        "alt_text": "Pixel-art Staro character presenting a countdown of five open-source AI coding agent repositories in a space setting."
+      }
+    }
+  }
+}
