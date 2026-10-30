@@ -1,0 +1,27 @@
+{
+  "topic": "llmgpu",
+  "video_topic": "How to host an open-source LLM on a cloud GPU: pick an open model, VRAM math + quantization, rent a GPU VM, serve with vLLM in Docker, call it with the OpenAI SDK, secure it, watch metrics, scale to zero",
+  "repo_url": "",
+  "format": "pixel_space_silent",
+  "video_source": "output/pixel_llmgpu/final_llmgpu_a.mp4",
+  "posting": {
+    "title": "🖥️ Stop Renting Tokens: Host Your Own LLM on a GPU",
+    "tags": [
+      "llm",
+      "selfhosted",
+      "vllm"
+    ],
+    "caption": "Tired of paying per token? Rent the kitchen, not the meal. This video breaks self-hosting an LLM into 4 parts: pick an open model like Qwen3-8B, do the VRAM math and shrink it with quantization, rent a cloud GPU, and serve it with vLLM in Docker. Then call it with the OpenAI SDK, lock it down, watch Prometheus metrics, and scale to zero with serverless GPUs when idle. Follow for more tutorials.",
+    "linkedin": "🖥️ Tired of paying per token?\n\nToken APIs are like a restaurant: convenient, but you pay per dish every single time. A rented GPU is your own kitchen: you pay per hour, and at high volume or with private data, that math can flip in your favor.\n\nThis video walks through self-hosting an open-source LLM end to end:\n\n✅ Pick an open model: Qwen/Qwen3-8B (Apache-2.0, ~8.2B params) or OpenAI's gpt-oss\n✅ Do the VRAM math: BF16 = 2 bytes/param (~16.4GB for Qwen3-8B), then shrink with FP8 (9.44GB) or AWQ 4-bit (6.10GB)\n✅ Rent a GPU VM (RunPod, Lambda, AWS/GCP/Azure) and check it with nvidia-smi -L\n✅ Serve it with vLLM in Docker, an OpenAI-compatible server with /v1/chat/completions\n✅ Call it with the OpenAI SDK, pointing base_url at your server\n✅ Lock it down behind TLS and --api-key, keep port 8000 private\n✅ Watch Prometheus metrics like vllm:num_requests_waiting to know when to scale\n\nvLLM Docker command from the docs:\ndocker run --gpus all --ipc=host -p 8000:8000 vllm/vllm-openai:latest --model Qwen/Qwen3-8B\n\nPro tip: an idle rented GPU still bills by the hour, scale to zero with serverless GPUs like Modal or RunPod Serverless.\n\nWould you self-host your next LLM or stay on a token API? 👇",
+    "linkedin_image_script": {
+      "format": "single square LinkedIn feed image",
+      "dimensions": "1:1 square",
+      "quality": "medium",
+      "headline": "Rent the Kitchen, Not the Meal",
+      "visual": "Pixel-art deep-space scene in the Noborta pixel style: a pixel GPU server tower glowing with VRAM bars filling up, next to a quantization panel shrinking a model block from 16GB to 6GB, a Docker whale icon feeding into a vLLM server rack, and a small Prometheus graph panel with a metrics line trending upward, no characters.",
+      "supporting_text": "Qwen3-8B · vLLM · Docker · Self-Hosted",
+      "alt_text": "Pixel-art diagram of VRAM math, quantization, and a vLLM Docker server for self-hosting an open-source LLM."
+    },
+    "thumbnail_prompt": "Pixel-art deep-space scene, a glowing pixel GPU server tower with VRAM bars, a quantization block shrinking from 16GB to 6GB, a Docker whale icon linked to a vLLM server rack, small Prometheus metrics graph nearby, no characters, 9:16."
+  }
+}
