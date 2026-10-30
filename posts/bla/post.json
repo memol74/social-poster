@@ -1,0 +1,35 @@
+{
+  "video": "video.mp4",
+  "platforms": {
+    "youtube": {
+      "title": "🛡️ This Repo Makes AI Reverse-Engineers Go Broke",
+      "description": "Since exactly five days ago, you can bankrupt AI that cracks apps. It's BLA, Blind LLM Agents, already past a thousand GitHub stars. Point it at your build and it plants decoys, canaries and rabbit holes. When an AI reverse-engineering agent tries to analyze it, it hits resource limits and burns tokens, while your app keeps running exactly the same. Basically a honeypot with a token bill attached. One command: npx bla-agents harden. Comment the word 'SHIELD' and I'll send you the link and tutorial for this repo.",
+      "tags": [
+        "github",
+        "llmsecurity",
+        "cybersecurity"
+      ],
+      "privacy": "public",
+      "made_for_kids": false
+    },
+    "instagram": {
+      "caption": "Since exactly five days ago, you can bankrupt AI that cracks apps. It's BLA, Blind LLM Agents, already past a thousand GitHub stars. Point it at your build and it plants decoys, canaries and rabbit holes. When an AI reverse-engineering agent tries to analyze it, it hits resource limits and burns tokens, while your app keeps running exactly the same. Basically a honeypot with a token bill attached. One command: npx bla-agents harden. Comment the word 'SHIELD' and I'll send you the link and tutorial for this repo."
+    },
+    "tiktok": {
+      "description": "Since exactly five days ago, you can bankrupt AI that cracks apps. It's BLA, Blind LLM Agents, already past a thousand GitHub stars. Point it at your build and it plants decoys, canaries and rabbit holes. When an AI reverse-engineering agent tries to analyze it, it hits resource limits and burns tokens, while your app keeps running exactly the same. Basically a honeypot with a token bill attached. One command: npx bla-agents harden. Comment the word 'SHIELD' and I'll send you the link and tutorial for this repo.",
+      "privacy": "PUBLIC_TO_EVERYONE"
+    },
+    "linkedin": {
+      "text": "🛡️ What if the AI trying to crack your app went bankrupt instead?\n\nAI reverse-engineering agents (REA) can now pick apart shipped software fast, and most defenses just slow them down a little.\n\nBLA (Blind LLM Agents) takes a different approach: it protects your OWN build by making analysis expensive, not impossible.\n\n✅ Poison layer: format-valid canaries, honey metadata, decoy control flow\n✅ Exhaust layer: pushes artifacts past REA's documented resource budgets\n✅ Hallucinate layer: truncated inventories, redaction failures, rabbit holes\n✅ Runtime stays identical for real users\n✅ Auto-discovers dist/, build/, .asar, .wasm, .sqlite, models and runs audit → protect → verify\n✅ Works as an MCP server + skill with Claude Code, Cursor, Codex, Gemini CLI, Windsurf and more\n\nIn one empirical test, an Electron ASAR file grew from 607 B to 16.9 MiB and tripped the REA's 16 MiB header capacity limit outright.\n\nCreated just 5 days ago. Already at 1,187 GitHub stars and 160 forks. MIT licensed.\n\nnpx bla-agents harden .\n\nWould you rather patch vulnerabilities or make attackers pay for every attempt? 👇",
+      "image_script": {
+        "format": "single square LinkedIn feed image",
+        "dimensions": "1:1 square",
+        "quality": "medium",
+        "headline": "Make Reverse Engineering Bankrupt Again",
+        "visual": "Pixel-art deep-space scene in the Noborta pixel style: Staro (orange star head, black hoodie, white gloves) standing beside a shielded app icon riddled with glowing decoy traps and canary tokens, while a confused robot AI agent spins in circles draining a token meter to zero, with a small MIT stamp nearby.",
+        "supporting_text": "qybaihe/bla · ★ 1,187",
+        "alt_text": "Pixel-art Staro character guarding a software build with decoys as an AI reverse-engineering agent burns through its token budget."
+      }
+    }
+  }
+}
