@@ -1,0 +1,27 @@
+{
+  "topic": "openbot",
+  "video_topic": "OpenBot by CopilotKit - open-source self-hosted AI coworkers, each with its own computer (browser, files, granted tools), governed by one gateway",
+  "repo_url": "https://github.com/CopilotKit/OpenBot",
+  "format": "pixel_space",
+  "video_source": "output/pixel_openbot/final_A_76w_1x_nomusic.mp4",
+  "posting": {
+    "title": "🤖 Give Your AI Its Own Computer: Meet OpenBot",
+    "tags": [
+      "github",
+      "ai",
+      "opensource"
+    ],
+    "caption": "This free AI tool gives your AI coworkers their own computer. It's OpenBot by CopilotKit, MIT licensed, over eight thousand stars. Each bot gets a real browser, its own files, and only the tools you grant. Every action hits one gateway: decided before it happens, recorded after. Hits something risky? You take the wheel, like an intern that asks first. Bring any AG-UI agent and host it yourself. Comment the word 'COWORKER' and I'll send you the link and tutorial for this repo.",
+    "linkedin": "🤖 What if your AI assistant had its own desk, its own browser, and a manager watching every move?\n\nMost AI tools run in a black box you don't control, on infrastructure you don't own, with no record of what they actually did.\n\nOpenBot by CopilotKit gives every AI coworker a real computer of its own:\n\n✅ Its own browser with its own logins, its own files, and only the tools you grant\n✅ One gateway that decides every action against your policy before it happens, and records it after\n✅ Watch the bot work on its own screen, take the wheel when it hits something risky, hand it back when done\n✅ Answers come back as UI components, not just walls of text\n✅ Built on AG-UI, so it runs LangGraph, Mastra, CrewAI, Pydantic AI, Google ADK, or hand-written agents\n✅ Ships with General Assistant, Knowledge, Risk Analyst, and ten more example coworkers\n✅ Docker Compose spins up everything, your data stays in your own PostgreSQL, you bring your own model key\n\n8,657 stars. 1,097 forks. MIT licensed. A template to clone and own, not a hosted product.\n\nInstall with Docker Compose and run it on your own infrastructure.\n\nWould you trust an AI coworker with its own browser and files? 👇",
+    "linkedin_image_script": {
+      "format": "single square LinkedIn feed image",
+      "dimensions": "1:1 square",
+      "quality": "medium",
+      "headline": "Every Bot Gets Its Own Computer",
+      "visual": "Pixel-art deep-space scene in the Noborta pixel style: Staro (orange star head, black hoodie, white gloves) standing beside a small pixel desk with its own monitor, browser window, and file folder icons, a glowing gateway checkpoint in front of it stamping an action ALLOWED while another is marked DENIED, a steering wheel icon floating nearby to show handoff control.",
+      "supporting_text": "CopilotKit/OpenBot · ★ 8,657 · MIT",
+      "alt_text": "Pixel-art Staro character showing an AI coworker with its own computer, gated by a policy checkpoint, in a space setting."
+    },
+    "thumbnail_prompt": "Pixel-art deep-space scene, orange star-headed character in a black hoodie standing next to a tiny glowing computer desk with a browser and folder icons, a gateway checkpoint stamping actions ALLOWED or DENIED in front of it, stars and planets in the background, 9:16."
+  }
+}
