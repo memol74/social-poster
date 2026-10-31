@@ -1,0 +1,35 @@
+{
+  "video": "video.mp4",
+  "platforms": {
+    "youtube": {
+      "title": "🤖 Forget The Codex Desktop App, Use This Free One",
+      "description": "Forget the Codex desktop app. Use this free one instead. It's T3 Code, MIT licensed, with over thirty-five thousand stars. One control surface for Claude Code, Codex, Cursor, OpenCode and more. It works with the subscriptions you already pay for, no new bill. Then steer your agents from desktop, web, or your phone. What are they selling? Nothing. Comment the word 'AGENTS' and I'll send you the link and tutorial for this repo.",
+      "tags": [
+        "github",
+        "aiagents",
+        "opensource"
+      ],
+      "privacy": "public",
+      "made_for_kids": false
+    },
+    "instagram": {
+      "caption": "Forget the Codex desktop app. Use this free one instead. It's T3 Code, MIT licensed, with over thirty-five thousand stars. One control surface for Claude Code, Codex, Cursor, OpenCode and more. It works with the subscriptions you already pay for, no new bill. Then steer your agents from desktop, web, or your phone. What are they selling? Nothing. Comment the word 'AGENTS' and I'll send you the link and tutorial for this repo."
+    },
+    "tiktok": {
+      "description": "Forget the Codex desktop app. Use this free one instead. It's T3 Code, MIT licensed, with over thirty-five thousand stars. One control surface for Claude Code, Codex, Cursor, OpenCode and more. It works with the subscriptions you already pay for, no new bill. Then steer your agents from desktop, web, or your phone. What are they selling? Nothing. Comment the word 'AGENTS' and I'll send you the link and tutorial for this repo.",
+      "privacy": "PUBLIC_TO_EVERYONE"
+    },
+    "linkedin": {
+      "text": "🤖 How many apps are you juggling just to steer your coding agents?\n\nClaude Code here, Cursor there, Codex in another tab, each with its own window and its own habits.\n\nT3 Code is a free, MIT-licensed control surface that puts them all in one place:\n\n✅ Works with Claude Code, Codex, Cursor, OpenCode, Grok Build and Google Antigravity\n✅ Uses the subscriptions you already pay for, no new bill\n✅ Control your agents from a desktop app, a web app, or your phone\n✅ Fully open and forkable, built to be performant and remote-ready\n✅ The README literally says \"Wait, what are you selling me?\" Answer: \"Nothing.\"\n\n35,340 GitHub stars. 8,772 forks. Still very early, so expect some bugs.\n\nInstall: curl -fsSL https://t3.codes/install.sh | sh\n\nWould you trust one control surface to run all your agents? 👇",
+      "image_script": {
+        "format": "single square LinkedIn feed image",
+        "dimensions": "1:1 square",
+        "quality": "medium",
+        "headline": "One Surface, Every Agent",
+        "visual": "Pixel-art deep-space scene in the Noborta pixel style: Staro (orange star head, black hoodie, white gloves) standing before a floating control panel with labeled dials for Claude Code, Codex, Cursor and OpenCode, with a phone, laptop and desktop monitor orbiting nearby and a green MIT stamp in the corner.",
+        "supporting_text": "pingdotgg/t3code · ★ 35.3K",
+        "alt_text": "Pixel-art Staro character controlling multiple AI coding agents from one panel in a space setting."
+      }
+    }
+  }
+}
