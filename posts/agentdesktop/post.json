@@ -1,0 +1,35 @@
+{
+  "video": "video.mp4",
+  "platforms": {
+    "youtube": {
+      "title": "🖱️ Vercel's AI Agent Clicks Apps Without Touching Your Mouse",
+      "description": "Vercel just open-sourced computer use for AI agents. Agent Desktop skips pixel guessing entirely: it reads the real OS accessibility tree, hands your agent a ref for every clickable element, and acts on that ref instead of a coordinate. If the UI changes mid-task, it returns a stale ref error instead of misclicking. Runs headless on Mac, Windows and Linux, so your mouse stays yours. Rust, Apache-2.0, 4,152 stars. Comment the word 'DESKTOP' and I'll send you the link and tutorial for this repo.",
+      "tags": [
+        "github",
+        "ai",
+        "automation"
+      ],
+      "privacy": "public",
+      "made_for_kids": false
+    },
+    "instagram": {
+      "caption": "Vercel just open-sourced computer use for AI agents. Agent Desktop skips pixel guessing entirely: it reads the real OS accessibility tree, hands your agent a ref for every clickable element, and acts on that ref instead of a coordinate. If the UI changes mid-task, it returns a stale ref error instead of misclicking. Runs headless on Mac, Windows and Linux, so your mouse stays yours. Rust, Apache-2.0, 4,152 stars. Comment the word 'DESKTOP' and I'll send you the link and tutorial for this repo."
+    },
+    "tiktok": {
+      "description": "Vercel just open-sourced computer use for AI agents. Agent Desktop skips pixel guessing entirely: it reads the real OS accessibility tree, hands your agent a ref for every clickable element, and acts on that ref instead of a coordinate. If the UI changes mid-task, it returns a stale ref error instead of misclicking. Runs headless on Mac, Windows and Linux, so your mouse stays yours. Rust, Apache-2.0, 4,152 stars. Comment the word 'DESKTOP' and I'll send you the link and tutorial for this repo.",
+      "privacy": "PUBLIC_TO_EVERYONE"
+    },
+    "linkedin": {
+      "text": "🖱️ How does your AI agent know what it's actually clicking on?\n\nMost computer-use agents guess from screenshots, matching pixels and hoping the button didn't move.\n\nVercel Labs just open-sourced Agent Desktop, and it takes a completely different approach:\n\n✅ Reads the OS accessibility tree instead of matching pixels\n✅ One snapshot returns JSON with a ref for every actionable element\n✅ Agent clicks the ref, then snapshots again to verify the result\n✅ UI changed? It returns STALE_REF or AMBIGUOUS_TARGET instead of clicking the wrong thing\n✅ Headless by default, actions go through the accessibility API without moving your pointer or stealing focus\n✅ CLI and C library, native binaries for macOS, Windows and Linux, x64 and ARM64\n\n4,152 stars, 293 forks, Rust, Apache-2.0 licensed.\n\nInstall: npm install -g agent-desktop\n\nWould you trust an agent to operate your desktop apps without taking your mouse? 👇",
+      "image_script": {
+        "format": "single square LinkedIn feed image",
+        "dimensions": "1:1 square",
+        "quality": "medium",
+        "headline": "Agents That Read, Not Guess",
+        "visual": "Pixel-art deep-space scene in the Noborta pixel style: Staro (orange star head, black hoodie, white gloves) standing beside a glowing desktop window overlaid with a wireframe accessibility tree, small labeled refs floating over buttons, a tiny robot cursor hovering a ref without touching a physical mouse icon marked with a cross.",
+        "supporting_text": "vercel-labs/agent-desktop · ★ 4,152",
+        "alt_text": "Pixel-art Staro character showing an AI agent reading a desktop app's accessibility tree instead of using pixels."
+      }
+    }
+  }
+}
