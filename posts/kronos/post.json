@@ -1,0 +1,35 @@
+{
+  "video": "video.mp4",
+  "platforms": {
+    "youtube": {
+      "title": "📈 This Free AI Forecasts Candlestick Charts for You",
+      "description": "This free AI tool lets you forecast market candlestick charts. It's Kronos, MIT licensed, with over forty-four thousand stars, the first open-source foundation model for candlesticks, trained on data from over forty-five global exchanges. A tokenizer turns price and volume into tokens, then a Transformer predicts the next one. Load it from Hugging Face in two lines, forecast in one call. Fine-tuning scripts included. Still not financial advice. Comment the word 'CHART' and I'll send you the link and tutorial for this repo.",
+      "tags": [
+        "github",
+        "ai",
+        "finance"
+      ],
+      "privacy": "public",
+      "made_for_kids": false
+    },
+    "instagram": {
+      "caption": "This free AI tool lets you forecast market candlestick charts. It's Kronos, MIT licensed, with over forty-four thousand stars, the first open-source foundation model for candlesticks, trained on data from over forty-five global exchanges. A tokenizer turns price and volume into tokens, then a Transformer predicts the next one. Load it from Hugging Face in two lines, forecast in one call. Fine-tuning scripts included. Still not financial advice. Comment the word 'CHART' and I'll send you the link and tutorial for this repo."
+    },
+    "tiktok": {
+      "description": "This free AI tool lets you forecast market candlestick charts. It's Kronos, MIT licensed, with over forty-four thousand stars, the first open-source foundation model for candlesticks, trained on data from over forty-five global exchanges. A tokenizer turns price and volume into tokens, then a Transformer predicts the next one. Load it from Hugging Face in two lines, forecast in one call. Fine-tuning scripts included. Still not financial advice. Comment the word 'CHART' and I'll send you the link and tutorial for this repo.",
+      "privacy": "PUBLIC_TO_EVERYONE"
+    },
+    "linkedin": {
+      "text": "📈 What if a Transformer could read candlestick charts the way it reads text?\n\nMost forecasting tools are either black-box trading bots or academic models you can't actually run.\n\nKronos is an open-source foundation model built specifically for K-line data:\n\n✅ First open-source foundation model for financial candlesticks, trained on data from over 45 global exchanges\n✅ Two-stage design: a tokenizer quantizes OHLCV data into hierarchical discrete tokens\n✅ A decoder-only autoregressive Transformer pre-trained on those tokens to predict what comes next\n✅ Three open sizes on Hugging Face: Kronos-mini (4.1M params), Kronos-small (24.7M), Kronos-base (102.3M)\n✅ Fine-tuning scripts released so you can adapt it to your own data\n✅ Live demo forecasting BTC/USDT 24h candles\n\n44,652 stars. MIT licensed. Paper accepted at AAAI 2026.\n\nInstall: pip install -r requirements.txt\n\nThen load with KronosTokenizer.from_pretrained() and Kronos.from_pretrained(), and forecast with KronosPredictor().predict().\n\nNot financial advice, just a genuinely open model for a closed field.\n\nWould you trust a Transformer to forecast a chart? 👇",
+      "image_script": {
+        "format": "single square LinkedIn feed image",
+        "dimensions": "1:1 square",
+        "quality": "medium",
+        "headline": "An AI That Reads Candlesticks",
+        "visual": "Pixel-art deep-space scene in the Noborta pixel style: Staro (orange star head, black hoodie, white gloves) standing beside a glowing floating candlestick chart, with small pixel tokens streaming from the candles into a Transformer-shaped module, a green MIT stamp nearby.",
+        "supporting_text": "shiyu-coder/Kronos · ★ 44.6K",
+        "alt_text": "Pixel-art Staro character presenting the Kronos open-source candlestick forecasting model in a space setting."
+      }
+    }
+  }
+}
