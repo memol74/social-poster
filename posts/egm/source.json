@@ -1,0 +1,27 @@
+{
+  "video_topic": "google/elephant-goldfish-model",
+  "repo_url": "https://github.com/google/elephant-goldfish-model",
+  "format": "pixel_space",
+  "video_source": "output/pixel_egm/final_A_75w_1x_nomusic.mp4",
+  "topic": "Elephant-Goldfish Model: Google's open-source plugin to design specs with a deep-context agent and review them with zero-context subagents",
+  "posting": {
+    "title": "🐘 Google's Elephant-Goldfish Model: Design Smarter With AI",
+    "tags": [
+      "github",
+      "ai",
+      "softwareengineering"
+    ],
+    "caption": "You can now design software the way thousands of Google engineers do. The Elephant-Goldfish Model is Apache-licensed and open source, with over 7,600 stars. The elephant remembers your whole project and drafts the spec, then goldfish reviewers read it with zero memory of your chat, catching hidden assumptions before a single line of code. Works in Claude Code, Codex and Antigravity. Comment the word 'GOLDFISH' and I'll send you the link and tutorial for this repo.",
+    "linkedin": "🐘 What if forgetting was the feature, not the bug?\n\nAI agents that remember your entire project are great for drafting specs, but that same memory makes them blind to their own assumptions. Nobody catches the gaps because everyone shares the same context.\n\nGoogle's Elephant-Goldfish Model (EGM) fixes this with two kinds of agents:\n\n✅ The elephant holds project context, requirements and earlier decisions, and drafts the specification\n✅ Goldfish subagents review the draft with zero memory of the conversation, reading only the document and source material\n✅ Fresh eyes surface missing assumptions, unclear requirements and implementation risks\n✅ Skills for every stage: brainstorm, draft, review, resolve, bootstrap, review-loop, drift-report\n✅ Works with Antigravity, Claude Code and Codex\n\nThousands of Google engineers already use it this way. 7,612 stars, Apache-2.0 licensed.\n\nInstall for Claude Code:\nclaude plugin marketplace add google/elephant-goldfish-model\nclaude plugin install egm@egm\n\nWould your team design better if every review started from zero memory? 👇",
+    "linkedin_image_script": {
+      "format": "single square LinkedIn feed image",
+      "dimensions": "1:1 square",
+      "quality": "medium",
+      "headline": "Design Like an Elephant, Review Like a Goldfish",
+      "visual": "Pixel-art deep-space scene in the Noborta pixel style: Staro (orange star head, black hoodie, white gloves) standing between a glowing elephant-shaped memory core labeled SPEC and a small goldfish-shaped reviewer bot circling a document, stars and planets in the background.",
+      "supporting_text": "google/elephant-goldfish-model · ★ 7.6K",
+      "alt_text": "Pixel-art Staro character presenting Google's Elephant-Goldfish Model with an elephant memory core and goldfish reviewer in space."
+    },
+    "thumbnail_prompt": "Pixel-art deep-space scene, orange star-headed character in a black hoodie pointing at a glowing spec document, a small pixel elephant on one side holding project memory and a tiny goldfish circling the document on the other side reviewing it, stars and planets in background, 9:16."
+  }
+}
