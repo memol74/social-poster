@@ -1,0 +1,35 @@
+{
+  "video": "video.mp4",
+  "platforms": {
+    "youtube": {
+      "title": "🤝 This AI Sales Agent Runs on Your Claude Plan, Not an API Bill",
+      "description": "You can now run an AI sales rep on your Claude plan. It's Harvey, MIT licensed, with over three thousand seven hundred stars. It finds prospects, reads their sites, and writes cold emails about them. Then it sends, reads replies, and works each conversation toward a meeting. No API key, no token bill. Codex works too. And nothing sends until you approve it. A closer with manners. Comment the word 'HARVEY' and I'll send you the link and tutorial for this repo.",
+      "tags": [
+        "github",
+        "ai",
+        "sales"
+      ],
+      "privacy": "public",
+      "made_for_kids": false
+    },
+    "instagram": {
+      "caption": "You can now run an AI sales rep on your Claude plan. It's Harvey, MIT licensed, with over three thousand seven hundred stars. It finds prospects, reads their sites, and writes cold emails about them. Then it sends, reads replies, and works each conversation toward a meeting. No API key, no token bill. Codex works too. And nothing sends until you approve it. A closer with manners. Comment the word 'HARVEY' and I'll send you the link and tutorial for this repo."
+    },
+    "tiktok": {
+      "description": "You can now run an AI sales rep on your Claude plan. It's Harvey, MIT licensed, with over three thousand seven hundred stars. It finds prospects, reads their sites, and writes cold emails about them. Then it sends, reads replies, and works each conversation toward a meeting. No API key, no token bill. Codex works too. And nothing sends until you approve it. A closer with manners. Comment the word 'HARVEY' and I'll send you the link and tutorial for this repo.",
+      "privacy": "PUBLIC_TO_EVERYONE"
+    },
+    "linkedin": {
+      "text": "🤝 What if your AI sales rep ran on a subscription you already pay for?\n\nMost AI sales tools bill you per API token on top of your other subscriptions, and most of them send emails without asking you first.\n\nHarvey is an open-source autonomous sales agent that runs on your Claude Pro/Max plan via Claude Code, or your ChatGPT plan via Codex:\n\n✅ Finds businesses and reads their websites before writing anything\n✅ Writes cold emails that reference something specific about each prospect\n✅ Sends campaigns, reads replies, and works each conversation toward a meeting\n✅ Runs a heartbeat loop every 15 minutes: wake, quiet hours, budget check, decide, act, log, sleep\n✅ Every outgoing email waits for your approval in the Outbox: approve, edit, or reject\n✅ Local dashboard at localhost:5555, token-locked, data stored in SQLite\n✅ Works with gmail, microsoft, smtp, or instantly as mail providers\n\n3,702 stars, 764 forks, MIT licensed. No API key, no per-token billing, subject to your subscription's usage limits.\n\nInstall and run: harvey run\n\nWould you let an AI agent run your outbound, as long as you approve every email first? 👇",
+      "image_script": {
+        "format": "single square LinkedIn feed image",
+        "dimensions": "1:1 square",
+        "quality": "medium",
+        "headline": "Your AI Sales Rep, On Approval",
+        "visual": "Pixel-art deep-space scene in the Noborta pixel style: Staro (orange star head, black hoodie, white gloves) standing beside a glowing Outbox terminal panel showing an email draft with A / E / R options, a small prospect profile window floating nearby, and a MIT stamp in the corner.",
+        "supporting_text": "ethanplusai/harvey · ★ 3,702",
+        "alt_text": "Pixel-art Staro character reviewing an outbox email approval screen for Harvey, an autonomous AI sales agent."
+      }
+    }
+  }
+}
