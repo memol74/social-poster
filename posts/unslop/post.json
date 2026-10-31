@@ -1,0 +1,35 @@
+{
+  "video": "video.mp4",
+  "platforms": {
+    "youtube": {
+      "title": "🧹 This Claude Skill Unslops Your Vibecoded UI",
+      "description": "Since exactly two days ago, you can make vibecoded UI look designed. It's unslop, a Claude skill with over three thousand stars. First it audits the slop: purple gradients, glows, emoji labels, shouty copy. Then it picks a direction and fixes the screen, pass by pass. Works with React, Vue, Tailwind, plain HTML, even a live site. It even films your screen unslopping itself. Comment the word 'UNSLOP' and I'll send you the link and tutorial for this repo.",
+      "tags": [
+        "github",
+        "claude",
+        "designtools"
+      ],
+      "privacy": "public",
+      "made_for_kids": false
+    },
+    "instagram": {
+      "caption": "Since exactly two days ago, you can make vibecoded UI look designed. It's unslop, a Claude skill with over three thousand stars. First it audits the slop: purple gradients, glows, emoji labels, shouty copy. Then it picks a direction and fixes the screen, pass by pass. Works with React, Vue, Tailwind, plain HTML, even a live site. It even films your screen unslopping itself. Comment the word 'UNSLOP' and I'll send you the link and tutorial for this repo."
+    },
+    "tiktok": {
+      "description": "Since exactly two days ago, you can make vibecoded UI look designed. It's unslop, a Claude skill with over three thousand stars. First it audits the slop: purple gradients, glows, emoji labels, shouty copy. Then it picks a direction and fixes the screen, pass by pass. Works with React, Vue, Tailwind, plain HTML, even a live site. It even films your screen unslopping itself. Comment the word 'UNSLOP' and I'll send you the link and tutorial for this repo.",
+      "privacy": "PUBLIC_TO_EVERYONE"
+    },
+    "linkedin": {
+      "text": "🧹 Does your AI-built UI look a little... slopped?\n\nYou know the look: purple gradients everywhere, glows on every card, emoji instead of icons, copy that shouts, spacing that's off.\n\nunslop is a Claude Code skill that fixes exactly that, step by step:\n\n✅ Audits first: lists every sign of slop and where it lives\n✅ Proposes a direction, a character and a signature detail from your product before touching anything\n✅ Fixes in passes: spacing, color, icons, copy, type, layout, details, visuals, motion\n✅ Works with Next.js, React, Vue, Svelte, Tailwind, plain HTML/CSS, or a live site from a link\n✅ If the screen is already good, it says so instead of redesigning for the sake of it\n✅ Can generate hero scenes and even a short video of your screen unslopping itself\n\nCreated 2 days ago. 3,359 stars, 168 forks already. CC BY 4.0.\n\nInstall: git clone https://github.com/heydamir/unslop ; mkdir -p ~/.claude/skills && cp -r unslop/skills/unslop ~/.claude/skills/\n\nWould you let an AI redesign your dashboard pass by pass? 👇",
+      "image_script": {
+        "format": "single square LinkedIn feed image",
+        "dimensions": "1:1 square",
+        "quality": "medium",
+        "headline": "Unslop Your UI, Pass by Pass",
+        "visual": "Pixel-art deep-space scene in the Noborta pixel style: Staro (orange star head, black hoodie, white gloves) standing between two screens, the left one glowing with purple gradients and emoji labels, the right one clean and redesigned, with a checklist panel showing SPACING, COLOR, ICONS, COPY, TYPE passes ticked off.",
+        "supporting_text": "heydamir/unslop · ★ 3,359",
+        "alt_text": "Pixel-art Staro character showing a before-and-after UI redesign from slop to designed interface."
+      }
+    }
+  }
+}
