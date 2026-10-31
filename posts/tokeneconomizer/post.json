@@ -1,0 +1,35 @@
+{
+  "video": "video.mp4",
+  "platforms": {
+    "youtube": {
+      "title": "💸 Microsoft's New Plugin Cuts Your AI Coding Bill",
+      "description": "Microsoft just open-sourced a way to cut your AI coding bill. TokenEconomizer is a plugin for Claude Code, Codex and Copilot CLI that learns your repo from past sessions, so agents stop relearning the same facts. Unused tools stop loading, requests get lighter, and a judge model nudges agents stuck in error loops. Result: up to 31% cheaper on SWE-Bench tasks. Comment the word 'TOKENS' and I'll send you the link and tutorial for this repo.",
+      "tags": [
+        "github",
+        "ai",
+        "codingagents"
+      ],
+      "privacy": "public",
+      "made_for_kids": false
+    },
+    "instagram": {
+      "caption": "Microsoft just open-sourced a way to cut your AI coding bill. TokenEconomizer is a plugin for Claude Code, Codex and Copilot CLI that learns your repo from past sessions, so agents stop relearning the same facts. Unused tools stop loading, requests get lighter, and a judge model nudges agents stuck in error loops. Result: up to 31% cheaper on SWE-Bench tasks. Comment the word 'TOKENS' and I'll send you the link and tutorial for this repo."
+    },
+    "tiktok": {
+      "description": "Microsoft just open-sourced a way to cut your AI coding bill. TokenEconomizer is a plugin for Claude Code, Codex and Copilot CLI that learns your repo from past sessions, so agents stop relearning the same facts. Unused tools stop loading, requests get lighter, and a judge model nudges agents stuck in error loops. Result: up to 31% cheaper on SWE-Bench tasks. Comment the word 'TOKENS' and I'll send you the link and tutorial for this repo.",
+      "privacy": "PUBLIC_TO_EVERYONE"
+    },
+    "linkedin": {
+      "text": "💸 What if your AI coding agent kept relearning the same lessons, over and over, on your dime?\n\nEvery new session, your agent rediscovers how to run tests, which build step comes first, which tools it actually needs. That repetition costs tokens, and tokens cost money.\n\nMicrosoft just open-sourced TokenEconomizer to fix exactly this:\n\n✅ Plugin for Claude Code, Codex, GitHub Copilot CLI and Pi (experimental opencode support), no changes to the agent itself\n✅ Micro-skills: learns repo facts like 'python -m pytest' or 'npx tsc' from past sessions, locked in after 3 confirmations\n✅ Tool pruning: unused tools skip the next session, one command brings them back\n✅ Failure-loop intervention: a judge model spots stuck turns and sends one redirect, never stops the turn itself\n✅ All learned data stays local in ~/.tokeneconomizer\n\nOn 277 SWE-Bench tasks: 18.4–30.9% lower mean cost across five agent-model combos, cheaper in all 30 repo x combo cells, Pass@1 up in 4 of 5. Web-Bench: 16–21% lower.\n\nInstall for Copilot CLI:\ngit clone https://github.com/microsoft/TokenEconomizer.git\ncopilot plugin marketplace add \"$PWD/TokenEconomizer\"\ncopilot plugin install tokeneconomizer@tokeneconomizer\n\nWould trimming your agent's token bill by 30% change how often you use it? 👇",
+      "image_script": {
+        "format": "single square LinkedIn feed image",
+        "dimensions": "1:1 square",
+        "quality": "medium",
+        "headline": "Cut Your Coding Agent's Bill",
+        "visual": "Pixel-art deep-space scene in the Noborta pixel style: Staro (orange star head, black hoodie, white gloves) standing beside a shrinking cost meter labeled TOKENS, with a small judge-robot character redirecting a looping error path, and a stack of pruned tool icons fading into the background stars.",
+        "supporting_text": "microsoft/TokenEconomizer · ★ 2,995",
+        "alt_text": "Pixel-art Staro character showing Microsoft's TokenEconomizer plugin reducing AI coding agent costs."
+      }
+    }
+  }
+}
