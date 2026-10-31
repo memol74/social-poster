@@ -1,0 +1,35 @@
+{
+  "video": "video.mp4",
+  "platforms": {
+    "youtube": {
+      "title": "📈 Run Your Own AI Hedge Fund With Fake Money",
+      "description": "You can now run your own AI hedge fund, with fake money. AI Hedge Fund is MIT licensed with over sixty-four thousand stars. LLM investor personas analyze real fundamentals and emit trading signals. Paper trade real market days with an approval step and a kill switch, or backtest a fund and watch its equity curve race the benchmark. Install with one pipx command. No real trades, so no Lambo. Comment the word 'FUND' and I'll send you the link and tutorial for this repo.",
+      "tags": [
+        "github",
+        "ai",
+        "finance"
+      ],
+      "privacy": "public",
+      "made_for_kids": false
+    },
+    "instagram": {
+      "caption": "You can now run your own AI hedge fund, with fake money. AI Hedge Fund is MIT licensed with over sixty-four thousand stars. LLM investor personas analyze real fundamentals and emit trading signals. Paper trade real market days with an approval step and a kill switch, or backtest a fund and watch its equity curve race the benchmark. Install with one pipx command. No real trades, so no Lambo. Comment the word 'FUND' and I'll send you the link and tutorial for this repo."
+    },
+    "tiktok": {
+      "description": "You can now run your own AI hedge fund, with fake money. AI Hedge Fund is MIT licensed with over sixty-four thousand stars. LLM investor personas analyze real fundamentals and emit trading signals. Paper trade real market days with an approval step and a kill switch, or backtest a fund and watch its equity curve race the benchmark. Install with one pipx command. No real trades, so no Lambo. Comment the word 'FUND' and I'll send you the link and tutorial for this repo.",
+      "privacy": "PUBLIC_TO_EVERYONE"
+    },
+    "linkedin": {
+      "text": "📈 What if you could run a hedge fund without risking a single real dollar?\n\nMost people wanting to test trading ideas either risk real capital or build a backtesting setup from scratch.\n\nAI Hedge Fund is an open-source proof of concept that lets you do neither:\n\n✅ LLM investor persona agents reason over point-in-time fundamentals and emit trading signals\n✅ Paper trading mode: a ledger of real market days, fake money, an approval step showing the exact decision before anything trades, and a kill switch\n✅ Every session appended to a hash-chained ledger\n✅ Backtesting mode: replay a fund over history and watch its equity curve race the benchmark\n✅ Needs a Financial Datasets API key plus one model API key (Anthropic, OpenAI, DeepSeek, Google, xAI, Kimi, or TypeSafe)\n\n64,397 stars. MIT licensed. Educational and research use only, it does not execute real trades.\n\nInstall: pipx install aihf, then run aihf\n\nWould you trust an AI persona of Warren Buffett with your paper portfolio? 👇",
+      "image_script": {
+        "format": "single square LinkedIn feed image",
+        "dimensions": "1:1 square",
+        "quality": "medium",
+        "headline": "Your AI Hedge Fund Awaits",
+        "visual": "Pixel-art deep-space scene in the Noborta pixel style: Staro (orange star head, black hoodie, white gloves) standing before a glowing trading terminal with an equity curve chart racing a benchmark line, a small robot investor persona icon beside a SIGNAL: BUY panel, and a green MIT stamp in the corner.",
+        "supporting_text": "virattt/ai-hedge-fund · ★ 64.4K",
+        "alt_text": "Pixel-art Staro character presenting the AI Hedge Fund repo with an equity curve and trading signal panel in a space setting."
+      }
+    }
+  }
+}
