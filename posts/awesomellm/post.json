@@ -1,0 +1,35 @@
+{
+  "video": "video.mp4",
+  "platforms": {
+    "youtube": {
+      "title": "🤖 Clone & Ship 100+ Free AI Agents From One Repo",
+      "description": "You can now clone and ship over a hundred AI agents. Awesome LLM Apps is Apache-2.0 licensed with over 143,000 stars: agent skills, RAG apps, voice agents and multi-agent teams, all tested end-to-end. They run on Claude, Gemini, GPT, DeepSeek, Llama or Qwen. Install a skill in one command, or run any agent in thirty seconds. One skill even autopsies your abandoned side projects. Rude, but fair. Comment the word 'AGENTS' and I'll send you the link and tutorial for this repo.",
+      "tags": [
+        "github",
+        "ai",
+        "opensource"
+      ],
+      "privacy": "public",
+      "made_for_kids": false
+    },
+    "instagram": {
+      "caption": "You can now clone and ship over a hundred AI agents. Awesome LLM Apps is Apache-2.0 licensed with over 143,000 stars: agent skills, RAG apps, voice agents and multi-agent teams, all tested end-to-end. They run on Claude, Gemini, GPT, DeepSeek, Llama or Qwen. Install a skill in one command, or run any agent in thirty seconds. One skill even autopsies your abandoned side projects. Rude, but fair. Comment the word 'AGENTS' and I'll send you the link and tutorial for this repo."
+    },
+    "tiktok": {
+      "description": "You can now clone and ship over a hundred AI agents. Awesome LLM Apps is Apache-2.0 licensed with over 143,000 stars: agent skills, RAG apps, voice agents and multi-agent teams, all tested end-to-end. They run on Claude, Gemini, GPT, DeepSeek, Llama or Qwen. Install a skill in one command, or run any agent in thirty seconds. One skill even autopsies your abandoned side projects. Rude, but fair. Comment the word 'AGENTS' and I'll send you the link and tutorial for this repo.",
+      "privacy": "PUBLIC_TO_EVERYONE"
+    },
+    "linkedin": {
+      "text": "🤖 What if you could stop building AI agents from scratch?\n\nMost people spend weeks wiring up agents, RAG pipelines and voice bots before they even test an idea.\n\nAwesome LLM Apps gives you over 100 hand-built, tested AI agents you can clone and ship today:\n\n✅ Agent skills that install with one command and work in Claude Code, Codex and Cursor\n✅ Starter, advanced and always-on AI agents\n✅ Multi-agent teams, voice AI agents and RAG apps\n✅ Generative UI, MCP agents and autonomous game-playing agents\n✅ Works with Claude, Gemini, GPT, DeepSeek, Llama or Qwen\n✅ Every skill passes a security + eval CI gate\n\nOne skill, Project Graveyard, finds every side project you abandoned, tells you why it died, and helps you finish the one worth saving. Rude, but fair.\n\n143,596 stars. Apache-2.0 licensed. New templates drop weekly.\n\nRun an agent in about 30 seconds:\ngit clone https://github.com/Shubhamsaboo/awesome-llm-apps.git\n\nWhich agent would you ship first? 👇",
+      "image_script": {
+        "format": "single square LinkedIn feed image",
+        "dimensions": "1:1 square",
+        "quality": "medium",
+        "headline": "100+ AI Agents, Clone & Ship",
+        "visual": "Pixel-art deep-space scene in the Noborta pixel style: Staro (orange star head, black hoodie, white gloves) standing beside a glowing terminal window running a clone command, surrounded by floating pixel-art icon tiles labeled AGENTS, RAG, VOICE and SKILLS, with small model badges for Claude, Gemini, GPT and Llama orbiting nearby.",
+        "supporting_text": "Shubhamsaboo/awesome-llm-apps · ★ 143K",
+        "alt_text": "Pixel-art Staro character presenting Awesome LLM Apps, a repo with over 100 open-source AI agents."
+      }
+    }
+  }
+}
