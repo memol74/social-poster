@@ -1,0 +1,35 @@
+{
+  "video": "video.mp4",
+  "platforms": {
+    "youtube": {
+      "title": "🐼 This Browser Runs 9x Faster Than Chrome, Built in Zig",
+      "description": "You can now run headless browsing nine times faster than Chrome. Lightpanda is a new open-source browser written in Zig, with 39K stars, built from scratch for AI agents and automation, not a Chromium fork. For 100 pages it uses 16x less memory. Keep your Puppeteer or Playwright scripts and point them at its CDP server. It even ships an MCP server. Comment the word 'PANDA' and I'll send you the link and tutorial for this repo.",
+      "tags": [
+        "github",
+        "browser",
+        "ai"
+      ],
+      "privacy": "public",
+      "made_for_kids": false
+    },
+    "instagram": {
+      "caption": "You can now run headless browsing nine times faster than Chrome. Lightpanda is a new open-source browser written in Zig, with 39K stars, built from scratch for AI agents and automation, not a Chromium fork. For 100 pages it uses 16x less memory. Keep your Puppeteer or Playwright scripts and point them at its CDP server. It even ships an MCP server. Comment the word 'PANDA' and I'll send you the link and tutorial for this repo."
+    },
+    "tiktok": {
+      "description": "You can now run headless browsing nine times faster than Chrome. Lightpanda is a new open-source browser written in Zig, with 39K stars, built from scratch for AI agents and automation, not a Chromium fork. For 100 pages it uses 16x less memory. Keep your Puppeteer or Playwright scripts and point them at its CDP server. It even ships an MCP server. Comment the word 'PANDA' and I'll send you the link and tutorial for this repo.",
+      "privacy": "PUBLIC_TO_EVERYONE"
+    },
+    "linkedin": {
+      "text": "🐼 What if your headless browser didn't need 2GB of RAM just to load 100 pages?\n\nMost automation setups run headless Chrome, and it's heavy: slow boot times, bloated memory, fans spinning on your CI runners.\n\nLightpanda is an open-source browser written in Zig, built from scratch for AI agents and automation:\n\n✅ Not a Chromium fork, not a WebKit patch, JavaScript runs via V8\n✅ 9x faster execution: 5s vs 46s on a 100-page benchmark (AWS EC2 m5.large)\n✅ 16x less memory: 123MB peak vs 2GB for headless Chrome\n✅ Works with your existing Puppeteer or Playwright scripts via CDP server\n✅ Also supports WebDriver BiDi\n✅ Ships its own MCP server (JSON-RPC 2.0 over stdio and HTTP)\n\n39,186 stars, 1,905 forks, AGPL-3.0 licensed.\n\nInstall: brew install lightpanda-io/browser/lightpanda\n\nWould swapping your Chrome instance for this change your automation costs? 👇",
+      "image_script": {
+        "format": "single square LinkedIn feed image",
+        "dimensions": "1:1 square",
+        "quality": "medium",
+        "headline": "9x Faster, 16x Lighter",
+        "visual": "Pixel-art deep-space scene in the Noborta pixel style: Staro (orange star head, black hoodie, white gloves) standing between two browser windows, one labeled CHROME with a heavy weight icon and overheating fan, the other labeled LIGHTPANDA glowing light and fast with a small rocket trail, a CDP connection line linking to a Puppeteer/Playwright script panel.",
+        "supporting_text": "lightpanda-io/browser · ★ 39K · AGPL-3.0",
+        "alt_text": "Pixel-art Staro character comparing Lightpanda browser speed and memory use against headless Chrome in a space setting."
+      }
+    }
+  }
+}
