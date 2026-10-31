@@ -1,0 +1,35 @@
+{
+  "video": "video.mp4",
+  "platforms": {
+    "youtube": {
+      "title": "🎙️ Forget ElevenLabs. This Free Local AI Voice Studio Wins",
+      "description": "Forget ElevenLabs. Use this free AI voice studio instead. VoiceStudio is fully local, open-source (AGPL-3.0), with nearly ninety-seven thousand stars. Clone a voice from a clean recording, or just describe one in words. Dub videos timed to the original, in 646 languages. Dictate, transcribe, even narrate audiobooks, on desktop or phone. It all runs on your own device, no cloud, no bill. Comment the word 'VOICE' and I'll send you the link and tutorial for this repo.",
+      "tags": [
+        "github",
+        "ai",
+        "opensource"
+      ],
+      "privacy": "public",
+      "made_for_kids": false
+    },
+    "instagram": {
+      "caption": "Forget ElevenLabs. Use this free AI voice studio instead. VoiceStudio is fully local, open-source (AGPL-3.0), with nearly ninety-seven thousand stars. Clone a voice from a clean recording, or just describe one in words. Dub videos timed to the original, in 646 languages. Dictate, transcribe, even narrate audiobooks, on desktop or phone. It all runs on your own device, no cloud, no bill. Comment the word 'VOICE' and I'll send you the link and tutorial for this repo."
+    },
+    "tiktok": {
+      "description": "Forget ElevenLabs. Use this free AI voice studio instead. VoiceStudio is fully local, open-source (AGPL-3.0), with nearly ninety-seven thousand stars. Clone a voice from a clean recording, or just describe one in words. Dub videos timed to the original, in 646 languages. Dictate, transcribe, even narrate audiobooks, on desktop or phone. It all runs on your own device, no cloud, no bill. Comment the word 'VOICE' and I'll send you the link and tutorial for this repo.",
+      "privacy": "PUBLIC_TO_EVERYONE"
+    },
+    "linkedin": {
+      "text": "🎙️ Why are you still paying monthly for AI voice cloning?\n\nTools like ElevenLabs lock your voice pipeline behind a cloud API and a recurring bill, plus your audio leaves your machine every time.\n\nVoiceStudio is a free, fully-local, open-source alternative that runs entirely on your own device:\n\n✅ Voice cloning from a clean reference recording\n✅ Voice design: describe a voice in words and generate it\n✅ Video dubbing with speech timed to the original\n✅ Dictation widget and local transcription\n✅ Audiobook and batch narration in 646 languages\n✅ Local API, MCP, recipes and watch folders for automation\n✅ Works on macOS, Windows, Linux, Docker, Android and iOS\n\nNearly 97K GitHub stars, AGPL-3.0 licensed, no paid cloud behind it. Default engine powered by k2-fsa/OmniVoice, with dozens more in the Model Manager. CPU works (slower), with CUDA, Metal, ROCm and Vulkan support.\n\nInstall: curl -fsSL https://voicestudio.sh/install | sh\n\nWould you trust your voice pipeline to run fully on your own device? 👇",
+      "image_script": {
+        "format": "single square LinkedIn feed image",
+        "dimensions": "1:1 square",
+        "quality": "medium",
+        "headline": "646 Languages. Zero Cloud.",
+        "visual": "Pixel-art deep-space scene in the Noborta pixel style: Staro (orange star head, black hoodie, white gloves) standing in front of a glowing soundwave console with microphone icon, a floating holographic globe showing language subtitles, and a padlock icon labeled LOCAL on a small satellite dish crossed out to signal no cloud.",
+        "supporting_text": "debpalash/VoiceStudio · ★ 96.7K",
+        "alt_text": "Pixel-art Staro character presenting VoiceStudio's local voice cloning and dubbing features in a space setting."
+      }
+    }
+  }
+}
