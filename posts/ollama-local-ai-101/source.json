@@ -1,0 +1,27 @@
+{
+  "topic": "ollama_local_ai_101",
+  "video_topic": "ollama/ollama - run a free, private ChatGPT-style AI on your own laptop (3D pixel tutorial)",
+  "repo_url": "https://github.com/ollama/ollama",
+  "format": "pixel_space",
+  "video_source": "output/pixel_localai3d/final_A_3d_tutorial.mp4",
+  "posting": {
+    "title": "🤖 Run Your Own Private ChatGPT on Your Laptop, Free",
+    "tags": [
+      "github",
+      "ai",
+      "localllm"
+    ],
+    "caption": "This free AI tool runs a ChatGPT-style assistant on your own laptop. It's called Ollama: open source, MIT licensed, with over 185,000 GitHub stars. Install it with one command, run ollama run llama3.2, and you're chatting fully offline. Your apps talk to localhost port 11434 through an OpenAI-compatible API. Add Open WebUI on top and you get a full browser chat interface. Install, run, call: your own private AI, no monthly bill. Comment the word 'LOCAL' and I'll send you the full setup guide.",
+    "linkedin": "🤖 What if your ChatGPT never left your laptop?\n\nMost AI chat tools send every prompt to someone else's server, cost a monthly fee, and stop working the moment you lose internet.\n\nOllama is a free, open-source tool that runs a ChatGPT-style assistant entirely on your own machine:\n\n✅ One command installs it on macOS, Linux or Windows\n✅ ollama run llama3.2 downloads a ~2GB model and starts chatting, fully offline\n✅ Pick your size: Llama 3.2 at ~2GB or Llama 3.1 8B at ~5GB\n✅ OpenAI-compatible API on localhost:11434, so the OpenAI SDK works by just changing the base_url\n✅ Add Open WebUI for a full browser-based chat interface\n\n185,000+ GitHub stars. MIT licensed.\n\nInstall: curl -fsSL https://ollama.com/install.sh | sh\n\nWould you trust a local model over a cloud subscription? 👇",
+    "linkedin_image_script": {
+      "format": "single square LinkedIn feed image",
+      "dimensions": "1:1 square",
+      "quality": "medium",
+      "headline": "Your Own Private AI, Offline",
+      "visual": "Pixel-art deep-space scene in the Noborta pixel style: Staro (orange star head, black hoodie, white gloves) sitting at a laptop glowing with a terminal window showing 'ollama run llama3.2', a small WiFi-off icon floating nearby, and a chat bubble interface hovering above the screen like a hologram.",
+      "supporting_text": "ollama/ollama · ★ 185K",
+      "alt_text": "Pixel-art Staro character running a private offline AI chat assistant with Ollama on a laptop in a space setting."
+    },
+    "thumbnail_prompt": "Pixel-art deep-space scene, orange star-headed character in a black hoodie sitting at a glowing laptop with a terminal running ollama commands, a chat bubble hologram floating above, stars and planets in the background, 9:16."
+  }
+}
