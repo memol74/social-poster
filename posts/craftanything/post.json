@@ -1,0 +1,35 @@
+{
+  "video": "video.mp4",
+  "platforms": {
+    "youtube": {
+      "title": "🛠️ Rebuild Any Website or Game With AI: Craft Anything",
+      "description": "Since last week, you can rebuild any website, app or game. Craft Anything is open source, pure Rust, almost eighteen thousand stars. Point it at a target, and real inspection tools study how it's built. A coding agent like Claude Code builds your own version, then checks it against the original and refines it. 320 tools, all exposed over MCP. Comment the word 'CRAFT' and I'll send you the link and tutorial for this repo.",
+      "tags": [
+        "github",
+        "rust",
+        "ai"
+      ],
+      "privacy": "public",
+      "made_for_kids": false
+    },
+    "instagram": {
+      "caption": "Since last week, you can rebuild any website, app or game. Craft Anything is open source, pure Rust, almost eighteen thousand stars. Point it at a target, and real inspection tools study how it's built. A coding agent like Claude Code builds your own version, then checks it against the original and refines it. 320 tools, all exposed over MCP. Comment the word 'CRAFT' and I'll send you the link and tutorial for this repo."
+    },
+    "tiktok": {
+      "description": "Since last week, you can rebuild any website, app or game. Craft Anything is open source, pure Rust, almost eighteen thousand stars. Point it at a target, and real inspection tools study how it's built. A coding agent like Claude Code builds your own version, then checks it against the original and refines it. 320 tools, all exposed over MCP. Comment the word 'CRAFT' and I'll send you the link and tutorial for this repo.",
+      "privacy": "PUBLIC_TO_EVERYONE"
+    },
+    "linkedin": {
+      "text": "🛠️ What if you could rebuild any website, app or game, just by pointing at it?\n\nMost of us study other people's products by guessing from the outside, then rebuilding blind.\n\nCraft Anything flips that: real tools inspect the target first, then an AI agent builds your version.\n\n✅ Study: real inspection tools examine how the website, app or game actually works\n✅ Build: a coding agent (Claude Code first, GitHub Copilot CLI also supported) builds a new project in the stack you choose\n✅ Check: compares your build against the original, websites checked at three screen widths\n✅ Ready: refine until it matches\n✅ 320 tools, each both a CLI command and an MCP tool, no AI required just to inspect\n✅ Clean-room engine, 100% Rust, runs on macOS, Windows, Linux, FreeBSD and Web\n\n17,807 stars and 3,257 forks, 6 days after creation. Apache-2.0, early alpha.\n\ngit clone https://github.com/storytold/craft-anything\n\nWould you trust an AI agent to rebuild your favorite app? 👇",
+      "image_script": {
+        "format": "single square LinkedIn feed image",
+        "dimensions": "1:1 square",
+        "quality": "medium",
+        "headline": "Study It. Build It. Check It.",
+        "visual": "Pixel-art deep-space scene in the Noborta pixel style: Staro (orange star head, black hoodie, white gloves) holding a scanning device over a floating website window, with a second window beside it labeled YOUR VERSION mid-construction by small robotic tool icons, and a checklist panel showing STUDY / BUILD / CHECK / READY steps.",
+        "supporting_text": "storytold/craft-anything · ★ 17.8K",
+        "alt_text": "Pixel-art Staro character studying a website and rebuilding it with AI tools in Craft Anything."
+      }
+    }
+  }
+}
